@@ -1,11 +1,12 @@
 # Using request to load in parsing option on GET command
 from flask import Flask, request
-import datetime
+from datetime import datetime
 
 app = Flask(__name__)
 
 # Defined endpoint at /getq
 @app.route('/getq')
+
 def get_question():
     
     # sector, sou, and difficulty are search string arguments set-up for API
@@ -28,4 +29,5 @@ def get_question():
     return_string = echoback + word_problem
     return return_string
 
-app.run(debug = True, port = 5000)
+if __name__ == '__main__':
+    app.run(debug = True, use_reloader=True)
