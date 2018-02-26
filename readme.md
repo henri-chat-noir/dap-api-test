@@ -1,5 +1,2 @@
-# Stores REST Api
+# Dimensional Analysis Problem (DAP) generator test API
 
-This is built with Flask, Flask-RESTful, Flask-JWT, and Flask-SQLAlchemy.
-
-Deployed on Heroku.
