@@ -1,1 +1,1 @@
-web: gunicorn getq:app --log-file=-
+web: gunicorn qgen:app --log-file=-

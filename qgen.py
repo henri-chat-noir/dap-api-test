@@ -1,9 +1,11 @@
 # Using request to load in parsing option on GET command
 from flask import Flask, request
+from flask_cors import CORS, cross_origin
 
 import datetime
 
 app = Flask(__name__)
+CORS(app)
 
 # Defined endpoint at /getq
 @app.route('/getq')
