@@ -1,6 +1,6 @@
 # Using request to load in parsing option on GET command
 from flask import Flask, request
-from datetime import datetime
+import datetime
 
 app = Flask(__name__)
 
