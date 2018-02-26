@@ -1,39 +1,31 @@
-import os
-
-from flask import Flask
-from flask_restful import Api
-from flask_jwt import JWT
-
-from security import authenticate, identity
-from resources.user import UserRegister
-from resources.item import Item, ItemList
-from resources.store import Store, StoreList
+# Using request to load in parsing option on GET command
+from flask import Flask, request
+import datetime
 
 app = Flask(__name__)
 
-app.config['DEBUG'] = True
+# Defined endpoint at /getq
+@app.route('/getq')
+def get_question():
+    
+    # sector, sou, and difficulty are search string arguments set-up for API
+    sector = request.args.get('sector')
+    sou = request.args.get('sou')
+    difficulty = request.args.get('difficulty')
+    
+    echo1 = "The sector you've asked for is: " + sector
+    echo2 = "The system of units is: " + sou
+    echo3 = "The level of difficulty is: " + difficulty
+    echoback = echo1 + "\n" + echo2 + "\n" + echo3 + "\n"
 
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', 'sqlite:///data.db')
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-app.secret_key = 'jose'
-api = Api(app)
+    # Need to look into random variable generation, but date/time works for now
+    now = datetime.datetime.now()
+    time_stamp = now.strftime("%Y-%m-%d %H:%M")
+    
+    # Temporary component just to have something added back on GET that's created by API code
+    word_problem = "This is your question which we've generated for you at: " + time_stamp
 
-jwt = JWT(app, authenticate, identity)  # /auth
+    return_string = echoback + word_problem
+    return return_string
 
-api.add_resource(Store, '/store/<string:name>')
-api.add_resource(Item, '/item/<string:name>')
-api.add_resource(ItemList, '/items')
-api.add_resource(StoreList, '/stores')
-
-api.add_resource(UserRegister, '/register')
-
-if __name__ == '__main__':
-    from db import db
-    db.init_app(app)
-
-    if app.config['DEBUG']:
-        @app.before_first_request
-        def create_tables():
-            db.create_all()
-
-    app.run(port=5000)
+app.run(debug = True, port = 5000)
