@@ -1,3 +1,56 @@
+import json
+import ast
+
+def baseProcess(targetDict, exclUIDs):
+    # Main processing of next dictionary
+    # Creates baseList and simpList keys on targetDict and returns as outputDict
+
+    outputDict = targetDict
+    for entry in outputDict.items():
+        
+        unitName = entry[0]
+        unitInfo = entry[1]
+        uID = unitInfo['Uid']
+        actionList = True
+        
+        # If uID excluded, simply move on to next entry in dictionary        
+        if uID in exclUIDs:
+            breakStop = True
+            continue
+    
+        # print("Now working on . . .:", uID, ". ", unitName)
+        # Bucket used where expectation is mutable; defList variable used as non-mutable
+        # Initially assigning value defList to tempList ahead of WHILE loop important, as otherwise SIBU-only defLists
+        # don't have anything to work from below loop
+        defList = unitInfo['defList']
+        tempList = defList
+
+        # Attack defList until all arguments have SIBU units returned into baseList
+        actionList = not allSIBU(defList)    
+    
+        while actionList:
+            # baseStep defList and assign to tempList for iteration on this loop
+        
+            baseReturn = baseStep(defList, uID, unitName, targetDict)
+            tempList = baseReturn[0]
+            baseError = baseReturn[1]
+        
+            # Partly to prevent endless looping on mal-formed elements,
+            # but also just to call it a day if generating errors      
+            if baseError == "OK":
+                actionList = not allSIBU(tempList)    
+            else:
+                actionList = False
+
+        # When tempList fully processed place value in as new key into dictionary
+        outputDict[unitName]['baseList'] = tempList
+        
+        # Then create new key that 'combines like terms' within baseList
+        tempList = simplify(tempList)
+        outputDict[unitName]['simpList'] = tempList
+
+    return outputDict
+
 def simplify(argList):
 
     unitList = []
@@ -135,3 +188,59 @@ def isSIBU(symbol):
         # print(unit, is_SIBU)
 
     return isSIBU
+
+def selectSubDict(unitsList, rawDict):
+
+    outputDict = {}
+    for rawEntry in rawDict:
+
+        unitName = rawEntry['name']
+        if unitName in unitsList:
+        
+            outputDict[unitName] = rawEntry
+            defString = rawEntry['defString']
+        
+            # JSON structure of defString formatted to 'look' like Python list, but needs to be converted into one
+            # and added into dictionary under new 'defList' key
+            defList = ast.literal_eval(defString)
+            outputDict[unitName]['defList'] = defList
+
+    return outputDict
+
+def buildSOUnames(SOUset, rawDict):
+    
+    nameList = []
+    for unitEntry in rawDict:
+
+        if unitEntry['SOU'] in SOUset:
+            nameList.append(unitEntry['name'])
+
+    # Extract SI and metric dictionary entries and build new dictionary, using 'name' of unit entry as key in new dictionary
+    
+    return nameList
+
+def loadRaw(fileName):
+    
+    dictPath = "C:\\0_Python\dap-api-test\\"
+    
+    with open(dictPath + fileName, 'r') as file:      # Open connection to file, read only
+        rawDict = json.load(file)
+        # rawDict has the structure as list of dictionaries, i.e. each entry is un-keyed and only a member of a list
+    
+    return rawDict
+
+def printDict(targetDict, exclUIDs):
+    # Simple output function for showing dictionary
+
+    for entry in targetDict.items():
+        
+        unitName = entry[0]
+        unitInfo = entry[1]
+    
+        uID = unitInfo['Uid']
+        if uID not in exclUIDs:
+
+            print("Output: ", uID, ". ", unitName, unitInfo['defList'])
+            print("baseList: ", unitInfo['baseList'])
+            print("simpList: ", unitInfo['simpList'])
+            print("------------")
