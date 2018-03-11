@@ -56,10 +56,12 @@ for entry in metricDict.items():
         continue
     
     # print("Now working on . . .:", uID, ". ", unitName)
-    # Bucket used where expectation is mutable; defList variable used as non-mutable        
-    tempList = []           
+    # Bucket used where expectation is mutable; defList variable used as non-mutable
+    # Initially assigning value defList to tempList ahead of WHILE loop important, as otherwise SIBU-only defLists
+    # don't have anything to work from below loop
     defList = unitInfo['defList']
-    
+    tempList = defList
+
     # Attack defList until all arguments have SIBU units returned into baseList
     actionList = not fDAP.allSIBU(defList)    
     
