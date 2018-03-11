@@ -8,7 +8,7 @@ print(os.getcwd())
 import functionsDAP as fDAP
 
 dictPath = "C:\\0_Python\dap-api-test\\"
-rawName = 'UnitsDict09.json'    
+rawName = 'UnitsDict09hacked.json'    
 
 with open(dictPath + rawName, 'r') as file:      # Open connection to file, read only
     rawDict = json.load(file)
@@ -31,66 +31,54 @@ for rawEntry in rawDict:
         
         metricDict[unitName] = rawEntry
         defString = rawEntry['defString']
-        
-        # JSON structure of defString formatted to 'look' like Python list, but needs to be converted into one
-        # and added into dictionary under new 'defList' key
         defList = ast.literal_eval(defString)
         metricDict[unitName]['defList'] = defList
 
-for entry in metricDict.items():
-    # Main processing of next dictionary, creating baseList and simpList keys
-    
-    breakStop = False
-    unitName = entry[0]
+for item in metricDict.items():
+    # print("Stage 1:", item[0], item[1]['defList'])
 
+for entry in metricDict.items():
+    breakStop = False
+    tempList = []
+    unitName = entry[0]
     unitInfo = entry[1]
     uID = unitInfo['Uid']
     actionList = True
-
-    # Several entries English system (why?).  Also ('1', 1) tuples vs. (1, 1), "n.a.' symbol on steradians, bust with set-up on reciprocal meter
-    exclUIDs = {50, 146, 268, 297, 374, 535, 661, 662, 591, 596, 525}
-    # If uID excluded, simply move on to next entry in dictionary
-    if uID in exclUIDs:
+    if uID == 525:
         breakStop = True
-        continue
     
     # print("Now working on . . .:", uID, ". ", unitName)
-    # Bucket used where expectation is mutable; defList variable used as non-mutable        
-    tempList = []           
     defList = unitInfo['defList']
-    
-    # Attack defList until all arguments have SIBU units returned into baseList
-    actionList = not fDAP.allSIBU(defList)    
+
+    unitaryList = False
+    if defList[0] == (1,1) and len(defList) == 1:
+        breakStop = True
     
     while actionList:
-        # baseStep defList and assign to tempList for iteration on this loop
-        
-        baseReturn = fDAP.baseStep(defList, uID, unitName, metricDict)
-        tempList = baseReturn[0]
-        baseError = baseReturn[1]
-        
-        # Partly to prevent endless looping on mal-formed elements,
-        # but also just to call it a day if generating errors      
-        if baseError == "OK":
-            actionList = not fDAP.allSIBU(tempList)    
-        else:
-            actionList = False
-
+    # baseStep defList and assign to tempList for iteration on this loop
+        tempList = fDAP.baseStep(unitName, defList, metricDict)
+        # print(uID, ". ", unitName, tempList)
+        actionList = not fDAP.allSIBU(tempList)
+    
     # When tempList fully processed place value in as new key into dictionary
     metricDict[unitName]['baseList'] = tempList
         
     tempList = fDAP.simplify(tempList)
     metricDict[unitName]['simpList'] = tempList
 
+#   print("baseList: ", metricDict[unitName]['baseList'])
+#   print("simpList: ", metricDict[unitName]['simpList'])
+#   print("__________")
+
 for entry in metricDict.items():
-    # Output loop
+
     unitName = entry[0]
     unitInfo = entry[1]
-    
     uID = unitInfo['Uid']
-    if uID not in exclUIDs:
 
-        print("Stage 2: ", uID, ". ", unitName, unitInfo['defList'])
-        print("baseList: ", unitInfo['baseList'])
-        print("simpList: ", unitInfo['simpList'])
-        print("------------")
+    print("Stage 2: ", uID, ". ", unitName, unitInfo['defList'])
+    print("baseList: ", unitInfo['baseList'])
+    print("simpList: ", unitInfo['simpList'])
+    print("__________")
+
+
