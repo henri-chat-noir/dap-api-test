@@ -8,13 +8,14 @@
       "symbol": "abC",
       "defString": "[(10, 1), (\"C\", 1)]",
       "convCoefficient": 10,
-      "convUnits": "C"
+      "convUnits": "C",
+      "notes": 0
    },
    {
       "Uid": 3,
-      "name": "acceleration due to gravity (at surface)",
-      "Qid": 0,
-      "quantity": "TBD",
+      "name": "standard gravity",
+      "Qid": 1,
+      "quantity": "acceleration",
       "SOU": "universal",
       "symbol": "g0",
       "defString": "[(9.80665, 1), (\"m\", 1), (\"s\", -2)]",
@@ -31,7 +32,8 @@
       "symbol": "ac",
       "defString": "[(10, 1), (\"ch\", 2)]",
       "convCoefficient": 10,
-      "convUnits": "ch2"
+      "convUnits": "ch2",
+      "notes": 0
    },
    {
       "Uid": 6,
@@ -42,7 +44,8 @@
       "symbol": "ac\u00B7ft",
       "defString": "[(1, 1), (\"ac\", 1), (\"ft\", 1)]",
       "convCoefficient": 1,
-      "convUnits": "ac\u00B7ft"
+      "convUnits": "ac\u00B7ft",
+      "notes": 0
    },
    {
       "Uid": 7,
@@ -53,7 +56,8 @@
       "symbol": "ac\u00B7in",
       "defString": "[(1, 1), (\"ac\", 1), (\"in\", 1)]",
       "convCoefficient": 1,
-      "convUnits": "ac\u00B7in"
+      "convUnits": "ac\u00B7in",
+      "notes": 0
    },
    {
       "Uid": 8,
@@ -76,7 +80,8 @@
       "symbol": "A/m",
       "defString": "[(1, 1), (\"A\", 1), (\"m\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "A/m"
+      "convUnits": "A/m",
+      "notes": 0
    },
    {
       "Uid": 11,
@@ -87,7 +92,8 @@
       "symbol": "A/m2",
       "defString": "[(1, 1), (\"A\", 1), (\"m\", -2)]",
       "convCoefficient": 1,
-      "convUnits": "A/m2"
+      "convUnits": "A/m2",
+      "notes": 0
    },
    {
       "Uid": 12,
@@ -98,7 +104,8 @@
       "symbol": "\u00C5",
       "defString": "[(1E-10, 1), (\"m\", 1)]",
       "convCoefficient": 0.0000000001,
-      "convUnits": "m"
+      "convUnits": "m",
+      "notes": 0
    },
    {
       "Uid": 13,
@@ -109,7 +116,8 @@
       "symbol": "\u00B5",
       "defString": "[(0.000981748, 1), (\"rad\", 1)]",
       "convCoefficient": 9.8174770424681E-04,
-      "convUnits": "rad"
+      "convUnits": "rad",
+      "notes": 0
    },
    {
       "Uid": 16,
@@ -120,7 +128,8 @@
       "symbol": "a",
       "defString": "[(100, 1), (\"m\", 2)]",
       "convCoefficient": 100,
-      "convUnits": "m2"
+      "convUnits": "m2",
+      "notes": 0
    },
    {
       "Uid": 17,
@@ -143,29 +152,32 @@
       "symbol": "at",
       "defString": "[(1, 1), (\"kgf\", 1), (\"cm\", -2)]",
       "convCoefficient": 1,
-      "convUnits": "kgf/cm2"
+      "convUnits": "kgf/cm2",
+      "notes": 0
    },
    {
       "Uid": 28,
       "name": "atomic unit of charge",
       "Qid": 8,
       "quantity": "electric charge",
-      "SOU": "non-SI metric",
+      "SOU": "universal",
       "symbol": "au",
       "defString": "[(1, 1), (\"e\", 1)]",
       "convCoefficient": 1,
-      "convUnits": "e"
+      "convUnits": "e",
+      "notes": 0
    },
    {
       "Uid": 33,
-      "name": "Avogradro's Number",
-      "Qid": 0,
-      "quantity": "TBD",
+      "name": "Avogradro's number",
+      "Qid": 66,
+      "quantity": "amount of substance",
       "SOU": "universal",
       "symbol": "NA",
       "defString": "[(1, 1), (\"#\", 1)]",
       "convCoefficient": 1,
-      "convUnits": "#"
+      "convUnits": "#",
+      "notes": 0
    },
    {
       "Uid": 34,
@@ -176,7 +188,8 @@
       "symbol": "bag (coffee)",
       "defString": "[(60, 1), (\"kg\", 1)]",
       "convCoefficient": 60,
-      "convUnits": "kg"
+      "convUnits": "kg",
+      "notes": 0
    },
    {
       "Uid": 35,
@@ -187,7 +200,8 @@
       "symbol": "bag (cement)",
       "defString": "[(94, 1), (\"lb\", 1)]",
       "convCoefficient": 94,
-      "convUnits": "lb"
+      "convUnits": "lb",
+      "notes": 0
    },
    {
       "Uid": 37,
@@ -198,7 +212,8 @@
       "symbol": "bar",
       "defString": "[(105, 1), (\"Pa\", 1)]",
       "convCoefficient": 105,
-      "convUnits": "Pa"
+      "convUnits": "Pa",
+      "notes": 0
    },
    {
       "Uid": 38,
@@ -209,7 +224,8 @@
       "symbol": "barge",
       "defString": "[(110.5, 1), (\"ton\", 1)]",
       "convCoefficient": 110.5,
-      "convUnits": "ton"
+      "convUnits": "ton",
+      "notes": 0
    },
    {
       "Uid": 39,
@@ -220,7 +236,8 @@
       "symbol": "barleycorn",
       "defString": "[(0.333333333, 1), (\"in\", 1)]",
       "convCoefficient": 0.333333333333333,
-      "convUnits": "in"
+      "convUnits": "in",
+      "notes": 0
    },
    {
       "Uid": 40,
@@ -231,7 +248,8 @@
       "symbol": "b",
       "defString": "[(1E-28, 1), (\"m\", 2)]",
       "convCoefficient": 1E-28,
-      "convUnits": "m2"
+      "convUnits": "m2",
+      "notes": 0
    },
    {
       "Uid": 41,
@@ -242,7 +260,8 @@
       "symbol": "barony",
       "defString": "[(4000, 1), (\"ac\", 1)]",
       "convCoefficient": 4000,
-      "convUnits": "ac"
+      "convUnits": "ac",
+      "notes": 0
    },
    {
       "Uid": 42,
@@ -253,7 +272,8 @@
       "symbol": "bbl (imp)",
       "defString": "[(36, 1), (\"gal (imp)\", 1)]",
       "convCoefficient": 36,
-      "convUnits": "gal (imp)"
+      "convUnits": "gal (imp)",
+      "notes": 0
    },
    {
       "Uid": 43,
@@ -264,7 +284,8 @@
       "symbol": "bbl (US dry)",
       "defString": "[(105, 1), (\"qt (US dry)\", 1)]",
       "convCoefficient": 105,
-      "convUnits": "qt (US dry)"
+      "convUnits": "qt (US dry)",
+      "notes": 0
    },
    {
       "Uid": 45,
@@ -275,7 +296,8 @@
       "symbol": "bbl",
       "defString": "[(155.5, 1), (\"gal\", 1)]",
       "convCoefficient": 155.5,
-      "convUnits": "gal"
+      "convUnits": "gal",
+      "notes": 0
    },
    {
       "Uid": 46,
@@ -286,7 +308,8 @@
       "symbol": "bbl (pet)",
       "defString": "[(42, 1), (\"gal\", 1)]",
       "convCoefficient": 42,
-      "convUnits": "gal"
+      "convUnits": "gal",
+      "notes": 0
    },
    {
       "Uid": 48,
@@ -297,7 +320,8 @@
       "symbol": "boe",
       "defString": "[(614.8, 1), (\"BTU59\u00A0\u00B0F\", 1)]",
       "convCoefficient": 614.8,
-      "convUnits": "BTU59\u00A0\u00B0F"
+      "convUnits": "BTU59\u00A0\u00B0F",
+      "notes": 0
    },
    {
       "Uid": 49,
@@ -308,7 +332,8 @@
       "symbol": "barye",
       "defString": "[(1, 1), (\"dyn\", 1), (\"cm\", -2)]",
       "convCoefficient": 1,
-      "convUnits": "dyn/cm2"
+      "convUnits": "dyn/cm2",
+      "notes": 0
    },
    {
       "Uid": 50,
@@ -325,12 +350,14 @@
    {
       "Uid": 51,
       "name": "bel",
-      "quantity": "TBD",
+      "Qid": 71,
+      "quantity": "ratio (non-dimensional)",
       "SOU": "SI",
       "symbol": "B",
       "defString": "[(1.151292546, 1), (\"Np\", 1)]",
       "convCoefficient": 1.15129254649702,
-      "convUnits": "Np"
+      "convUnits": "Np",
+      "notes": 0
    },
    {
       "Uid": 54,
@@ -341,7 +368,8 @@
       "symbol": "bd",
       "defString": "[(1, 1), (\"in\", 1), (\"ft\", 1)]",
       "convCoefficient": 1,
-      "convUnits": "in\u00B7ft"
+      "convUnits": "in\u00B7ft",
+      "notes": 0
    },
    {
       "Uid": 55,
@@ -352,7 +380,8 @@
       "symbol": "B.O.T.U.",
       "defString": "[(1, 1), (\"kW\", 1), (\"h\", 1)]",
       "convCoefficient": 1,
-      "convUnits": "kW\u00B7h"
+      "convUnits": "kW\u00B7h",
+      "notes": 0
    },
    {
       "Uid": 56,
@@ -363,7 +392,8 @@
       "symbol": "fbm",
       "defString": "[(144, 1), (\"in\", 3)]",
       "convCoefficient": 144,
-      "convUnits": "in3"
+      "convUnits": "in3",
+      "notes": 0
    },
    {
       "Uid": 60,
@@ -374,7 +404,8 @@
       "symbol": "BTU59\u00A0\u00B0F",
       "defString": "[(108.644812, 1), (\"J\", 1)]",
       "convCoefficient": 108.644812,
-      "convUnits": "J"
+      "convUnits": "J",
+      "notes": 0
    },
    {
       "Uid": 63,
@@ -385,7 +416,8 @@
       "symbol": "BTUIT",
       "defString": "[(108.6707528, 1), (\"J\", 1)]",
       "convCoefficient": 108.67075281986,
-      "convUnits": "J"
+      "convUnits": "J",
+      "notes": 0
    },
    {
       "Uid": 64,
@@ -396,7 +428,8 @@
       "symbol": "BTUISO",
       "defString": "[(108.6135, 1), (\"J\", 1)]",
       "convCoefficient": 108.6135,
-      "convUnits": "J"
+      "convUnits": "J",
+      "notes": 0
    },
    {
       "Uid": 67,
@@ -407,7 +440,8 @@
       "symbol": "BTUIT/h",
       "defString": "[(1, 1), (\"BTUIT\", 1), (\"h\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "BTUIT/h"
+      "convUnits": "BTUIT/h",
+      "notes": 0
    },
    {
       "Uid": 68,
@@ -418,7 +452,8 @@
       "symbol": "BTUIT/min",
       "defString": "[(1, 1), (\"BTUIT\", 1), (\"min\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "BTUIT/min"
+      "convUnits": "BTUIT/min",
+      "notes": 0
    },
    {
       "Uid": 69,
@@ -429,7 +464,8 @@
       "symbol": "BTUIT/s",
       "defString": "[(1, 1), (\"BTUIT\", 1), (\"s\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "BTUIT/s"
+      "convUnits": "BTUIT/s",
+      "notes": 0
    },
    {
       "Uid": 70,
@@ -440,7 +476,8 @@
       "symbol": "bkt",
       "defString": "[(4, 1), (\"gal (imp)\", 1)]",
       "convCoefficient": 4,
-      "convUnits": "gal (imp)"
+      "convUnits": "gal (imp)",
+      "notes": 0
    },
    {
       "Uid": 71,
@@ -451,7 +488,8 @@
       "symbol": "bu (imp)",
       "defString": "[(8, 1), (\"gal (imp)\", 1)]",
       "convCoefficient": 8,
-      "convUnits": "gal (imp)"
+      "convUnits": "gal (imp)",
+      "notes": 0
    },
    {
       "Uid": 72,
@@ -462,7 +500,8 @@
       "symbol": "bu (US heaped)",
       "defString": "[(2.75, 1), (\"bu\", 1)]",
       "convCoefficient": 2.75,
-      "convUnits": "bu"
+      "convUnits": "bu",
+      "notes": 0
    },
    {
       "Uid": 73,
@@ -473,7 +512,8 @@
       "symbol": "bu",
       "defString": "[(2150.42, 1), (\"in\", 3)]",
       "convCoefficient": 2150.42,
-      "convUnits": "in3"
+      "convUnits": "in3",
+      "notes": 0
    },
    {
       "Uid": 660,
@@ -484,7 +524,8 @@
       "symbol": "butt",
       "defString": "[(126, 1), (\"gal\", 1)]",
       "convCoefficient": 126,
-      "convUnits": "gal"
+      "convUnits": "gal",
+      "notes": 0
    },
    {
       "Uid": 74,
@@ -495,7 +536,8 @@
       "symbol": "pipe",
       "defString": "[(126, 1), (\"gal\", 1)]",
       "convCoefficient": 126,
-      "convUnits": "gal"
+      "convUnits": "gal",
+      "notes": 0
    },
    {
       "Uid": 76,
@@ -506,7 +548,8 @@
       "symbol": "cable length (imperial)",
       "defString": "[(608, 1), (\"ft\", 1)]",
       "convCoefficient": 608,
-      "convUnits": "ft"
+      "convUnits": "ft",
+      "notes": 0
    },
    {
       "Uid": 77,
@@ -517,7 +560,8 @@
       "symbol": "cable length (international)",
       "defString": "[(0.1, 1), (\"nmi\", 1)]",
       "convCoefficient": 0.1,
-      "convUnits": "nmi"
+      "convUnits": "nmi",
+      "notes": 0
    },
    {
       "Uid": 78,
@@ -528,7 +572,8 @@
       "symbol": "cable length",
       "defString": "[(720, 1), (\"ft\", 1)]",
       "convCoefficient": 720,
-      "convUnits": "ft"
+      "convUnits": "ft",
+      "notes": 0
    },
    {
       "Uid": 80,
@@ -539,7 +584,8 @@
       "symbol": "cal15\u00A0\u00B0C",
       "defString": "[(4.1855, 1), (\"J\", 1)]",
       "convCoefficient": 4.1855,
-      "convUnits": "J"
+      "convUnits": "J",
+      "notes": 0
    },
    {
       "Uid": 83,
@@ -550,7 +596,8 @@
       "symbol": "calIT",
       "defString": "[(4.1868, 1), (\"J\", 1)]",
       "convCoefficient": 4.1868,
-      "convUnits": "J"
+      "convUnits": "J",
+      "notes": 0
    },
    {
       "Uid": 85,
@@ -561,7 +608,8 @@
       "symbol": "calth",
       "defString": "[(4.184, 1), (\"J\", 1)]",
       "convCoefficient": 4.184,
-      "convUnits": "J"
+      "convUnits": "J",
+      "notes": 0
    },
    {
       "Uid": 86,
@@ -572,7 +620,8 @@
       "symbol": "Cal (FDA)",
       "defString": "[(1, 1), (\"kcal\", 1)]",
       "convCoefficient": 1,
-      "convUnits": "kcal"
+      "convUnits": "kcal",
+      "notes": 0
    },
    {
       "Uid": 87,
@@ -583,7 +632,8 @@
       "symbol": "calIT/s",
       "defString": "[(1, 1), (\"calIT\", 1), (\"s\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "calIT/s"
+      "convUnits": "calIT/s",
+      "notes": 0
    },
    {
       "Uid": 88,
@@ -606,7 +656,8 @@
       "symbol": "cd/ft2",
       "defString": "[(1, 1), (\"cd\", 1), (\"ft\", -2)]",
       "convCoefficient": 1,
-      "convUnits": "cd/ft2"
+      "convUnits": "cd/ft2",
+      "notes": 0
    },
    {
       "Uid": 90,
@@ -617,7 +668,8 @@
       "symbol": "cd/in2",
       "defString": "[(1, 1), (\"cd\", 1), (\"in\", -2)]",
       "convCoefficient": 1,
-      "convUnits": "cd/in2"
+      "convUnits": "cd/in2",
+      "notes": 0
    },
    {
       "Uid": 91,
@@ -628,7 +680,8 @@
       "symbol": "cd/m2",
       "defString": "[(1, 1), (\"cd\", 1), (\"m\", -2)]",
       "convCoefficient": 1,
-      "convUnits": "cd/m2"
+      "convUnits": "cd/m2",
+      "notes": 0
    },
    {
       "Uid": 95,
@@ -639,7 +692,8 @@
       "symbol": "ct",
       "defString": "[(200, 1), (\"mg\", 1)]",
       "convCoefficient": 200,
-      "convUnits": "mg"
+      "convUnits": "mg",
+      "notes": 0
    },
    {
       "Uid": 96,
@@ -650,29 +704,32 @@
       "symbol": "kt",
       "defString": "[(5.166666667, 1), (\"gr\", 1)]",
       "convCoefficient": 5.16666666666667,
-      "convUnits": "gr"
+      "convUnits": "gr",
+      "notes": 0
    },
    {
-      "Uid": 98,
-      "name": "centesimal minute of arc",
+      "Uid": 14,
+      "name": "arcminute",
       "Qid": 27,
       "quantity": "plane angle",
-      "SOU": "universal",
-      "symbol": "'",
-      "defString": "[(0.01, 1), (\"grad\", 1)]",
-      "convCoefficient": 0.01,
-      "convUnits": "grad"
+      "SOU": "SI",
+      "symbol": "arcmin",
+      "defString": "[(0.016666667, 1), (\"\u00B0\", 1)]",
+      "convCoefficient": 1.66666666666667E-02,
+      "convUnits": "\u00B0",
+      "notes": 0
    },
    {
-      "Uid": 99,
-      "name": "centesimal second of arc",
+      "Uid": 15,
+      "name": "arcsecond",
       "Qid": 27,
       "quantity": "plane angle",
-      "SOU": "universal",
-      "symbol": "\"",
-      "defString": "[ ('\"', 1) ]",
-      "convCoefficient": 0.0001,
-      "convUnits": "grad"
+      "SOU": "SI",
+      "symbol": "arcsec",
+      "defString": "[(0.000277778, 1), (\"\u00B0\", 1)]",
+      "convCoefficient": 2.77777777777778E-04,
+      "convUnits": "\u00B0",
+      "notes": 0
    },
    {
       "Uid": 100,
@@ -688,14 +745,15 @@
    },
    {
       "Uid": 103,
-      "name": "Century",
+      "name": "century",
       "Qid": 36,
       "quantity": "time",
-      "SOU": "universal",
-      "symbol": "c",
+      "SOU": "other English",
+      "symbol": "century",
       "defString": "[(100, 1), (\"yr\", 1)]",
       "convCoefficient": 100,
-      "convUnits": "yr"
+      "convUnits": "yr",
+      "notes": 0
    },
    {
       "Uid": 104,
@@ -706,7 +764,8 @@
       "symbol": "ch",
       "defString": "[(66, 1), (\"ft\", 1)]",
       "convCoefficient": 66,
-      "convUnits": "ft"
+      "convUnits": "ft",
+      "notes": 0
    },
    {
       "Uid": 106,
@@ -717,7 +776,8 @@
       "symbol": "circ in",
       "defString": "[(0.785398163, 1), (\"in\", 2)]",
       "convCoefficient": 0.785398163397448,
-      "convUnits": "in2"
+      "convUnits": "in2",
+      "notes": 0
    },
    {
       "Uid": 107,
@@ -728,7 +788,8 @@
       "symbol": "circ mil",
       "defString": "[(0.785398163, 1), (\"mil\", 2)]",
       "convCoefficient": 0.785398163397448,
-      "convUnits": "mil2"
+      "convUnits": "mil2",
+      "notes": 0
    },
    {
       "Uid": 108,
@@ -739,7 +800,8 @@
       "symbol": "clove",
       "defString": "[(8, 1), (\"lb\", 1)]",
       "convCoefficient": 8,
-      "convUnits": "lb"
+      "convUnits": "lb",
+      "notes": 0
    },
    {
       "Uid": 109,
@@ -750,7 +812,8 @@
       "symbol": "coomb",
       "defString": "[(4, 1), (\"bu (imp)\", 1)]",
       "convCoefficient": 4,
-      "convUnits": "bu (imp)"
+      "convUnits": "bu (imp)",
+      "notes": 0
    },
    {
       "Uid": 110,
@@ -761,7 +824,8 @@
       "symbol": "cord",
       "defString": "[(192, 1), (\"bd\", 1)]",
       "convCoefficient": 192,
-      "convUnits": "bd"
+      "convUnits": "bd",
+      "notes": 0
    },
    {
       "Uid": 111,
@@ -772,7 +836,8 @@
       "symbol": "cord (firewood)",
       "defString": "[(128, 1), (\"ft\", 3)]",
       "convCoefficient": 128,
-      "convUnits": "ft3"
+      "convUnits": "ft3",
+      "notes": 0
    },
    {
       "Uid": 112,
@@ -783,7 +848,8 @@
       "symbol": "cord-foot",
       "defString": "[(16, 1), (\"ft\", 3)]",
       "convCoefficient": 16,
-      "convUnits": "ft3"
+      "convUnits": "ft3",
+      "notes": 0
    },
    {
       "Uid": 113,
@@ -806,7 +872,8 @@
       "symbol": "C/m3",
       "defString": "[(1, 1), (\"C\", 1), (\"m\", -3)]",
       "convCoefficient": 1,
-      "convUnits": "C/m3"
+      "convUnits": "C/m3",
+      "notes": 0
    },
    {
       "Uid": 116,
@@ -829,18 +896,20 @@
       "symbol": "C/m2",
       "defString": "[(1, 1), (\"C\", 1), (\"m\", -2)]",
       "convCoefficient": 1,
-      "convUnits": "C/m2"
+      "convUnits": "C/m2",
+      "notes": 0
    },
    {
       "Uid": 118,
       "name": "count of number of units",
-      "Qid": 0,
-      "quantity": "TBD",
+      "Qid": 66,
+      "quantity": "amount of substance",
       "SOU": "universal",
       "symbol": "#",
       "defString": "[(1, 1), (\"#\", 1)]",
       "convCoefficient": 1,
-      "convUnits": "#"
+      "convUnits": "#",
+      "notes": 0
    },
    {
       "Uid": 121,
@@ -851,7 +920,8 @@
       "symbol": "fm3",
       "defString": "[(1, 1), (\"fm\", 3)]",
       "convCoefficient": 1,
-      "convUnits": "fm3"
+      "convUnits": "fm3",
+      "notes": 0
    },
    {
       "Uid": 122,
@@ -862,7 +932,8 @@
       "symbol": "ft3",
       "defString": "[(1, 1), (\"ft\", 3)]",
       "convCoefficient": 1,
-      "convUnits": "ft3"
+      "convUnits": "ft3",
+      "notes": 0
    },
    {
       "Uid": 125,
@@ -873,7 +944,8 @@
       "symbol": "ft3 (gas)",
       "defString": "[(1000, 1), (\"BTUIT\", 1)]",
       "convCoefficient": 1000,
-      "convUnits": "BTUIT"
+      "convUnits": "BTUIT",
+      "notes": 0
    },
    {
       "Uid": 126,
@@ -884,7 +956,8 @@
       "symbol": "CFM",
       "defString": "[(1, 1), (\"ft\", 3), (\"min\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "ft3/min"
+      "convUnits": "ft3/min",
+      "notes": 0
    },
    {
       "Uid": 127,
@@ -895,7 +968,8 @@
       "symbol": "ft3/s",
       "defString": "[(1, 1), (\"ft\", 3), (\"s\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "ft3/s"
+      "convUnits": "ft3/s",
+      "notes": 0
    },
    {
       "Uid": 128,
@@ -906,7 +980,8 @@
       "symbol": "in3",
       "defString": "[(1, 1), (\"in\", 3)]",
       "convCoefficient": 1,
-      "convUnits": "in3"
+      "convUnits": "in3",
+      "notes": 0
    },
    {
       "Uid": 130,
@@ -917,7 +992,8 @@
       "symbol": "in3/min",
       "defString": "[(1, 1), (\"in\", 3), (\"min\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "in3/min"
+      "convUnits": "in3/min",
+      "notes": 0
    },
    {
       "Uid": 131,
@@ -928,7 +1004,8 @@
       "symbol": "in3/s",
       "defString": "[(1, 1), (\"in\", 3), (\"s\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "in3/s"
+      "convUnits": "in3/s",
+      "notes": 0
    },
    {
       "Uid": 132,
@@ -939,7 +1016,8 @@
       "symbol": "m3",
       "defString": "[(1, 1), (\"m\", 3)]",
       "convCoefficient": 1,
-      "convUnits": "m3"
+      "convUnits": "m3",
+      "notes": 0
    },
    {
       "Uid": 133,
@@ -950,7 +1028,8 @@
       "symbol": "m3/kg",
       "defString": "[(1, 1), (\"m\", 3), (\"kg\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "m3/kg"
+      "convUnits": "m3/kg",
+      "notes": 0
    },
    {
       "Uid": 134,
@@ -961,7 +1040,8 @@
       "symbol": "m3/s",
       "defString": "[(1, 1), (\"m\", 3), (\"s\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "m3/s"
+      "convUnits": "m3/s",
+      "notes": 0
    },
    {
       "Uid": 135,
@@ -972,7 +1052,8 @@
       "symbol": "mi3",
       "defString": "[(1, 1), (\"mi\", 3)]",
       "convCoefficient": 1,
-      "convUnits": "mi3"
+      "convUnits": "mi3",
+      "notes": 0
    },
    {
       "Uid": 136,
@@ -983,7 +1064,8 @@
       "symbol": "yd3",
       "defString": "[(27, 1), (\"ft\", 3)]",
       "convCoefficient": 27,
-      "convUnits": "ft3"
+      "convUnits": "ft3",
+      "notes": 0
    },
    {
       "Uid": 138,
@@ -1006,7 +1088,8 @@
       "symbol": "cda",
       "defString": "[(0.971222, 1), (\"ac\", 1)]",
       "convCoefficient": 0.971222,
-      "convUnits": "ac"
+      "convUnits": "ac",
+      "notes": 0
    },
    {
       "Uid": 141,
@@ -1017,7 +1100,8 @@
       "symbol": "cup (breakfast)",
       "defString": "[(10, 1), (\"fl oz (imp)\", 1)]",
       "convCoefficient": 10,
-      "convUnits": "fl oz (imp)"
+      "convUnits": "fl oz (imp)",
+      "notes": 0
    },
    {
       "Uid": 142,
@@ -1028,7 +1112,8 @@
       "symbol": "cup",
       "defString": "[(8, 1), (\"fl oz\", 1)]",
       "convCoefficient": 8,
-      "convUnits": "fl oz"
+      "convUnits": "fl oz",
+      "notes": 0
    },
    {
       "Uid": 143,
@@ -1039,7 +1124,8 @@
       "symbol": "cup (US dry)",
       "defString": "[(240, 1), (\"ml\", 1)]",
       "convCoefficient": 240,
-      "convUnits": "ml"
+      "convUnits": "ml",
+      "notes": 0
    },
    {
       "Uid": 144,
@@ -1050,7 +1136,8 @@
       "symbol": "cup (metric)",
       "defString": "[(0.00025, 1), (\"m\", 3)]",
       "convCoefficient": 0.00025,
-      "convUnits": "m3"
+      "convUnits": "m3",
+      "notes": 0
    },
    {
       "Uid": 145,
@@ -1061,7 +1148,8 @@
       "symbol": "c (Can)",
       "defString": "[(8, 1), (\"fl oz (imp)\", 1)]",
       "convCoefficient": 8,
-      "convUnits": "fl oz (imp)"
+      "convUnits": "fl oz (imp)",
+      "notes": 0
    },
    {
       "Uid": 146,
@@ -1072,7 +1160,8 @@
       "symbol": "Ci",
       "defString": "[(3737, 1), (\"Bq\", 1)]",
       "convCoefficient": 3737,
-      "convUnits": "Bq"
+      "convUnits": "Bq",
+      "notes": 0
    },
    {
       "Uid": 149,
@@ -1083,7 +1172,8 @@
       "symbol": "dash (imp)",
       "defString": "[(0.5, 1), (\"pinch (imp)\", 1)]",
       "convCoefficient": 0.5,
-      "convUnits": "pinch (imp)"
+      "convUnits": "pinch (imp)",
+      "notes": 0
    },
    {
       "Uid": 151,
@@ -1094,39 +1184,56 @@
       "symbol": "dash",
       "defString": "[(0.5, 1), (\"pinch\", 1)]",
       "convCoefficient": 0.5,
-      "convUnits": "pinch"
+      "convUnits": "pinch",
+      "notes": 0
    },
    {
       "Uid": 152,
-      "name": "Day",
+      "name": "day",
       "Qid": 36,
       "quantity": "time",
       "SOU": "SI",
       "symbol": "d",
       "defString": "[(24, 1), (\"h\", 1)]",
       "convCoefficient": 24,
-      "convUnits": "h"
+      "convUnits": "h",
+      "notes": 0
    },
    {
       "Uid": 155,
-      "name": "Decade",
+      "name": "decade",
       "Qid": 36,
       "quantity": "time",
       "SOU": "universal",
       "symbol": "dec",
       "defString": "[(10, 1), (\"yr\", 1)]",
       "convCoefficient": 10,
-      "convUnits": "yr"
+      "convUnits": "yr",
+      "notes": 0
    },
    {
       "Uid": 156,
       "name": "decibel",
-      "quantity": "TBD",
+      "Qid": 71,
+      "quantity": "ratio (non-dimensional)",
       "SOU": "universal",
       "symbol": "dB",
       "defString": "[(0.1, 1), (\"B\", 1)]",
       "convCoefficient": 0.1,
-      "convUnits": "B"
+      "convUnits": "B",
+      "notes": 0
+   },
+   {
+      "Uid": 157,
+      "name": "degree (of arc)",
+      "Qid": 27,
+      "quantity": "plane angle",
+      "SOU": "SI",
+      "symbol": "\u00B0",
+      "defString": "[(0.017453293, 1), (\"rad\", 1)]",
+      "convCoefficient": 1.74532925199433E-02,
+      "convUnits": "rad",
+      "notes": "\u2261 \u200B1/360 of a revolution"
    },
    {
       "Uid": 158,
@@ -1137,7 +1244,8 @@
       "symbol": "\u00B0C",
       "defString": "[(0, 1), (\"K\", 1)]",
       "convCoefficient": 0,
-      "convUnits": "K"
+      "convUnits": "K",
+      "notes": 0
    },
    {
       "Uid": 160,
@@ -1148,7 +1256,8 @@
       "symbol": "\u00B0F",
       "defString": "[(0, 1), (\"\u00B0C\", 1)]",
       "convCoefficient": 0,
-      "convUnits": "\u00B0C"
+      "convUnits": "\u00B0C",
+      "notes": 0
    },
    {
       "Uid": 162,
@@ -1159,7 +1268,8 @@
       "symbol": "\u00B0R",
       "defString": "[(0, 1), (\"K\", 1)]",
       "convCoefficient": 0,
-      "convUnits": "K"
+      "convUnits": "K",
+      "notes": 0
    },
    {
       "Uid": 165,
@@ -1170,7 +1280,8 @@
       "symbol": "dessertspoon",
       "defString": "[(0.083333333, 1), (\"gi (imp)\", 1)]",
       "convCoefficient": 8.33333333333333E-02,
-      "convUnits": "gi (imp)"
+      "convUnits": "gi (imp)",
+      "notes": 0
    },
    {
       "Uid": 166,
@@ -1205,7 +1316,8 @@
       "symbol": "drop (US dry)",
       "defString": "[(0.05, 1), (\"ml\", 1)]",
       "convCoefficient": 0.05,
-      "convUnits": "ml"
+      "convUnits": "ml",
+      "notes": 0
    },
    {
       "Uid": 172,
@@ -1216,7 +1328,8 @@
       "symbol": "gtt (imp)",
       "defString": "[(0.003472222, 1), (\"fl oz (imp)\", 1)]",
       "convCoefficient": 3.47222222222222E-03,
-      "convUnits": "fl oz (imp)"
+      "convUnits": "fl oz (imp)",
+      "notes": 0
    },
    {
       "Uid": 173,
@@ -1227,7 +1340,8 @@
       "symbol": "gtt (US fl)",
       "defString": "[(0.002777778, 1), (\"fl oz\", 1)]",
       "convCoefficient": 2.77777777777778E-03,
-      "convUnits": "fl oz"
+      "convUnits": "fl oz",
+      "notes": 0
    },
    {
       "Uid": 175,
@@ -1238,7 +1352,8 @@
       "symbol": "drop (medical)",
       "defString": "[(0.083333333, 1), (\"ml\", 1)]",
       "convCoefficient": 8.33333333333333E-02,
-      "convUnits": "ml"
+      "convUnits": "ml",
+      "notes": 0
    },
    {
       "Uid": 176,
@@ -1249,7 +1364,8 @@
       "symbol": "dunam",
       "defString": "[(1000, 1), (\"m\", 2)]",
       "convCoefficient": 1000,
-      "convUnits": "m2"
+      "convUnits": "m2",
+      "notes": 0
    },
    {
       "Uid": 177,
@@ -1260,7 +1376,8 @@
       "symbol": "dyn",
       "defString": "[(1, 1), (\"g\", 1), (\"cm\", 1), (\"s\", -2)]",
       "convCoefficient": 1,
-      "convUnits": "g\u00B7cm/s2"
+      "convUnits": "g\u00B7cm/s2",
+      "notes": 0
    },
    {
       "Uid": 178,
@@ -1271,7 +1388,8 @@
       "symbol": "emu",
       "defString": "[(10, 1), (\"C\", 1)]",
       "convCoefficient": 10,
-      "convUnits": "C"
+      "convUnits": "C",
+      "notes": 0
    },
    {
       "Uid": 179,
@@ -1282,7 +1400,8 @@
       "symbol": "abamp",
       "defString": "[(10, 1), (\"A\", 1)]",
       "convCoefficient": 10,
-      "convUnits": "A"
+      "convUnits": "A",
+      "notes": 0
    },
    {
       "Uid": 181,
@@ -1293,7 +1412,8 @@
       "symbol": "eV",
       "defString": "[(1, 1), (\"e\", 1), (\"V\", 1)]",
       "convCoefficient": 1,
-      "convUnits": "e\u00B7V"
+      "convUnits": "e\u00B7V",
+      "notes": 0
    },
    {
       "Uid": 182,
@@ -1304,13 +1424,14 @@
       "symbol": "esu",
       "defString": "[(0.1, 1), (\"A\", 1), (\"m\", 1), (\"C\", -1)]",
       "convCoefficient": 0.1,
-      "convUnits": "A\u00B7m/C"
+      "convUnits": "A\u00B7m/C",
+      "notes": 0
    },
    {
       "Uid": 183,
       "name": "elementary charge",
-      "Qid": 0,
-      "quantity": "TBD",
+      "Qid": 66,
+      "quantity": "amount of substance",
       "SOU": "universal",
       "symbol": "e",
       "defString": "[(1.60218E-19, 1), (\"C\", 1)]",
@@ -1339,7 +1460,8 @@
       "symbol": "erg",
       "defString": "[(1, 1), (\"g\", 1), (\"cm\", 2), (\"s\", -2)]",
       "convCoefficient": 1,
-      "convUnits": "g\u00B7cm2/s2"
+      "convUnits": "g\u00B7cm2/s2",
+      "notes": 0
    },
    {
       "Uid": 186,
@@ -1350,7 +1472,8 @@
       "symbol": "erg/s",
       "defString": "[(1, 1), (\"erg\", 1), (\"s\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "erg/s"
+      "convUnits": "erg/s",
+      "notes": 0
    },
    {
       "Uid": 187,
@@ -1361,7 +1484,8 @@
       "symbol": "esu/s",
       "defString": "[(0.1, 1), (\"A\", 1), (\"m\", 1), (\"s\", -1), (\"C\", -1)]",
       "convCoefficient": 0.1,
-      "convUnits": "A\u00B7m/(s\u00B7C)"
+      "convUnits": "A\u00B7m/(s\u00B7C)",
+      "notes": 0
    },
    {
       "Uid": 188,
@@ -1384,7 +1508,8 @@
       "symbol": "F/m",
       "defString": "[(1, 1), (\"F\", 1), (\"m\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "F/m"
+      "convUnits": "F/m",
+      "notes": 0
    },
    {
       "Uid": 190,
@@ -1395,7 +1520,8 @@
       "symbol": "faraday",
       "defString": "[(1, 1), (\"mol\", 1), (\"NA\", 1), (\"e\", 1)]",
       "convCoefficient": 1,
-      "convUnits": "mol\u00B7NA\u00B7e"
+      "convUnits": "mol\u00B7NA\u00B7e",
+      "notes": 0
    },
    {
       "Uid": 191,
@@ -1406,7 +1532,8 @@
       "symbol": "ftm",
       "defString": "[(6, 1), (\"ft\", 1)]",
       "convCoefficient": 6,
-      "convUnits": "ft"
+      "convUnits": "ft",
+      "notes": 0
    },
    {
       "Uid": 192,
@@ -1417,7 +1544,8 @@
       "symbol": "fm",
       "defString": "[(1E-15, 1), (\"m\", 1)]",
       "convCoefficient": 0.000000000000001,
-      "convUnits": "m"
+      "convUnits": "m",
+      "notes": 0
    },
    {
       "Uid": 193,
@@ -1428,7 +1556,8 @@
       "symbol": "fifth",
       "defString": "[(0.2, 1), (\"gal\", 1)]",
       "convCoefficient": 0.2,
-      "convUnits": "gal"
+      "convUnits": "gal",
+      "notes": 0
    },
    {
       "Uid": 194,
@@ -1439,7 +1568,8 @@
       "symbol": "finger",
       "defString": "[(0.875, 1), (\"in\", 1)]",
       "convCoefficient": 0.875,
-      "convUnits": "in"
+      "convUnits": "in",
+      "notes": 0
    },
    {
       "Uid": 195,
@@ -1450,7 +1580,8 @@
       "symbol": "finger (cloth)",
       "defString": "[(20.5, 1), (\"in\", 1)]",
       "convCoefficient": 20.5,
-      "convUnits": "in"
+      "convUnits": "in",
+      "notes": 0
    },
    {
       "Uid": 196,
@@ -1461,7 +1592,8 @@
       "symbol": "firkin",
       "defString": "[(9, 1), (\"gal (imp)\", 1)]",
       "convCoefficient": 9,
-      "convUnits": "gal (imp)"
+      "convUnits": "gal (imp)",
+      "notes": 0
    },
    {
       "Uid": 197,
@@ -1472,7 +1604,8 @@
       "symbol": "fl dr (imp)",
       "defString": "[(0.125, 1), (\"fl oz (imp)\", 1)]",
       "convCoefficient": 0.125,
-      "convUnits": "fl oz (imp)"
+      "convUnits": "fl oz (imp)",
+      "notes": 0
    },
    {
       "Uid": 199,
@@ -1483,7 +1616,8 @@
       "symbol": "fl s",
       "defString": "[(0.041666667, 1), (\"fl oz (imp)\", 1)]",
       "convCoefficient": 4.16666666666667E-02,
-      "convUnits": "fl oz (imp)"
+      "convUnits": "fl oz (imp)",
+      "notes": 0
    },
    {
       "Uid": 203,
@@ -1494,7 +1628,8 @@
       "symbol": "ft (metric)",
       "defString": "[(0.3048, 1), (\"m\", 1)]",
       "convCoefficient": 0.3048,
-      "convUnits": "m"
+      "convUnits": "m",
+      "notes": 0
    },
    {
       "Uid": 204,
@@ -1505,7 +1640,8 @@
       "symbol": "ft",
       "defString": "[(12, 1), (\"in\", 1)]",
       "convCoefficient": 12,
-      "convUnits": "in"
+      "convUnits": "in",
+      "notes": 0
    },
    {
       "Uid": 209,
@@ -1516,7 +1652,8 @@
       "symbol": "fph",
       "defString": "[(1, 1), (\"ft\", 1), (\"h\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "ft/h"
+      "convUnits": "ft/h",
+      "notes": 0
    },
    {
       "Uid": 210,
@@ -1527,7 +1664,8 @@
       "symbol": "fph/s",
       "defString": "[(1, 1), (\"ft\", 1), (\"h\", -1), (\"s\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "ft/(h\u00B7s)"
+      "convUnits": "ft/(h\u00B7s)",
+      "notes": 0
    },
    {
       "Uid": 211,
@@ -1538,7 +1676,8 @@
       "symbol": "fpm",
       "defString": "[(1, 1), (\"ft\", 1), (\"min\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "ft/min"
+      "convUnits": "ft/min",
+      "notes": 0
    },
    {
       "Uid": 212,
@@ -1549,7 +1688,8 @@
       "symbol": "fpm/s",
       "defString": "[(1, 1), (\"ft\", 1), (\"min\", -1), (\"s\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "ft/(min\u00B7s)"
+      "convUnits": "ft/(min\u00B7s)",
+      "notes": 0
    },
    {
       "Uid": 213,
@@ -1560,7 +1700,8 @@
       "symbol": "fps",
       "defString": "[(1, 1), (\"ft\", 1), (\"s\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "ft/s"
+      "convUnits": "ft/s",
+      "notes": 0
    },
    {
       "Uid": 214,
@@ -1571,7 +1712,8 @@
       "symbol": "fps2",
       "defString": "[(1, 1), (\"ft\", 1), (\"s\", -2)]",
       "convCoefficient": 1,
-      "convUnits": "ft/s2"
+      "convUnits": "ft/s2",
+      "notes": 0
    },
    {
       "Uid": 215,
@@ -1582,7 +1724,8 @@
       "symbol": "lmf",
       "defString": "[(0.333333333, 1), (\"m\", 1)]",
       "convCoefficient": 0.333333333333333,
-      "convUnits": "m"
+      "convUnits": "m",
+      "notes": 0
    },
    {
       "Uid": 216,
@@ -1593,7 +1736,8 @@
       "symbol": "mf",
       "defString": "[(0.316227766, 1), (\"m\", 1)]",
       "convCoefficient": 0.316227766016838,
-      "convUnits": "m"
+      "convUnits": "m",
+      "notes": 0
    },
    {
       "Uid": 217,
@@ -1604,7 +1748,8 @@
       "symbol": "smf",
       "defString": "[(0.3, 1), (\"m\", 1)]",
       "convCoefficient": 0.3,
-      "convUnits": "m"
+      "convUnits": "m",
+      "notes": 0
    },
    {
       "Uid": 218,
@@ -1615,7 +1760,8 @@
       "symbol": "fc",
       "defString": "[(1, 1), (\"lm\", 1), (\"ft\", -2)]",
       "convCoefficient": 1,
-      "convUnits": "lm/ft2"
+      "convUnits": "lm/ft2",
+      "notes": 0
    },
    {
       "Uid": 219,
@@ -1626,7 +1772,8 @@
       "symbol": "fL",
       "defString": "[(0.318309886, 1), (\"cd\", 1), (\"ft\", -2)]",
       "convCoefficient": 0.318309886183791,
-      "convUnits": "cd/ft2"
+      "convUnits": "cd/ft2",
+      "notes": 0
    },
    {
       "Uid": 220,
@@ -1637,7 +1784,8 @@
       "symbol": "ft\u00B7lbf",
       "defString": "[(1, 1), (\"g0\", 1), (\"lb\", 1), (\"ft\", 1)]",
       "convCoefficient": 1,
-      "convUnits": "g0\u00B7lb\u00B7ft"
+      "convUnits": "g0\u00B7lb\u00B7ft",
+      "notes": 0
    },
    {
       "Uid": 223,
@@ -1648,7 +1796,8 @@
       "symbol": "ft\u00B7pdl",
       "defString": "[(1, 1), (\"lb\", 1), (\"ft\", 2), (\"s\", -2)]",
       "convCoefficient": 1,
-      "convUnits": "lb\u00B7ft2/s2"
+      "convUnits": "lb\u00B7ft2/s2",
+      "notes": 0
    },
    {
       "Uid": 224,
@@ -1659,7 +1808,8 @@
       "symbol": "ft\u00B7lbf/h",
       "defString": "[(1, 1), (\"ft\", 1), (\"lbf\", 1), (\"h\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "ft\u00B7lbf/h"
+      "convUnits": "ft\u00B7lbf/h",
+      "notes": 0
    },
    {
       "Uid": 225,
@@ -1670,7 +1820,8 @@
       "symbol": "ft\u00B7lbf/min",
       "defString": "[(1, 1), (\"ft\", 1), (\"lbf\", 1), (\"min\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "ft\u00B7lbf/min"
+      "convUnits": "ft\u00B7lbf/min",
+      "notes": 0
    },
    {
       "Uid": 226,
@@ -1681,7 +1832,8 @@
       "symbol": "ft\u00B7lbf/s",
       "defString": "[(1, 1), (\"ft\", 1), (\"lbf\", 1), (\"s\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "ft\u00B7lbf/s"
+      "convUnits": "ft\u00B7lbf/s",
+      "notes": 0
    },
    {
       "Uid": 227,
@@ -1692,7 +1844,8 @@
       "symbol": "fn",
       "defString": "[(2, 1), (\"wk\", 1)]",
       "convCoefficient": 2,
-      "convUnits": "wk"
+      "convUnits": "wk",
+      "notes": 0
    },
    {
       "Uid": 229,
@@ -1703,7 +1856,8 @@
       "symbol": "charriere",
       "defString": "[(0.333333333, 1), (\"mm\", 1)]",
       "convCoefficient": 0.333333333333333,
-      "convUnits": "mm"
+      "convUnits": "mm",
+      "notes": 0
    },
    {
       "Uid": 659,
@@ -1714,7 +1868,8 @@
       "symbol": "french",
       "defString": "[(0.333333333, 1), (\"mm\", 1)]",
       "convCoefficient": 0.333333333333333,
-      "convUnits": "mm"
+      "convUnits": "mm",
+      "notes": 0
    },
    {
       "Uid": 230,
@@ -1725,7 +1880,8 @@
       "symbol": "fur",
       "defString": "[(10, 1), (\"ch\", 1)]",
       "convCoefficient": 10,
-      "convUnits": "ch"
+      "convUnits": "ch",
+      "notes": 0
    },
    {
       "Uid": 233,
@@ -1736,7 +1892,8 @@
       "symbol": "fur/fn",
       "defString": "[(1, 1), (\"fur\", 1), (\"fn\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "fur/fn"
+      "convUnits": "fur/fn",
+      "notes": 0
    },
    {
       "Uid": 234,
@@ -1747,7 +1904,8 @@
       "symbol": "Gal",
       "defString": "[(1, 1), (\"cm\", 1), (\"s\", -2)]",
       "convCoefficient": 1,
-      "convUnits": "cm/s2"
+      "convUnits": "cm/s2",
+      "notes": 0
    },
    {
       "Uid": 235,
@@ -1758,7 +1916,8 @@
       "symbol": "gal (beer)",
       "defString": "[(282, 1), (\"in\", 3)]",
       "convCoefficient": 282,
-      "convUnits": "in3"
+      "convUnits": "in3",
+      "notes": 0
    },
    {
       "Uid": 236,
@@ -1769,7 +1928,8 @@
       "symbol": "gal (imp)",
       "defString": "[(4.54609, 1), (\"L\", 1)]",
       "convCoefficient": 4.54609,
-      "convUnits": "L"
+      "convUnits": "L",
+      "notes": 0
    },
    {
       "Uid": 237,
@@ -1780,7 +1940,8 @@
       "symbol": "gal (US dry)",
       "defString": "[(0.125, 1), (\"bu\", 1)]",
       "convCoefficient": 0.125,
-      "convUnits": "bu"
+      "convUnits": "bu",
+      "notes": 0
    },
    {
       "Uid": 238,
@@ -1791,7 +1952,8 @@
       "symbol": "gal",
       "defString": "[(231, 1), (\"in\", 3)]",
       "convCoefficient": 231,
-      "convUnits": "in3"
+      "convUnits": "in3",
+      "notes": 0
    },
    {
       "Uid": 239,
@@ -1802,7 +1964,8 @@
       "symbol": "GPD",
       "defString": "[(1, 1), (\"gal\", 1), (\"d\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "gal/d"
+      "convUnits": "gal/d",
+      "notes": 0
    },
    {
       "Uid": 240,
@@ -1813,7 +1976,8 @@
       "symbol": "GPH",
       "defString": "[(1, 1), (\"gal\", 1), (\"h\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "gal/h"
+      "convUnits": "gal/h",
+      "notes": 0
    },
    {
       "Uid": 241,
@@ -1824,7 +1988,8 @@
       "symbol": "GPM",
       "defString": "[(1, 1), (\"gal\", 1), (\"min\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "gal/min"
+      "convUnits": "gal/min",
+      "notes": 0
    },
    {
       "Uid": 244,
@@ -1835,7 +2000,8 @@
       "symbol": "\u03B3",
       "defString": "[(1, 1), (\"\u03BCg\", 1)]",
       "convCoefficient": 1,
-      "convUnits": "\u03BCg"
+      "convUnits": "\u03BCg",
+      "notes": 0
    },
    {
       "Uid": 245,
@@ -1846,7 +2012,8 @@
       "symbol": "G",
       "defString": "[(1, 1), (\"Mx\", 1), (\"cm\", -2)]",
       "convCoefficient": 1,
-      "convUnits": "Mx/cm2"
+      "convUnits": "Mx/cm2",
+      "notes": 0
    },
    {
       "Uid": 247,
@@ -1857,7 +2024,8 @@
       "symbol": "GcalIT",
       "defString": "[(0, 1), (\"calIT\", 1)]",
       "convCoefficient": 0,
-      "convUnits": "calIT"
+      "convUnits": "calIT",
+      "notes": 0
    },
    {
       "Uid": 248,
@@ -1868,7 +2036,8 @@
       "symbol": "Gcalth",
       "defString": "[(0, 1), (\"calth\", 1)]",
       "convCoefficient": 0,
-      "convUnits": "calth"
+      "convUnits": "calth",
+      "notes": 0
    },
    {
       "Uid": 249,
@@ -1879,7 +2048,8 @@
       "symbol": "gi (imp)",
       "defString": "[(5, 1), (\"fl oz (imp)\", 1)]",
       "convCoefficient": 5,
-      "convUnits": "fl oz (imp)"
+      "convUnits": "fl oz (imp)",
+      "notes": 0
    },
    {
       "Uid": 250,
@@ -1890,11 +2060,12 @@
       "symbol": "gi (US)",
       "defString": "[(4, 1), (\"fl oz\", 1)]",
       "convCoefficient": 4,
-      "convUnits": "fl oz"
+      "convUnits": "fl oz",
+      "notes": 0
    },
    {
       "Uid": 251,
-      "name": "grad; gradian; gon",
+      "name": "grad",
       "Qid": 27,
       "quantity": "plane angle",
       "SOU": "universal",
@@ -1913,7 +2084,8 @@
       "symbol": "gr",
       "defString": "[(0.000142857, 1), (\"lb\", 1)]",
       "convCoefficient": 1.42857142857143E-04,
-      "convUnits": "lb"
+      "convUnits": "lb",
+      "notes": 0
    },
    {
       "Uid": 253,
@@ -1936,7 +2108,8 @@
       "symbol": "g/ml",
       "defString": "[(1, 1), (\"g\", 1), (\"ml\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "g/ml"
+      "convUnits": "g/ml",
+      "notes": 0
    },
    {
       "Uid": 258,
@@ -1959,7 +2132,8 @@
       "symbol": "Gy/s",
       "defString": "[(1, 1), (\"Gy\", 1), (\"s\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "Gy/s"
+      "convUnits": "Gy/s",
+      "notes": 0
    },
    {
       "Uid": 260,
@@ -1970,7 +2144,8 @@
       "symbol": "guntha (India)",
       "defString": "[(121, 1), (\"yd\", 2)]",
       "convCoefficient": 121,
-      "convUnits": "yd2"
+      "convUnits": "yd2",
+      "notes": 0
    },
    {
       "Uid": 261,
@@ -1981,7 +2156,8 @@
       "symbol": "hand",
       "defString": "[(4, 1), (\"in\", 1)]",
       "convCoefficient": 4,
-      "convUnits": "in"
+      "convUnits": "in",
+      "notes": 0
    },
    {
       "Uid": 264,
@@ -1992,18 +2168,20 @@
       "symbol": "ha",
       "defString": "[(10000, 1), (\"m\", 2)]",
       "convCoefficient": 10000,
-      "convUnits": "m2"
+      "convUnits": "m2",
+      "notes": 0
    },
    {
       "Uid": 265,
-      "name": "Helek",
+      "name": "helek",
       "Qid": 36,
       "quantity": "time",
       "SOU": "universal",
-      "symbol": "Helek",
+      "symbol": "helek",
       "defString": "[(0.000925926, 1), (\"h\", 1)]",
       "convCoefficient": 9.25925925925926E-04,
-      "convUnits": "h"
+      "convUnits": "h",
+      "notes": 0
    },
    {
       "Uid": 266,
@@ -2026,7 +2204,8 @@
       "symbol": "H/m",
       "defString": "[(1, 1), (\"H\", 1), (\"m\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "H/m"
+      "convUnits": "H/m",
+      "notes": 0
    },
    {
       "Uid": 268,
@@ -2049,7 +2228,8 @@
       "symbol": "hide",
       "defString": "[(120, 1), (\"ac\", 1)]",
       "convCoefficient": 120,
-      "convUnits": "ac"
+      "convUnits": "ac",
+      "notes": 0
    },
    {
       "Uid": 271,
@@ -2060,7 +2240,8 @@
       "symbol": "hhd (imp)",
       "defString": "[(2, 1), (\"bbl (imp)\", 1)]",
       "convCoefficient": 2,
-      "convUnits": "bbl (imp)"
+      "convUnits": "bbl (imp)",
+      "notes": 0
    },
    {
       "Uid": 272,
@@ -2071,7 +2252,8 @@
       "symbol": "hhd (US)",
       "defString": "[(2, 1), (\"bbl\", 1)]",
       "convCoefficient": 2,
-      "convUnits": "bbl"
+      "convUnits": "bbl",
+      "notes": 0
    },
    {
       "Uid": 273,
@@ -2080,9 +2262,10 @@
       "quantity": "power",
       "SOU": "other English",
       "symbol": "hp (boiler)",
-      "defString": "[(0, 1), (\"lb\", 1), (\"h\", -1), (\"BTUIT/lb\", -1)]",
+      "defString": "[(0, 1), (\"BTUIT\", 1), (\"h\", -1)]",
       "convCoefficient": 0,
-      "convUnits": "lb/h\u00B7BTUIT/lb"
+      "convUnits": "BTUIT/h",
+      "notes": 0
    },
    {
       "Uid": 274,
@@ -2093,7 +2276,8 @@
       "symbol": "hp (elec)",
       "defString": "[(746, 1), (\"W\", 1)]",
       "convCoefficient": 746,
-      "convUnits": "W"
+      "convUnits": "W",
+      "notes": 0
    },
    {
       "Uid": 275,
@@ -2104,7 +2288,8 @@
       "symbol": "hp (Euro)",
       "defString": "[(75, 1), (\"kp\", 1), (\"m\", 1), (\"s\", -1)]",
       "convCoefficient": 75,
-      "convUnits": "kp\u00B7m/s"
+      "convUnits": "kp\u00B7m/s",
+      "notes": 0
    },
    {
       "Uid": 276,
@@ -2115,7 +2300,8 @@
       "symbol": "PS",
       "defString": "[(75, 1), (\"m\", 1), (\"kgf\", 1), (\"s\", -1)]",
       "convCoefficient": 75,
-      "convUnits": "m\u00B7kgf/s"
+      "convUnits": "m\u00B7kgf/s",
+      "notes": 0
    },
    {
       "Uid": 277,
@@ -2126,7 +2312,8 @@
       "symbol": "hp",
       "defString": "[(550, 1), (\"ft\", 1), (\"lbf\", 1), (\"s\", -1)]",
       "convCoefficient": 550,
-      "convUnits": "ft\u00B7lbf/s"
+      "convUnits": "ft\u00B7lbf/s",
+      "notes": 0
    },
    {
       "Uid": 278,
@@ -2137,7 +2324,8 @@
       "symbol": "hp\u00B7h",
       "defString": "[(1, 1), (\"hp\", 1), (\"h\", 1)]",
       "convCoefficient": 1,
-      "convUnits": "hp\u00B7h"
+      "convUnits": "hp\u00B7h",
+      "notes": 0
    },
    {
       "Uid": 279,
@@ -2148,7 +2336,8 @@
       "symbol": "h",
       "defString": "[(60, 1), (\"min\", 1)]",
       "convCoefficient": 60,
-      "convUnits": "min"
+      "convUnits": "min",
+      "notes": 0
    },
    {
       "Uid": 281,
@@ -2159,7 +2348,8 @@
       "symbol": "long cwt",
       "defString": "[(112, 1), (\"lb\", 1)]",
       "convCoefficient": 112,
-      "convUnits": "lb"
+      "convUnits": "lb",
+      "notes": 0
    },
    {
       "Uid": 282,
@@ -2170,7 +2360,8 @@
       "symbol": "sh cwt",
       "defString": "[(100, 1), (\"lb\", 1)]",
       "convCoefficient": 100,
-      "convUnits": "lb"
+      "convUnits": "lb",
+      "notes": 0
    },
    {
       "Uid": 663,
@@ -2181,7 +2372,8 @@
       "symbol": "cental",
       "defString": "[(100, 1), (\"lb\", 1)]",
       "convCoefficient": 100,
-      "convUnits": "lb"
+      "convUnits": "lb",
+      "notes": 0
    },
    {
       "Uid": 285,
@@ -2192,7 +2384,8 @@
       "symbol": "in",
       "defString": "[(0.083333333, 1), (\"ft\", 1)]",
       "convCoefficient": 8.33333333333333E-02,
-      "convUnits": "ft"
+      "convUnits": "ft",
+      "notes": 0
    },
    {
       "Uid": 288,
@@ -2203,7 +2396,8 @@
       "symbol": "iph",
       "defString": "[(1, 1), (\"in\", 1), (\"h\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "in/h"
+      "convUnits": "in/h",
+      "notes": 0
    },
    {
       "Uid": 289,
@@ -2214,7 +2408,8 @@
       "symbol": "ipm",
       "defString": "[(1, 1), (\"in\", 1), (\"min\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "in/min"
+      "convUnits": "in/min",
+      "notes": 0
    },
    {
       "Uid": 290,
@@ -2225,7 +2420,8 @@
       "symbol": "ipm/s",
       "defString": "[(1, 1), (\"in\", 1), (\"min\", -1), (\"s\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "in/(min\u00B7s)"
+      "convUnits": "in/(min\u00B7s)",
+      "notes": 0
    },
    {
       "Uid": 291,
@@ -2236,7 +2432,8 @@
       "symbol": "ips",
       "defString": "[(1, 1), (\"in\", 1), (\"s\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "in/s"
+      "convUnits": "in/s",
+      "notes": 0
    },
    {
       "Uid": 292,
@@ -2247,40 +2444,44 @@
       "symbol": "ips2",
       "defString": "[(1, 1), (\"in\", 1), (\"s\", -2)]",
       "convCoefficient": 1,
-      "convUnits": "in/s2"
+      "convUnits": "in/s2",
+      "notes": 0
    },
    {
       "Uid": 295,
-      "name": "Jiffy (alternative)",
+      "name": "jiffy (alternative)",
       "Qid": 36,
       "quantity": "time",
       "SOU": "universal",
       "symbol": "ja",
       "defString": "[(0.01, 1), (\"s\", 1)]",
       "convCoefficient": 0.01,
-      "convUnits": "s"
+      "convUnits": "s",
+      "notes": 0
    },
    {
       "Uid": 296,
-      "name": "Jiffy",
+      "name": "jiffy",
       "Qid": 36,
       "quantity": "time",
       "SOU": "universal",
       "symbol": "j",
       "defString": "[(0.016666667, 1), (\"s\", 1)]",
       "convCoefficient": 1.66666666666667E-02,
-      "convUnits": "s"
+      "convUnits": "s",
+      "notes": 0
    },
    {
       "Uid": 297,
       "name": "jigger (bartending)",
       "Qid": 40,
       "quantity": "volume",
-      "SOU": "non-SI metric",
+      "SOU": "other English",
       "symbol": "jigger",
       "defString": "[(5.5, 1), (\"fl oz\", 1)]",
       "convCoefficient": 5.5,
-      "convUnits": "fl oz"
+      "convUnits": "fl oz",
+      "notes": 0
    },
    {
       "Uid": 298,
@@ -2303,7 +2504,8 @@
       "symbol": "J/m3",
       "defString": "[(1, 1), (\"J\", 1), (\"m\", -3)]",
       "convCoefficient": 1,
-      "convUnits": "J/m3"
+      "convUnits": "J/m3",
+      "notes": 0
    },
    {
       "Uid": 302,
@@ -2314,7 +2516,8 @@
       "symbol": "J/K",
       "defString": "[(1, 1), (\"J\", 1), (\"K\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "J/K"
+      "convUnits": "J/K",
+      "notes": 0
    },
    {
       "Uid": 303,
@@ -2325,7 +2528,8 @@
       "symbol": "J/kg",
       "defString": "[(1, 1), (\"J\", 1), (\"kg\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "J/kg"
+      "convUnits": "J/kg",
+      "notes": 0
    },
    {
       "Uid": 304,
@@ -2336,7 +2540,8 @@
       "symbol": "J/(kg\u00B7K)",
       "defString": "[(1, 1), (\"J\", 1), (\"kg\", -1), (\"K\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "J/(kg\u00B7K)"
+      "convUnits": "J/(kg\u00B7K)",
+      "notes": 0
    },
    {
       "Uid": 305,
@@ -2347,7 +2552,8 @@
       "symbol": "J/mol",
       "defString": "[(1, 1), (\"J\", 1), (\"mol\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "J/mol"
+      "convUnits": "J/mol",
+      "notes": 0
    },
    {
       "Uid": 306,
@@ -2358,7 +2564,8 @@
       "symbol": "J/(mol\u00B7K)",
       "defString": "[(1, 1), (\"J\", 1), (\"mol\", -1), (\"K\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "J/(mol\u00B7K)"
+      "convUnits": "J/(mol\u00B7K)",
+      "notes": 0
    },
    {
       "Uid": 307,
@@ -2367,9 +2574,10 @@
       "quantity": "catalytic activity",
       "SOU": "SI",
       "symbol": "kat",
-      "defString": "[(1, 1), (\"kat\", 1)]",
+      "defString": "[(1, 1), (\"mol\", 1), (\"s\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "kat"
+      "convUnits": "mol/s",
+      "notes": 0
    },
    {
       "Uid": 308,
@@ -2380,7 +2588,8 @@
       "symbol": "kat/m3",
       "defString": "[(1, 1), (\"kat\", 1), (\"m\", -3)]",
       "convCoefficient": 1,
-      "convUnits": "kat/m3"
+      "convUnits": "kat/m3",
+      "notes": 0
    },
    {
       "Uid": 309,
@@ -2391,7 +2600,8 @@
       "symbol": "Ke (quarter of an hour)",
       "defString": "[(0.25, 1), (\"h\", 1)]",
       "convCoefficient": 0.25,
-      "convUnits": "h"
+      "convUnits": "h",
+      "notes": 0
    },
    {
       "Uid": 312,
@@ -2402,7 +2612,8 @@
       "symbol": "Ke (traditional)",
       "defString": "[(0.01, 1), (\"d\", 1)]",
       "convCoefficient": 0.01,
-      "convUnits": "d"
+      "convUnits": "d",
+      "notes": 0
    },
    {
       "Uid": 314,
@@ -2437,7 +2648,8 @@
       "symbol": "kilderkin",
       "defString": "[(18, 1), (\"gal (imp)\", 1)]",
       "convCoefficient": 18,
-      "convUnits": "gal (imp)"
+      "convUnits": "gal (imp)",
+      "notes": 0
    },
    {
       "Uid": 317,
@@ -2472,7 +2684,8 @@
       "symbol": "kcal",
       "defString": "[(1000, 1), (\"calIT\", 1)]",
       "convCoefficient": 1000,
-      "convUnits": "calIT"
+      "convUnits": "calIT",
+      "notes": 0
    },
    {
       "Uid": 320,
@@ -2495,7 +2708,8 @@
       "symbol": "kg/m3",
       "defString": "[(1, 1), (\"kg\", 1), (\"m\", -3)]",
       "convCoefficient": 1,
-      "convUnits": "kg/m3"
+      "convUnits": "kg/m3",
+      "notes": 0
    },
    {
       "Uid": 322,
@@ -2506,7 +2720,8 @@
       "symbol": "kg/kg",
       "defString": "[(1, 1), (\"kg\", 1), (\"kg\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "kg/kg"
+      "convUnits": "kg/kg",
+      "notes": 0
    },
    {
       "Uid": 323,
@@ -2517,7 +2732,8 @@
       "symbol": "kg/L",
       "defString": "[(1, 1), (\"kg\", 1), (\"L\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "kg/L"
+      "convUnits": "kg/L",
+      "notes": 0
    },
    {
       "Uid": 324,
@@ -2528,7 +2744,8 @@
       "symbol": "kgf",
       "defString": "[(1, 1), (\"g0\", 1), (\"kg\", 1)]",
       "convCoefficient": 1,
-      "convUnits": "g0\u00B7kg"
+      "convUnits": "g0\u00B7kg",
+      "notes": 0
    },
    {
       "Uid": 325,
@@ -2539,7 +2756,8 @@
       "symbol": "kgf/mm2",
       "defString": "[(1, 1), (\"kgf\", 1), (\"mm\", -2)]",
       "convCoefficient": 1,
-      "convUnits": "kgf/mm2"
+      "convUnits": "kgf/mm2",
+      "notes": 0
    },
    {
       "Uid": 326,
@@ -2562,7 +2780,8 @@
       "symbol": "km/h",
       "defString": "[(1, 1), (\"km\", 1), (\"h\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "km/h"
+      "convUnits": "km/h",
+      "notes": 0
    },
    {
       "Uid": 328,
@@ -2573,7 +2792,8 @@
       "symbol": "kp",
       "defString": "[(1, 1), (\"kgf\", 1)]",
       "convCoefficient": 1,
-      "convUnits": "kgf"
+      "convUnits": "kgf",
+      "notes": 0
    },
    {
       "Uid": 329,
@@ -2584,7 +2804,8 @@
       "symbol": "kW",
       "defString": "[(1000, 1), (\"W\", 1)]",
       "convCoefficient": 1000,
-      "convUnits": "W"
+      "convUnits": "W",
+      "notes": 0
    },
    {
       "Uid": 330,
@@ -2595,7 +2816,8 @@
       "symbol": "kW\u00B7h",
       "defString": "[(1, 1), (\"kW\", 1), (\"h\", 1)]",
       "convCoefficient": 1,
-      "convUnits": "kW\u00B7h"
+      "convUnits": "kW\u00B7h",
+      "notes": 0
    },
    {
       "Uid": 332,
@@ -2606,7 +2828,8 @@
       "symbol": "kip",
       "defString": "[(1000, 1), (\"lb\", 1)]",
       "convCoefficient": 1000,
-      "convUnits": "lb"
+      "convUnits": "lb",
+      "notes": 0
    },
    {
       "Uid": 333,
@@ -2617,7 +2840,8 @@
       "symbol": "ksi",
       "defString": "[(1, 1), (\"kipf\", 1), (\"in\", -2)]",
       "convCoefficient": 1,
-      "convUnits": "kipf/in2"
+      "convUnits": "kipf/in2",
+      "notes": 0
    },
    {
       "Uid": 335,
@@ -2628,7 +2852,8 @@
       "symbol": "kipf",
       "defString": "[(1000, 1), (\"g0\", 1), (\"lb\", 1)]",
       "convCoefficient": 1000,
-      "convUnits": "g0\u00B7lb"
+      "convUnits": "g0\u00B7lb",
+      "notes": 0
    },
    {
       "Uid": 336,
@@ -2639,7 +2864,8 @@
       "symbol": "kn",
       "defString": "[(1, 1), (\"nmi\", 1), (\"h\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "nmi/h"
+      "convUnits": "nmi/h",
+      "notes": 0
    },
    {
       "Uid": 339,
@@ -2650,7 +2876,8 @@
       "symbol": "kn/s",
       "defString": "[(1, 1), (\"kn\", 1), (\"s\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "kn/s"
+      "convUnits": "kn/s",
+      "notes": 0
    },
    {
       "Uid": 340,
@@ -2661,7 +2888,8 @@
       "symbol": "\u03BB",
       "defString": "[(1, 1), (\"mm\", 3)]",
       "convCoefficient": 1,
-      "convUnits": "mm3"
+      "convUnits": "mm3",
+      "notes": 0
    },
    {
       "Uid": 341,
@@ -2672,7 +2900,8 @@
       "symbol": "lambert",
       "defString": "[(0, 1), (\"cd\", 1), (\"m\", -2)]",
       "convCoefficient": 0,
-      "convUnits": "cd/m2"
+      "convUnits": "cd/m2",
+      "notes": 0
    },
    {
       "Uid": 342,
@@ -2683,7 +2912,8 @@
       "symbol": "Cal",
       "defString": "[(1000, 1), (\"calIT\", 1)]",
       "convCoefficient": 1000,
-      "convUnits": "calIT"
+      "convUnits": "calIT",
+      "notes": 0
    },
    {
       "Uid": 343,
@@ -2694,7 +2924,8 @@
       "symbol": "last",
       "defString": "[(80, 1), (\"bu (imp)\", 1)]",
       "convCoefficient": 80,
-      "convUnits": "bu (imp)"
+      "convUnits": "bu (imp)",
+      "notes": 0
    },
    {
       "Uid": 344,
@@ -2717,7 +2948,8 @@
       "symbol": "light-day",
       "defString": "[(24, 1), (\"light-hour\", 1)]",
       "convCoefficient": 24,
-      "convUnits": "light-hour"
+      "convUnits": "light-hour",
+      "notes": 0
    },
    {
       "Uid": 346,
@@ -2728,7 +2960,8 @@
       "symbol": "light-hour",
       "defString": "[(60, 1), (\"light-minute\", 1)]",
       "convCoefficient": 60,
-      "convUnits": "light-minute"
+      "convUnits": "light-minute",
+      "notes": 0
    },
    {
       "Uid": 347,
@@ -2739,7 +2972,8 @@
       "symbol": "light-minute",
       "defString": "[(60, 1), (\"light-second\", 1)]",
       "convCoefficient": 60,
-      "convUnits": "light-second"
+      "convUnits": "light-second",
+      "notes": 0
    },
    {
       "Uid": 348,
@@ -2774,7 +3008,8 @@
       "symbol": "ln",
       "defString": "[(0.083333333, 1), (\"in\", 1)]",
       "convCoefficient": 8.33333333333333E-02,
-      "convUnits": "in"
+      "convUnits": "in",
+      "notes": 0
    },
    {
       "Uid": 351,
@@ -2785,7 +3020,8 @@
       "symbol": "lnk",
       "defString": "[(0.01, 1), (\"ch\", 1)]",
       "convCoefficient": 0.01,
-      "convUnits": "ch"
+      "convUnits": "ch",
+      "notes": 0
    },
    {
       "Uid": 354,
@@ -2796,7 +3032,8 @@
       "symbol": "lnk (Ram)",
       "defString": "[(1, 1), (\"ft\", 1)]",
       "convCoefficient": 1,
-      "convUnits": "ft"
+      "convUnits": "ft",
+      "notes": 0
    },
    {
       "Uid": 355,
@@ -2819,7 +3056,8 @@
       "symbol": "LPM",
       "defString": "[(1, 1), (\"L\", 1), (\"min\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "L/min"
+      "convUnits": "L/min",
+      "notes": 0
    },
    {
       "Uid": 361,
@@ -2830,7 +3068,8 @@
       "symbol": "load",
       "defString": "[(50, 1), (\"ft\", 3)]",
       "convCoefficient": 50,
-      "convUnits": "ft3"
+      "convUnits": "ft3",
+      "notes": 0
    },
    {
       "Uid": 362,
@@ -2841,7 +3080,8 @@
       "symbol": "long ton",
       "defString": "[(2240, 1), (\"lb\", 1)]",
       "convCoefficient": 2240,
-      "convUnits": "lb"
+      "convUnits": "lb",
+      "notes": 0
    },
    {
       "Uid": 365,
@@ -2852,7 +3092,8 @@
       "symbol": "lm",
       "defString": "[(1, 1), (\"cd\", 1), (\"sr\", 1)]",
       "convCoefficient": 1,
-      "convUnits": "cd\u00B7sr"
+      "convUnits": "cd\u00B7sr",
+      "notes": 0
    },
    {
       "Uid": 366,
@@ -2863,7 +3104,8 @@
       "symbol": "lm/in2",
       "defString": "[(1, 1), (\"lm\", 1), (\"in\", -2)]",
       "convCoefficient": 1,
-      "convUnits": "lm/in2"
+      "convUnits": "lm/in2",
+      "notes": 0
    },
    {
       "Uid": 369,
@@ -2874,7 +3116,8 @@
       "symbol": "lx",
       "defString": "[(1, 1), (\"lm\", 1), (\"m\", -2)]",
       "convCoefficient": 1,
-      "convUnits": "lm/m2"
+      "convUnits": "lm/m2",
+      "notes": 0
    },
    {
       "Uid": 370,
@@ -2897,7 +3140,8 @@
       "symbol": "mark",
       "defString": "[(8, 1), (\"oz t\", 1)]",
       "convCoefficient": 8,
-      "convUnits": "oz t"
+      "convUnits": "oz t",
+      "notes": 0
    },
    {
       "Uid": 372,
@@ -2908,7 +3152,8 @@
       "symbol": "Mx",
       "defString": "[(0.00000001, 1), (\"Wb\", 1)]",
       "convCoefficient": 0.00000001,
-      "convUnits": "Wb"
+      "convUnits": "Wb",
+      "notes": 0
    },
    {
       "Uid": 373,
@@ -2919,7 +3164,8 @@
       "symbol": "McalIT",
       "defString": "[(1000, 1), (\"calIT\", 1)]",
       "convCoefficient": 1000,
-      "convUnits": "calIT"
+      "convUnits": "calIT",
+      "notes": 0
    },
    {
       "Uid": 374,
@@ -2930,7 +3176,8 @@
       "symbol": "MBq",
       "defString": "[(1000, 1), (\"Bq\", 1)]",
       "convCoefficient": 1000,
-      "convUnits": "Bq"
+      "convUnits": "Bq",
+      "notes": 0
    },
    {
       "Uid": 375,
@@ -2953,7 +3200,8 @@
       "symbol": "m/s",
       "defString": "[(1, 1), (\"m\", 1), (\"s\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "m/s"
+      "convUnits": "m/s",
+      "notes": 0
    },
    {
       "Uid": 378,
@@ -2964,7 +3212,8 @@
       "symbol": "m/s2",
       "defString": "[(1, 1), (\"m\", 1), (\"s\", -2)]",
       "convCoefficient": 1,
-      "convUnits": "m/s2"
+      "convUnits": "m/s2",
+      "notes": 0
    },
    {
       "Uid": 380,
@@ -2975,7 +3224,8 @@
       "symbol": "MT",
       "defString": "[(1000, 1), (\"kg\", 1)]",
       "convCoefficient": 1000,
-      "convUnits": "kg"
+      "convUnits": "kg",
+      "notes": 0
    },
    {
       "Uid": 381,
@@ -2986,7 +3236,8 @@
       "symbol": "mickey",
       "defString": "[(0.005, 1), (\"in\", 1)]",
       "convCoefficient": 0.005,
-      "convUnits": "in"
+      "convUnits": "in",
+      "notes": 0
    },
    {
       "Uid": 382,
@@ -3009,7 +3260,8 @@
       "symbol": "\u03BCm",
       "defString": "[(0.000001, 1), (\"m\", 1)]",
       "convCoefficient": 0.000001,
-      "convUnits": "m"
+      "convUnits": "m",
+      "notes": 0
    },
    {
       "Uid": 385,
@@ -3020,7 +3272,8 @@
       "symbol": "\u03BC",
       "defString": "[(0.000001, 1), (\"m\", 1)]",
       "convCoefficient": 0.000001,
-      "convUnits": "m"
+      "convUnits": "m",
+      "notes": 0
    },
    {
       "Uid": 386,
@@ -3031,7 +3284,8 @@
       "symbol": "mil",
       "defString": "[(0.001, 1), (\"in\", 1)]",
       "convCoefficient": 0.001,
-      "convUnits": "in"
+      "convUnits": "in",
+      "notes": 0
    },
    {
       "Uid": 387,
@@ -3042,7 +3296,8 @@
       "symbol": "mil (Sweden)",
       "defString": "[(10, 1), (\"km\", 1)]",
       "convCoefficient": 10,
-      "convUnits": "km"
+      "convUnits": "km",
+      "notes": 0
    },
    {
       "Uid": 388,
@@ -3053,7 +3308,8 @@
       "symbol": "mi (geo)",
       "defString": "[(6082, 1), (\"ft\", 1)]",
       "convCoefficient": 6082,
-      "convUnits": "ft"
+      "convUnits": "ft",
+      "notes": 0
    },
    {
       "Uid": 393,
@@ -3064,7 +3320,8 @@
       "symbol": "mi (tact)",
       "defString": "[(6000, 1), (\"ft\", 1)]",
       "convCoefficient": 6000,
-      "convUnits": "ft"
+      "convUnits": "ft",
+      "notes": 0
    },
    {
       "Uid": 394,
@@ -3075,7 +3332,8 @@
       "symbol": "mi (tel)",
       "defString": "[(6087, 1), (\"ft\", 1)]",
       "convCoefficient": 6087,
-      "convUnits": "ft"
+      "convUnits": "ft",
+      "notes": 0
    },
    {
       "Uid": 395,
@@ -3086,7 +3344,8 @@
       "symbol": "mph",
       "defString": "[(1, 1), (\"mi\", 1), (\"h\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "mi/h"
+      "convUnits": "mi/h",
+      "notes": 0
    },
    {
       "Uid": 396,
@@ -3097,7 +3356,8 @@
       "symbol": "mph/s",
       "defString": "[(1, 1), (\"mi\", 1), (\"h\", -1), (\"s\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "mi/(h\u00B7s)"
+      "convUnits": "mi/(h\u00B7s)",
+      "notes": 0
    },
    {
       "Uid": 397,
@@ -3108,7 +3368,8 @@
       "symbol": "mpm",
       "defString": "[(1, 1), (\"mi\", 1), (\"min\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "mi/min"
+      "convUnits": "mi/min",
+      "notes": 0
    },
    {
       "Uid": 398,
@@ -3119,7 +3380,8 @@
       "symbol": "mpm/s",
       "defString": "[(1, 1), (\"mi\", 1), (\"min\", -1), (\"s\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "mi/(min\u00B7s)"
+      "convUnits": "mi/(min\u00B7s)",
+      "notes": 0
    },
    {
       "Uid": 399,
@@ -3130,7 +3392,8 @@
       "symbol": "mps",
       "defString": "[(1, 1), (\"mi\", 1), (\"s\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "mi/s"
+      "convUnits": "mi/s",
+      "notes": 0
    },
    {
       "Uid": 400,
@@ -3141,18 +3404,20 @@
       "symbol": "mps2",
       "defString": "[(1, 1), (\"mi\", 1), (\"s\", -2)]",
       "convCoefficient": 1,
-      "convUnits": "mi/s2"
+      "convUnits": "mi/s2",
+      "notes": 0
    },
    {
       "Uid": 401,
-      "name": "Millennium",
+      "name": "millennium",
       "Qid": 36,
       "quantity": "time",
       "SOU": "universal",
-      "symbol": "Millennium",
+      "symbol": "millennium",
       "defString": "[(1000, 1), (\"yr\", 1)]",
       "convCoefficient": 1000,
-      "convUnits": "yr"
+      "convUnits": "yr",
+      "notes": 0
    },
    {
       "Uid": 402,
@@ -3163,7 +3428,8 @@
       "symbol": "mA",
       "defString": "[(0.001, 1), (\"A\", 1)]",
       "convCoefficient": 0.001,
-      "convUnits": "A"
+      "convUnits": "A",
+      "notes": 0
    },
    {
       "Uid": 403,
@@ -3174,18 +3440,20 @@
       "symbol": "mA\u00B7h",
       "defString": "[(0.001, 1), (\"A\", 1), (\"h\", 1)]",
       "convCoefficient": 0.001,
-      "convUnits": "A\u00B7h"
+      "convUnits": "A\u00B7h",
+      "notes": 0
    },
    {
       "Uid": 404,
-      "name": "Milliday",
+      "name": "milliday",
       "Qid": 36,
       "quantity": "time",
       "SOU": "universal",
       "symbol": "md",
       "defString": "[(0.001, 1), (\"d\", 1)]",
       "convCoefficient": 0.001,
-      "convUnits": "d"
+      "convUnits": "d",
+      "notes": 0
    },
    {
       "Uid": 405,
@@ -3232,7 +3500,8 @@
       "symbol": "min (imp)",
       "defString": "[(0.016666667, 1), (\"fl dr (imp)\", 1)]",
       "convCoefficient": 1.66666666666667E-02,
-      "convUnits": "fl dr (imp)"
+      "convUnits": "fl dr (imp)",
+      "notes": 0
    },
    {
       "Uid": 415,
@@ -3243,7 +3512,8 @@
       "symbol": "min (US)",
       "defString": "[(0.016666667, 1), (\"fl dr (US)\", 1)]",
       "convCoefficient": 1.66666666666667E-02,
-      "convUnits": "fl dr (US)"
+      "convUnits": "fl dr (US)",
+      "notes": 0
    },
    {
       "Uid": 416,
@@ -3254,7 +3524,8 @@
       "symbol": "min",
       "defString": "[(60, 1), (\"s\", 1)]",
       "convCoefficient": 60,
-      "convUnits": "s"
+      "convUnits": "s",
+      "notes": 0
    },
    {
       "Uid": 418,
@@ -3265,7 +3536,8 @@
       "symbol": "mite",
       "defString": "[(0.05, 1), (\"gr\", 1)]",
       "convCoefficient": 0.05,
-      "convUnits": "gr"
+      "convUnits": "gr",
+      "notes": 0
    },
    {
       "Uid": 419,
@@ -3276,7 +3548,8 @@
       "symbol": "mite (metric)",
       "defString": "[(0.05, 1), (\"g\", 1)]",
       "convCoefficient": 0.05,
-      "convUnits": "g"
+      "convUnits": "g",
+      "notes": 0
    },
    {
       "Uid": 420,
@@ -3287,7 +3560,8 @@
       "symbol": "mol",
       "defString": "[(1, 1), (\"mol\", 1)]",
       "convCoefficient": 1,
-      "convUnits": "mol"
+      "convUnits": "mol",
+      "notes": 0
    },
    {
       "Uid": 421,
@@ -3298,7 +3572,8 @@
       "symbol": "mol/m3",
       "defString": "[(1, 1), (\"mol\", 1), (\"m\", -3)]",
       "convCoefficient": 1,
-      "convUnits": "mol/m3"
+      "convUnits": "mol/m3",
+      "notes": 0
    },
    {
       "Uid": 422,
@@ -3309,18 +3584,20 @@
       "symbol": "moment",
       "defString": "[(90, 1), (\"s\", 1)]",
       "convCoefficient": 90,
-      "convUnits": "s"
+      "convUnits": "s",
+      "notes": 0
    },
    {
       "Uid": 423,
-      "name": "Month (full)",
+      "name": "month (full)",
       "Qid": 36,
       "quantity": "time",
       "SOU": "universal",
       "symbol": "mo",
       "defString": "[(30, 1), (\"d\", 1)]",
       "convCoefficient": 30,
-      "convUnits": "d"
+      "convUnits": "d",
+      "notes": 0
    },
    {
       "Uid": 427,
@@ -3331,7 +3608,8 @@
       "symbol": "nail (cloth)",
       "defString": "[(5.25, 1), (\"in\", 1)]",
       "convCoefficient": 5.25,
-      "convUnits": "in"
+      "convUnits": "in",
+      "notes": 0
    },
    {
       "Uid": 428,
@@ -3342,7 +3620,8 @@
       "symbol": "nm",
       "defString": "[(0.000000001, 1), (\"m\", 1)]",
       "convCoefficient": 0.000000001,
-      "convUnits": "m"
+      "convUnits": "m",
+      "notes": 0
    },
    {
       "Uid": 430,
@@ -3353,7 +3632,8 @@
       "symbol": "NL",
       "defString": "[(3, 1), (\"nmi\", 1)]",
       "convCoefficient": 3,
-      "convUnits": "nmi"
+      "convUnits": "nmi",
+      "notes": 0
    },
    {
       "Uid": 431,
@@ -3364,7 +3644,8 @@
       "symbol": "NM (Adm)",
       "defString": "[(6080, 1), (\"ft\", 1)]",
       "convCoefficient": 6080,
-      "convUnits": "ft"
+      "convUnits": "ft",
+      "notes": 0
    },
    {
       "Uid": 434,
@@ -3375,7 +3656,8 @@
       "symbol": "nmi",
       "defString": "[(1852, 1), (\"m\", 1)]",
       "convCoefficient": 1852,
-      "convUnits": "m"
+      "convUnits": "m",
+      "notes": 0
    },
    {
       "Uid": 435,
@@ -3386,18 +3668,20 @@
       "symbol": "nmi (pre 1954)",
       "defString": "[(1853.248, 1), (\"m\", 1)]",
       "convCoefficient": 1853.248,
-      "convUnits": "m"
+      "convUnits": "m",
+      "notes": 0
    },
    {
       "Uid": 436,
       "name": "neper",
-      "Qid": 0,
-      "quantity": "TBD",
+      "Qid": 71,
+      "quantity": "ratio (non-dimensional)",
       "SOU": "SI",
       "symbol": "Np",
       "defString": "[(1, 1), (\"NA\", 1)]",
       "convCoefficient": 1,
-      "convUnits": "NA"
+      "convUnits": "NA",
+      "notes": 0
    },
    {
       "Uid": 437,
@@ -3413,14 +3697,15 @@
    },
    {
       "Uid": 438,
-      "name": "Newton meter",
+      "name": "newton meter",
       "Qid": 37,
       "quantity": "torque",
       "SOU": "SI",
       "symbol": "N\u00B7m",
       "defString": "[(1, 1), (\"N\", 1), (\"m\", 1)]",
       "convCoefficient": 1,
-      "convUnits": "N\u00B7m"
+      "convUnits": "N\u00B7m",
+      "notes": 0
    },
    {
       "Uid": 439,
@@ -3431,18 +3716,20 @@
       "symbol": "N/m",
       "defString": "[(1, 1), (\"N\", 1), (\"m\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "N/m"
+      "convUnits": "N/m",
+      "notes": 0
    },
    {
       "Uid": 442,
-      "name": "Noggin",
+      "name": "noggin",
       "Qid": 40,
       "quantity": "volume",
       "SOU": "other English",
       "symbol": "nog",
       "defString": "[(5, 1), (\"fl oz (imp)\", 1)]",
       "convCoefficient": 5,
-      "convUnits": "fl oz (imp)"
+      "convUnits": "fl oz (imp)",
+      "notes": 0
    },
    {
       "Uid": 445,
@@ -3477,7 +3764,8 @@
       "symbol": "fl oz (imp)",
       "defString": "[(0.00625, 1), (\"gal (imp)\", 1)]",
       "convCoefficient": 0.00625,
-      "convUnits": "gal (imp)"
+      "convUnits": "gal (imp)",
+      "notes": 0
    },
    {
       "Uid": 448,
@@ -3500,7 +3788,8 @@
       "symbol": "oz (FDA)",
       "defString": "[(28, 1), (\"g\", 1)]",
       "convCoefficient": 28,
-      "convUnits": "g"
+      "convUnits": "g",
+      "notes": 0
    },
    {
       "Uid": 450,
@@ -3511,7 +3800,8 @@
       "symbol": "fl oz",
       "defString": "[(0.0078125, 1), (\"gal\", 1)]",
       "convCoefficient": 0.0078125,
-      "convUnits": "gal"
+      "convUnits": "gal",
+      "notes": 0
    },
    {
       "Uid": 451,
@@ -3522,7 +3812,8 @@
       "symbol": "fl oz (FDA)",
       "defString": "[(30, 1), (\"ml\", 1)]",
       "convCoefficient": 30,
-      "convUnits": "ml"
+      "convUnits": "ml",
+      "notes": 0
    },
    {
       "Uid": 452,
@@ -3533,7 +3824,8 @@
       "symbol": "oz/ft3",
       "defString": "[(1, 1), (\"oz\", 1), (\"ft\", -3)]",
       "convCoefficient": 1,
-      "convUnits": "oz/ft3"
+      "convUnits": "oz/ft3",
+      "notes": 0
    },
    {
       "Uid": 453,
@@ -3544,7 +3836,8 @@
       "symbol": "oz/in3",
       "defString": "[(1, 1), (\"oz\", 1), (\"in\", -3)]",
       "convCoefficient": 1,
-      "convUnits": "oz/in3"
+      "convUnits": "oz/in3",
+      "notes": 0
    },
    {
       "Uid": 454,
@@ -3555,7 +3848,8 @@
       "symbol": "oz/gal",
       "defString": "[(1, 1), (\"oz\", 1), (\"gal\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "oz/gal"
+      "convUnits": "oz/gal",
+      "notes": 0
    },
    {
       "Uid": 455,
@@ -3566,7 +3860,8 @@
       "symbol": "oz/gal",
       "defString": "[(1, 1), (\"oz\", 1), (\"gal\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "oz/gal"
+      "convUnits": "oz/gal",
+      "notes": 0
    },
    {
       "Uid": 457,
@@ -3577,7 +3872,8 @@
       "symbol": "pace",
       "defString": "[(2.5, 1), (\"ft\", 1)]",
       "convCoefficient": 2.5,
-      "convUnits": "ft"
+      "convUnits": "ft",
+      "notes": 0
    },
    {
       "Uid": 458,
@@ -3588,7 +3884,8 @@
       "symbol": "palm",
       "defString": "[(3, 1), (\"in\", 1)]",
       "convCoefficient": 3,
-      "convUnits": "in"
+      "convUnits": "in",
+      "notes": 0
    },
    {
       "Uid": 460,
@@ -3623,7 +3920,8 @@
       "symbol": "pk (imp)",
       "defString": "[(2, 1), (\"gal (imp)\", 1)]",
       "convCoefficient": 2,
-      "convUnits": "gal (imp)"
+      "convUnits": "gal (imp)",
+      "notes": 0
    },
    {
       "Uid": 463,
@@ -3634,7 +3932,8 @@
       "symbol": "pk (US dry)",
       "defString": "[(0.25, 1), (\"bu\", 1)]",
       "convCoefficient": 0.25,
-      "convUnits": "bu"
+      "convUnits": "bu",
+      "notes": 0
    },
    {
       "Uid": 464,
@@ -3645,7 +3944,8 @@
       "symbol": "pwt",
       "defString": "[(0.05, 1), (\"oz t\", 1)]",
       "convCoefficient": 0.05,
-      "convUnits": "oz t"
+      "convUnits": "oz t",
+      "notes": 0
    },
    {
       "Uid": 465,
@@ -3656,7 +3956,8 @@
       "symbol": "per",
       "defString": "[(24.75, 1), (\"ft\", 3)]",
       "convCoefficient": 24.75,
-      "convUnits": "ft3"
+      "convUnits": "ft3",
+      "notes": 0
    },
    {
       "Uid": 467,
@@ -3667,7 +3968,8 @@
       "symbol": "ph",
       "defString": "[(1, 1), (\"lm\", 1), (\"cm\", -2)]",
       "convCoefficient": 1,
-      "convUnits": "lm/cm2"
+      "convUnits": "lm/cm2",
+      "notes": 0
    },
    {
       "Uid": 468,
@@ -3678,7 +3980,8 @@
       "symbol": "pica",
       "defString": "[(12, 1), (\"point\", 1)]",
       "convCoefficient": 12,
-      "convUnits": "point"
+      "convUnits": "point",
+      "notes": 0
    },
    {
       "Uid": 470,
@@ -3689,7 +3992,8 @@
       "symbol": "pz",
       "defString": "[(1000, 1), (\"kg\", 1), (\"m\", -1), (\"s\", -2)]",
       "convCoefficient": 1000,
-      "convUnits": "kg/(m\u00B7s2)"
+      "convUnits": "kg/(m\u00B7s2)",
+      "notes": 0
    },
    {
       "Uid": 471,
@@ -3700,7 +4004,8 @@
       "symbol": "pinch",
       "defString": "[(0.020833333, 1), (\"fl oz\", 1)]",
       "convCoefficient": 2.08333333333333E-02,
-      "convUnits": "fl oz"
+      "convUnits": "fl oz",
+      "notes": 0
    },
    {
       "Uid": 472,
@@ -3711,7 +4016,8 @@
       "symbol": "pinch (imp)",
       "defString": "[(0.005208333, 1), (\"gi (imp)\", 1)]",
       "convCoefficient": 5.20833333333333E-03,
-      "convUnits": "gi (imp)"
+      "convUnits": "gi (imp)",
+      "notes": 0
    },
    {
       "Uid": 473,
@@ -3722,7 +4028,8 @@
       "symbol": "ping",
       "defString": "[(3.305785124, 1), (\"m\", 2)]",
       "convCoefficient": 3.30578512396694,
-      "convUnits": "m2"
+      "convUnits": "m2",
+      "notes": 0
    },
    {
       "Uid": 474,
@@ -3733,7 +4040,8 @@
       "symbol": "pt (imp)",
       "defString": "[(0.125, 1), (\"gal (imp)\", 1)]",
       "convCoefficient": 0.125,
-      "convUnits": "gal (imp)"
+      "convUnits": "gal (imp)",
+      "notes": 0
    },
    {
       "Uid": 475,
@@ -3744,7 +4052,8 @@
       "symbol": "pt (US dry)",
       "defString": "[(0.125, 1), (\"gal (US dry)\", 1)]",
       "convCoefficient": 0.125,
-      "convUnits": "gal (US dry)"
+      "convUnits": "gal (US dry)",
+      "notes": 0
    },
    {
       "Uid": 476,
@@ -3755,7 +4064,8 @@
       "symbol": "pt (US fl)",
       "defString": "[(0.125, 1), (\"gal\", 1)]",
       "convCoefficient": 0.125,
-      "convUnits": "gal"
+      "convUnits": "gal",
+      "notes": 0
    },
    {
       "Uid": 478,
@@ -3766,7 +4076,8 @@
       "symbol": "point",
       "defString": "[(0.01, 1), (\"ct\", 1)]",
       "convCoefficient": 0.01,
-      "convUnits": "ct"
+      "convUnits": "ct",
+      "notes": 0
    },
    {
       "Uid": 481,
@@ -3777,7 +4088,8 @@
       "symbol": "pt",
       "defString": "[(0.013888889, 1), (\"in\", 1)]",
       "convCoefficient": 1.38888888888889E-02,
-      "convUnits": "in"
+      "convUnits": "in",
+      "notes": 0
    },
    {
       "Uid": 483,
@@ -3788,7 +4100,8 @@
       "symbol": "P",
       "defString": "[(1, 1), (\"barye\", 1), (\"s\", 1)]",
       "convCoefficient": 1,
-      "convUnits": "barye\u00B7s"
+      "convUnits": "barye\u00B7s",
+      "notes": 0
    },
    {
       "Uid": 484,
@@ -3799,7 +4112,8 @@
       "symbol": "pole",
       "defString": "[(80.5, 1), (\"ft\", 1)]",
       "convCoefficient": 80.5,
-      "convUnits": "ft"
+      "convUnits": "ft",
+      "notes": 0
    },
    {
       "Uid": 485,
@@ -3810,7 +4124,8 @@
       "symbol": "p",
       "defString": "[(100, 1), (\"m\", 1), (\"kgf\", 1), (\"s\", -1)]",
       "convCoefficient": 100,
-      "convUnits": "m\u00B7kgf/s"
+      "convUnits": "m\u00B7kgf/s",
+      "notes": 0
    },
    {
       "Uid": 486,
@@ -3821,7 +4136,8 @@
       "symbol": "pony",
       "defString": "[(0.75, 1), (\"fl oz\", 1)]",
       "convCoefficient": 0.75,
-      "convUnits": "fl oz"
+      "convUnits": "fl oz",
+      "notes": 0
    },
    {
       "Uid": 487,
@@ -3832,7 +4148,8 @@
       "symbol": "pottle",
       "defString": "[(0.5, 1), (\"gal (imp)\", 1)]",
       "convCoefficient": 0.5,
-      "convUnits": "gal (imp)"
+      "convUnits": "gal (imp)",
+      "notes": 0
    },
    {
       "Uid": 488,
@@ -3843,7 +4160,8 @@
       "symbol": "quartern",
       "defString": "[(80, 1), (\"fl oz (imp)\", 1)]",
       "convCoefficient": 80,
-      "convUnits": "fl oz (imp)"
+      "convUnits": "fl oz (imp)",
+      "notes": 0
    },
    {
       "Uid": 489,
@@ -3854,7 +4172,8 @@
       "symbol": "pound (metric)",
       "defString": "[(500, 1), (\"g\", 1)]",
       "convCoefficient": 500,
-      "convUnits": "g"
+      "convUnits": "g",
+      "notes": 0
    },
    {
       "Uid": 492,
@@ -3877,7 +4196,8 @@
       "symbol": "lb/ft3",
       "defString": "[(1, 1), (\"lb\", 1), (\"ft\", -3)]",
       "convCoefficient": 1,
-      "convUnits": "lb/ft3"
+      "convUnits": "lb/ft3",
+      "notes": 0
    },
    {
       "Uid": 494,
@@ -3888,7 +4208,8 @@
       "symbol": "lb/in3",
       "defString": "[(1, 1), (\"lb\", 1), (\"in\", -3)]",
       "convCoefficient": 1,
-      "convUnits": "lb/in3"
+      "convUnits": "lb/in3",
+      "notes": 0
    },
    {
       "Uid": 495,
@@ -3899,7 +4220,8 @@
       "symbol": "lb/(ft\u00B7h)",
       "defString": "[(1, 1), (\"lb\", 1), (\"ft\", -1), (\"h\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "lb/(ft\u00B7h)"
+      "convUnits": "lb/(ft\u00B7h)",
+      "notes": 0
    },
    {
       "Uid": 496,
@@ -3910,7 +4232,8 @@
       "symbol": "lb/(ft\u00B7s)",
       "defString": "[(1, 1), (\"lb\", 1), (\"ft\", -1), (\"s\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "lb/(ft\u00B7s)"
+      "convUnits": "lb/(ft\u00B7s)",
+      "notes": 0
    },
    {
       "Uid": 497,
@@ -3921,7 +4244,8 @@
       "symbol": "lb/gal (imp)",
       "defString": "[(1, 1), (\"lb\", 1), (\"gal (imp)\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "lb/gal (imp)"
+      "convUnits": "lb/gal (imp)",
+      "notes": 0
    },
    {
       "Uid": 498,
@@ -3932,7 +4256,8 @@
       "symbol": "lb/gal",
       "defString": "[(1, 1), (\"lb\", 1), (\"gal\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "lb/gal"
+      "convUnits": "lb/gal",
+      "notes": 0
    },
    {
       "Uid": 499,
@@ -3943,7 +4268,8 @@
       "symbol": "psf",
       "defString": "[(1, 1), (\"lbf\", 1), (\"ft\", -2)]",
       "convCoefficient": 1,
-      "convUnits": "lbf/ft2"
+      "convUnits": "lbf/ft2",
+      "notes": 0
    },
    {
       "Uid": 500,
@@ -3954,7 +4280,8 @@
       "symbol": "psi",
       "defString": "[(1, 1), (\"lbf\", 1), (\"in\", -2)]",
       "convCoefficient": 1,
-      "convUnits": "lbf/in2"
+      "convUnits": "lbf/in2",
+      "notes": 0
    },
    {
       "Uid": 501,
@@ -3965,7 +4292,8 @@
       "symbol": "pdl",
       "defString": "[(1, 1), (\"lb\", 1), (\"ft\", 1), (\"s\", -2)]",
       "convCoefficient": 1,
-      "convUnits": "lb\u00B7ft/s2"
+      "convUnits": "lb\u00B7ft/s2",
+      "notes": 0
    },
    {
       "Uid": 502,
@@ -3976,7 +4304,8 @@
       "symbol": "pdl/ft2",
       "defString": "[(1, 1), (\"pdl\", 1), (\"ft\", -2)]",
       "convCoefficient": 1,
-      "convUnits": "pdl/ft2"
+      "convUnits": "pdl/ft2",
+      "notes": 0
    },
    {
       "Uid": 503,
@@ -3987,7 +4316,8 @@
       "symbol": "lbf",
       "defString": "[(1, 1), (\"g0\", 1), (\"lb\", 1)]",
       "convCoefficient": 1,
-      "convUnits": "g0\u00B7lb"
+      "convUnits": "g0\u00B7lb",
+      "notes": 0
    },
    {
       "Uid": 504,
@@ -3998,7 +4328,8 @@
       "symbol": "lbf\u00B7s/ft2",
       "defString": "[(1, 1), (\"lbf\", 1), (\"s\", 1), (\"ft\", -2)]",
       "convCoefficient": 1,
-      "convUnits": "lbf\u00B7s/ft2"
+      "convUnits": "lbf\u00B7s/ft2",
+      "notes": 0
    },
    {
       "Uid": 505,
@@ -4009,7 +4340,8 @@
       "symbol": "lbf\u00B7s/in2",
       "defString": "[(1, 1), (\"lbf\", 1), (\"s\", 1), (\"in\", -2)]",
       "convCoefficient": 1,
-      "convUnits": "lbf\u00B7s/in2"
+      "convUnits": "lbf\u00B7s/in2",
+      "notes": 0
    },
    {
       "Uid": 506,
@@ -4032,7 +4364,8 @@
       "symbol": "quad",
       "defString": "[(1015, 1), (\"BTUIT\", 1)]",
       "convCoefficient": 1015,
-      "convUnits": "BTUIT"
+      "convUnits": "BTUIT",
+      "notes": 0
    },
    {
       "Uid": 509,
@@ -4043,7 +4376,8 @@
       "symbol": "qt (imp)",
       "defString": "[(0.25, 1), (\"gal (imp)\", 1)]",
       "convCoefficient": 0.25,
-      "convUnits": "gal (imp)"
+      "convUnits": "gal (imp)",
+      "notes": 0
    },
    {
       "Uid": 511,
@@ -4054,7 +4388,8 @@
       "symbol": "qt (US dry)",
       "defString": "[(0.25, 1), (\"gal (US dry)\", 1)]",
       "convCoefficient": 0.25,
-      "convUnits": "gal (US dry)"
+      "convUnits": "gal (US dry)",
+      "notes": 0
    },
    {
       "Uid": 512,
@@ -4065,7 +4400,8 @@
       "symbol": "qt",
       "defString": "[(0.25, 1), (\"gal\", 1)]",
       "convCoefficient": 0.25,
-      "convUnits": "gal"
+      "convUnits": "gal",
+      "notes": 0
    },
    {
       "Uid": 513,
@@ -4076,7 +4412,8 @@
       "symbol": "quarter",
       "defString": "[(0.25, 1), (\"yd\", 1)]",
       "convCoefficient": 0.25,
-      "convUnits": "yd"
+      "convUnits": "yd",
+      "notes": 0
    },
    {
       "Uid": 514,
@@ -4087,7 +4424,8 @@
       "symbol": "quarter (imp)",
       "defString": "[(0.25, 1), (\"long cwt\", 1)]",
       "convCoefficient": 0.25,
-      "convUnits": "long cwt"
+      "convUnits": "long cwt",
+      "notes": 0
    },
    {
       "Uid": 517,
@@ -4098,7 +4436,8 @@
       "symbol": "quarter (informal)",
       "defString": "[(0.25, 1), (\"ton\", 1)]",
       "convCoefficient": 0.25,
-      "convUnits": "ton"
+      "convUnits": "ton",
+      "notes": 0
    },
    {
       "Uid": 518,
@@ -4109,7 +4448,8 @@
       "symbol": "quarter, long (informal)",
       "defString": "[(0.25, 1), (\"long ton\", 1)]",
       "convCoefficient": 0.25,
-      "convUnits": "long ton"
+      "convUnits": "long ton",
+      "notes": 0
    },
    {
       "Uid": 519,
@@ -4120,7 +4460,8 @@
       "symbol": "pail (imp)",
       "defString": "[(8, 1), (\"bu (imp)\", 1)]",
       "convCoefficient": 8,
-      "convUnits": "bu (imp)"
+      "convUnits": "bu (imp)",
+      "notes": 0
    },
    {
       "Uid": 520,
@@ -4131,7 +4472,8 @@
       "symbol": "q",
       "defString": "[(100, 1), (\"kg\", 1)]",
       "convCoefficient": 100,
-      "convUnits": "kg"
+      "convUnits": "kg",
+      "notes": 0
    },
    {
       "Uid": 521,
@@ -4139,10 +4481,23 @@
       "Qid": 30,
       "quantity": "radiation - absorbed dose",
       "SOU": "non-SI metric",
-      "symbol": "rad",
+      "symbol": "rad (dose)",
       "defString": "[(0.01, 1), (\"Gy\", 1)]",
       "convCoefficient": 0.01,
-      "convUnits": "Gy"
+      "convUnits": "Gy",
+      "notes": 0
+   },
+   {
+      "Uid": 522,
+      "name": "radian",
+      "Qid": 27,
+      "quantity": "plane angle",
+      "SOU": "SI",
+      "symbol": "rad",
+      "defString": "[(1, 1), (\"m\", 1), (\"m\", -1)]",
+      "convCoefficient": 1,
+      "convUnits": "m/m",
+      "notes": "The angle subtended at the center of a circle by an arc whose length is equal to the circle's radius.  One full revolution encompasses 2\u03C0 radians."
    },
    {
       "Uid": 523,
@@ -4153,7 +4508,8 @@
       "symbol": "rad/s",
       "defString": "[(1, 1), (\"rad\", 1), (\"s\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "rad/s"
+      "convUnits": "rad/s",
+      "notes": 0
    },
    {
       "Uid": 524,
@@ -4164,7 +4520,8 @@
       "symbol": "rad/s2",
       "defString": "[(1, 1), (\"rad\", 1), (\"s\", -2)]",
       "convCoefficient": 1,
-      "convUnits": "rad/s2"
+      "convUnits": "rad/s2",
+      "notes": 0
    },
    {
       "Uid": 525,
@@ -4172,10 +4529,11 @@
       "Qid": 65,
       "quantity": "wave number",
       "SOU": "SI",
-      "symbol": "m-1",
-      "defString": "[(1, 1), (\"m\", -1)]",
+      "symbol": "1/m",
+      "defString": "[(1, 1), (\"1\", 1), (\"m\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "m-1"
+      "convUnits": "1/m",
+      "notes": 0
    },
    {
       "Uid": 526,
@@ -4186,7 +4544,8 @@
       "symbol": "register ton",
       "defString": "[(100, 1), (\"ft\", 3)]",
       "convCoefficient": 100,
-      "convUnits": "ft3"
+      "convUnits": "ft3",
+      "notes": 0
    },
    {
       "Uid": 529,
@@ -4197,7 +4556,8 @@
       "symbol": "rd",
       "defString": "[(80.5, 1), (\"ft\", 1)]",
       "convCoefficient": 80.5,
-      "convUnits": "ft"
+      "convUnits": "ft",
+      "notes": 0
    },
    {
       "Uid": 531,
@@ -4213,14 +4573,15 @@
    },
    {
       "Uid": 532,
-      "name": "R\u00F6ntgen equivalent man",
+      "name": "roentgen equivalent man",
       "Qid": 31,
       "quantity": "radiation - equivalent dose",
-      "SOU": "SI",
+      "SOU": "non-SI metric",
       "symbol": "rem",
       "defString": "[(0.01, 1), (\"Sv\", 1)]",
       "convCoefficient": 0.01,
-      "convUnits": "Sv"
+      "convUnits": "Sv",
+      "notes": 0
    },
    {
       "Uid": 533,
@@ -4231,7 +4592,8 @@
       "symbol": "ro",
       "defString": "[(0.25, 1), (\"ac\", 1)]",
       "convCoefficient": 0.25,
-      "convUnits": "ac"
+      "convUnits": "ac",
+      "notes": 0
    },
    {
       "Uid": 534,
@@ -4242,7 +4604,8 @@
       "symbol": "rope",
       "defString": "[(20, 1), (\"ft\", 1)]",
       "convCoefficient": 20,
-      "convUnits": "ft"
+      "convUnits": "ft",
+      "notes": 0
    },
    {
       "Uid": 535,
@@ -4253,7 +4616,8 @@
       "symbol": "ruth",
       "defString": "[(1, 1), (\"MBq\", 1)]",
       "convCoefficient": 1,
-      "convUnits": "MBq"
+      "convUnits": "MBq",
+      "notes": 0
    },
    {
       "Uid": 537,
@@ -4264,7 +4628,8 @@
       "symbol": "sack",
       "defString": "[(3, 1), (\"bu\", 1)]",
       "convCoefficient": 3,
-      "convUnits": "bu"
+      "convUnits": "bu",
+      "notes": 0
    },
    {
       "Uid": 658,
@@ -4275,7 +4640,8 @@
       "symbol": "sack (imp)",
       "defString": "[(3, 1), (\"bu (imp)\", 1)]",
       "convCoefficient": 3,
-      "convUnits": "bu (imp)"
+      "convUnits": "bu (imp)",
+      "notes": 0
    },
    {
       "Uid": 538,
@@ -4286,7 +4652,8 @@
       "symbol": "bag (imp)",
       "defString": "[(3, 1), (\"bu (imp)\", 1)]",
       "convCoefficient": 3,
-      "convUnits": "bu (imp)"
+      "convUnits": "bu (imp)",
+      "notes": 0
    },
    {
       "Uid": 539,
@@ -4297,7 +4664,8 @@
       "symbol": "s ap",
       "defString": "[(20, 1), (\"gr\", 1)]",
       "convCoefficient": 20,
-      "convUnits": "gr"
+      "convUnits": "gr",
+      "notes": 0
    },
    {
       "Uid": 540,
@@ -4308,11 +4676,12 @@
       "symbol": "seam",
       "defString": "[(8, 1), (\"bu\", 1)]",
       "convCoefficient": 8,
-      "convUnits": "bu"
+      "convUnits": "bu",
+      "notes": 0
    },
    {
       "Uid": 541,
-      "name": "Second",
+      "name": "second",
       "Qid": 36,
       "quantity": "time",
       "SOU": "SI",
@@ -4331,18 +4700,20 @@
       "symbol": "section",
       "defString": "[(1, 1), (\"mi\", 2)]",
       "convCoefficient": 1,
-      "convUnits": "mi2"
+      "convUnits": "mi2",
+      "notes": 0
    },
    {
       "Uid": 544,
-      "name": "Shake",
+      "name": "shake",
       "Qid": 36,
       "quantity": "time",
       "SOU": "universal",
-      "symbol": "Shake",
+      "symbol": "shake",
       "defString": "[(0.00000001, 1), (\"s\", 1)]",
       "convCoefficient": 0.00000001,
-      "convUnits": "s"
+      "convUnits": "s",
+      "notes": 0
    },
    {
       "Uid": 545,
@@ -4353,7 +4724,8 @@
       "symbol": "shaku (Japan)",
       "defString": "[(0.303030303, 1), (\"m\", 1)]",
       "convCoefficient": 0.303030303030303,
-      "convUnits": "m"
+      "convUnits": "m",
+      "notes": 0
    },
    {
       "Uid": 547,
@@ -4364,7 +4736,8 @@
       "symbol": "shed",
       "defString": "[(1E-52, 1), (\"m\", 2)]",
       "convCoefficient": 1E-52,
-      "convUnits": "m2"
+      "convUnits": "m2",
+      "notes": 0
    },
    {
       "Uid": 548,
@@ -4375,7 +4748,8 @@
       "symbol": "sheet",
       "defString": "[(0.001428571, 1), (\"lb\", 1)]",
       "convCoefficient": 1.42857142857143E-03,
-      "convUnits": "lb"
+      "convUnits": "lb",
+      "notes": 0
    },
    {
       "Uid": 549,
@@ -4386,7 +4760,8 @@
       "symbol": "ton",
       "defString": "[(2000, 1), (\"lb\", 1)]",
       "convCoefficient": 2000,
-      "convUnits": "lb"
+      "convUnits": "lb",
+      "notes": 0
    },
    {
       "Uid": 552,
@@ -4397,7 +4772,8 @@
       "symbol": "shot",
       "defString": "[(1.5, 1), (\"fl oz\", 1)]",
       "convCoefficient": 1.5,
-      "convUnits": "fl oz"
+      "convUnits": "fl oz",
+      "notes": 0
    },
    {
       "Uid": 553,
@@ -4408,7 +4784,8 @@
       "symbol": "S",
       "defString": "[(1, 1), (\"A\", 1), (\"V\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "A/V"
+      "convUnits": "A/V",
+      "notes": 0
    },
    {
       "Uid": 554,
@@ -4424,14 +4801,15 @@
    },
    {
       "Uid": 555,
-      "name": "Sigma",
+      "name": "sigma",
       "Qid": 36,
       "quantity": "time",
       "SOU": "universal",
-      "symbol": "Sigma",
+      "symbol": "sigma",
       "defString": "[(0.000001, 1), (\"s\", 1)]",
       "convCoefficient": 0.000001,
-      "convUnits": "s"
+      "convUnits": "s",
+      "notes": 0
    },
    {
       "Uid": 557,
@@ -4442,7 +4820,8 @@
       "symbol": "slug/ft3",
       "defString": "[(1, 1), (\"slug\", 1), (\"ft\", -3)]",
       "convCoefficient": 1,
-      "convUnits": "slug/ft3"
+      "convUnits": "slug/ft3",
+      "notes": 0
    },
    {
       "Uid": 558,
@@ -4461,7 +4840,7 @@
       "name": "geepound",
       "Qid": 26,
       "quantity": "mass",
-      "SOU": "non-SI metric",
+      "SOU": "other English",
       "symbol": "geepound",
       "defString": "[(1, 1), (\"slug\", 1)]",
       "convCoefficient": 1,
@@ -4473,7 +4852,7 @@
       "name": "hyl",
       "Qid": 26,
       "quantity": "mass",
-      "SOU": "non-SI metric",
+      "SOU": "other English",
       "symbol": "hyl",
       "defString": "[(1, 1), (\"slug\", 1)]",
       "convCoefficient": 1,
@@ -4489,7 +4868,8 @@
       "symbol": "span",
       "defString": "[(9, 1), (\"in\", 1)]",
       "convCoefficient": 9,
-      "convUnits": "in"
+      "convUnits": "in",
+      "notes": 0
    },
    {
       "Uid": 563,
@@ -4500,7 +4880,8 @@
       "symbol": "c",
       "defString": "[(299792458, 1), (\"m\", 1), (\"s\", -1)]",
       "convCoefficient": 299792458,
-      "convUnits": "m/s"
+      "convUnits": "m/s",
+      "notes": 0
    },
    {
       "Uid": 564,
@@ -4523,7 +4904,8 @@
       "symbol": "square (roofing)",
       "defString": "[(100, 1), (\"ft\", 2)]",
       "convCoefficient": 100,
-      "convUnits": "ft2"
+      "convUnits": "ft2",
+      "notes": 0
    },
    {
       "Uid": 566,
@@ -4534,7 +4916,8 @@
       "symbol": "ch2",
       "defString": "[(4356, 1), (\"ft\", 2)]",
       "convCoefficient": 4356,
-      "convUnits": "ft2"
+      "convUnits": "ft2",
+      "notes": 0
    },
    {
       "Uid": 570,
@@ -4545,7 +4928,8 @@
       "symbol": "ft2",
       "defString": "[(1, 1), (\"ft\", 2)]",
       "convCoefficient": 1,
-      "convUnits": "ft2"
+      "convUnits": "ft2",
+      "notes": 0
    },
    {
       "Uid": 571,
@@ -4556,7 +4940,8 @@
       "symbol": "ft2 (EDR)",
       "defString": "[(240, 1), (\"BTUIT\", 1), (\"h\", -1)]",
       "convCoefficient": 240,
-      "convUnits": "BTUIT/h"
+      "convUnits": "BTUIT/h",
+      "notes": 0
    },
    {
       "Uid": 572,
@@ -4567,7 +4952,8 @@
       "symbol": "ft2/s",
       "defString": "[(1, 1), (\"ft\", 2), (\"s\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "ft2/s"
+      "convUnits": "ft2/s",
+      "notes": 0
    },
    {
       "Uid": 573,
@@ -4578,7 +4964,8 @@
       "symbol": "in2",
       "defString": "[(1, 1), (\"in\", 2)]",
       "convCoefficient": 1,
-      "convUnits": "in2"
+      "convUnits": "in2",
+      "notes": 0
    },
    {
       "Uid": 574,
@@ -4589,7 +4976,8 @@
       "symbol": "km2",
       "defString": "[(1, 1), (\"km\", 2)]",
       "convCoefficient": 1,
-      "convUnits": "km2"
+      "convUnits": "km2",
+      "notes": 0
    },
    {
       "Uid": 577,
@@ -4600,7 +4988,8 @@
       "symbol": "m2",
       "defString": "[(1, 1), (\"m\", 2)]",
       "convCoefficient": 1,
-      "convUnits": "m2"
+      "convUnits": "m2",
+      "notes": 0
    },
    {
       "Uid": 578,
@@ -4611,7 +5000,8 @@
       "symbol": "m2/s",
       "defString": "[(1, 1), (\"m\", 2), (\"s\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "m2/s"
+      "convUnits": "m2/s",
+      "notes": 0
    },
    {
       "Uid": 579,
@@ -4622,7 +5012,8 @@
       "symbol": "mil2",
       "defString": "[(1, 1), (\"mil\", 2)]",
       "convCoefficient": 1,
-      "convUnits": "mil2"
+      "convUnits": "mil2",
+      "notes": 0
    },
    {
       "Uid": 580,
@@ -4633,7 +5024,8 @@
       "symbol": "mi2",
       "defString": "[(1, 1), (\"mi\", 2)]",
       "convCoefficient": 1,
-      "convUnits": "mi2"
+      "convUnits": "mi2",
+      "notes": 0
    },
    {
       "Uid": 581,
@@ -4644,7 +5036,8 @@
       "symbol": "rd2",
       "defString": "[(1, 1), (\"rd\", 2)]",
       "convCoefficient": 1,
-      "convUnits": "rd2"
+      "convUnits": "rd2",
+      "notes": 0
    },
    {
       "Uid": 582,
@@ -4655,18 +5048,8 @@
       "symbol": "yd2",
       "defString": "[(1, 1), (\"yd\", 2)]",
       "convCoefficient": 1,
-      "convUnits": "yd2"
-   },
-   {
-      "Uid": 586,
-      "name": "standard gravity",
-      "Qid": 1,
-      "quantity": "acceleration",
-      "SOU": "universal",
-      "symbol": "g0",
-      "defString": "[(9.80665, 1), (\"m\", 1), (\"s\", -2)]",
-      "convCoefficient": 9.80665,
-      "convUnits": "m/s2"
+      "convUnits": "yd2",
+      "notes": 0
    },
    {
       "Uid": 589,
@@ -4687,9 +5070,9 @@
       "quantity": "solid angle",
       "SOU": "SI",
       "symbol": "sr",
-      "defString": "[(1, 1), (\"n.a\", 1)]",
+      "defString": "[(1, 1), (\"m\", 2), (\"m\", -2)]",
       "convCoefficient": 1,
-      "convUnits": "\u2261 1 sr",
+      "convUnits": "m2/m2",
       "notes": "The solid angle subtended at the center of a sphere of radius r by a portion of the surface of the sphere having an area r2.\nA sphere subtends 4\u03C0\u00A0sr.[18]"
    },
    {
@@ -4701,7 +5084,8 @@
       "symbol": "sn",
       "defString": "[(1, 1), (\"MT\", 1), (\"m\", 1), (\"s\", -2)]",
       "convCoefficient": 1,
-      "convUnits": "MT\u00B7m/s2"
+      "convUnits": "MT\u00B7m/s2",
+      "notes": 0
    },
    {
       "Uid": 593,
@@ -4712,7 +5096,8 @@
       "symbol": "stick",
       "defString": "[(2, 1), (\"in\", 1)]",
       "convCoefficient": 2,
-      "convUnits": "in"
+      "convUnits": "in",
+      "notes": 0
    },
    {
       "Uid": 594,
@@ -4723,7 +5108,8 @@
       "symbol": "sb",
       "defString": "[(104, 1), (\"cd\", 1), (\"m\", -2)]",
       "convCoefficient": 104,
-      "convUnits": "cd/m2"
+      "convUnits": "cd/m2",
+      "notes": 0
    },
    {
       "Uid": 595,
@@ -4734,18 +5120,20 @@
       "symbol": "St",
       "defString": "[(1, 1), (\"cm\", 2), (\"s\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "cm2/s"
+      "convUnits": "cm2/s",
+      "notes": 0
    },
    {
       "Uid": 596,
       "name": "stone",
       "Qid": 26,
       "quantity": "mass",
-      "SOU": "non-SI metric",
+      "SOU": "other English",
       "symbol": "st",
       "defString": "[(14, 1), (\"lb\", 1)]",
       "convCoefficient": 14,
-      "convUnits": "lb"
+      "convUnits": "lb",
+      "notes": 0
    },
    {
       "Uid": 597,
@@ -4756,7 +5144,8 @@
       "symbol": "stremma",
       "defString": "[(1000, 1), (\"m\", 2)]",
       "convCoefficient": 1000,
-      "convUnits": "m2"
+      "convUnits": "m2",
+      "notes": 0
    },
    {
       "Uid": 598,
@@ -4767,7 +5156,8 @@
       "symbol": "strike (imp)",
       "defString": "[(2, 1), (\"bu (imp)\", 1)]",
       "convCoefficient": 2,
-      "convUnits": "bu (imp)"
+      "convUnits": "bu (imp)",
+      "notes": 0
    },
    {
       "Uid": 599,
@@ -4778,7 +5168,8 @@
       "symbol": "strike (US dry)",
       "defString": "[(2, 1), (\"bu\", 1)]",
       "convCoefficient": 2,
-      "convUnits": "bu"
+      "convUnits": "bu",
+      "notes": 0
    },
    {
       "Uid": 600,
@@ -4789,18 +5180,20 @@
       "symbol": "ft (survey)",
       "defString": "[(0.30480061, 1), (\"m\", 1)]",
       "convCoefficient": 0.304800609601219,
-      "convUnits": "m"
+      "convUnits": "m",
+      "notes": 0
    },
    {
       "Uid": 601,
-      "name": "Svedberg",
+      "name": "svedberg",
       "Qid": 36,
       "quantity": "time",
       "SOU": "universal",
       "symbol": "Sved",
       "defString": "[(1E-13, 1), (\"s\", 1)]",
       "convCoefficient": 0.0000000000001,
-      "convUnits": "s"
+      "convUnits": "s",
+      "notes": 0
    },
    {
       "Uid": 603,
@@ -4811,7 +5204,8 @@
       "symbol": "tbsp (Can)",
       "defString": "[(0.5, 1), (\"fl oz (imp)\", 1)]",
       "convCoefficient": 0.5,
-      "convUnits": "fl oz (imp)"
+      "convUnits": "fl oz (imp)",
+      "notes": 0
    },
    {
       "Uid": 604,
@@ -4822,7 +5216,8 @@
       "symbol": "tbsp (imp)",
       "defString": "[(0.625, 1), (\"fl oz (imp)\", 1)]",
       "convCoefficient": 0.625,
-      "convUnits": "fl oz (imp)"
+      "convUnits": "fl oz (imp)",
+      "notes": 0
    },
    {
       "Uid": 605,
@@ -4833,7 +5228,8 @@
       "symbol": "tbsp",
       "defString": "[(0.5, 1), (\"fl oz\", 1)]",
       "convCoefficient": 0.5,
-      "convUnits": "fl oz"
+      "convUnits": "fl oz",
+      "notes": 0
    },
    {
       "Uid": 606,
@@ -4844,7 +5240,8 @@
       "symbol": "tbsp (FDA)",
       "defString": "[(15, 1), (\"ml\", 1)]",
       "convCoefficient": 15,
-      "convUnits": "ml"
+      "convUnits": "ml",
+      "notes": 0
    },
    {
       "Uid": 607,
@@ -4855,7 +5252,8 @@
       "symbol": "tsp (Can)",
       "defString": "[(0.166666667, 1), (\"fl oz (imp)\", 1)]",
       "convCoefficient": 0.166666666666667,
-      "convUnits": "fl oz (imp)"
+      "convUnits": "fl oz (imp)",
+      "notes": 0
    },
    {
       "Uid": 608,
@@ -4866,7 +5264,8 @@
       "symbol": "tsp (imp)",
       "defString": "[(0.041666667, 1), (\"gi (imp)\", 1)]",
       "convCoefficient": 4.16666666666667E-02,
-      "convUnits": "gi (imp)"
+      "convUnits": "gi (imp)",
+      "notes": 0
    },
    {
       "Uid": 609,
@@ -4877,7 +5276,8 @@
       "symbol": "tsp",
       "defString": "[(0.166666667, 1), (\"fl oz\", 1)]",
       "convCoefficient": 0.166666666666667,
-      "convUnits": "fl oz"
+      "convUnits": "fl oz",
+      "notes": 0
    },
    {
       "Uid": 610,
@@ -4888,7 +5288,8 @@
       "symbol": "tsp (FDA)",
       "defString": "[(5, 1), (\"ml\", 1)]",
       "convCoefficient": 5,
-      "convUnits": "ml"
+      "convUnits": "ml",
+      "notes": 0
    },
    {
       "Uid": 611,
@@ -4899,7 +5300,8 @@
       "symbol": "T",
       "defString": "[(1, 1), (\"Wb\", 1), (\"m\", -2)]",
       "convCoefficient": 1,
-      "convUnits": "Wb/m2"
+      "convUnits": "Wb/m2",
+      "notes": 0
    },
    {
       "Uid": 612,
@@ -4910,7 +5312,8 @@
       "symbol": "therm",
       "defString": "[(100000, 1), (\"BTU59\u00A0\u00B0F\", 1)]",
       "convCoefficient": 100000,
-      "convUnits": "BTU59\u00A0\u00B0F"
+      "convUnits": "BTU59\u00A0\u00B0F",
+      "notes": 0
    },
    {
       "Uid": 613,
@@ -4921,7 +5324,8 @@
       "symbol": "therm (E.C.)",
       "defString": "[(100000, 1), (\"BTUIT\", 1)]",
       "convCoefficient": 100000,
-      "convUnits": "BTUIT"
+      "convUnits": "BTUIT",
+      "notes": 0
    },
    {
       "Uid": 614,
@@ -4932,7 +5336,8 @@
       "symbol": "th",
       "defString": "[(1, 1), (\"McalIT\", 1)]",
       "convCoefficient": 1,
-      "convUnits": "McalIT"
+      "convUnits": "McalIT",
+      "notes": 0
    },
    {
       "Uid": 615,
@@ -4943,7 +5348,8 @@
       "symbol": "thou",
       "defString": "[(0.001, 1), (\"in\", 1)]",
       "convCoefficient": 0.001,
-      "convUnits": "in"
+      "convUnits": "in",
+      "notes": 0
    },
    {
       "Uid": 616,
@@ -4954,7 +5360,8 @@
       "symbol": "timber foot",
       "defString": "[(1, 1), (\"ft\", 3)]",
       "convCoefficient": 1,
-      "convUnits": "ft3"
+      "convUnits": "ft3",
+      "notes": 0
    },
    {
       "Uid": 617,
@@ -4965,7 +5372,8 @@
       "symbol": "ton (displacement)",
       "defString": "[(35, 1), (\"ft\", 3)]",
       "convCoefficient": 35,
-      "convUnits": "ft3"
+      "convUnits": "ft3",
+      "notes": 0
    },
    {
       "Uid": 618,
@@ -4976,7 +5384,8 @@
       "symbol": "ton (freight)",
       "defString": "[(40, 1), (\"ft\", 3)]",
       "convCoefficient": 40,
-      "convUnits": "ft3"
+      "convUnits": "ft3",
+      "notes": 0
    },
    {
       "Uid": 619,
@@ -4987,7 +5396,8 @@
       "symbol": "ton (water)",
       "defString": "[(28, 1), (\"bu (imp)\", 1)]",
       "convCoefficient": 28,
-      "convUnits": "bu (imp)"
+      "convUnits": "bu (imp)",
+      "notes": 0
    },
    {
       "Uid": 621,
@@ -4998,7 +5408,8 @@
       "symbol": "TCE",
       "defString": "[(7, 1), (\"Gcalth\", 1)]",
       "convCoefficient": 7,
-      "convUnits": "Gcalth"
+      "convUnits": "Gcalth",
+      "notes": 0
    },
    {
       "Uid": 624,
@@ -5009,7 +5420,8 @@
       "symbol": "tTNT",
       "defString": "[(1, 1), (\"Gcalth\", 1)]",
       "convCoefficient": 1,
-      "convUnits": "Gcalth"
+      "convUnits": "Gcalth",
+      "notes": 0
    },
    {
       "Uid": 628,
@@ -5020,7 +5432,8 @@
       "symbol": "toe",
       "defString": "[(10, 1), (\"GcalIT\", 1)]",
       "convCoefficient": 10,
-      "convUnits": "GcalIT"
+      "convUnits": "GcalIT",
+      "notes": 0
    },
    {
       "Uid": 629,
@@ -5031,7 +5444,8 @@
       "symbol": "torr",
       "defString": "[(133.3223684, 1), (\"Pa\", 1)]",
       "convCoefficient": 133.322368421053,
-      "convUnits": "Pa"
+      "convUnits": "Pa",
+      "notes": 0
    },
    {
       "Uid": 630,
@@ -5042,7 +5456,8 @@
       "symbol": "twp",
       "defString": "[(36, 1), (\"mi\", 2)]",
       "convCoefficient": 36,
-      "convUnits": "mi2"
+      "convUnits": "mi2",
+      "notes": 0
    },
    {
       "Uid": 631,
@@ -5053,7 +5468,8 @@
       "symbol": "tun",
       "defString": "[(252, 1), (\"gal\", 1)]",
       "convCoefficient": 252,
-      "convUnits": "gal"
+      "convUnits": "gal",
+      "notes": 0
    },
    {
       "Uid": 632,
@@ -5064,7 +5480,8 @@
       "symbol": "twip",
       "defString": "[(0.000694444, 1), (\"in\", 1)]",
       "convCoefficient": 6.94444444444444E-04,
-      "convUnits": "in"
+      "convUnits": "in",
+      "notes": 0
    },
    {
       "Uid": 633,
@@ -5075,7 +5492,8 @@
       "symbol": "fl dr (US)",
       "defString": "[(0.125, 1), (\"fl oz\", 1)]",
       "convCoefficient": 0.125,
-      "convUnits": "fl oz"
+      "convUnits": "fl oz",
+      "notes": 0
    },
    {
       "Uid": 634,
@@ -5098,7 +5516,8 @@
       "symbol": "V/m",
       "defString": "[(1, 1), (\"V\", 1), (\"m\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "V/m"
+      "convUnits": "V/m",
+      "notes": 0
    },
    {
       "Uid": 636,
@@ -5121,7 +5540,8 @@
       "symbol": "W/(m\u00B7K)",
       "defString": "[(1, 1), (\"W\", 1), (\"m\", -1), (\"K\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "W/(m\u00B7K)"
+      "convUnits": "W/(m\u00B7K)",
+      "notes": 0
    },
    {
       "Uid": 638,
@@ -5132,7 +5552,8 @@
       "symbol": "W/m2",
       "defString": "[(1, 1), (\"W\", 1), (\"m\", -2)]",
       "convCoefficient": 1,
-      "convUnits": "W/m2"
+      "convUnits": "W/m2",
+      "notes": 0
    },
    {
       "Uid": 639,
@@ -5143,7 +5564,8 @@
       "symbol": "W/(m2\u00B7sr)",
       "defString": "[(1, 1), (\"W\", 1), (\"m\", -2), (\"sr\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "W/(m2\u00B7sr)"
+      "convUnits": "W/(m2\u00B7sr)",
+      "notes": 0
    },
    {
       "Uid": 640,
@@ -5154,7 +5576,8 @@
       "symbol": "W/sr",
       "defString": "[(1, 1), (\"W\", 1), (\"sr\", -1)]",
       "convCoefficient": 1,
-      "convUnits": "W/sr"
+      "convUnits": "W/sr",
+      "notes": 0
    },
    {
       "Uid": 641,
@@ -5170,14 +5593,15 @@
    },
    {
       "Uid": 642,
-      "name": "Week",
+      "name": "week",
       "Qid": 36,
       "quantity": "time",
       "SOU": "universal",
       "symbol": "wk",
       "defString": "[(7, 1), (\"d\", 1)]",
       "convCoefficient": 7,
-      "convUnits": "d"
+      "convUnits": "d",
+      "notes": 0
    },
    {
       "Uid": 643,
@@ -5188,7 +5612,8 @@
       "symbol": "wey (US dry)",
       "defString": "[(40, 1), (\"bu\", 1)]",
       "convCoefficient": 40,
-      "convUnits": "bu"
+      "convUnits": "bu",
+      "notes": 0
    },
    {
       "Uid": 644,
@@ -5199,7 +5624,8 @@
       "symbol": "wey",
       "defString": "[(252, 1), (\"lb\", 1)]",
       "convCoefficient": 252,
-      "convUnits": "lb"
+      "convUnits": "lb",
+      "notes": 0
    },
    {
       "Uid": 645,
@@ -5210,7 +5636,8 @@
       "symbol": "wey (imp)",
       "defString": "[(18, 1), (\"st\", 1)]",
       "convCoefficient": 18,
-      "convUnits": "st"
+      "convUnits": "st",
+      "notes": 0
    },
    {
       "Uid": 647,
@@ -5221,7 +5648,8 @@
       "symbol": "yd (metric)",
       "defString": "[(0.9144, 1), (\"m\", 1)]",
       "convCoefficient": 0.9144,
-      "convUnits": "m"
+      "convUnits": "m",
+      "notes": 0
    },
    {
       "Uid": 648,
@@ -5232,7 +5660,8 @@
       "symbol": "yd",
       "defString": "[(3, 1), (\"ft\", 1)]",
       "convCoefficient": 3,
-      "convUnits": "ft"
+      "convUnits": "ft",
+      "notes": 0
    },
    {
       "Uid": 650,
@@ -5243,11 +5672,12 @@
       "symbol": "yardland",
       "defString": "[(30, 1), (\"ac\", 1)]",
       "convCoefficient": 30,
-      "convUnits": "ac"
+      "convUnits": "ac",
+      "notes": 0
    },
    {
       "Uid": 651,
-      "name": "Year (common)",
+      "name": "year (common)",
       "Qid": 36,
       "quantity": "time",
       "SOU": "universal",
