@@ -33,7 +33,7 @@ def get_question():
       'sector' : echo1,
       'sou' : echo2,
       'difficulty' : echo3,
-      'wordp' : word_problem
+      'wordp' : word_problem,
       'times' : time_stamp
     }
 
