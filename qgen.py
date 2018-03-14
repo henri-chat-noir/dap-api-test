@@ -30,6 +30,7 @@ def get_question():
     word_problem = "What is the answer to life, the universe, and everything? "
     instructions = "Please enter in Light-years per hour..."
     the_answer = 42
+    answer_units = "Light-years"
 
     echoback = {
       'sector' : echo1,
@@ -38,7 +39,8 @@ def get_question():
       'wordp' : word_problem,
       'times' : time_stamp,
       'answer': the_answer,
-      'instruct' : instructions
+      'instruct' : instructions,
+      'a_unit' : answer_units
     }
 
     return_string = json.dumps(echoback)
