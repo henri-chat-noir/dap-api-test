@@ -24,17 +24,21 @@ def get_question():
 
     # Need to look into random variable generation, but date/time works for now
     now = datetime.datetime.now()
-    time_stamp = now.strftime("%Y-%m-%d %H:%M")
+    time_stamp = "Generated at: " + now.strftime("%d-%m-%Y %H:%M")
 
     # Temporary component just to have something added back on GET that's created by API code
-    word_problem = "This is your question which we've generated for you at: "
+    word_problem = "What is the answer to life, the universe, and everything? "
+    instructions = "Please enter in Light-years per hour..."
+    the_answer = 42
 
     echoback = {
       'sector' : echo1,
       'sou' : echo2,
       'difficulty' : echo3,
       'wordp' : word_problem,
-      'times' : time_stamp
+      'times' : time_stamp,
+      'answer': 42,
+      'instruct' : instructions
     }
 
     return_string = json.dumps(echoback)
