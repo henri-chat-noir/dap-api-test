@@ -37,7 +37,7 @@ def get_question():
       'difficulty' : echo3,
       'wordp' : word_problem,
       'times' : time_stamp,
-      'answer': 42,
+      'answer': the_answer,
       'instruct' : instructions
     }
 
