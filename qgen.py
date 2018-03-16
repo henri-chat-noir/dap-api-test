@@ -5,6 +5,7 @@ from flask_cors import CORS, cross_origin
 import datetime
 import json
 
+
 app = Flask(__name__)
 CORS(app)
 
@@ -23,7 +24,7 @@ def get_question():
     echo3 = "The level of difficulty is: " + difficulty
 
     # Need to look into random variable generation, but date/time works for now
-    now = datetime.datetime.now(tzinfo.tzname("EDT"))
+    now = datetime.datetime.now()
     time_stamp = "Generated at: " + now.strftime("%d-%m-%Y %I:%M %p")
 
     # Temporary component just to have something added back on GET that's created by API code
