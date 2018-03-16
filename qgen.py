@@ -24,13 +24,13 @@ def get_question():
 
     # Need to look into random variable generation, but date/time works for now
     now = datetime.datetime.now()
-    time_stamp = "Generated at: " + now.strftime("%d-%m-%Y %H:%M")
+    time_stamp = "Generated at: " + now.strftime("%d-%m-%Y %I:%M %p")
 
     # Temporary component just to have something added back on GET that's created by API code
     word_problem = "What is the answer to life, the universe, and everything? "
-    instructions = "Please enter in Light-years per hour..."
+    instructions = "Please enter in miles per hour..."
     the_answer = 42
-    answer_units = "Light-years"
+    answer_units = "miles/hour"
 
     echoback = {
       'sector' : echo1,
