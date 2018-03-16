@@ -23,7 +23,7 @@ def get_question():
     echo3 = "The level of difficulty is: " + difficulty
 
     # Need to look into random variable generation, but date/time works for now
-    now = datetime.datetime.now(utcoffset(-4))
+    now = datetime.datetime.now(tzinfo.tzname("EDT"))
     time_stamp = "Generated at: " + now.strftime("%d-%m-%Y %I:%M %p")
 
     # Temporary component just to have something added back on GET that's created by API code
