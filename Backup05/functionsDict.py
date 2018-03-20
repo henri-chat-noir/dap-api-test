@@ -1,6 +1,5 @@
+import json
 import ast
-import os
-import functionsGen as fGen
 
 def listProcess(targetDict, exclUIDs):
     # Main processing of next dictionary
@@ -49,7 +48,7 @@ def listProcess(targetDict, exclUIDs):
         outputDict[unitName]['baseList'] = tempList
         
         # Then create new key that 'combines like terms' within baseList
-        tempList = fGen.combineLike(tempList)
+        tempList = simplify(tempList)
         outputDict[unitName]['simpList'] = tempList
 
         # Having creating a series of base-unit related tuples, then matter of extracting coefficients
@@ -103,6 +102,32 @@ def processCoeff(argList):
             symList.append(argTuple)
 
     return (coeff, symList)
+
+def simplify(argList):
+    # Function that cycles through defList and combines like terms
+
+    unitList = []
+    
+    for unit, degree in argList:
+        if len(unitList) == 0:
+            unitList = [unit]
+        
+        else:
+            if unit not in unitList:
+                unitList.append(unit)  
+    
+    simplify = []
+    for uniqueUnit in unitList:
+        
+        combDegree = 0
+        for unit, degree in argList:
+
+            if unit == uniqueUnit:
+                combDegree = combDegree + degree
+            
+        simplify.append( (uniqueUnit, combDegree) )
+
+    return simplify
 
 def baseStep(defList, pathList, unitID, unitName, unitsDict):
 
@@ -266,6 +291,25 @@ def buildIDs(SOUset, rawDict):
     # Extract the unit IDs for all SI and metric dictionary entries in the raw file
     
     return IDlist
+
+def loadRaw(fileName):
+    
+    dictPath = "C:\\0_Python\dap-api-test\\"
+    
+    with open(dictPath + fileName, 'r') as file:      # Open connection to file, read only
+        rawDict = json.load(file)
+        # rawDict has the structure as list of dictionaries, i.e. each entry is un-keyed and only a member of a list
+    
+    return rawDict
+
+def outputJson(targetDict, outputName):
+    # Write fileName out to rawDict has the structure as list of dictionaries, i.e. each entry is un-keyed and only a member of a list
+    outputPath = "C:\\0_Python\dap-api-test\\"
+    
+    with open(outputPath + outputName, 'w') as file:      # Open connection to file, write only
+        json.dump(targetDict, file)
+            
+    return
 
 def printDict(targetDict, exclUIDs):
     # Simple output function for showing dictionary

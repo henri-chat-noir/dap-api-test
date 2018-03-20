@@ -1,5 +1,8 @@
 import ast
 import os
+
+os.chdir("C:\\0_Python\dap-api-test\\")
+print(os.getcwd())
 import functionsGen as fGen
 
 def listProcess(targetDict, exclUIDs):
@@ -49,7 +52,7 @@ def listProcess(targetDict, exclUIDs):
         outputDict[unitName]['baseList'] = tempList
         
         # Then create new key that 'combines like terms' within baseList
-        tempList = fGen.combineLike(tempList)
+        tempList = fGen.simplify(tempList)
         outputDict[unitName]['simpList'] = tempList
 
         # Having creating a series of base-unit related tuples, then matter of extracting coefficients
