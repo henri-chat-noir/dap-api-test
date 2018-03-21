@@ -9,40 +9,25 @@ import random as rand
 import ast
 import F_general as fGen
 
-def setObjects(paramList, probType, dimDict, objDict, probDict):
+def setObjects(paramList, probType, dimDict, probDict):
     
-    # For each dimension selected find object compatible with it and probType
+    # For each the dimension for each parameter, find object compatible with both dimension and probType
     paramObjList = []
-    objClassList = objDict.keys()
     for pDim, degree in paramList:
-
-        paramObjectClasses = dimDict[pDim]['expObjClasses']
-        # print("Possible parameter object classes: ", paramObjectClasses)
-        paramObjects = []
-        for objClass in paramObjectClasses:
-            if objClass in objClassList:
-                newParamObjects = objDict[objClass]['objList']
-            else:
-                if objClass[-1] == "#":
-                    newParamObjects = objClass[:-1]
-                else:            
-                    print("Dimension obj class value not object class and no # suffix")
-            if type(newParamObjects) is str:
-                paramObjects.append(newParamObjects)
-            else:
-                paramObjects.extend(newParamObjects)
-            
+        
+        dimObjects = dimDict[pDim]['dimObjects']
         # print(pDim, "possible parameter objects: ", paramObjects)
+        
         probObjects = probDict[probType]['probObjects']
-
         # print(probType, "probObjects: ", probObjects)
+
         if len(probObjects) != 0:
-            dimObjects = [i for i in paramObjects if i in probObjects]
+            paramObjects = [i for i in probObjects if i in dimObjects]
         else:
-            dimObjects = paramObjects[:]
+            paramObjects = dimObjects[:]
 
         # print(pDim, "+for+", probType, "dimObjects:", dimObjects)
-        numObj = len(dimObjects)
+        numObj = len(paramObjects)
         if numObj > 0:
             pass
             # objIndex = rand.randint(1, numObj) - 1
@@ -50,7 +35,7 @@ def setObjects(paramList, probType, dimDict, objDict, probDict):
             print("No valid dimensions found")
         
         # selectedObj = dimObjects[objIndex]
-        newTuple = (pDim, degree, dimObjects)
+        newTuple = (pDim, degree, paramObjects)
         paramObjList.append(newTuple)
         
     return paramObjList

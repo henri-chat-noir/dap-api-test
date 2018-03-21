@@ -22,13 +22,12 @@ probDict = fBuild.buildProbDict('dictProblems09.json', objDict)
 
 # Process raw JSON into fully built-out dimensions dictionary
 rawDims = fGen.loadRaw("dictDimensions12.json")
-dimsDict = fBuild.buildDimsDict(rawDims)
+dimsDict = fBuild.buildDimsDict(rawDims, objDict)
 
 # Build appropriate dimensions dictionary (from raw JSON)
 subject = 'mechanics'
-SOU = 'SI'
 exclDims = ['acceleration', 'action', 'dynamic viscosity', 'energy density', 'frequency', 'kinematic viscosity', 'surface tension', 'torque']
-mechSIdims = fCore.selectDims(subject, exclDims, dimsDict)
+mechDimDict = fCore.selectDims(subject, exclDims, dimsDict)
 
 # Main procedure to create tuple list of dimensions, lambdas that are dimensionally congruent
 answerDim = 'energy'
@@ -44,7 +43,7 @@ while not goodList and tryCount < maxTry:
     tryCount = tryCount + 1
 
     # Going to use difficulty variable as a threshold on minimum number of arguments before routine clears remaining base dimensions
-    paramList = fCore.dealParameters(answerDim, difficulty, mechSIdims)
+    paramList = fCore.dealParameters(answerDim, difficulty, mechDimDict)
     
     if len(paramList) != 0 and len(paramList) <= maxArgs:
         goodList = True
@@ -63,7 +62,7 @@ print("Problem type: ", probType)
 print("----------")
 print("\n")
 
-paramObjList = fCore.setObjects(paramList, probType, mechSIdims, objDict, probDict)
+paramObjList = fCore.setObjects(paramList, probType, mechDimDict, probDict)
 print("Established parameters, degrees, and objects:")
 for param in paramObjList:
     print(param)

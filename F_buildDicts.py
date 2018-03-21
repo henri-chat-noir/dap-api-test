@@ -13,7 +13,7 @@ problem type and dimension respectively
 import ast
 import F_general as fGen
 
-def buildDimsDict(rawDict):
+def buildDimsDict(rawDict, objDict):
     # Processes what is essentially raw, non-nested JSON import and adds keys as noted in module documention
     # Also creates a 'proper list' from what is string in JSON file via ast.literal_eval function
 
@@ -57,8 +57,32 @@ def buildDimsDict(rawDict):
                 tempList.extend(subsetList)
                 # print("Object list: ", tempList)
                 
-        entryInfo['expObjClasses'] = tempList
-  
+        entryInfo['dimObjClasses'] = tempList
+
+    # Then final loop through to resolve create an actual 'object list' from object classes
+    for keyVal, entryInfo in outputDict.items():
+        
+        dimObjClasses = entryInfo['dimObjClasses']
+        objClassList = objDict.keys()
+        # print("Possible parameter object classes: ", paramObjectClasses)
+        dimObjects = []
+        for objClass in dimObjClasses:
+            if objClass in objClassList:
+                newDimObjects = objDict[objClass]['objList']
+            else:
+                if objClass[-1] == "#":
+                    newDimObjects = objClass[:-1]
+                else:            
+                    print("Dimension obj class value not object class and no # suffix")
+            
+            # Clunky way of handling variability in type determination with append vs. extend, oh well (for now)
+            if type(newDimObjects) is str:
+                dimObjects.append(newDimObjects)
+            else:
+                dimObjects.extend(newDimObjects)
+
+            entryInfo['dimObjects'] = dimObjects
+
     return outputDict
 
 def buildProbDict(JSONfile, objDict):
