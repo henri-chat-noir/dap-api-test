@@ -1,7 +1,17 @@
+"""
+Module that contains functions used generically across different modules / stages of process, includes
+combineLike - takes list of 2tuples in format (base, degree)
+loadRaw - simple file load (that works on local system set-up)
+outputJSON
+"""
+
 import json
 
 def combineLike(targList):
     # Function that cycles through list of string, degree tuples and combines like terms
+    # Presumes list is formed of 2tuples in format (string, degree), where return list 'collapses'
+    # terms with identical strings by adding degrees together
+    # This function does not (yet) eliminate terms with zero degree or convert them to "1"
 
     textList = []
     for text, degree in targList:

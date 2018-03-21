@@ -1,31 +1,42 @@
-import functionsGen as fGen
-import functionsDict as fDict
-import functionsCore as fCore
+import F_general as fGen
+import F_unitsDict as fUnits
+import F_buildDicts as fBuild
+import F_coreProc as fCore
 
-rawDict = fGen.loadRaw('UnitsDict13.json')
+rawUnitsDict = fGen.loadRaw('UnitsDict13.json')
 
 # Create list, metricIDs, of SI and other metric unit labels
+# Require then to 
 metricSOUs = {'SI', 'non-SI metric', 'universal'}
-metricIDs = fDict.buildIDs(metricSOUs, rawDict)
+metricIDs = fUnits.buildIDlist(metricSOUs, rawUnitsDict)
 
 # Build 'sub dictionary' (from raw load) based on metricIDs
-metricDict = fDict.selectSubDict(metricIDs, rawDict)
+metricDict = fUnits.extractSubDict(metricIDs, rawUnitsDict)
 metricOmits = {}
-metricDict = fDict.listProcess(metricDict, metricOmits)
+metricDict = fUnits.unitProcess(metricDict, metricOmits)
+
+# Need to use objDict in order to resolve the object class indicators that exist in either or both
+# dimensions' and 'problems' dictionaries
+objDict = fBuild.buildObjDict('dictObjects06.json')
+probDict = fBuild.buildProbDict('dictProblems09.json', objDict)
+
+# Process raw JSON into fully built-out dimensions dictionary
+rawDims = fGen.loadRaw("dictDimensions12.json")
+dimsDict = fBuild.buildDimsDict(rawDims)
 
 # Build appropriate dimensions dictionary (from raw JSON)
-subject = "mechanics"
+subject = 'mechanics'
 SOU = 'SI'
-rawDims = "dictDimensions11.json"
-mechSIdims = fCore.buildDims(subject, SOU, rawDims)
+exclDims = ['acceleration', 'action', 'dynamic viscosity', 'energy density', 'frequency', 'kinematic viscosity', 'surface tension', 'torque']
+mechSIdims = fCore.selectDims(subject, exclDims, dimsDict)
 
 # Main procedure to create tuple list of dimensions, lambdas that are dimensionally congruent
-answerDim = 'mass'
+answerDim = 'energy'
 difficulty = 2
 
 tryCount = 0
 maxTry = 50
- 
+
 paramList = []
 goodList = False
 maxArgs = difficulty + 3
@@ -33,7 +44,7 @@ while not goodList and tryCount < maxTry:
     tryCount = tryCount + 1
 
     # Going to use difficulty variable as a threshold on minimum number of arguments before routine clears remaining base dimensions
-    paramList = fCore.selectParameters(answerDim, difficulty, mechSIdims)
+    paramList = fCore.dealParameters(answerDim, difficulty, mechSIdims)
     
     if len(paramList) != 0 and len(paramList) <= maxArgs:
         goodList = True
@@ -41,12 +52,8 @@ while not goodList and tryCount < maxTry:
 argList = paramList[1:]
 print(answerDim, "can be calculated with this combination of arguments: ")
 print(argList)
+print("\n")
 print("Number of tries: ", tryCount)
-print("----------")
-
-objDict = fCore.createObjDict('dictObjects06.json')
-# Need to use objDict in order to resolve the object class indicators that may be present in dictProblems JSON
-probDict = fCore.createProbDict('dictProblems09.json', objDict)
 
 # print(objDict.items())
 
@@ -61,10 +68,11 @@ print("Established parameters, degrees, and objects:")
 for param in paramObjList:
     print(param)
 print("----------")
+print("\n")
 
 # fDict.printDict(metricDict, metricOmits)
 
-# fDict.printBaseUnits(metricDict)
+# fUtil.printBaseUnits(metricDict)
 # fGen.outputJson(metricDict, 'metricDict-v01.json')
 
 # print( json.dumps(metricDict, indent=4, sort_keys=True))
