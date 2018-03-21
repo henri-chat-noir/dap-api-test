@@ -1,7 +1,10 @@
-import F_general as fGen
-import F_unitsDict as fUnits
-import F_buildDicts as fBuild
-import F_coreProc as fCore
+import F0_general as fGen
+import F1_utility as fUtil
+import F2_unitsDict as fUnits
+import F3_buildDicts as fBuild
+import F4_dealParams as fParam
+import F5_findProb as fProb
+import F6_pickObjects as fCore
 
 rawUnitsDict = fGen.loadRaw('UnitsDict13.json')
 
@@ -27,7 +30,7 @@ dimsDict = fBuild.buildDimsDict(rawDims, objDict)
 # Build appropriate dimensions dictionary (from raw JSON)
 subject = 'mechanics'
 exclDims = ['acceleration', 'action', 'dynamic viscosity', 'energy density', 'frequency', 'kinematic viscosity', 'surface tension', 'torque']
-mechDimDict = fCore.selectDims(subject, exclDims, dimsDict)
+mechDimDict = fParam.selectDims(subject, exclDims, dimsDict)
 
 # Main procedure to create tuple list of dimensions, lambdas that are dimensionally congruent
 answerDim = 'energy'
@@ -43,7 +46,7 @@ while not goodList and tryCount < maxTry:
     tryCount = tryCount + 1
 
     # Going to use difficulty variable as a threshold on minimum number of arguments before routine clears remaining base dimensions
-    paramList = fCore.dealParameters(answerDim, difficulty, mechDimDict)
+    paramList = fParam.dealParameters(answerDim, difficulty, mechDimDict)
     
     if len(paramList) != 0 and len(paramList) <= maxArgs:
         goodList = True
@@ -57,7 +60,7 @@ print("Number of tries: ", tryCount)
 # print(objDict.items())
 
 paramDims = [i[0] for i in paramList]
-probType = fCore.findProbType(paramDims, probDict)
+probType = fProb.findProbType(paramDims, probDict)
 print("Problem type: ", probType)
 print("----------")
 print("\n")
@@ -68,13 +71,3 @@ for param in paramObjList:
     print(param)
 print("----------")
 print("\n")
-
-# fDict.printDict(metricDict, metricOmits)
-
-# fUtil.printBaseUnits(metricDict)
-# fGen.outputJson(metricDict, 'metricDict-v01.json')
-
-# print( json.dumps(metricDict, indent=4, sort_keys=True))
-
-# printSet = {438}
-# learn.printPath(metricDict, printSet)

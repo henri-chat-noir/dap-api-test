@@ -31,7 +31,7 @@ all in turn supported by simple small logic functions:
              SIBUlist = ('m', 'kg', 's', 'A', 'K', 'mol', 'cd')
 
 """
-import F_general as fGen
+import F0_general as fGen
 import ast
 # import os
 

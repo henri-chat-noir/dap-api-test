@@ -11,7 +11,7 @@ problem type and dimension respectively
 
 """
 import ast
-import F_general as fGen
+import F0_general as fGen
 
 def buildDimsDict(rawDict, objDict):
     # Processes what is essentially raw, non-nested JSON import and adds keys as noted in module documention
