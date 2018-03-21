@@ -1,0 +1,66 @@
+[
+   {
+      "objClass": "1D object",
+      "objects": "\"string\", \"piston\""
+   },
+   {
+      "objClass": "activity",
+      "objects": "\"filling\", \"driving\""
+   },
+   {
+      "objClass": "animal",
+      "objects": "\"badger\", \"tiger\", \"wombat\""
+   },
+   {
+      "objClass": "body of water",
+      "objects": "\"lake\", \"pond\", \"resevoir\", \"swimming pool\""
+   },
+   {
+      "objClass": "container",
+      "objects": "\"bottle\", \"vat\""
+   },
+   {
+      "objClass": "elec device",
+      "objects": "\"light bulb\", \"heater\""
+   },
+   {
+      "objClass": "force applicators",
+      "objects": "\"lever\", \"jack handle\", \"piston\", \"hydraulic ram\""
+   },
+   {
+      "objClass": "floor covering",
+      "objects": "\"carpet\", \"rug\""
+   },
+   {
+      "objClass": "fluid",
+      "objects": "\"water\", \"wine\", \"oil\", \"beer\", \"sewage\""
+   },
+   {
+      "objClass": "land",
+      "objects": "\"farm\", \"back yard\", \"property\""
+   },
+   {
+      "objClass": "mech device",
+      "objects": "\"car engine\", \"motor\", \"pump\""
+   },
+   {
+      "objClass": "moving object",
+      "objects": "\"bullet\", \"piston\""
+   },
+   {
+      "objClass": "pressure vessels",
+      "objects": "\"scuba tank\", \"piston\", \"cylinder\""
+   },
+   {
+      "objClass": "rotating object",
+      "objects": "\"bolt\", \"axel\", \"jar lid\""
+   },
+   {
+      "objClass": "route",
+      "objects": "\"path\", \"road\""
+   },
+   {
+      "objClass": "vehicle",
+      "objects": "\"truck\", \"car\", \"stagecoach\""
+   }
+]

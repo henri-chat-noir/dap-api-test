@@ -16,7 +16,7 @@ metricDict = fDict.listProcess(metricDict, metricOmits)
 # Build appropriate dimensions dictionary (from raw JSON)
 subject = "mechanics"
 SOU = 'SI'
-rawDims = "dictDimensions11.json"
+rawDims = "DimensionDict04.json"
 mechSIdims = fCore.buildDims(subject, SOU, rawDims)
 
 # Main procedure to create tuple list of dimensions, lambdas that are dimensionally congruent
@@ -44,23 +44,10 @@ print(argList)
 print("Number of tries: ", tryCount)
 print("----------")
 
-objDict = fCore.createObjDict('dictObjects06.json')
-# Need to use objDict in order to resolve the object class indicators that may be present in dictProblems JSON
-probDict = fCore.createProbDict('dictProblems09.json', objDict)
-
-# print(objDict.items())
+probDict = fCore.createProbDict('ProblemDict03.json')
 
 paramDims = [i[0] for i in paramList]
 probType = fCore.findProbType(paramDims, probDict)
-print("Problem type: ", probType)
-print("----------")
-print("\n")
-
-paramObjList = fCore.setObjects(paramList, probType, mechSIdims, objDict, probDict)
-print("Established parameters, degrees, and objects:")
-for param in paramObjList:
-    print(param)
-print("----------")
 
 # fDict.printDict(metricDict, metricOmits)
 

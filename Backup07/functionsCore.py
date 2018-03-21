@@ -2,53 +2,6 @@ import random as rand
 import ast
 import functionsGen as fGen
 
-def setObjects(paramList, probType, dimDict, objDict, probDict):
-    
-    # For each dimension selected find object compatible with it and probType
-    paramObjList = []
-    objClassList = objDict.keys()
-    for pDim, degree in paramList:
-
-        paramObjectClasses = dimDict[pDim]['expObjClasses']
-        # print("Possible parameter object classes: ", paramObjectClasses)
-        paramObjects = []
-        for objClass in paramObjectClasses:
-            if objClass in objClassList:
-                newParamObjects = objDict[objClass]['objList']
-            else:
-                if objClass[-1] == "#":
-                    newParamObjects = objClass[:-1]
-                else:            
-                    print("Dimension obj class value not object class and no # suffix")
-            if type(newParamObjects) is str:
-                paramObjects.append(newParamObjects)
-            else:
-                paramObjects.extend(newParamObjects)
-            
-        # print(pDim, "possible parameter objects: ", paramObjects)
-        probObjects = probDict[probType]['probObjects']
-
-        # print(probType, "probObjects: ", probObjects)
-        if len(probObjects) != 0:
-            dimObjects = [i for i in paramObjects if i in probObjects]
-        else:
-            dimObjects = paramObjects[:]
-
-        # print(pDim, "+for+", probType, "dimObjects:", dimObjects)
-        numObj = len(dimObjects)
-        if numObj > 0:
-            pass
-            # objIndex = rand.randint(1, numObj) - 1
-        else:
-            print("No valid dimensions found")
-        
-        # selectedObj = dimObjects[objIndex]
-        newTuple = (pDim, degree, dimObjects)
-        paramObjList.append(newTuple)
-        
-    return paramObjList
-
-
 def findProbType(paramDims, probDict):
     
     # Create a list of keys sorted in ascending order based on dimSetSize
@@ -56,18 +9,18 @@ def findProbType(paramDims, probDict):
     setSizeSort = sorted(probDict.keys(), key=lambda x: probDict[x]['dimSetSize'])
     
     for keyVal in setSizeSort:
-        dimSet = probDict[keyVal]['probDims']
+        dimSet = probDict[keyVal]['expandedDims']
         inSet = True
         for probDim in paramDims:
             if probDim not in dimSet:
                 inSet = False
-                # print(probDim, " not in ", keyVal, ": ", dimSet)
+                print(probDim, " not in ", keyVal, ": ", dimSet)
                 break
         if inSet:
         # If each probDim within dimSet, then inSet would have survived as True, and must stop checking further keyVals
             break
     if inSet:
-        # print("Simplest problem type: ", keyVal)
+        print("Simplest problem type: ", keyVal)
         problemType = keyVal
     else:
         print("No problem context matches selected dimensions")
@@ -75,64 +28,36 @@ def findProbType(paramDims, probDict):
 
     return problemType
 
-def createProbDict(JSONfile, objDict):
+def createProbDict(JSONfile):
 
     # Start simply by creating a nested dictionary from raw JSON file
     # Also add proper list and/or tuple objects from what would otherwise be simple JSON strings
-    
     problemTypes = fGen.loadRaw(JSONfile)
     probDict = {}
     for entry in problemTypes:
         keyVal = entry['probType']
         probDict[keyVal] = entry
-        entry['probDimTuples'] = ast.literal_eval(entry['dimString'])
-        entry['probObjClassTuples'] = ast.literal_eval(entry['objClassString'])
+        entry['rawDims'] = ast.literal_eval(entry['dimensionSet'])
+        entry['objTuples'] = ast.literal_eval(entry['objectSet'])
         
     # Then need to decode the rawDims list, where there are instances of [keyVal!] pointers to other sets
-    # As well, separate decoding of those elements in objTuples that reference object classes, rather than objects
     for keyVal, entryInfo in probDict.items():
         
-        rawList = list(entryInfo['probDimTuples'])
+        # Initialize by setting expandedDims to rawDims
+        rawList = list(entryInfo['rawDims'])
         tempList = rawList[:]
         for element in rawList:
             if element[-1] == "!":
                 subsetLabel = element[:-1]
                 tempList.remove(element)
-                subsetList = list(probDict[subsetLabel]['probDimTuples'])
+                subsetList = list(probDict[subsetLabel]['rawDims'])
                 tempList.extend(subsetList)
                 
-        entryInfo['probDims'] = tempList
+        entryInfo['expandedDims'] = tempList
         # Create a new entry which is size of full dimSet, which is used in sorting (to select minimal set that 'fits')
         probDict[keyVal]['dimSetSize'] = len(tempList)
     
-        rawList = entryInfo['probObjClassTuples']
-        tempList = list(rawList[:])
-        for element in rawList:
-            if element[-1] == "#":
-                tempList.remove(element)
-                tempList.append(element[:-1])
-            else:
-                tempList.remove(element)
-                objectList = list(objDict[element]['objList'])
-                tempList.extend(objectList)
-                
-        entryInfo['probObjects'] = tempList
-        
     return probDict
-
-def createObjDict(JSONfile):
-
-    # Start simply by creating a nested dictionary from raw JSON file
-    # Also add proper list and/or tuple objects from what would otherwise be simple JSON strings
-    objects = fGen.loadRaw(JSONfile)
-    objDict = {}
-    for entry in objects:
-        keyVal = entry['objClass']
-        objDict[keyVal] = entry
-        entry['objList'] = ast.literal_eval(entry['objects'])
-        
-    return objDict
-
 
 def selectParameters(answerDim, difficulty, dimDict):
     
@@ -264,6 +189,13 @@ def randomDim(residualBaseTuples, paramDims, dimDict):
     
     return dimension
 
+def buildDims(subject, SOU, rawFile):
+
+    rawDims = fGen.loadRaw(rawFile)
+    exclDims = ['acceleration', 'action', 'dynamic viscosity', 'energy density', 'frequency', 'kinematic viscosity', 'surface tension', 'torque']    
+    dimsDict = selectDims(subject, exclDims, rawDims)
+    
+    return dimsDict
 
 def simpleDim(residTuples, paramDims, dimDict):
 
@@ -286,15 +218,6 @@ def simpleDim(residTuples, paramDims, dimDict):
       
     return simpleDim
 
-def buildDims(subject, SOU, rawFile):
-
-    rawDims = fGen.loadRaw(rawFile)
-    exclDims = ['acceleration', 'action', 'dynamic viscosity', 'energy density', 'frequency', 'kinematic viscosity', 'surface tension', 'torque']    
-    dimsDict = selectDims(subject, exclDims, rawDims)
-    
-    return dimsDict
-
-
 def selectDims(subject, exclDims, rawDict):
     # Builds new dictionary based on subject
     # Also creates a 'proper list' from what is string in JSON file via ast.literal_eval function
@@ -308,34 +231,17 @@ def selectDims(subject, exclDims, rawDict):
         # but needs to be converted into one with ast.literal_eval
         subjectString = rawEntry['subjectString']
         baseDimsString = rawEntry['baseDims']
-        objRaw = rawEntry['objClassString']
 
         subjectList = ast.literal_eval(subjectString)
         baseTuples = ast.literal_eval(baseDimsString)
-        rawObjClasses = ast.literal_eval(objRaw)
- 
+ #       baseDims = []
         if subject in subjectList and dimension not in exclDims:
+        
             outputDict[dimension] = rawEntry
             outputDict[dimension]['subjectList'] = subjectList
             outputDict[dimension]['baseTuples'] = baseTuples
-            outputDict[dimension]['rawObjClasses'] = rawObjClasses
-
-    # Then need to decode the 'raw' object class list, where there are instances of [keyVal!] pointers to dimensions
-    for keyVal, entryInfo in outputDict.items():
-        
-        # Initialize by setting expandedObjects to rawObjects
-        rawList = list(entryInfo['rawObjClasses'])
-        tempList = rawList[:]
-        for element in rawList:
-            if element[-1] == "!":
-                subsetLabel = element[:-1]
-                # print("subsetLabel: ", subsetLabel)
-                tempList.remove(element)
-                subsetList = list(outputDict[subsetLabel]['rawObjClasses'])
-                tempList.extend(subsetList)
-                # print("Object list: ", tempList)
-                
-        entryInfo['expObjClasses'] = tempList
+#            for baseTuple in baseDimTuples:
+#                baseDims.append(baseTuple[0])
             
     return outputDict
 
