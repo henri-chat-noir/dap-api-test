@@ -195,7 +195,7 @@
       "catID": 12,
       "subjectString": "[\"motion\", \"mechanics\"]",
       "primDimString": "[(\"LEN\", 2), (\"TIM\", -2), (\"MAS\", 1)]",
-      "objClassString": "(\"velocity!\",)"
+      "objClassString": "(\"velocity!\", \"power!\")"
    },
    {
       "dimension": "energy density",
@@ -213,7 +213,7 @@
       "catID": 12,
       "subjectString": "[\"motion\", \"mechanics\"]",
       "primDimString": "[(\"LEN\", 1), (\"TIM\", -2), (\"MAS\", 1)]",
-      "objClassString": "(\"force applicators\",)"
+      "objClassString": "(\"force applicator\",)"
    },
    {
       "dimension": "frequency",
@@ -357,7 +357,7 @@
       "catID": 11,
       "subjectString": "[\"mechanics\", \"chemistry\"]",
       "primDimString": "[(\"LEN\", -3), (\"MAS\", 1)]",
-      "objClassString": "(\"mass!\",)"
+      "objClassString": "(\"fluid\",)"
    },
    {
       "dimension": "mass fraction",
@@ -429,7 +429,7 @@
       "catID": 12,
       "subjectString": "[\"mechanics\"]",
       "primDimString": "[(\"LEN\", -1), (\"TIM\", -2), (\"MAS\", 1)]",
-      "objClassString": "(\"pressure vessels\",)"
+      "objClassString": "(\"pressure vessel\",)"
    },
    {
       "dimension": "radiance",
@@ -609,7 +609,7 @@
       "catID": 23,
       "subjectString": "[\"motion\", \"mechanics\", \"chemistry\", \"electronics\", \"thermodynamics\", \"optics\"]",
       "primDimString": "[(\"LEN\", 3)]",
-      "objClassString": "(\"fluid\",)"
+      "objClassString": "(\"fluid\", \"container\", \"body of water\")"
    },
    {
       "dimension": "volume flow",

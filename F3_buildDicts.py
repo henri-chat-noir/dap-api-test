@@ -68,7 +68,8 @@ def buildDimsDict(rawDict, objDict):
         dimObjects = []
         for objClass in dimObjClasses:
             if objClass in objClassList:
-                newDimObjects = objDict[objClass]['objList']
+                newDimObjects = objDict[objClass]
+           
             else:
                 if objClass[-1] == "#":
                     newDimObjects = objClass[:-1]
@@ -87,50 +88,87 @@ def buildDimsDict(rawDict, objDict):
 
 def buildProbDict(JSONfile, objDict):
 
-    # Start simply by creating a nested dictionary from raw JSON file
-    # Also add proper list and/or tuple objects from what would otherwise be simple JSON strings
-    
-    problemTypes = fGen.loadRaw(JSONfile)
+    # Start simply by creating a nested dictionary from raw JSON file, with probType as key
+    # Add proper dictionary structure with/for odPacks, as 'raw' (as not processed for ! and # entries)
+    problemRoster = fGen.loadRaw(JSONfile)
     probDict = {}
-    for entry in problemTypes:
+
+    for entry in problemRoster:
         keyVal = entry['probType']
-        probDict[keyVal] = entry
-        entry['probDimTuple'] = ast.literal_eval(entry['dimString'])
-        entry['probObjClassTuples'] = ast.literal_eval(entry['objClassString'])
+        probDict[keyVal] = {}
         
-    # Then need to decode the rawDims list, where there are instances of [keyVal!] pointers to other sets
+        probDict[keyVal]['probContext'] = entry['probContext']
+
+        odPacksRaw = ast.literal_eval(entry['odPacks'])
+        probDict[keyVal]['odPacksRaw'] = odPacksRaw
+        
+#       entry['probDimTuple'] = ast.literal_eval(entry['dimString'])
+#       entry['probObjClassTuples'] = ast.literal_eval(entry['objClassString'])
+        
+    # Then need to decode the odPacksRaw dictionary, where there are instances of "!" pointers to other keys
     # As well, separate decoding of those elements in objClasses that reference objects themselves
     # (as indicated by # suffix)
     for keyVal, entryInfo in probDict.items():
         
-        rawList = list(entryInfo['probDimTuple'])
-        tempList = rawList[:]
-        for element in rawList:
-            if element[-1] == "!":
-                subsetLabel = element[:-1]
-                tempList.remove(element)
-                subsetList = list(probDict[subsetLabel]['probDimTuple'])
-                tempList.extend(subsetList)
-                
-        entryInfo['probDims'] = tempList
+        allObjects = []         # useful to build list of all objects (separately from object-dimension packages)
+        allDims = []         # ditto to previous comment
+        odPacks = []
+        odPacksRaw = entryInfo['odPacksRaw']
+        for objRaw, dimRaw in odPacksRaw:
+            
+            # First iterate through objects list, filtering on # and looking up rest (which are object classes)
+            # in objDict, returning full list of all objects
+            rawList = objRaw
+            tempList = rawList[:]
+            for element in rawList:
+                if element[-1] == "#":
+                    tempList.remove(element)
+                    tempList.append(element[:-1])
+                else:
+                    tempList.remove(element)
+                    objList = objDict[element]
+                    tempList.extend(objList)
+            
+            objList = tempList[:]
+            allObjects.extend(objList)
+            
+            # Then iterate through dimensions list, filtering on ! pointers to other keys (for their dim lists)
+            # With new doPack structure, which are lists of 2tuples (themselves lists), it's presumed that ! calls can only be to
+            # a) odPack[0] (set as fixed constant); and b) that those references themselves do not contain ! elements
+            rawList = dimRaw
+            tempList = rawList[:]
+            for element in rawList:
+                if element[-1] == "!":
+                    pointerLabel = element[:-1]
+                    tempList.remove(element)
+                    newDims = probDict[pointerLabel]['odPacksRaw'][0][1]
+                    # subsetList = list(probDict[subsetLabel]['probDimTuple'])
+                    tempList.extend(newDims)
+            
+            dimList = tempList[:]
+            allDims.extend(dimList)
+            
+            odPackTuple = (objList, dimList)
+            odPacks.append(odPackTuple)
+
+            # Assign constructed tempList into entry odPack
+            # and accumulate objects in allObjects list for assignment outside of odPacksRaw loop
+            
+            # odPacks[keyVar]['dimList'] = tempList
+            
+        # End of looping through doPackRaw dictionary
+        entryInfo['odPacks'] = odPacks
+
+        # With advent of 'packs', opportunity for deliberate duplicates of dimensions and/or objects
+        # SO comments that set function de-duplicates, and then can convert that back to list
+        entryInfo['allObjects'] = list(set(allObjects))
+        entryInfo['allDims'] = list(set(allDims))
+
         # Create a new entry which is size of full dimSet
         # This is used in (later) processing to select the problem that has the smallest number of dimensions
         # that still 'fits' the 'dealt' parameters.
-        probDict[keyVal]['dimSetSize'] = len(tempList)
-    
-        rawList = entryInfo['probObjClassTuples']
-        tempList = list(rawList[:])
-        for element in rawList:
-            if element[-1] == "#":
-                tempList.remove(element)
-                tempList.append(element[:-1])
-            else:
-                tempList.remove(element)
-                objectList = list(objDict[element]['objList'])
-                tempList.extend(objectList)
-                
-        entryInfo['probObjects'] = tempList
-        
+        entryInfo['dimSetSize'] = len(allDims)
+
     return probDict
 
 def buildObjDict(JSONfile):
@@ -141,8 +179,9 @@ def buildObjDict(JSONfile):
     objects = fGen.loadRaw(JSONfile)
     objDict = {}
     for entry in objects:
-        keyVar = entry['objClass']
-        objDict[keyVar] = entry
-        entry['objList'] = ast.literal_eval(entry['objects'])
+        keyVal = entry['objClass']
+        objTuple = ast.literal_eval(entry['objects'])
+        objList = list(objTuple)
+        objDict[keyVal] = objList
         
     return objDict

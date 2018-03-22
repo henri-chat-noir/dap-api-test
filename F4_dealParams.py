@@ -1,7 +1,17 @@
 import F0_general as fGen
 import random as rand
 
-def dealParameters(answerDim, difficulty, dimDict):
+def dealAnswer(dimDict):
+
+    dims = list(dimDict.keys())
+    maxIndex = len(dims) - 1
+    dimIndex = rand.randint(0, maxIndex)
+    answerDim = dims[dimIndex]
+    
+    return answerDim
+
+
+def dealArguments(answerDim, difficulty, dimDict):
     
     # Initialize the residual tuples list with definition of answer; development list of strings for resid Dims
     residTuples = dimDict[answerDim]['primTuples']
@@ -126,8 +136,8 @@ def randomDim(residualPrimTuples, paramDims, dimDict):
 
     keyList = list(nextDims.keys())
     maxIndex = len(keyList) - 1
-    nextIndex = rand.randint(0, maxIndex)
-    dimension = keyList[nextIndex]
+    dimIndex = rand.randint(0, maxIndex)
+    dimension = keyList[dimIndex]
     
     return dimension
 

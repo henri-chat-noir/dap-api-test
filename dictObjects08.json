@@ -1,11 +1,11 @@
 [
    {
       "objClass": "1D object",
-      "objects": "\"string\", \"piston\""
+      "objects": "\"string\", \"cable\", \"rope\", \"tape\""
    },
    {
       "objClass": "activity",
-      "objects": "\"filling\", \"driving\""
+      "objects": "\"filling\", \"driving\", \"operating\""
    },
    {
       "objClass": "animal",
@@ -24,7 +24,7 @@
       "objects": "\"light bulb\", \"heater\""
    },
    {
-      "objClass": "force applicators",
+      "objClass": "force applicator",
       "objects": "\"lever\", \"jack handle\", \"piston\", \"hydraulic ram\""
    },
    {
@@ -48,7 +48,7 @@
       "objects": "\"bullet\", \"piston\""
    },
    {
-      "objClass": "pressure vessels",
+      "objClass": "pressure vessel",
       "objects": "\"scuba tank\", \"piston\", \"cylinder\""
    },
    {
