@@ -24,7 +24,7 @@ def get_question():
 
     else:
         print("Hello World")
-        subject = request.args.get('sector')
+        subject = request.args.get('subject')
         sou = request.args.get('sou')
         difficulty = request.args.get('difficulty')
 
