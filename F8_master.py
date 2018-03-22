@@ -15,6 +15,7 @@ import F7_buildText as fText
 
 def problemGen(subject, sou, difficulty):
 
+"""
     if sou == 'SI':
     elif sou == 'English':
         pass
@@ -22,7 +23,8 @@ def problemGen(subject, sou, difficulty):
         pass
     else:
         pass
-
+"""
+    
     rawUnitsDict = fGen.loadRaw('UnitsDict13.json')
 
     # Create list, metricIDs based on passed system of units
