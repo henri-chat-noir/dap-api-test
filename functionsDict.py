@@ -294,7 +294,9 @@ def buildIDs(SOUset, rawDict):
 
 def loadRaw(fileName):
 
-    dictPath = "/Users/Riston/qrmockup/dap/dap-api-test/"
+#/Users/Riston/qrmockup/dap/dap-api-test/
+# C:\\0_Python\dap-api-test\\
+    dictPath = "C:\\0_Python\dap-api-test\\"
 
     with open(dictPath + fileName, 'r') as file:      # Open connection to file, read only
         rawDict = json.load(file)

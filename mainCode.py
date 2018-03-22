@@ -1,6 +1,9 @@
 import os
 
-os.chdir("/Users/Riston/qrmockup/dap/dap-api-test/")
+
+#original C:\\0_Python\dap-api-test\\
+#local /Users/Riston/qrmockup/dap/dap-api-test/
+os.chdir("C:\\0_Python\dap-api-test\\")
 print(os.getcwd())
 import functionsDict as fDict
 
