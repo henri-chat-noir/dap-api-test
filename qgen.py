@@ -6,6 +6,7 @@ import F8_master as fMaster
 # import datetime
 import json
 
+
 app = Flask(__name__)
 CORS(app)
 
@@ -28,13 +29,13 @@ def get_question():
         difficulty = request.args.get('difficulty')
 
     echoback = fMaster.problemGen(subject, sou, difficulty)
-    
+
     returnString = json.dumps(echoback)
     if localRun:
         print("echoback JSON: ", returnString)
 
     return returnString
-    
+
 # get_question()
 if __name__ == '__main__':
     app.run(debug = True, use_reloader=True)
