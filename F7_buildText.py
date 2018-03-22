@@ -45,3 +45,24 @@ def dimPrep(dim):
         preposition = "of"
         
     return preposition
+
+def buildEchoback(subject, sou, difficulty, title, context, queryText, assumptionText):
+
+    answerVal = 42
+    answerUnits = "kg-m/s2"
+    instruction = "Please enter in Light-years per hour..."
+
+    echoback = {
+        'subject' : "A problem related to " + subject,
+        'sou' : sou,
+        'difficulty' : difficulty,
+        'title' : title + " (" + sou + " units)",
+        'context' : context,
+        'query' : queryText,
+        'assumptions' : assumptionText,
+        'answerVal': answerVal,
+        'aUnits' : answerUnits,
+        'instruction' : instruction
+    }
+
+    return echoback
