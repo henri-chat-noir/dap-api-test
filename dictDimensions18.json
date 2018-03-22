@@ -213,7 +213,7 @@
       "catID": 12,
       "subjectString": "[\"motion\", \"mechanics\"]",
       "primDimString": "[(\"LEN\", 1), (\"TIM\", -2), (\"MAS\", 1)]",
-      "objClassString": "(\"force applicator\",)"
+      "objClassString": "(\"force applicator\", \"car engine#\")"
    },
    {
       "dimension": "frequency",

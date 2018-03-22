@@ -6,9 +6,21 @@
       "objClassString": "\"\""
    },
    {
+      "probType": "static properties - solid",
+      "probContext": "a [object]",
+      "odPacks": "[]",
+      "objClassString": "\"\""
+   },
+   {
+      "probType": "time and distance",
+      "probContext": "a [vehicle] traveling on a [route]",
+      "odPacks": "[([\"route\"], [\"length\"]),\n([\"vehicle\"], [\"velocity\"]),\n([\"driving#\"], [\"time\"])]",
+      "objClassString": "\"\""
+   },
+   {
       "probType": "acceleration",
       "probContext": "accelerating a stationary [vehicle]",
-      "odPacks": "[([\"route\"], [\"length\"]),\n([\"vehicle\"], [\"mass\", \"acceleration\", \"velocity\"]),\n([\"car engine#\", \"motor#\"], [\"force\", \"power\", \"energy\"]),\n([\"driving#\"], [\"time\"])]",
+      "odPacks": "[([\"route\"], [\"length\"]),\n([\"vehicle\"], [\"mass\", \"acceleration\", \"velocity\"]),\n([\"car engine#\", \"jet engine#\", \"motor#\"], [\"force\", \"power\", \"energy\"]),\n([\"driving#\"], [\"time\"])]",
       "objClassString": "\"\""
    },
    {
@@ -24,7 +36,19 @@
       "objClassString": "\"\""
    },
    {
-      "probType": "filling",
+      "probType": "filling - simple",
+      "probContext": 0,
+      "odPacks": "[([\"piston#\"], [\"area\", \"length\", \"velocity\"]),\n([\"fluid\"], [\"mass density\", \"mass\", \"volume\", \"specific volume\", \"volume flow\"]),\n([\"filling#\"], [\"time\"])]",
+      "objClassString": "\"\""
+   },
+   {
+      "probType": "fluid cannon",
+      "probContext": "a cannon firing a quantity of [fluid]",
+      "odPacks": "[([\"piston#\"], [\"acceleration\", \"pressure\", \"force\", \"area\", \"length\"]),\n([\"fluid\"], [\"mass density\", \"mass\", \"volume\", \"specific volume\", \"volume flow\"]),\n([\"firing#\"], [\"time\"]),\n([\"pump#\"], [\"energy\", \"power\"])]",
+      "objClassString": "\"\""
+   },
+   {
+      "probType": "filling - power",
       "probContext": "filling a [body of water, container] with [fluid]",
       "odPacks": "[([\"piston#\"], [\"pressure\", \"force\", \"area\", \"length\", \"velocity\"]),\n([\"fluid\"], [\"mass density\", \"mass\", \"volume\", \"specific volume\", \"volume flow\"]),\n([\"filling#\"], [\"time\"]),\n([\"pump#\"], [\"energy\", \"power\"])]",
       "objClassString": "\"If piston in picture, then assume, force acting on it (or it's velocity) is constant through duration of filling.\""

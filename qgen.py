@@ -2,7 +2,8 @@
 from flask import Flask, request
 from flask_cors import CORS, cross_origin
 
-import datetime
+import F8_master as fMaster
+# import datetime
 import json
 
 
@@ -14,6 +15,7 @@ CORS(app)
 
 def get_question():
 
+<<<<<<< HEAD
     # sector, sou, and difficulty are search string arguments set-up for API
     sector = request.args.get('sector')
     sou = request.args.get('sou')
@@ -47,5 +49,29 @@ def get_question():
     return_string = json.dumps(echoback)
     return return_string
 
+=======
+    localRun = False
+    # subject, sou, and difficulty are search string arguments set-up for API
+    if localRun:
+        subject = 'mechanics'
+        sou = 'SI'
+        difficulty = 'hard'
+
+    else:
+        print("Hello World")
+        subject = request.args.get('subject')
+        sou = request.args.get('sou')
+        difficulty = request.args.get('difficulty')
+
+    echoback = fMaster.problemGen(subject, sou, difficulty)
+    
+    returnString = json.dumps(echoback)
+    if localRun:
+        print("echoback JSON: ", returnString)
+
+    return returnString
+    
+# get_question()
+>>>>>>> 9685c9280e7a7c34dee11f00bfd691bbccdf14f5
 if __name__ == '__main__':
     app.run(debug = True, use_reloader=True)

@@ -5,7 +5,7 @@
    },
    {
       "objClass": "activity",
-      "objects": "\"filling\", \"driving\", \"operating\""
+      "objects": "\"filling\", \"driving\", \"operating\", \"firing\""
    },
    {
       "objClass": "animal",
@@ -25,7 +25,7 @@
    },
    {
       "objClass": "force applicator",
-      "objects": "\"lever\", \"jack handle\", \"piston\", \"hydraulic ram\""
+      "objects": "\"lever\", \"jack handle\", \"piston\", \"hydraulic ram\", \"spring\""
    },
    {
       "objClass": "floor covering",
