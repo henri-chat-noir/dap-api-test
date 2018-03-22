@@ -7,19 +7,19 @@ def listProcess(targetDict, exclUIDs):
 
     outputDict = targetDict
     for entry in outputDict.items():
-        
+
         unitName = entry[0]
         unitInfo = entry[1]
         uID = unitInfo['Uid']
-        
-        pathList = []      
+
+        pathList = []
         actionList = True
-        
-        # If uID excluded, simply move on to next entry in dictionary        
+
+        # If uID excluded, simply move on to next entry in dictionary
         if uID in exclUIDs:
             breakStop = True
             continue
-    
+
         # print("Now working on . . .:", uID, ". ", unitName)
         # Bucket used where expectation is mutable; defList variable used as non-mutable
         # Initially assigning value defList to tempList ahead of WHILE loop important, as otherwise SIBU-only defLists
@@ -28,25 +28,25 @@ def listProcess(targetDict, exclUIDs):
         tempList = defList
 
         # Attack defList until all arguments have SIBU units returned into baseList
-        actionList = not argsDone(defList)    
-    
+        actionList = not argsDone(defList)
+
         while actionList:
             # baseStep defList and assign to tempList for iteration on this loop
-        
+
             baseReturn = baseStep(defList, pathList, uID, unitName, targetDict)
             tempList = baseReturn[0]
             baseError = baseReturn[1]
-        
+
             # Partly to prevent endless looping on mal-formed elements,
-            # but also just to call it a day if generating errors      
+            # but also just to call it a day if generating errors
             if baseError == "OK":
-                actionList = not argsDone(tempList)    
+                actionList = not argsDone(tempList)
             else:
                 actionList = False
 
         # When tempList fully processed place value in as new key into dictionary
         outputDict[unitName]['baseList'] = tempList
-        
+
         # Then create new key that 'combines like terms' within baseList
         tempList = simplify(tempList)
         outputDict[unitName]['simpList'] = tempList
@@ -71,14 +71,14 @@ def tagBase(coeff, symList):
     # If list has > 1 tuple, then not going to be a base unit anyway
     symbol = symList[0][0]
     degree = symList[0][1]
-    
+
     # Conditions for base unit fairly self explanatory from 4 required conditions
     if len(symList) == 1 and coeff == 1 and isBase(symbol) and degree == 1:
         tagBase = True
     else:
         tagBase = False
-        
-    return tagBase        
+
+    return tagBase
 
 def processCoeff(argList):
     # Function that identifies each numeric tuple in argList, calculates float from values
@@ -107,24 +107,24 @@ def simplify(argList):
     # Function that cycles through defList and combines like terms
 
     unitList = []
-    
+
     for unit, degree in argList:
         if len(unitList) == 0:
             unitList = [unit]
-        
+
         else:
             if unit not in unitList:
-                unitList.append(unit)  
-    
+                unitList.append(unit)
+
     simplify = []
     for uniqueUnit in unitList:
-        
+
         combDegree = 0
         for unit, degree in argList:
 
             if unit == uniqueUnit:
                 combDegree = combDegree + degree
-            
+
         simplify.append( (uniqueUnit, combDegree) )
 
     return simplify
@@ -143,23 +143,23 @@ def baseStep(defList, pathList, unitID, unitName, unitsDict):
 
     new_defList = defList
     for argTuple in defList:
-        
+
         # Presumed defList is structured with 2tuples: (symbol, degree)
         if type(argTuple) != tuple:
             errLabel = "Arg in defList not a 2tuple"
             breakStop = True
-            
+
         argSymbol = argTuple[0]
         argDegree = argTuple[1]
-                
+
         if not symDone(argSymbol):
-            
+
             # Start by clearing the offending argument out of argument list and assigning to new variable
             new_defList.remove(argTuple)
-            
+
             # This is key bit.  Replacement argument list is returned by looking through dictionary list to find
             # entry where its 'symbol' matches the symbol from argTuple
-            
+
             matchFound = False
             for entry in unitsDict.items():
                 # Loop through dictionary to identify the 'root' entry with a symbol (defined for the unit)
@@ -171,35 +171,35 @@ def baseStep(defList, pathList, unitID, unitName, unitsDict):
                 if entry[1]['symbol'] == argSymbol and not (unitName == matchName):
                     # When find a match, assign its defList to a replacement def list (as to structure)
                     # i.e. this defList needs to be 'adjusted' consistent with the degree of the original argument
-                    
+
                     matchFound = True
                     rep_defList = entry[1]['defList']
 
                     # Also add the unit ID for the matched unit onto pathList
                     pathList.append(entry[1]['Uid'])
                     break
-                     
+
             if matchFound:
                 # This for loop builds a set of tuples consistent with rep_defList, but where degrees multiplied by degree
                 # from the argument that is being replaced (and already cleared from defList
 
                 for repArg in rep_defList:
                     repSymbol = repArg[0]
-                    repDegree = argDegree * repArg[1]   
+                    repDegree = argDegree * repArg[1]
                     repTuple = (repSymbol, repDegree)
                     new_defList.append(repTuple)
-            
+
                     # Revised defList simply returned with newArgs added
                     # (noting non-SIBU 2tuple argument was 'cleared out' earlier in function)
 
             else: # If no match found
                 # Best course is to simply replace argTuple back into string (order will be changed, though) and move on/out
                 new_defList.append(argTuple)
-                errLabel = "No entry match found for an arg\'s symbol in dictionary"       
-                breakStop = True         
+                errLabel = "No entry match found for an arg\'s symbol in dictionary"
+                breakStop = True
                 break
-            
-            
+
+
             if new_defList is None:
                 errLabel = "Replacement defList is NoneType"
                 breakStop = True
@@ -211,12 +211,12 @@ def argsDone(unitList):
     # 2tuple presumed to have structure: symbol, degree
 
     argsDone = True
-    
+
     for unitTuple in unitList:
 
         if len(unitTuple) != 2:
             breakStop = True
-  
+
         symbol = unitTuple[0]
         degree = unitTuple[1]
 
@@ -228,16 +228,16 @@ def argsDone(unitList):
 
 def symDone(symbol):
     # Function simply test a single unit letter to see if in SIBU list, ignoring integers or floats
-    
+
     stopSym = {'#'}
     # "#", which is symbol being tested for 'count of number of units' isn't designed as SI, but just to say buying 2 cars, instead of 3
     # The same (as above) will hold for currency symbols when we get to that point
-    
+
     if isNumber(symbol) or isBase(symbol) or symbol in stopSym:
         symDone = True
     else:
         symDone = False
-        
+
     return symDone
 
 def isNumber(symbol):
@@ -269,10 +269,10 @@ def selectSubDict(selectionList, rawDict):
 
         unitID = rawEntry['Uid']
         if unitID in selectionList:
-        
+
             outputDict[unitID] = rawEntry
             defString = rawEntry['defString']
-        
+
             # JSON structure of defString formatted to 'look' like Python list, but needs to be converted into one
             # and added into dictionary under new 'defList' key
             defList = ast.literal_eval(defString)
@@ -281,7 +281,7 @@ def selectSubDict(selectionList, rawDict):
     return outputDict
 
 def buildIDs(SOUset, rawDict):
-    
+
     IDlist = []
     for unitEntry in rawDict:
 
@@ -289,17 +289,17 @@ def buildIDs(SOUset, rawDict):
             IDlist.append(unitEntry['Uid'])
 
     # Extract the unit IDs for all SI and metric dictionary entries in the raw file
-    
+
     return IDlist
 
 def loadRaw(fileName):
-    
-    dictPath = "C:\\0_Python\dap-api-test\\"
-    
+
+    dictPath = "/Users/Riston/qrmockup/dap/dap-api-test/"
+
     with open(dictPath + fileName, 'r') as file:      # Open connection to file, read only
         rawDict = json.load(file)
         # rawDict has the structure as list of dictionaries, i.e. each entry is un-keyed and only a member of a list
-    
+
     return rawDict
 
 def printDict(targetDict, exclUIDs):
@@ -307,10 +307,10 @@ def printDict(targetDict, exclUIDs):
     # Provides a 'comment' string next to listing of PathIDs with labels of each unit in path (if any)
 
     for entry in targetDict.items():
-        
+
         unitID = entry[0]
         unitInfo = entry[1]
-    
+
         unitName = unitInfo['name']
         if unitID not in exclUIDs:
 
@@ -325,7 +325,7 @@ def printDict(targetDict, exclUIDs):
                 print(pathDict.items())
 
             for pathEntry in pathDict.values():
-                
+
                 var1 = pathEntry['Uid']
                 var2 = pathEntry['name']
                 var3 = pathEntry['defList']
@@ -334,9 +334,9 @@ def printDict(targetDict, exclUIDs):
                     pathLabels = newLabel
                 else:
                     pathLabels = pathLabels + ", " + newLabel
-            
+
             del(pathDict)
-            
+
             print("Output:", unitID, "-", unitName, "defString = ", unitInfo['defString'])
             print("defList: ", unitInfo['defList'])
             print("baseList: ", unitInfo['baseList'])
@@ -350,7 +350,7 @@ def printDict(targetDict, exclUIDs):
 def printBaseUnits(targetDict):
 
     for entry in targetDict.items():
-        
+
         unitID = entry[0]
         unitInfo = entry[1]
         unitName = unitInfo['name']
@@ -364,5 +364,5 @@ def printBaseUnits(targetDict):
             print("symList: ", unitInfo['symList'])
             print("pathList: ", unitInfo['pathList'])
             print("------------")
-    
+
     return
