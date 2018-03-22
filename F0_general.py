@@ -7,6 +7,8 @@ outputJSON
 
 import json
 
+import os
+
 def combineLike(targList):
     # Function that cycles through list of string, degree tuples and combines like terms
     # Presumes list is formed of 2tuples in format (string, degree), where return list 'collapses'
@@ -39,7 +41,7 @@ def combineLike(targList):
 
 def loadRaw(fileName):
     
-    dictPath = "C:\\0_Python\dap-api-test\\"
+    dictPath = os.getcwd()
     with open(dictPath + fileName, 'r') as file:      # Open connection to file, read only
         rawDict = json.load(file)
         # rawDict has the structure as list of dictionaries, i.e. each entry is un-keyed and only a member of a list
@@ -50,7 +52,7 @@ def loadRaw(fileName):
 def outputJson(targetDict, outputName):
     # Write fileName out to rawDict has the structure as list of dictionaries, i.e. each entry is un-keyed and only a member of a list
 
-    outputPath = "C:\\0_Python\dap-api-test\\"
+    outputPath = os.getcwd()
     with open(outputPath + outputName, 'w') as file:      # Open connection to file, write only
         json.dump(targetDict, file)
             
