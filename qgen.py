@@ -24,12 +24,9 @@ def get_question():
 
     else:
         print("Hello World")
-        subject = 'mechanics'
-        sou = 'SI'
-        difficulty = 'hard'
-        #subject = request.args.get('sector')
-        #sou = request.args.get('sou')
-        #difficulty = request.args.get('difficulty')
+        subject = request.args.get('sector')
+        sou = request.args.get('sou')
+        difficulty = request.args.get('difficulty')
 
     echoback = fMaster.problemGen(subject, sou, difficulty)
 
