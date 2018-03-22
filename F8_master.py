@@ -15,25 +15,19 @@ import F7_buildText as fText
 
 def problemGen(subject, sou, difficulty):
 
-    if sou == 'SI':
-        souSet = {'SI', 'non-SI metric', 'universal'}
-    elif sou == 'English':
-        pass
-    elif sou == 'Imperial':
-        pass
-    else:
-        pass
 
     rawUnitsDict = fGen.loadRaw('UnitsDict13.json')
 
     # Create list, metricIDs based on passed system of units
+    souSet = {'SI', 'non-SI metric', 'universal'}
     metricSOUs = {'SI', 'non-SI metric', 'universal'}
     unitIDlist = fUnits.buildIDlist(souSet, rawUnitsDict)
-
     # Build 'sub dictionary' (from raw load) based on unitIDlist
     metricDict = fUnits.extractSubDict(unitIDlist, rawUnitsDict)
     metricOmits = {}
     metricDict = fUnits.unitProcess(metricDict, metricOmits)
+
+
 
     # Need to use objDict in order to resolve the object class indicators that exist in either or both
     # dimensions' and 'problems' dictionaries
