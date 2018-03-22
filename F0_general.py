@@ -42,7 +42,7 @@ def combineLike(targList):
 def loadRaw(fileName):
     
     dictPath = os.getcwd()
-    with open(dictPath + fileName, 'r') as file:      # Open connection to file, read only
+    with open(dictPath + "/"+fileName, 'r') as file:      # Open connection to file, read only
         rawDict = json.load(file)
         # rawDict has the structure as list of dictionaries, i.e. each entry is un-keyed and only a member of a list
     
