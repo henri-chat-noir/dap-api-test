@@ -3,17 +3,33 @@ Prototype main processing, front to back at this point, with no separation of 's
 However, with that said, nascent efforts to start to organize into what needs to be calculated on each API call
 from those elements that are static pre-processing of raw JSON files (and could then be exported and read in once)
 
+<<<<<<< HEAD
 
 #original C:\\0_Python\dap-api-test\\
 #local /Users/Riston/qrmockup/dap/dap-api-test/
 os.chdir("C:\\0_Python\dap-api-test\\")
 print(os.getcwd())
 import functionsDict as fDict
+=======
+"""
+import F0_general as fGen
+import F1_utility as fUtil
+import F2_unitsDict as fUnits
+import F3_buildDicts as fBuild
+import F4_dealParams as fParam
+import F5_findProb as fProb
+import F6_pickObjects as fObj
+import F7_buildText as fText
+>>>>>>> upstream/master
 
 rawUnitsDict = fGen.loadRaw('UnitsDict13.json')
 
 # Create list, metricIDs, of SI and other metric unit labels
+<<<<<<< HEAD
 # Require then to
+=======
+# Require then to 
+>>>>>>> upstream/master
 metricSOUs = {'SI', 'non-SI metric', 'universal'}
 metricIDs = fUnits.buildIDlist(metricSOUs, rawUnitsDict)
 
@@ -53,10 +69,17 @@ while not goodList and tryCount < maxTry:
 
     # Going to use difficulty variable as a threshold on minimum number of arguments before routine clears remaining base dimensions
     paramList = fParam.dealArguments(answerDim, difficulty, mechDimDict)
+<<<<<<< HEAD
 
     if len(paramList) != 0 and len(paramList) <= maxArgs:
         goodList = True
 
+=======
+    
+    if len(paramList) != 0 and len(paramList) <= maxArgs:
+        goodList = True
+    
+>>>>>>> upstream/master
 argList = paramList[1:]
 
 print(argList)
@@ -86,6 +109,7 @@ queryText = fText.buildQuery(ansTuple)
 assumptionText = fText.buildAss(paramObjList[1:])
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 fDict.printDict(metricDict, metricOmits)
 # fDict.printBaseUnits(metricDict)
 =======
@@ -94,3 +118,9 @@ print("Query: ", queryText)
 print("\n")
 print(assumptionText)
 >>>>>>> b9e45c323cba9fce591bb7603c97b9c76b088286
+=======
+print("Problem context: ", context)
+print("Query: ", queryText)
+print("\n")
+print(assumptionText)
+>>>>>>> upstream/master

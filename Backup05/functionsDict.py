@@ -15,7 +15,10 @@ def listProcess(targetDict, exclUIDs):
 
 =======
         
+<<<<<<< HEAD:Backup05/functionsDict.py
 >>>>>>> b9e45c323cba9fce591bb7603c97b9c76b088286:Backup05/functionsDict.py
+=======
+>>>>>>> upstream/master:Backup05/functionsDict.py
         pathList = []
         actionList = True
 
@@ -333,6 +336,7 @@ def printDict(targetDict, exclUIDs):
             if len(pathList) != 0:
                 breakStop = True
 
+<<<<<<< HEAD:Backup05/functionsDict.py
 <<<<<<< HEAD:functionsDict.py
             pathLabels = ''
 
@@ -355,6 +359,8 @@ def printDict(targetDict, exclUIDs):
 
 =======
 >>>>>>> b9e45c323cba9fce591bb7603c97b9c76b088286:Backup05/functionsDict.py
+=======
+>>>>>>> upstream/master:Backup05/functionsDict.py
             print("Output:", unitID, "-", unitName, "defString = ", unitInfo['defString'])
             print("defList: ", unitInfo['defList'])
             print("baseList: ", unitInfo['baseList'])
