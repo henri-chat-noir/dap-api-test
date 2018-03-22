@@ -9,13 +9,13 @@ def  buildContext(probType, paramObjList, probDict):
 
     probContextTemplate = probDict[probType]['probContext']
 
-    probContext = probContextTemplate
+    probContext = preamble + " " + probContextTemplate
 
     return probContext
 
 def buildQuery(ansTuple):
 
-    queryText = "What is the " + ansTuple[0] + " of " + ansTuple[2]
+    queryText = "What is the " + ansTuple[0] + " " + dimPrep(ansTuple[0]) + " " + ansTuple[2] + "?"
 
     return queryText
 
@@ -27,7 +27,21 @@ def buildAss(argTuple):
         count = count + 1
         value = "[value]"
         units = "[units]"
-        coreText = "A " + dim + " [of/on/for] " + obj + " = " + value + " " + units
+        coreText = dim[0].upper() + dim[1:] + " " + dimPrep(dim) + " " + obj + " = " + value + " " + units
         assText = assText + str(count) + ".  " + coreText + "\n"
 
     return assText
+
+def dimPrep(dim):
+    # Sets preposition appled for objects based on dimension, e.g. "energy output of" [object], rather than simply "of"
+
+    if dim in ['energy', 'power']:
+        preposition = "output of"
+
+    elif dim in ['force', 'pressure']:
+        preposition = "applied by"
+
+    else:
+        preposition = "of"
+        
+    return preposition

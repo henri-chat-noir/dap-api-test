@@ -13,8 +13,8 @@ CORS(app)
 
 def get_question():
 
-    # sector, sou, and difficulty are search string arguments set-up for API
-    sector = request.args.get('sector')
+    # subject, sou, and difficulty are search string arguments set-up for API
+    subject = request.args.get('subject')
     sou = request.args.get('sou')
     difficulty = request.args.get('difficulty')
 

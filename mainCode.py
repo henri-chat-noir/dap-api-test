@@ -27,11 +27,11 @@ metricDict = fUnits.unitProcess(metricDict, metricOmits)
 
 # Need to use objDict in order to resolve the object class indicators that exist in either or both
 # dimensions' and 'problems' dictionaries
-objDict = fBuild.buildObjDict('dictObjects08.json')
-probDict = fBuild.buildProbDict('dictProblems17.json', objDict)
+objDict = fBuild.buildObjDict('dictObjects09.json')
+probDict = fBuild.buildProbDict('dictProblems18.json', objDict)
 
 # Process raw JSON into fully built-out dimensions dictionary
-rawDims = fGen.loadRaw("dictDimensions17.json")
+rawDims = fGen.loadRaw("dictDimensions18.json")
 dimsDict = fBuild.buildDimsDict(rawDims, objDict)
 
 # Build appropriate dimensions dictionary (from raw JSON)
@@ -43,7 +43,7 @@ mechDimDict = fParam.selectDims(subject, exclDims, dimsDict)
 answerDim = fParam.dealAnswer(mechDimDict)
 print(answerDim, "can be calculated with this combination of arguments: ")
 
-difficulty = 2
+difficulty = 3
 
 tryCount = 0
 maxTry = 50
@@ -63,7 +63,6 @@ while not goodList and tryCount < maxTry:
 argList = paramList[1:]
 
 print(argList)
-print("\n")
 print("Number of tries: ", tryCount)
 
 # print(objDict.items())
