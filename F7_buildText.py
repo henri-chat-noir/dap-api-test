@@ -55,7 +55,7 @@ def buildEchoback(subject, sou, difficulty, title, context, queryText, assumptio
     echoback = {
         'subject' : "A problem related to: " + subject + ".",
         'sou' : "The system of units are: "+sou +".",
-        'difficulty' : "the difficulty level is: " + str(difficulty) + ".",
+        'difficulty' : "The difficulty level is: " + str(difficulty) + ".",
         'title' : title + " (" + sou + " units)",
         'context' : context,
         'query' : queryText,
