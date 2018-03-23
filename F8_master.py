@@ -13,6 +13,8 @@ import F5_findProb as fProb
 import F6_pickObjects as fObj
 import F7_buildText as fText
 
+import chad
+
 
 def problemGen(subject, sou, diffString):
 
@@ -30,7 +32,7 @@ def problemGen(subject, sou, diffString):
     # Need to use objDict in order to resolve the object class indicators that exist in either or both
     # dimensions' and 'problems' dictionaries
     objDict = fBuild.buildObjDict('dictObjects12.json')
-    probDict = fBuild.buildProbDict('dictProblems20.json', objDict)
+    probDict = fBuild.buildProbDict('dictProblems22.json', objDict)
 
     # Process raw JSON into fully built-out dimensions dictionary
     rawDims = fGen.loadRaw("dictDimensions18.json")
@@ -81,12 +83,16 @@ def problemGen(subject, sou, diffString):
     print("----------")
     print("\n")
 
+    title = fText.buildTitle(probType, paramObjList, probDict)
     context = fText.buildContext(probType, paramObjList, probDict)
     
     ansTuple = paramObjList[0]
     queryText = fText.buildQuery(ansTuple)
     assList = fText.buildAss(paramObjList[1:])
-
+  
+    print("Title: ", title)
+    print("===============")
+    
     print("Problem context: ", context)
     print("\n")
     print("Query: ", queryText)
@@ -94,10 +100,9 @@ def problemGen(subject, sou, diffString):
     for line in assList:
         print(line)
 
-    title = "Dummy title"
-    echoback = fText.buildEchoback(subject, sou, difficulty, title, context, queryText, assList)
+    echoback = chad.buildEchoback(subject, sou, diffString, title, context, queryText, assList)
     print("\n")
-    # print("ECHOBACK:")
-    # print(echoback)
+    print("ECHOBACK:")
+    print(echoback)
     
     return echoback
