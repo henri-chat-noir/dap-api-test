@@ -6,7 +6,6 @@ import F8_master as fMaster
 # import datetime
 import json
 
-
 app = Flask(__name__)
 CORS(app)
 
@@ -14,28 +13,24 @@ CORS(app)
 @app.route('/getq')
 
 def get_question():
+    
+    apiRun = True
 
-    localRun = False
     # subject, sou, and difficulty are search string arguments set-up for API
-    if localRun:
-        subject = 'mechanics'
-        sou = 'SI'
-        difficulty = 'hard'
-
-    else:
-        print("Hello World")
+    if apiRun:
         subject = request.args.get('subject')
         sou = request.args.get('sou')
-        difficulty = request.args.get('difficulty')
+        diffString = request.args.get('difficulty')
+    
+    else:
+        subject = 'mechanics'
+        sou = 'SI'
+        diffString = 'Challenging'
 
-    echoback = fMaster.problemGen(subject, sou, difficulty)
-
+    echoback = fMaster.problemGen(subject, sou, diffString)
     returnString = json.dumps(echoback)
-    if localRun:
-        print("echoback JSON: ", returnString)
-
+    
     return returnString
 
-# get_question()
 if __name__ == '__main__':
     app.run(debug = True, use_reloader=True)
