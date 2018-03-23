@@ -9,11 +9,13 @@ def  buildContext(probType, paramObjList, probDict):
     
     preamble = "You need to run some calculations related to"
     conTemplate = probDict[probType]['probContext']
+    print("Template: ", conTemplate)
     context = preamble + " " + swapObjects(conTemplate, paramObjList)
 
     return context
 
 def swapObjects(tempString, paramObjList):
+
 
     # Build simple list of objects connected with problem from paramObjList tuple
     # Note effort to create unique list may not strictly be required for following operations, but good practice
@@ -44,7 +46,7 @@ def swapObjects(tempString, paramObjList):
         
         parseString = bElement[1:-1].split(", ")
         for parseObjClass in parseString:
-            print("Object class: ", objClass)
+            #print("Object class: ", objClass)
             for probObjClass, probObj in probClassObjList:
                 if parseObjClass == probObjClass:
                     test = bElement in outputString
@@ -102,11 +104,18 @@ def buildEchoback(subject, sou, difficulty, title, context, queryText, assumptio
     answerVal = 42
     answerUnits = "kg-m/s2"
     instruction = "Please enter in Light-years per hour..."
+    difString = {
+        1 : "Simple",
+        2 : "Fairly Easy",
+        3 : "Challenging",
+        4 : "Very Hard",
+        5 : "Brutal"
+    }
 
     echoback = {
-        'subject' : "A problem related to " + subject,
-        'sou' : sou,
-        'difficulty' : difficulty,
+        'subject' : "A problem related to: " + subject + ".",
+        'sou' : "The system of units are: "+sou +".",
+        'difficulty' : "The difficulty level is: " + difString[difficulty] + ".",
         'title' : title + " (" + sou + " units)",
         'context' : context,
         'query' : queryText,
