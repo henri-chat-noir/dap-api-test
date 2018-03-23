@@ -13,13 +13,8 @@ import F5_findProb as fProb
 import F6_pickObjects as fObj
 import F7_buildText as fText
 
-<<<<<<< HEAD
 
-def problemGen(subject, sou, difficulty):
-
-=======
 def problemGen(subject, sou, diffString):
->>>>>>> upstream/master
 
     rawUnitsDict = fGen.loadRaw('UnitsDict13.json')
 
@@ -51,13 +46,9 @@ def problemGen(subject, sou, diffString):
     print(answerDim, "can be calculated with this combination of arguments: ")
 
     # Need to convert whatever is set by web page into integer
-<<<<<<< HEAD
-    
-    
-    difficulty = 3
-=======
+
     difficulty = ["Simple", "Fairly easy", "Challenging", "Very hard", "Brutal"].index(diffString)
->>>>>>> upstream/master
+
 
     tryCount = 0
     maxTry = 50
