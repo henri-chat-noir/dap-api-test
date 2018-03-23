@@ -51,11 +51,18 @@ def buildEchoback(subject, sou, difficulty, title, context, queryText, assumptio
     answerVal = 42
     answerUnits = "kg-m/s2"
     instruction = "Please enter in Light-years per hour..."
+    difString = {
+        1 : "Simple",
+        2 : "Fairly Easy",
+        3 : "Challenging",
+        4 : "Very Hard",
+        5 : "Brutal"
+    }
 
     echoback = {
         'subject' : "A problem related to: " + subject + ".",
         'sou' : "The system of units are: "+sou +".",
-        'difficulty' : "The difficulty level is: " + str(difficulty) + ".",
+        'difficulty' : "The difficulty level is: " + difString[difficulty] + ".",
         'title' : title + " (" + sou + " units)",
         'context' : context,
         'query' : queryText,
