@@ -9,9 +9,9 @@ def  buildContext(probType, paramObjList, probDict):
 
     probContextTemplate = probDict[probType]['probContext']
 
-    print(" The preamble: ",preamble)
     print ("The template: ", probContextTemplate)
-    probContext = preamble + " " + probContextTemplate
+    #currently coercing probContextTemplate to string until not return 0
+    probContext = preamble + " " + str(probContextTemplate)
 
     return probContext
 
