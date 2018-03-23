@@ -46,7 +46,7 @@ def swapObjects(tempString, paramObjList):
         
         parseString = bElement[1:-1].split(", ")
         for parseObjClass in parseString:
-            print("Object class: ", objClass)
+            #print("Object class: ", objClass)
             for probObjClass, probObj in probClassObjList:
                 if parseObjClass == probObjClass:
                     test = bElement in outputString
