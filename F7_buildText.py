@@ -51,7 +51,6 @@ def buildEchoback(subject, sou, difficulty, title, context, queryText, assumptio
     answerVal = 42
     answerUnits = "kg-m/s2"
     instruction = "Please enter in Light-years per hour..."
-    #add in basic dictionary for handling conversion of int to string value
     difString = {
         1 : "Simple",
         2 : "Fairly Easy",

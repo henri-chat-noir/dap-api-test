@@ -13,7 +13,6 @@ import F5_findProb as fProb
 import F6_pickObjects as fObj
 import F7_buildText as fText
 
-#generate dictionary function for converting string to integer
 def difString(x):
     return {
         'simple': 1,
@@ -58,7 +57,7 @@ def problemGen(subject, sou, difficulty):
     print(answerDim, "can be calculated with this combination of arguments: ")
 
     # Need to convert whatever is set by web page into integer
-    # completed by invoking difString dict return function
+    
     
     difficulty = difString(difficulty)
 
