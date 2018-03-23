@@ -75,15 +75,16 @@ def buildQuery(ansTuple):
 def buildAss(argTuple):
 
     count = 0
-    assText = ". . . if you are given the following assumptions:" + "\n"
+    assList = []
+    assList.append(". . . if you are given the following assumptions:" + "\n")
     for dim, deg, obj in argTuple:
         count = count + 1
         value = "[value]"
         units = "[units]"
         coreText = dim[0].upper() + dim[1:] + " " + dimPrep(dim) + " " + obj + " = " + value + " " + units
-        assText = assText + str(count) + ".  " + coreText + "\n"
+        assList.append(coreText)
 
-    return assText
+    return assList
 
 def dimPrep(dim):
     # Sets preposition appled for objects based on dimension, e.g. "energy output of" [object], rather than simply "of"
@@ -99,7 +100,7 @@ def dimPrep(dim):
         
     return preposition
 
-def buildEchoback(subject, sou, difficulty, title, context, queryText, assumptionText):
+def buildEchoback(subject, sou, difficulty, title, context, queryText, assList):
 
     answerVal = 42
     answerUnits = "kg-m/s2"
@@ -119,7 +120,7 @@ def buildEchoback(subject, sou, difficulty, title, context, queryText, assumptio
         'title' : title + " (" + sou + " units)",
         'context' : context,
         'query' : queryText,
-        'assumptions' : assumptionText,
+        'assumptions' : assList,
         'answerVal': answerVal,
         'aUnits' : answerUnits,
         'instruction' : instruction

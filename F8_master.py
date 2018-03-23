@@ -91,14 +91,15 @@ def problemGen(subject, sou, diffString):
     
     ansTuple = paramObjList[0]
     queryText = fText.buildQuery(ansTuple)
-    assumptionText = fText.buildAss(paramObjList[1:])
+    assList = fText.buildAss(paramObjList[1:])
 
     print("Problem context: ", context)
     print("Query: ", queryText)
     print("\n")
-    print(assumptionText)
+    for line in assList:
+        print(line)
 
     title = "Dummy title"
-    echoback = fText.buildEchoback(subject, sou, difficulty, title, context, queryText, assumptionText)
+    echoback = fText.buildEchoback(subject, sou, difficulty, title, context, queryText, assList)
     
     return echoback
