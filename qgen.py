@@ -14,7 +14,7 @@ CORS(app)
 
 def get_question():
     
-    apiRun = False
+    apiRun = True
 
     # subject, sou, and difficulty are search string arguments set-up for API
     if apiRun:
