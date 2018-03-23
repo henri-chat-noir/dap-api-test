@@ -53,9 +53,9 @@ def buildEchoback(subject, sou, difficulty, title, context, queryText, assumptio
     instruction = "Please enter in Light-years per hour..."
 
     echoback = {
-        'subject' : "A problem related to " + subject,
-        'sou' : sou,
-        'difficulty' : difficulty,
+        'subject' : "A problem related to: " + subject + ".",
+        'sou' : "The system of units are: "+sou +".",
+        'difficulty' : "the difficulty level is: " + difficulty + ".",
         'title' : title + " (" + sou + " units)",
         'context' : context,
         'query' : queryText,
