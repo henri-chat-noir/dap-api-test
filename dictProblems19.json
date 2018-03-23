@@ -1,7 +1,7 @@
 [
    {
       "probType": "static properties - fluid",
-      "probContext": "a [body of water] filled with [fluid]",
+      "probContext": "a [body of water, container] filled with [fluid]",
       "odPacks": "[([\"fluid\"], [\"mass\", \"mass density\", \"specific volume\"]),\n([\"body of water\", \"container\"], [\"area\", \"length\", \"volume\"])]",
       "objClassString": "\"\""
    },
@@ -20,7 +20,7 @@
    {
       "probType": "acceleration",
       "probContext": "accelerating a stationary [vehicle]",
-      "odPacks": "[([\"route\"], [\"length\"]),\n([\"vehicle\"], [\"mass\", \"acceleration\", \"velocity\"]),\n([\"car engine#\", \"jet engine#\", \"motor#\"], [\"force\", \"power\", \"energy\"]),\n([\"driving#\"], [\"time\"])]",
+      "odPacks": "[([\"route\"], [\"length\"]),\n([\"vehicle\"], [\"mass\", \"acceleration\", \"velocity\"]),\n([\"car engine#\", \"jet engine#\", \"motor#\"], [\"force\"]),\n([\"driving#\"], [\"time\"])]",
       "objClassString": "\"\""
    },
    {
@@ -37,13 +37,13 @@
    },
    {
       "probType": "filling - simple",
-      "probContext": 0,
+      "probContext": "filling a [body of water, container] with [fluid]",
       "odPacks": "[([\"piston#\"], [\"area\", \"length\", \"velocity\"]),\n([\"fluid\"], [\"mass density\", \"mass\", \"volume\", \"specific volume\", \"volume flow\"]),\n([\"filling#\"], [\"time\"])]",
       "objClassString": "\"\""
    },
    {
       "probType": "fluid cannon",
-      "probContext": "a cannon firing a quantity of [fluid]",
+      "probContext": "a cannon firing [fluid]",
       "odPacks": "[([\"piston#\"], [\"acceleration\", \"pressure\", \"force\", \"area\", \"length\"]),\n([\"fluid\"], [\"mass density\", \"mass\", \"volume\", \"specific volume\", \"volume flow\"]),\n([\"firing#\"], [\"time\"]),\n([\"pump#\"], [\"energy\", \"power\"])]",
       "objClassString": "\"\""
    },

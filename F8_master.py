@@ -13,8 +13,7 @@ import F5_findProb as fProb
 import F6_pickObjects as fObj
 import F7_buildText as fText
 
-def problemGen(subject, sou, difficulty):
-
+def problemGen(subject, sou, diffString):
 
     rawUnitsDict = fGen.loadRaw('UnitsDict13.json')
 
@@ -27,12 +26,10 @@ def problemGen(subject, sou, difficulty):
     metricOmits = {}
     metricDict = fUnits.unitProcess(metricDict, metricOmits)
 
-
-
     # Need to use objDict in order to resolve the object class indicators that exist in either or both
     # dimensions' and 'problems' dictionaries
-    objDict = fBuild.buildObjDict('dictObjects09.json')
-    probDict = fBuild.buildProbDict('dictProblems18.json', objDict)
+    objDict = fBuild.buildObjDict('dictObjects10.json')
+    probDict = fBuild.buildProbDict('dictProblems19.json', objDict)
 
     # Process raw JSON into fully built-out dimensions dictionary
     rawDims = fGen.loadRaw("dictDimensions18.json")
@@ -48,7 +45,7 @@ def problemGen(subject, sou, difficulty):
     print(answerDim, "can be calculated with this combination of arguments: ")
 
     # Need to convert whatever is set by web page into integer
-    difficulty = 3
+    difficulty = ["Simple", "Fairly easy", "Challenging", "Very hard", "Brutal"].index(diffString)
 
     tryCount = 0
     maxTry = 50
@@ -87,8 +84,10 @@ def problemGen(subject, sou, difficulty):
     print("----------")
     print("\n")
 
+    
+    context = fText.buildContext(probType, paramObjList, probDict)
+    
     ansTuple = paramObjList[0]
-    context = fText.buildContext(probType, ansTuple, probDict)
     queryText = fText.buildQuery(ansTuple)
     assumptionText = fText.buildAss(paramObjList[1:])
 

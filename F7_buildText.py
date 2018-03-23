@@ -2,16 +2,67 @@
 Last mile -- building text that will feed JSON return
 
 """
+import F3_buildDicts as fBuild
+import re
 
 def  buildContext(probType, paramObjList, probDict):
     
     preamble = "You need to run some calculations related to"
+    conTemplate = probDict[probType]['probContext']
+    context = preamble + " " + swapObjects(conTemplate, paramObjList)
 
-    probContextTemplate = probDict[probType]['probContext']
+    return context
 
-    probContext = preamble + " " + probContextTemplate
+def swapObjects(tempString, paramObjList):
 
-    return probContext
+    # Build simple list of objects connected with problem from paramObjList tuple
+    # Note effort to create unique list may not strictly be required for following operations, but good practice
+    probObjList = []
+    for paramTuple in paramObjList:
+        probObj = paramTuple[2]
+        if probObj not in probObjList:
+            probObjList.append(probObj)
+
+    # Look through object dictionary and create list of 2tuples that can relate an object class to object
+    objDict = fBuild.buildObjDict('dictObjects10.json')
+    probClassObjList = []
+    for probObj in probObjList:
+
+        for objClass, objList in objDict.items():
+            if probObj in objList:
+                classObjTuple = (objClass, probObj)
+                probClassObjList.append(classObjTuple)
+
+    print("objClass, object 2tuple list: ", probClassObjList)
+
+    # Replaced bracketed class indicators with object consistent with what dealt for problem
+    bracketSearch = re.compile(r'\[.+?\]')
+    bracketElements = re.findall(bracketSearch, tempString)
+    
+    outputString = tempString[:]
+    for bElement in bracketElements:
+        
+        parseString = bElement[1:-1].split(", ")
+        for parseObjClass in parseString:
+            print("Object class: ", objClass)
+            for probObjClass, probObj in probClassObjList:
+                if parseObjClass == probObjClass:
+                    test = bElement in outputString
+                    outputString.replace(bElement, probObj)
+
+        print(tempString, " replaced with:")
+        print(outputString)
+        print("=====")
+
+        outputString = ""
+
+    return outputString
+
+def findObject(objClass, objList):
+
+    pass
+
+    return
 
 def buildQuery(ansTuple):
 

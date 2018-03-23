@@ -25,7 +25,7 @@
    },
    {
       "objClass": "force applicator",
-      "objects": "\"lever\", \"jack handle\", \"piston\", \"hydraulic ram\", \"spring\""
+      "objects": "\"lever\", \"jack handle\", \"piston\", \"hydraulic ram\", \"spring\", \"rubber band\", \"rocket motor\""
    },
    {
       "objClass": "floor covering",
