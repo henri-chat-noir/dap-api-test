@@ -47,7 +47,7 @@ def problemGen(subject, sou, diffString):
 
     # Need to convert whatever is set by web page into integer
 
-    difficulty = ["Simple", "Fairly easy", "Challenging", "Very hard", "Brutal"].index(diffString)
+    difficulty = ["Simple", "Fairly easy", "Challenging", "Very hard", "Brutal"].index(diffString) + 1
 
 
     tryCount = 0
