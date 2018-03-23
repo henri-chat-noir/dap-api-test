@@ -9,15 +9,14 @@ def  buildContext(probType, paramObjList, probDict):
     
     preamble = "You need to run some calculations related to"
     conTemplate = probDict[probType]['probContext']
-    print("Template: ", conTemplate)
+    # print("Template: ", conTemplate)
     context = preamble + " " + swapObjects(conTemplate, paramObjList)
 
     return context
 
-def swapObjects(tempString, paramObjList):
+def swapObjects(inputString, paramObjList):
 
-
-    # Build simple list of objects connected with problem from paramObjList tuple
+    # First, build simple list of objects connected with problem from paramObjList tuple
     # Note effort to create unique list may not strictly be required for following operations, but good practice
     probObjList = []
     for paramTuple in paramObjList:
@@ -26,37 +25,48 @@ def swapObjects(tempString, paramObjList):
             probObjList.append(probObj)
 
     # Look through object dictionary and create list of 2tuples that can relate an object class to object
-    objDict = fBuild.buildObjDict('dictObjects10.json')
+    objDict = fBuild.buildObjDict('dictObjects12.json')
     probClassObjList = []
     for probObj in probObjList:
 
-        for objClass, objList in objDict.items():
+        for objClass, objTuple in objDict.items():
+            objList = objTuple[0]
             if probObj in objList:
                 classObjTuple = (objClass, probObj)
                 probClassObjList.append(classObjTuple)
 
     print("objClass, object 2tuple list: ", probClassObjList)
 
-    # Replaced bracketed class indicators with object consistent with what dealt for problem
-    bracketSearch = re.compile(r'\[.+?\]')
-    bracketElements = re.findall(bracketSearch, tempString)
+    # Replaced bracketed class indicators with object consistent with those dealt for problem
+    # Presumes that there is only a single object specified in any given object class (for now)
+    bracketSearch = re.compile(r'<.+?>')
+    outputString = inputString[:]
+    bracketElements = re.findall(bracketSearch, outputString)
     
-    outputString = tempString[:]
+    # Top/outside loop is to run through the 'bracketed strings'
     for bElement in bracketElements:
         
+        bElementMatch = False
         parseString = bElement[1:-1].split(", ")
+
+        # Loop through each element with brackets to see if can get a match
         for parseObjClass in parseString:
-            #print("Object class: ", objClass)
+            # print("Object class: ", objClass)
             for probObjClass, probObj in probClassObjList:
                 if parseObjClass == probObjClass:
-                    test = bElement in outputString
-                    outputString.replace(bElement, probObj)
+                    outputString = outputString.replace(bElement, probObj)
+                    bElementMatch = True
+        
+        # If run through each element within brackets with no match to problem objects,
+        # then swap in with defObj assigned to last parsObjClass tested
+        if not bElementMatch:
+            defObj = objDict[parseObjClass][1]
+            outputString = outputString.replace(bElement, defObj)
+    
 
-        print(tempString, " replaced with:")
-        print(outputString)
-        print("=====")
-
-        outputString = ""
+    # If somehow NONE of all that 'works', then at least re-form original template string with a message
+    if outputString == '':
+        outputString = inputString + " (no substitutions matched)"
 
     return outputString
 

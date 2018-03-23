@@ -29,8 +29,8 @@ def problemGen(subject, sou, diffString):
 
     # Need to use objDict in order to resolve the object class indicators that exist in either or both
     # dimensions' and 'problems' dictionaries
-    objDict = fBuild.buildObjDict('dictObjects10.json')
-    probDict = fBuild.buildProbDict('dictProblems19.json', objDict)
+    objDict = fBuild.buildObjDict('dictObjects12.json')
+    probDict = fBuild.buildProbDict('dictProblems20.json', objDict)
 
     # Process raw JSON into fully built-out dimensions dictionary
     rawDims = fGen.loadRaw("dictDimensions18.json")
@@ -44,11 +44,8 @@ def problemGen(subject, sou, diffString):
     answerDim = fParam.dealAnswer(mechDimDict)
     print(answerDim, "can be calculated with this combination of arguments: ")
 
-    # Need to convert whatever is set by web page into integer
-
+    # Need to convert whatever is set by web page into integer; plus 1 added so Simple doesn't generate a 'zero', which is problematic for code
     difficulty = ["Simple", "Fairly easy", "Challenging", "Very hard", "Brutal"].index(diffString) + 1
-
-
     tryCount = 0
     maxTry = 50
 
@@ -69,8 +66,6 @@ def problemGen(subject, sou, diffString):
     print(argList)
     print("Number of tries: ", tryCount)
 
-    # print(objDict.items())
-
     paramDims = [i[0] for i in paramList]
     probType = fProb.findProbType(paramDims, probDict)
     print("Problem type: ", probType)
@@ -86,7 +81,6 @@ def problemGen(subject, sou, diffString):
     print("----------")
     print("\n")
 
-    
     context = fText.buildContext(probType, paramObjList, probDict)
     
     ansTuple = paramObjList[0]
@@ -94,6 +88,7 @@ def problemGen(subject, sou, diffString):
     assList = fText.buildAss(paramObjList[1:])
 
     print("Problem context: ", context)
+    print("\n")
     print("Query: ", queryText)
     print("\n")
     for line in assList:
@@ -101,5 +96,8 @@ def problemGen(subject, sou, diffString):
 
     title = "Dummy title"
     echoback = fText.buildEchoback(subject, sou, difficulty, title, context, queryText, assList)
+    print("\n")
+    # print("ECHOBACK:")
+    # print(echoback)
     
     return echoback

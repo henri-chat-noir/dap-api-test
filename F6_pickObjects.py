@@ -31,8 +31,9 @@ def conformObjects(paramObjList, objDict):
 def findClass(targetObj, objDict):
 
     objHit = False
-    for objKey, objList in objDict.items():
-
+    for objKey, objTuple in objDict.items():
+       
+        objList = objTuple[0]
         if targetObj in objList:
             objClass = objKey
             objHit = True

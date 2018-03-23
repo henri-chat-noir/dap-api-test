@@ -68,7 +68,7 @@ def buildDimsDict(rawDict, objDict):
         dimObjects = []
         for objClass in dimObjClasses:
             if objClass in objClassList:
-                newDimObjects = objDict[objClass]
+                newDimObjects = objDict[objClass][0]
            
             else:
                 if objClass[-1] == "#":
@@ -126,7 +126,7 @@ def buildProbDict(JSONfile, objDict):
                     tempList.append(element[:-1])
                 else:
                     tempList.remove(element)
-                    objList = objDict[element]
+                    objList = objDict[element][0]
                     tempList.extend(objList)
             
             objList = tempList[:]
@@ -180,8 +180,11 @@ def buildObjDict(JSONfile):
     objDict = {}
     for entry in objects:
         keyVal = entry['objClass']
-        objTuple = ast.literal_eval(entry['objects'])
-        objList = list(objTuple)
-        objDict[keyVal] = objList
+        objListTuple = ast.literal_eval(entry['objects'])
+        objList = list(objListTuple)
+        
+        defObj = ast.literal_eval(entry['defObj'])
+        
+        objDict[keyVal] = (objList, defObj)
         
     return objDict
