@@ -5,16 +5,27 @@ Last mile -- building text that will feed JSON return
 import F3_buildDicts as fBuild
 import re
 
+def  buildTitle(probType, paramObjList, probDict):
+    
+    titleTemplate = probDict[probType]['title']
+    # print("Template: ", conTemplate)
+    titleLower = swapObjects(titleTemplate, paramObjList, True)
+    title = titleLower
+
+    return title
+
+
 def  buildContext(probType, paramObjList, probDict):
     
     preamble = "You need to run some calculations related to"
     conTemplate = probDict[probType]['probContext']
     # print("Template: ", conTemplate)
-    context = preamble + " " + swapObjects(conTemplate, paramObjList)
+    context = preamble + " " + swapObjects(conTemplate, paramObjList, False)
 
     return context
 
-def swapObjects(inputString, paramObjList):
+
+def swapObjects(inputString, paramObjList, firstCap):
 
     # First, build simple list of objects connected with problem from paramObjList tuple
     # Note effort to create unique list may not strictly be required for following operations, but good practice
@@ -35,7 +46,7 @@ def swapObjects(inputString, paramObjList):
                 classObjTuple = (objClass, probObj)
                 probClassObjList.append(classObjTuple)
 
-    print("objClass, object 2tuple list: ", probClassObjList)
+    # print("objClass, object 2tuple list: ", probClassObjList)
 
     # Replaced bracketed class indicators with object consistent with those dealt for problem
     # Presumes that there is only a single object specified in any given object class (for now)
@@ -53,15 +64,23 @@ def swapObjects(inputString, paramObjList):
         for parseObjClass in parseString:
             # print("Object class: ", objClass)
             for probObjClass, probObj in probClassObjList:
+                if firstCap:
+                    repWord = probObj[0].upper() + probObj[1:]
+                else:
+                    repWord = probObj
                 if parseObjClass == probObjClass:
-                    outputString = outputString.replace(bElement, probObj)
+                    outputString = outputString.replace(bElement, repWord)
                     bElementMatch = True
         
         # If run through each element within brackets with no match to problem objects,
         # then swap in with defObj assigned to last parsObjClass tested
         if not bElementMatch:
             defObj = objDict[parseObjClass][1]
-            outputString = outputString.replace(bElement, defObj)
+            if firstCap:
+                repWord = defObj[0].upper() + defObj[1:]
+            else:
+                repWord = defObj
+            outputString = outputString.replace(bElement, repWord)
     
 
     # If somehow NONE of all that 'works', then at least re-form original template string with a message
@@ -70,11 +89,6 @@ def swapObjects(inputString, paramObjList):
 
     return outputString
 
-def findObject(objClass, objList):
-
-    pass
-
-    return
 
 def buildQuery(ansTuple):
 
@@ -109,31 +123,3 @@ def dimPrep(dim):
         preposition = "of"
         
     return preposition
-
-def buildEchoback(subject, sou, difficulty, title, context, queryText, assList):
-
-    answerVal = 42
-    answerUnits = "kg-m/s2"
-    instruction = "Please enter in Light-years per hour..."
-    difString = {
-        1 : "Simple",
-        2 : "Fairly Easy",
-        3 : "Challenging",
-        4 : "Very Hard",
-        5 : "Brutal"
-    }
-
-    echoback = {
-        'subject' : "A problem related to: " + subject + ".",
-        'sou' : "The system of units are: "+sou +".",
-        'difficulty' : "The difficulty level is: " + difString[difficulty] + ".",
-        'title' : title + " (" + sou + " units)",
-        'context' : context,
-        'query' : queryText,
-        'assumptions' : assList,
-        'answerVal': answerVal,
-        'aUnits' : answerUnits,
-        'instruction' : instruction
-    }
-
-    return echoback

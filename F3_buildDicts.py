@@ -96,7 +96,8 @@ def buildProbDict(JSONfile, objDict):
     for entry in problemRoster:
         keyVal = entry['probType']
         probDict[keyVal] = {}
-        
+
+        probDict[keyVal]['title'] = entry['title']        
         probDict[keyVal]['probContext'] = entry['probContext']
 
         odPacksRaw = ast.literal_eval(entry['odPacks'])
