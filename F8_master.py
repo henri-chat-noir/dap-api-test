@@ -13,6 +13,15 @@ import F5_findProb as fProb
 import F6_pickObjects as fObj
 import F7_buildText as fText
 
+def difString(x):
+    return {
+        'simple': 1,
+        'fairlyeasy': 2,
+        'challenging': 3,
+        'veryhard': 4,
+        'brutal': 5
+    }[x]
+
 def problemGen(subject, sou, difficulty):
 
 
@@ -48,7 +57,9 @@ def problemGen(subject, sou, difficulty):
     print(answerDim, "can be calculated with this combination of arguments: ")
 
     # Need to convert whatever is set by web page into integer
-    difficulty = 3
+    
+    
+    difficulty = difString(difficulty)
 
     tryCount = 0
     maxTry = 50
