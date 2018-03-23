@@ -36,7 +36,6 @@ def problemGen(subject, sou, diffString):
     dimsDict = fBuild.buildDimsDict(rawDims, objDict)
 
     # Build appropriate dimensions dictionary (from raw JSON)
-    
     exclDims = ['acceleration', 'action', 'currency', 'dynamic viscosity', 'energy density', 'frequency', 'kinematic viscosity', 'surface tension', 'torque']
     mechDimDict = fParam.selectDims(subject, exclDims, dimsDict)
 
