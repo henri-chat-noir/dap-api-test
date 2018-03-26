@@ -1,0 +1,82 @@
+[
+   {
+      "objClass": "1D object",
+      "objects": "\"string\", \"cable\", \"rope\", \"tape\"",
+      "defObj": "\"ethernet cable\""
+   },
+   {
+      "objClass": "activity",
+      "objects": "\"filling\", \"driving\", \"operating\", \"firing\"",
+      "defObj": "\"daydreaming\""
+   },
+   {
+      "objClass": "animal",
+      "objects": "\"badger\", \"tiger\", \"Juno the cat\"",
+      "defObj": "\"wombat\""
+   },
+   {
+      "objClass": "body of water",
+      "objects": "\"lake\", \"pond\", \"resevoir\", \"swimming pool\"",
+      "defObj": "\"cesspit\""
+   },
+   {
+      "objClass": "container",
+      "objects": "\"bottle\", \"vat\"",
+      "defObj": "\"septic tank\""
+   },
+   {
+      "objClass": "elec device",
+      "objects": "\"light bulb\", \"heater\"",
+      "defObj": "\"electric chair\""
+   },
+   {
+      "objClass": "force applicator",
+      "objects": "\"lever\", \"jack handle\", \"piston\", \"hydraulic ram\", \"spring\", \"rubber band\", \"rocket motor\"",
+      "defObj": "\"bungee cord\""
+   },
+   {
+      "objClass": "floor covering",
+      "objects": "\"carpet\", \"rug\"",
+      "defObj": "\"purple shag\""
+   },
+   {
+      "objClass": "fluid",
+      "objects": "\"water\", \"wine\", \"oil\", \"beer\", \"sewage\"",
+      "defObj": "\"vomit\""
+   },
+   {
+      "objClass": "land",
+      "objects": "\"farm\", \"back yard\", \"property\"",
+      "defObj": "\"logging tract\""
+   },
+   {
+      "objClass": "mech device",
+      "objects": "\"car engine\", \"motor\", \"pump\"",
+      "defObj": "\"catapault\""
+   },
+   {
+      "objClass": "moving object",
+      "objects": "\"bullet\", \"piston\"",
+      "defObj": "\"crossbow bolt\","
+   },
+   {
+      "objClass": "pressure vessel",
+      "objects": "\"scuba tank\", \"piston\", \"cylinder\"",
+      "defObj": "\"can of hairspray\""
+   },
+   {
+      "objClass": "rotating object",
+      "objects": "\"bolt\", \"axel\", \"jar lid\"",
+      "defObj": "\"gyroscope\""
+   },
+   {
+      "objClass": "route",
+      "objects": "\"path\", \"road\"",
+      "defObj": "\"path to hell\""
+   },
+   {
+      "objClass": "vehicle",
+      "objects": "\"truck\", \"car\", \"stagecoach\"",
+      "defObj": "\"The Bat Mobile\""
+   }
+]

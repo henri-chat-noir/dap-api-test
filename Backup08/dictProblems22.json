@@ -3,7 +3,7 @@
       "probType": "static properties - fluid",
       "probContext": "a <body of water, container> filled with <fluid>",
       "odPacks": "[([\"fluid\"], [\"mass\", \"mass density\", \"specific volume\"]),\n([\"body of water\", \"container\"], [\"area\", \"length\", \"volume\"])]",
-      "title": "<fluid> <lake>",
+      "title": "<fluid> <body of water>",
       "notes": "\"\""
    },
    {
