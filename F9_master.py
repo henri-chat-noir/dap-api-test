@@ -15,7 +15,6 @@ import F7_buildText as fText
 
 import chad
 
-
 def problemGen(subject, sou, diffString):
 
     rawUnitsDict = fGen.loadRaw('UnitsDict13.json')
