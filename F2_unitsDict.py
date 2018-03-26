@@ -1,7 +1,7 @@
 """
 Main raw units dictionary processing module on initial imported JSON 'raw dictionary'
 Sub-dictionary selection
-    buildIDs: used to produce list of Uids that are consistent with selected SOU
+    buildIDs: used to produce list of uIDs that are consistent with selected SOU
     extractSubDict:
         sub-selects out of full (raw) 'master dictionary' only those units consistent with SOU selected
         In fact, what we will do going forward is pre-process a dictionary for each SOU, so this is not repeated each time
@@ -36,13 +36,19 @@ import ast
 # import os
 
 def unitProcess(targetDict, exclUIDs):
-    # Process targetDict
     # Creates baseList and simpList keys on targetDict and returns as outputDict
 
-    outputDict = targetDict
-    for unitName, unitInfo in outputDict.items():
+    outputDict = {}
+    for unitName, unitInfo in targetDict.items():
         
-        uID = unitInfo['Uid']
+        unitName = unitInfo['unitName']
+        outputDict[unitName] = {}
+        outputDict[unitName]['dimension'] = unitInfo['dimension']
+        outputDict[unitName]['category'] = unitInfo['category']
+        outputDict[unitName]['SOU'] = unitInfo['SOU']
+        outputDict[unitName]['symbol'] = unitInfo['symbol']
+
+        uID = unitInfo['uID']
         pathList = []
         actionList = True
         
@@ -173,7 +179,7 @@ def baseStep(defList, pathList, unitID, unitName, unitsDict):
                 # Note as well that an entry 'matching on itself' recursively is problem with dictionary (only allowable for Base Units)
                 # Such a case is at least omitted from 'proper' matchFound
 
-                matchName = entry[1]['name']
+                matchName = entry[1]['unitName']
                 if entry[1]['symbol'] == argSymbol and not (unitName == matchName):
                     # When find a match, assign its defList to a replacement def list (as to structure)
                     # i.e. this defList needs to be 'adjusted' consistent with the degree of the original argument
@@ -182,7 +188,7 @@ def baseStep(defList, pathList, unitID, unitName, unitsDict):
                     rep_defList = entry[1]['defList']
 
                     # Also add the unit ID for the matched unit onto pathList
-                    pathList.append(( entry[1]['Uid'], entry[1]['name']))
+                    pathList.append(( entry[1]['uID'], entry[1]['unitName']))
                     break
                      
             if matchFound:
@@ -275,7 +281,7 @@ def extractSubDict(selectionList, rawDict):
     outputDict = {}
     for rawEntry in rawDict:
 
-        unitID = rawEntry['Uid']
+        unitID = rawEntry['uID']
         if unitID in selectionList:
         
             outputDict[unitID] = rawEntry
@@ -296,7 +302,7 @@ def buildIDlist(SOUset, rawDict):
     for unitEntry in rawDict:
 
         if unitEntry['SOU'] in SOUset:
-            IDlist.append(unitEntry['Uid'])
+            IDlist.append(unitEntry['uID'])
 
     # Extract the unit IDs for all SI and metric dictionary entries in the raw file
     

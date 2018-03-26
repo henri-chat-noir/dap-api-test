@@ -1,9 +1,9 @@
 [
    {
-      "Uid": 1,
-      "name": "abcoulomb",
-      "Qid": 8,
-      "quantity": "electric charge",
+      "uID": 1,
+      "unitName": "abcoulomb",
+      "dimension": "electric charge",
+      "category": "Electromagnetism\u00A0",
       "SOU": "universal",
       "symbol": "abC",
       "defString": "[(10, 1), (\"C\", 1)]",
@@ -12,10 +12,10 @@
       "notes": 0
    },
    {
-      "Uid": 3,
-      "name": "standard gravity",
-      "Qid": 1,
-      "quantity": "acceleration",
+      "uID": 3,
+      "unitName": "standard gravity",
+      "dimension": "acceleration",
+      "category": "Physics of motion",
       "SOU": "universal",
       "symbol": "g0",
       "defString": "[(9.80665, 1), (\"m\", 1), (\"s\", -2)]",
@@ -24,10 +24,10 @@
       "notes": "It has a standard value defined as 9.80665 m/s2.  https://simple.wikipedia.org/wiki/Acceleration_due_to_gravity"
    },
    {
-      "Uid": 5,
-      "name": "acre",
-      "Qid": 3,
-      "quantity": "area",
+      "uID": 5,
+      "unitName": "acre",
+      "dimension": "area",
+      "category": "Spatial measurements",
       "SOU": "US customary",
       "symbol": "ac",
       "defString": "[(10, 1), (\"ch\", 2)]",
@@ -36,10 +36,10 @@
       "notes": 0
    },
    {
-      "Uid": 6,
-      "name": "acre-foot",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 6,
+      "unitName": "acre-foot",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "US customary",
       "symbol": "ac\u00B7ft",
       "defString": "[(1, 1), (\"ac\", 1), (\"ft\", 1)]",
@@ -48,10 +48,10 @@
       "notes": 0
    },
    {
-      "Uid": 7,
-      "name": "acre-inch",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 7,
+      "unitName": "acre-inch",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "other English",
       "symbol": "ac\u00B7in",
       "defString": "[(1, 1), (\"ac\", 1), (\"in\", 1)]",
@@ -60,10 +60,10 @@
       "notes": 0
    },
    {
-      "Uid": 8,
-      "name": "amp",
-      "Qid": 9,
-      "quantity": "electric current",
+      "uID": 8,
+      "unitName": "amp",
+      "dimension": "electric current",
+      "category": "Circuit / electrical properties",
       "SOU": "SI",
       "symbol": "A",
       "defString": "[(1, 1), (\"A\", 1)]",
@@ -72,10 +72,10 @@
       "notes": "\u2261 The constant current needed to produce a force of 2 \u00D710\u22127 newton per metre between two straight parallel conductors of infinite length and negligible circular cross-section placed one metre apart in a vacuum.[10]"
    },
    {
-      "Uid": 10,
-      "name": "ampere per meter",
-      "Qid": 57,
-      "quantity": "magnetic field strength\u00A0\u00A0",
+      "uID": 10,
+      "unitName": "ampere per meter",
+      "dimension": "magnetic field strength\u00A0\u00A0",
+      "category": "Electromagnetism\u00A0",
       "SOU": "SI",
       "symbol": "A/m",
       "defString": "[(1, 1), (\"A\", 1), (\"m\", -1)]",
@@ -84,10 +84,10 @@
       "notes": 0
    },
    {
-      "Uid": 11,
-      "name": "ampere per square meter",
-      "Qid": 43,
-      "quantity": "current density",
+      "uID": 11,
+      "unitName": "ampere per square meter",
+      "dimension": "current density",
+      "category": "Circuit / electrical properties",
       "SOU": "SI",
       "symbol": "A/m2",
       "defString": "[(1, 1), (\"A\", 1), (\"m\", -2)]",
@@ -96,10 +96,10 @@
       "notes": 0
    },
    {
-      "Uid": 12,
-      "name": "\u00E5ngstr\u00F6m",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 12,
+      "unitName": "\u00E5ngstr\u00F6m",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "SI",
       "symbol": "\u00C5",
       "defString": "[(1E-10, 1), (\"m\", 1)]",
@@ -108,10 +108,10 @@
       "notes": 0
    },
    {
-      "Uid": 13,
-      "name": "angular mil",
-      "Qid": 27,
-      "quantity": "plane angle",
+      "uID": 13,
+      "unitName": "angular mil",
+      "dimension": "plane angle",
+      "category": "Spatial measurements",
       "SOU": "universal",
       "symbol": "\u00B5",
       "defString": "[(0.000981748, 1), (\"rad\", 1)]",
@@ -120,10 +120,10 @@
       "notes": 0
    },
    {
-      "Uid": 16,
-      "name": "are",
-      "Qid": 3,
-      "quantity": "area",
+      "uID": 16,
+      "unitName": "are",
+      "dimension": "area",
+      "category": "Spatial measurements",
       "SOU": "SI",
       "symbol": "a",
       "defString": "[(100, 1), (\"m\", 2)]",
@@ -132,10 +132,10 @@
       "notes": 0
    },
    {
-      "Uid": 17,
-      "name": "astronomical unit",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 17,
+      "unitName": "astronomical unit",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "SI",
       "symbol": "AU",
       "defString": "[(1.49598E+11, 1), (\"m\", 1)]",
@@ -144,10 +144,10 @@
       "notes": "\u2248 Distance from Earth to Sun"
    },
    {
-      "Uid": 19,
-      "name": "atmosphere (technical)",
-      "Qid": 29,
-      "quantity": "pressure",
+      "uID": 19,
+      "unitName": "atmosphere (technical)",
+      "dimension": "pressure",
+      "category": "Mechanics",
       "SOU": "non-SI metric",
       "symbol": "at",
       "defString": "[(1, 1), (\"kgf\", 1), (\"cm\", -2)]",
@@ -156,10 +156,10 @@
       "notes": 0
    },
    {
-      "Uid": 28,
-      "name": "atomic unit of charge",
-      "Qid": 8,
-      "quantity": "electric charge",
+      "uID": 28,
+      "unitName": "atomic unit of charge",
+      "dimension": "electric charge",
+      "category": "Electromagnetism\u00A0",
       "SOU": "universal",
       "symbol": "au",
       "defString": "[(1, 1), (\"e\", 1)]",
@@ -168,10 +168,10 @@
       "notes": 0
    },
    {
-      "Uid": 33,
-      "name": "Avogradro's number",
-      "Qid": 66,
-      "quantity": "amount of substance",
+      "uID": 33,
+      "unitName": "Avogradro's number",
+      "dimension": "amount of substance",
+      "category": "Chemistry",
       "SOU": "universal",
       "symbol": "NA",
       "defString": "[(1, 1), (\"#\", 1)]",
@@ -180,10 +180,10 @@
       "notes": 0
    },
    {
-      "Uid": 34,
-      "name": "bag (coffee)",
-      "Qid": 26,
-      "quantity": "mass",
+      "uID": 34,
+      "unitName": "bag (coffee)",
+      "dimension": "mass",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "other English",
       "symbol": "bag (coffee)",
       "defString": "[(60, 1), (\"kg\", 1)]",
@@ -192,10 +192,10 @@
       "notes": 0
    },
    {
-      "Uid": 35,
-      "name": "bag (Portland cement)",
-      "Qid": 26,
-      "quantity": "mass",
+      "uID": 35,
+      "unitName": "bag (Portland cement)",
+      "dimension": "mass",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "other English",
       "symbol": "bag (cement)",
       "defString": "[(94, 1), (\"lb\", 1)]",
@@ -204,10 +204,10 @@
       "notes": 0
    },
    {
-      "Uid": 37,
-      "name": "bar",
-      "Qid": 29,
-      "quantity": "pressure",
+      "uID": 37,
+      "unitName": "bar",
+      "dimension": "pressure",
+      "category": "Mechanics",
       "SOU": "SI",
       "symbol": "bar",
       "defString": "[(105, 1), (\"Pa\", 1)]",
@@ -216,10 +216,10 @@
       "notes": 0
    },
    {
-      "Uid": 38,
-      "name": "barge",
-      "Qid": 26,
-      "quantity": "mass",
+      "uID": 38,
+      "unitName": "barge",
+      "dimension": "mass",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "other English",
       "symbol": "barge",
       "defString": "[(110.5, 1), (\"ton\", 1)]",
@@ -228,10 +228,10 @@
       "notes": 0
    },
    {
-      "Uid": 39,
-      "name": "barleycorn",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 39,
+      "unitName": "barleycorn",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "other English",
       "symbol": "barleycorn",
       "defString": "[(0.333333333, 1), (\"in\", 1)]",
@@ -240,10 +240,10 @@
       "notes": 0
    },
    {
-      "Uid": 40,
-      "name": "barn",
-      "Qid": 3,
-      "quantity": "area",
+      "uID": 40,
+      "unitName": "barn",
+      "dimension": "area",
+      "category": "Spatial measurements",
       "SOU": "SI",
       "symbol": "b",
       "defString": "[(1E-28, 1), (\"m\", 2)]",
@@ -252,10 +252,10 @@
       "notes": 0
    },
    {
-      "Uid": 41,
-      "name": "barony",
-      "Qid": 3,
-      "quantity": "area",
+      "uID": 41,
+      "unitName": "barony",
+      "dimension": "area",
+      "category": "Spatial measurements",
       "SOU": "other English",
       "symbol": "barony",
       "defString": "[(4000, 1), (\"ac\", 1)]",
@@ -264,10 +264,10 @@
       "notes": 0
    },
    {
-      "Uid": 42,
-      "name": "barrel (imperial)",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 42,
+      "unitName": "barrel (imperial)",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "imperial",
       "symbol": "bbl (imp)",
       "defString": "[(36, 1), (\"gal (imp)\", 1)]",
@@ -276,10 +276,10 @@
       "notes": 0
    },
    {
-      "Uid": 43,
-      "name": "barrel (US dry)",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 43,
+      "unitName": "barrel (US dry)",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "US customary",
       "symbol": "bbl (US dry)",
       "defString": "[(105, 1), (\"qt (US dry)\", 1)]",
@@ -288,10 +288,10 @@
       "notes": 0
    },
    {
-      "Uid": 45,
-      "name": "barrel (US fluid)",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 45,
+      "unitName": "barrel (US fluid)",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "US customary",
       "symbol": "bbl",
       "defString": "[(155.5, 1), (\"gal\", 1)]",
@@ -300,10 +300,10 @@
       "notes": 0
    },
    {
-      "Uid": 46,
-      "name": "barrel (petroleum)",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 46,
+      "unitName": "barrel (petroleum)",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "US customary",
       "symbol": "bbl (pet)",
       "defString": "[(42, 1), (\"gal\", 1)]",
@@ -312,10 +312,10 @@
       "notes": 0
    },
    {
-      "Uid": 48,
-      "name": "barrel of oil equivalent",
-      "Qid": 12,
-      "quantity": "energy",
+      "uID": 48,
+      "unitName": "barrel of oil equivalent",
+      "dimension": "energy",
+      "category": "Mechanics",
       "SOU": "other English",
       "symbol": "boe",
       "defString": "[(614.8, 1), (\"BTU59\u00A0\u00B0F\", 1)]",
@@ -324,10 +324,10 @@
       "notes": 0
    },
    {
-      "Uid": 49,
-      "name": "barye",
-      "Qid": 29,
-      "quantity": "pressure",
+      "uID": 49,
+      "unitName": "barye",
+      "dimension": "pressure",
+      "category": "Mechanics",
       "SOU": "non-SI metric",
       "symbol": "barye",
       "defString": "[(1, 1), (\"dyn\", 1), (\"cm\", -2)]",
@@ -336,10 +336,10 @@
       "notes": 0
    },
    {
-      "Uid": 50,
-      "name": "becquerel",
-      "Qid": 33,
-      "quantity": "radioactivity",
+      "uID": 50,
+      "unitName": "becquerel",
+      "dimension": "radioactivity",
+      "category": "Radiation and radioactivity\u00A0",
       "SOU": "SI",
       "symbol": "Bq",
       "defString": "[(1, 1), (\"1\", 1), (\"s\", -1)]",
@@ -348,10 +348,10 @@
       "notes": "\u2261 Number of disintegrations per second.\nAlthough becquerel (Bq) and hertz (Hz) both ultimately refer to the same SI base unit (s\u22121), Hz is used only for periodic phenomena (ie repetitions at regular intervals), and Bq is only used for stochastic processes (ie at random intervals) associated with radioactivity.[43]"
    },
    {
-      "Uid": 51,
-      "name": "bel",
-      "Qid": 71,
-      "quantity": "ratio (non-dimensional)",
+      "uID": 51,
+      "unitName": "bel",
+      "dimension": "ratio (non-dimensional)",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "SI",
       "symbol": "B",
       "defString": "[(1.151292546, 1), (\"Np\", 1)]",
@@ -360,10 +360,10 @@
       "notes": 0
    },
    {
-      "Uid": 54,
-      "name": "board",
-      "Qid": 3,
-      "quantity": "area",
+      "uID": 54,
+      "unitName": "board",
+      "dimension": "area",
+      "category": "Spatial measurements",
       "SOU": "other English",
       "symbol": "bd",
       "defString": "[(1, 1), (\"in\", 1), (\"ft\", 1)]",
@@ -372,10 +372,10 @@
       "notes": 0
    },
    {
-      "Uid": 55,
-      "name": "Board of Trade Unit",
-      "Qid": 12,
-      "quantity": "energy",
+      "uID": 55,
+      "unitName": "Board of Trade Unit",
+      "dimension": "energy",
+      "category": "Mechanics",
       "SOU": "non-SI metric",
       "symbol": "B.O.T.U.",
       "defString": "[(1, 1), (\"kW\", 1), (\"h\", 1)]",
@@ -384,10 +384,10 @@
       "notes": 0
    },
    {
-      "Uid": 56,
-      "name": "board-foot",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 56,
+      "unitName": "board-foot",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "other English",
       "symbol": "fbm",
       "defString": "[(144, 1), (\"in\", 3)]",
@@ -396,10 +396,10 @@
       "notes": 0
    },
    {
-      "Uid": 60,
-      "name": "British thermal unit (59\u00A0\u00B0F)",
-      "Qid": 12,
-      "quantity": "energy",
+      "uID": 60,
+      "unitName": "British thermal unit (59\u00A0\u00B0F)",
+      "dimension": "energy",
+      "category": "Mechanics",
       "SOU": "other English",
       "symbol": "BTU59\u00A0\u00B0F",
       "defString": "[(108.644812, 1), (\"J\", 1)]",
@@ -408,10 +408,10 @@
       "notes": 0
    },
    {
-      "Uid": 63,
-      "name": "British thermal unit",
-      "Qid": 12,
-      "quantity": "energy",
+      "uID": 63,
+      "unitName": "British thermal unit",
+      "dimension": "energy",
+      "category": "Mechanics",
       "SOU": "other English",
       "symbol": "BTUIT",
       "defString": "[(108.6707528, 1), (\"J\", 1)]",
@@ -420,10 +420,10 @@
       "notes": 0
    },
    {
-      "Uid": 64,
-      "name": "British thermal unit (ISO)",
-      "Qid": 12,
-      "quantity": "energy",
+      "uID": 64,
+      "unitName": "British thermal unit (ISO)",
+      "dimension": "energy",
+      "category": "Mechanics",
       "SOU": "other English",
       "symbol": "BTUISO",
       "defString": "[(108.6135, 1), (\"J\", 1)]",
@@ -432,10 +432,10 @@
       "notes": 0
    },
    {
-      "Uid": 67,
-      "name": "BTU per hour",
-      "Qid": 28,
-      "quantity": "power",
+      "uID": 67,
+      "unitName": "BTU per hour",
+      "dimension": "power",
+      "category": "Mechanics",
       "SOU": "other English",
       "symbol": "BTUIT/h",
       "defString": "[(1, 1), (\"BTUIT\", 1), (\"h\", -1)]",
@@ -444,10 +444,10 @@
       "notes": 0
    },
    {
-      "Uid": 68,
-      "name": "BTU per minute",
-      "Qid": 28,
-      "quantity": "power",
+      "uID": 68,
+      "unitName": "BTU per minute",
+      "dimension": "power",
+      "category": "Mechanics",
       "SOU": "other English",
       "symbol": "BTUIT/min",
       "defString": "[(1, 1), (\"BTUIT\", 1), (\"min\", -1)]",
@@ -456,10 +456,10 @@
       "notes": 0
    },
    {
-      "Uid": 69,
-      "name": "BTU per second",
-      "Qid": 28,
-      "quantity": "power",
+      "uID": 69,
+      "unitName": "BTU per second",
+      "dimension": "power",
+      "category": "Mechanics",
       "SOU": "other English",
       "symbol": "BTUIT/s",
       "defString": "[(1, 1), (\"BTUIT\", 1), (\"s\", -1)]",
@@ -468,10 +468,10 @@
       "notes": 0
    },
    {
-      "Uid": 70,
-      "name": "bucket",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 70,
+      "unitName": "bucket",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "imperial",
       "symbol": "bkt",
       "defString": "[(4, 1), (\"gal (imp)\", 1)]",
@@ -480,10 +480,10 @@
       "notes": 0
    },
    {
-      "Uid": 71,
-      "name": "bushel (imperial)",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 71,
+      "unitName": "bushel (imperial)",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "imperial",
       "symbol": "bu (imp)",
       "defString": "[(8, 1), (\"gal (imp)\", 1)]",
@@ -492,10 +492,10 @@
       "notes": 0
    },
    {
-      "Uid": 72,
-      "name": "bushel (US dry level)",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 72,
+      "unitName": "bushel (US dry level)",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "US customary",
       "symbol": "bu (US heaped)",
       "defString": "[(2.75, 1), (\"bu\", 1)]",
@@ -504,10 +504,10 @@
       "notes": 0
    },
    {
-      "Uid": 73,
-      "name": "bushel (US dry heaped)",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 73,
+      "unitName": "bushel (US dry heaped)",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "other English",
       "symbol": "bu",
       "defString": "[(2150.42, 1), (\"in\", 3)]",
@@ -516,10 +516,10 @@
       "notes": 0
    },
    {
-      "Uid": 660,
-      "name": "butt",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 660,
+      "unitName": "butt",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "other English",
       "symbol": "butt",
       "defString": "[(126, 1), (\"gal\", 1)]",
@@ -528,10 +528,10 @@
       "notes": 0
    },
    {
-      "Uid": 74,
-      "name": "pipe",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 74,
+      "unitName": "pipe",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "other English",
       "symbol": "pipe",
       "defString": "[(126, 1), (\"gal\", 1)]",
@@ -540,10 +540,10 @@
       "notes": 0
    },
    {
-      "Uid": 76,
-      "name": "cable length (imperial)",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 76,
+      "unitName": "cable length (imperial)",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "imperial",
       "symbol": "cable length (imperial)",
       "defString": "[(608, 1), (\"ft\", 1)]",
@@ -552,10 +552,10 @@
       "notes": 0
    },
    {
-      "Uid": 77,
-      "name": "cable length (international)",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 77,
+      "unitName": "cable length (international)",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "non-SI metric",
       "symbol": "cable length (international)",
       "defString": "[(0.1, 1), (\"nmi\", 1)]",
@@ -564,10 +564,10 @@
       "notes": 0
    },
    {
-      "Uid": 78,
-      "name": "cable length",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 78,
+      "unitName": "cable length",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "US customary",
       "symbol": "cable length",
       "defString": "[(720, 1), (\"ft\", 1)]",
@@ -576,10 +576,10 @@
       "notes": 0
    },
    {
-      "Uid": 80,
-      "name": "calorie (15\u00A0\u00B0C)",
-      "Qid": 12,
-      "quantity": "energy",
+      "uID": 80,
+      "unitName": "calorie (15\u00A0\u00B0C)",
+      "dimension": "energy",
+      "category": "Mechanics",
       "SOU": "non-SI metric",
       "symbol": "cal15\u00A0\u00B0C",
       "defString": "[(4.1855, 1), (\"J\", 1)]",
@@ -588,10 +588,10 @@
       "notes": 0
    },
    {
-      "Uid": 83,
-      "name": "calorie",
-      "Qid": 12,
-      "quantity": "energy",
+      "uID": 83,
+      "unitName": "calorie",
+      "dimension": "energy",
+      "category": "Mechanics",
       "SOU": "non-SI metric",
       "symbol": "calIT",
       "defString": "[(4.1868, 1), (\"J\", 1)]",
@@ -600,10 +600,10 @@
       "notes": 0
    },
    {
-      "Uid": 85,
-      "name": "calorie (thermochemical)",
-      "Qid": 12,
-      "quantity": "energy",
+      "uID": 85,
+      "unitName": "calorie (thermochemical)",
+      "dimension": "energy",
+      "category": "Mechanics",
       "SOU": "non-SI metric",
       "symbol": "calth",
       "defString": "[(4.184, 1), (\"J\", 1)]",
@@ -612,10 +612,10 @@
       "notes": 0
    },
    {
-      "Uid": 86,
-      "name": "Calorie (US; FDA)",
-      "Qid": 12,
-      "quantity": "energy",
+      "uID": 86,
+      "unitName": "Calorie (US; FDA)",
+      "dimension": "energy",
+      "category": "Mechanics",
       "SOU": "non-SI metric",
       "symbol": "Cal (FDA)",
       "defString": "[(1, 1), (\"kcal\", 1)]",
@@ -624,10 +624,10 @@
       "notes": 0
    },
    {
-      "Uid": 87,
-      "name": "calorie per second",
-      "Qid": 28,
-      "quantity": "power",
+      "uID": 87,
+      "unitName": "calorie per second",
+      "dimension": "power",
+      "category": "Mechanics",
       "SOU": "non-SI metric",
       "symbol": "calIT/s",
       "defString": "[(1, 1), (\"calIT\", 1), (\"s\", -1)]",
@@ -636,10 +636,10 @@
       "notes": 0
    },
    {
-      "Uid": 88,
-      "name": "candela",
-      "Qid": 22,
-      "quantity": "luminosity",
+      "uID": 88,
+      "unitName": "candela",
+      "dimension": "luminosity",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "SI",
       "symbol": "cd",
       "defString": "[(1, 1), (\"cd\", 1)]",
@@ -648,10 +648,10 @@
       "notes": "The candela is the preferred nomenclature for the SI unit.  The luminous intensity, in a given direction, of a source that emits monochromatic radiation of frequency 540\u00D71012 hertz and that has a radiant intensity in that direction of 1/683 watt per steradian.[10]"
    },
    {
-      "Uid": 89,
-      "name": "candela per square foot",
-      "Qid": 21,
-      "quantity": "luminance",
+      "uID": 89,
+      "unitName": "candela per square foot",
+      "dimension": "luminance",
+      "category": "Optics\u00A0",
       "SOU": "other English",
       "symbol": "cd/ft2",
       "defString": "[(1, 1), (\"cd\", 1), (\"ft\", -2)]",
@@ -660,10 +660,10 @@
       "notes": 0
    },
    {
-      "Uid": 90,
-      "name": "candela per square inch",
-      "Qid": 21,
-      "quantity": "luminance",
+      "uID": 90,
+      "unitName": "candela per square inch",
+      "dimension": "luminance",
+      "category": "Optics\u00A0",
       "SOU": "other English",
       "symbol": "cd/in2",
       "defString": "[(1, 1), (\"cd\", 1), (\"in\", -2)]",
@@ -672,10 +672,10 @@
       "notes": 0
    },
    {
-      "Uid": 91,
-      "name": "candela per square meter",
-      "Qid": 21,
-      "quantity": "luminance",
+      "uID": 91,
+      "unitName": "candela per square meter",
+      "dimension": "luminance",
+      "category": "Optics\u00A0",
       "SOU": "SI",
       "symbol": "cd/m2",
       "defString": "[(1, 1), (\"cd\", 1), (\"m\", -2)]",
@@ -684,10 +684,10 @@
       "notes": 0
    },
    {
-      "Uid": 95,
-      "name": "carat",
-      "Qid": 26,
-      "quantity": "mass",
+      "uID": 95,
+      "unitName": "carat",
+      "dimension": "mass",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "non-SI metric",
       "symbol": "ct",
       "defString": "[(200, 1), (\"mg\", 1)]",
@@ -696,10 +696,10 @@
       "notes": 0
    },
    {
-      "Uid": 96,
-      "name": "carat (metric)",
-      "Qid": 26,
-      "quantity": "mass",
+      "uID": 96,
+      "unitName": "carat (metric)",
+      "dimension": "mass",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "other English",
       "symbol": "kt",
       "defString": "[(5.166666667, 1), (\"gr\", 1)]",
@@ -708,10 +708,10 @@
       "notes": 0
    },
    {
-      "Uid": 14,
-      "name": "arcminute",
-      "Qid": 27,
-      "quantity": "plane angle",
+      "uID": 14,
+      "unitName": "arcminute",
+      "dimension": "plane angle",
+      "category": "Spatial measurements",
       "SOU": "SI",
       "symbol": "arcmin",
       "defString": "[(0.016666667, 1), (\"\u00B0\", 1)]",
@@ -720,10 +720,10 @@
       "notes": 0
    },
    {
-      "Uid": 15,
-      "name": "arcsecond",
-      "Qid": 27,
-      "quantity": "plane angle",
+      "uID": 15,
+      "unitName": "arcsecond",
+      "dimension": "plane angle",
+      "category": "Spatial measurements",
       "SOU": "SI",
       "symbol": "arcsec",
       "defString": "[(0.000277778, 1), (\"\u00B0\", 1)]",
@@ -732,10 +732,10 @@
       "notes": 0
    },
    {
-      "Uid": 100,
-      "name": "centimeter",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 100,
+      "unitName": "centimeter",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "non-SI metric",
       "symbol": "cm",
       "defString": "[(0.01, 1), (\"m\", 1)]",
@@ -744,10 +744,10 @@
       "notes": "\u2248 \u200B1\u204410000000 of the distance from equator to pole."
    },
    {
-      "Uid": 103,
-      "name": "century",
-      "Qid": 36,
-      "quantity": "time",
+      "uID": 103,
+      "unitName": "century",
+      "dimension": "time",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "other English",
       "symbol": "century",
       "defString": "[(100, 1), (\"yr\", 1)]",
@@ -756,10 +756,10 @@
       "notes": 0
    },
    {
-      "Uid": 104,
-      "name": "chain",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 104,
+      "unitName": "chain",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "US customary",
       "symbol": "ch",
       "defString": "[(66, 1), (\"ft\", 1)]",
@@ -768,10 +768,10 @@
       "notes": 0
    },
    {
-      "Uid": 106,
-      "name": "circular inch",
-      "Qid": 3,
-      "quantity": "area",
+      "uID": 106,
+      "unitName": "circular inch",
+      "dimension": "area",
+      "category": "Spatial measurements",
       "SOU": "other English",
       "symbol": "circ in",
       "defString": "[(0.785398163, 1), (\"in\", 2)]",
@@ -780,10 +780,10 @@
       "notes": 0
    },
    {
-      "Uid": 107,
-      "name": "circular mil; circular thou",
-      "Qid": 3,
-      "quantity": "area",
+      "uID": 107,
+      "unitName": "circular mil; circular thou",
+      "dimension": "area",
+      "category": "Spatial measurements",
       "SOU": "other English",
       "symbol": "circ mil",
       "defString": "[(0.785398163, 1), (\"mil\", 2)]",
@@ -792,10 +792,10 @@
       "notes": 0
    },
    {
-      "Uid": 108,
-      "name": "clove",
-      "Qid": 26,
-      "quantity": "mass",
+      "uID": 108,
+      "unitName": "clove",
+      "dimension": "mass",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "other English",
       "symbol": "clove",
       "defString": "[(8, 1), (\"lb\", 1)]",
@@ -804,10 +804,10 @@
       "notes": 0
    },
    {
-      "Uid": 109,
-      "name": "coomb",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 109,
+      "unitName": "coomb",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "other English",
       "symbol": "coomb",
       "defString": "[(4, 1), (\"bu (imp)\", 1)]",
@@ -816,10 +816,10 @@
       "notes": 0
    },
    {
-      "Uid": 110,
-      "name": "cord",
-      "Qid": 3,
-      "quantity": "area",
+      "uID": 110,
+      "unitName": "cord",
+      "dimension": "area",
+      "category": "Spatial measurements",
       "SOU": "other English",
       "symbol": "cord",
       "defString": "[(192, 1), (\"bd\", 1)]",
@@ -828,10 +828,10 @@
       "notes": 0
    },
    {
-      "Uid": 111,
-      "name": "cord (firewood)",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 111,
+      "unitName": "cord (firewood)",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "other English",
       "symbol": "cord (firewood)",
       "defString": "[(128, 1), (\"ft\", 3)]",
@@ -840,10 +840,10 @@
       "notes": 0
    },
    {
-      "Uid": 112,
-      "name": "cord-foot",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 112,
+      "unitName": "cord-foot",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "other English",
       "symbol": "cord-foot",
       "defString": "[(16, 1), (\"ft\", 3)]",
@@ -852,10 +852,10 @@
       "notes": 0
    },
    {
-      "Uid": 113,
-      "name": "coulomb",
-      "Qid": 8,
-      "quantity": "electric charge",
+      "uID": 113,
+      "unitName": "coulomb",
+      "dimension": "electric charge",
+      "category": "Electromagnetism\u00A0",
       "SOU": "SI",
       "symbol": "C",
       "defString": "[(1, 1), (\"A\", 1), (\"s\", 1)]",
@@ -864,10 +864,10 @@
       "notes": "\u2261 The amount of electricity carried in one second of time by one ampere of current.[33]"
    },
    {
-      "Uid": 115,
-      "name": "coulomb per cubic meter",
-      "Qid": 47,
-      "quantity": "electric charge density",
+      "uID": 115,
+      "unitName": "coulomb per cubic meter",
+      "dimension": "electric charge density",
+      "category": "Electromagnetism\u00A0",
       "SOU": "SI",
       "symbol": "C/m3",
       "defString": "[(1, 1), (\"C\", 1), (\"m\", -3)]",
@@ -876,10 +876,10 @@
       "notes": 0
    },
    {
-      "Uid": 116,
-      "name": "coulomb per kilogram",
-      "Qid": 32,
-      "quantity": "radiation - exposure",
+      "uID": 116,
+      "unitName": "coulomb per kilogram",
+      "dimension": "radiation - exposure",
+      "category": "Radiation and radioactivity\u00A0",
       "SOU": "SI",
       "symbol": "C/kg",
       "defString": "[(1, 1), (\"C\", 1), (\"kg\", -1)]",
@@ -888,10 +888,10 @@
       "notes": "The roentgen is not an SI unit and the NIST strongly discourages its continued use.[44]"
    },
    {
-      "Uid": 117,
-      "name": "coulomb per square meter",
-      "Qid": 53,
-      "quantity": "electric flux density",
+      "uID": 117,
+      "unitName": "coulomb per square meter",
+      "dimension": "electric flux density",
+      "category": "Electromagnetism\u00A0",
       "SOU": "SI",
       "symbol": "C/m2",
       "defString": "[(1, 1), (\"C\", 1), (\"m\", -2)]",
@@ -900,10 +900,10 @@
       "notes": 0
    },
    {
-      "Uid": 118,
-      "name": "count of number of units",
-      "Qid": 66,
-      "quantity": "amount of substance",
+      "uID": 118,
+      "unitName": "count of number of units",
+      "dimension": "amount of substance",
+      "category": "Chemistry",
       "SOU": "universal",
       "symbol": "#",
       "defString": "[(1, 1), (\"#\", 1)]",
@@ -912,10 +912,10 @@
       "notes": 0
    },
    {
-      "Uid": 121,
-      "name": "cubic fathom",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 121,
+      "unitName": "cubic fathom",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "non-SI metric",
       "symbol": "fm3",
       "defString": "[(1, 1), (\"fm\", 3)]",
@@ -924,10 +924,10 @@
       "notes": 0
    },
    {
-      "Uid": 122,
-      "name": "cubic foot",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 122,
+      "unitName": "cubic foot",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "US customary",
       "symbol": "ft3",
       "defString": "[(1, 1), (\"ft\", 3)]",
@@ -936,10 +936,10 @@
       "notes": 0
    },
    {
-      "Uid": 125,
-      "name": "cubic foot of natural gas",
-      "Qid": 12,
-      "quantity": "energy",
+      "uID": 125,
+      "unitName": "cubic foot of natural gas",
+      "dimension": "energy",
+      "category": "Mechanics",
       "SOU": "other English",
       "symbol": "ft3 (gas)",
       "defString": "[(1000, 1), (\"BTUIT\", 1)]",
@@ -948,10 +948,10 @@
       "notes": 0
    },
    {
-      "Uid": 126,
-      "name": "cubic foot per minute",
-      "Qid": 13,
-      "quantity": "volume flow",
+      "uID": 126,
+      "unitName": "cubic foot per minute",
+      "dimension": "volume flow",
+      "category": "Physics of motion",
       "SOU": "other English",
       "symbol": "CFM",
       "defString": "[(1, 1), (\"ft\", 3), (\"min\", -1)]",
@@ -960,10 +960,10 @@
       "notes": 0
    },
    {
-      "Uid": 127,
-      "name": "cubic foot per second",
-      "Qid": 13,
-      "quantity": "volume flow",
+      "uID": 127,
+      "unitName": "cubic foot per second",
+      "dimension": "volume flow",
+      "category": "Physics of motion",
       "SOU": "other English",
       "symbol": "ft3/s",
       "defString": "[(1, 1), (\"ft\", 3), (\"s\", -1)]",
@@ -972,10 +972,10 @@
       "notes": 0
    },
    {
-      "Uid": 128,
-      "name": "cubic inch",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 128,
+      "unitName": "cubic inch",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "US customary",
       "symbol": "in3",
       "defString": "[(1, 1), (\"in\", 3)]",
@@ -984,10 +984,10 @@
       "notes": 0
    },
    {
-      "Uid": 130,
-      "name": "cubic inch per minute",
-      "Qid": 13,
-      "quantity": "volume flow",
+      "uID": 130,
+      "unitName": "cubic inch per minute",
+      "dimension": "volume flow",
+      "category": "Physics of motion",
       "SOU": "other English",
       "symbol": "in3/min",
       "defString": "[(1, 1), (\"in\", 3), (\"min\", -1)]",
@@ -996,10 +996,10 @@
       "notes": 0
    },
    {
-      "Uid": 131,
-      "name": "cubic inch per second",
-      "Qid": 13,
-      "quantity": "volume flow",
+      "uID": 131,
+      "unitName": "cubic inch per second",
+      "dimension": "volume flow",
+      "category": "Physics of motion",
       "SOU": "other English",
       "symbol": "in3/s",
       "defString": "[(1, 1), (\"in\", 3), (\"s\", -1)]",
@@ -1008,10 +1008,10 @@
       "notes": 0
    },
    {
-      "Uid": 132,
-      "name": "cubic meter",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 132,
+      "unitName": "cubic meter",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "SI",
       "symbol": "m3",
       "defString": "[(1, 1), (\"m\", 3)]",
@@ -1020,10 +1020,10 @@
       "notes": 0
    },
    {
-      "Uid": 133,
-      "name": "cubic meter per kilogram",
-      "Qid": 63,
-      "quantity": "specific volume",
+      "uID": 133,
+      "unitName": "cubic meter per kilogram",
+      "dimension": "specific volume",
+      "category": "Physical properties",
       "SOU": "SI",
       "symbol": "m3/kg",
       "defString": "[(1, 1), (\"m\", 3), (\"kg\", -1)]",
@@ -1032,10 +1032,10 @@
       "notes": 0
    },
    {
-      "Uid": 134,
-      "name": "cubic meter per second",
-      "Qid": 13,
-      "quantity": "volume flow",
+      "uID": 134,
+      "unitName": "cubic meter per second",
+      "dimension": "volume flow",
+      "category": "Physics of motion",
       "SOU": "non-SI metric",
       "symbol": "m3/s",
       "defString": "[(1, 1), (\"m\", 3), (\"s\", -1)]",
@@ -1044,10 +1044,10 @@
       "notes": 0
    },
    {
-      "Uid": 135,
-      "name": "cubic mile",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 135,
+      "unitName": "cubic mile",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "other English",
       "symbol": "mi3",
       "defString": "[(1, 1), (\"mi\", 3)]",
@@ -1056,10 +1056,10 @@
       "notes": 0
    },
    {
-      "Uid": 136,
-      "name": "cubic yard",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 136,
+      "unitName": "cubic yard",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "US customary",
       "symbol": "yd3",
       "defString": "[(27, 1), (\"ft\", 3)]",
@@ -1068,10 +1068,10 @@
       "notes": 0
    },
    {
-      "Uid": 138,
-      "name": "cubit",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 138,
+      "unitName": "cubit",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "other English",
       "symbol": "cubit",
       "defString": "[(18, 1), (\"in\", 1)]",
@@ -1080,10 +1080,10 @@
       "notes": "\u2261 Distance from fingers to elbow"
    },
    {
-      "Uid": 140,
-      "name": "cuerda (PR Survey)",
-      "Qid": 3,
-      "quantity": "area",
+      "uID": 140,
+      "unitName": "cuerda (PR Survey)",
+      "dimension": "area",
+      "category": "Spatial measurements",
       "SOU": "other English",
       "symbol": "cda",
       "defString": "[(0.971222, 1), (\"ac\", 1)]",
@@ -1092,10 +1092,10 @@
       "notes": 0
    },
    {
-      "Uid": 141,
-      "name": "cup (breakfast)",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 141,
+      "unitName": "cup (breakfast)",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "other English",
       "symbol": "cup (breakfast)",
       "defString": "[(10, 1), (\"fl oz (imp)\", 1)]",
@@ -1104,10 +1104,10 @@
       "notes": 0
    },
    {
-      "Uid": 142,
-      "name": "cup",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 142,
+      "unitName": "cup",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "US customary",
       "symbol": "cup",
       "defString": "[(8, 1), (\"fl oz\", 1)]",
@@ -1116,10 +1116,10 @@
       "notes": 0
    },
    {
-      "Uid": 143,
-      "name": "cup (US dry)",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 143,
+      "unitName": "cup (US dry)",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "non-SI metric",
       "symbol": "cup (US dry)",
       "defString": "[(240, 1), (\"ml\", 1)]",
@@ -1128,10 +1128,10 @@
       "notes": 0
    },
    {
-      "Uid": 144,
-      "name": "cup (metric)",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 144,
+      "unitName": "cup (metric)",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "non-SI metric",
       "symbol": "cup (metric)",
       "defString": "[(0.00025, 1), (\"m\", 3)]",
@@ -1140,10 +1140,10 @@
       "notes": 0
    },
    {
-      "Uid": 145,
-      "name": "cup (Canadian)",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 145,
+      "unitName": "cup (Canadian)",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "other English",
       "symbol": "c (Can)",
       "defString": "[(8, 1), (\"fl oz (imp)\", 1)]",
@@ -1152,10 +1152,10 @@
       "notes": 0
    },
    {
-      "Uid": 146,
-      "name": "curie",
-      "Qid": 33,
-      "quantity": "radioactivity",
+      "uID": 146,
+      "unitName": "curie",
+      "dimension": "radioactivity",
+      "category": "Radiation and radioactivity\u00A0",
       "SOU": "SI",
       "symbol": "Ci",
       "defString": "[(3737, 1), (\"Bq\", 1)]",
@@ -1164,10 +1164,10 @@
       "notes": 0
    },
    {
-      "Uid": 149,
-      "name": "dash (imperial)",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 149,
+      "unitName": "dash (imperial)",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "imperial",
       "symbol": "dash (imp)",
       "defString": "[(0.5, 1), (\"pinch (imp)\", 1)]",
@@ -1176,10 +1176,10 @@
       "notes": 0
    },
    {
-      "Uid": 151,
-      "name": "dash",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 151,
+      "unitName": "dash",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "other English",
       "symbol": "dash",
       "defString": "[(0.5, 1), (\"pinch\", 1)]",
@@ -1188,10 +1188,10 @@
       "notes": 0
    },
    {
-      "Uid": 152,
-      "name": "day",
-      "Qid": 36,
-      "quantity": "time",
+      "uID": 152,
+      "unitName": "day",
+      "dimension": "time",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "SI",
       "symbol": "d",
       "defString": "[(24, 1), (\"h\", 1)]",
@@ -1200,10 +1200,10 @@
       "notes": 0
    },
    {
-      "Uid": 155,
-      "name": "decade",
-      "Qid": 36,
-      "quantity": "time",
+      "uID": 155,
+      "unitName": "decade",
+      "dimension": "time",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "universal",
       "symbol": "dec",
       "defString": "[(10, 1), (\"yr\", 1)]",
@@ -1212,10 +1212,10 @@
       "notes": 0
    },
    {
-      "Uid": 156,
-      "name": "decibel",
-      "Qid": 71,
-      "quantity": "ratio (non-dimensional)",
+      "uID": 156,
+      "unitName": "decibel",
+      "dimension": "ratio (non-dimensional)",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "universal",
       "symbol": "dB",
       "defString": "[(0.1, 1), (\"B\", 1)]",
@@ -1224,10 +1224,10 @@
       "notes": 0
    },
    {
-      "Uid": 157,
-      "name": "degree (of arc)",
-      "Qid": 27,
-      "quantity": "plane angle",
+      "uID": 157,
+      "unitName": "degree (of arc)",
+      "dimension": "plane angle",
+      "category": "Spatial measurements",
       "SOU": "SI",
       "symbol": "\u00B0",
       "defString": "[(0.017453293, 1), (\"rad\", 1)]",
@@ -1236,10 +1236,10 @@
       "notes": "\u2261 \u200B1/360 of a revolution"
    },
    {
-      "Uid": 158,
-      "name": "degree Celsius",
-      "Qid": 35,
-      "quantity": "temperature",
+      "uID": 158,
+      "unitName": "degree Celsius",
+      "dimension": "temperature",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "SI",
       "symbol": "\u00B0C",
       "defString": "[(0, 1), (\"K\", 1)]",
@@ -1248,10 +1248,10 @@
       "notes": 0
    },
    {
-      "Uid": 160,
-      "name": "degree Fahrenheit",
-      "Qid": 35,
-      "quantity": "temperature",
+      "uID": 160,
+      "unitName": "degree Fahrenheit",
+      "dimension": "temperature",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "other English",
       "symbol": "\u00B0F",
       "defString": "[(0, 1), (\"\u00B0C\", 1)]",
@@ -1260,10 +1260,10 @@
       "notes": 0
    },
    {
-      "Uid": 162,
-      "name": "degree Rankine",
-      "Qid": 35,
-      "quantity": "temperature",
+      "uID": 162,
+      "unitName": "degree Rankine",
+      "dimension": "temperature",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "other English",
       "symbol": "\u00B0R",
       "defString": "[(0, 1), (\"K\", 1)]",
@@ -1272,10 +1272,10 @@
       "notes": 0
    },
    {
-      "Uid": 165,
-      "name": "dessertspoon",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 165,
+      "unitName": "dessertspoon",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "imperial",
       "symbol": "dessertspoon",
       "defString": "[(0.083333333, 1), (\"gi (imp)\", 1)]",
@@ -1284,10 +1284,10 @@
       "notes": 0
    },
    {
-      "Uid": 166,
-      "name": "troy dram",
-      "Qid": 26,
-      "quantity": "mass",
+      "uID": 166,
+      "unitName": "troy dram",
+      "dimension": "mass",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "other English",
       "symbol": "dr t",
       "defString": "[(60, 1), (\"gr\", 1)]",
@@ -1296,10 +1296,10 @@
       "notes": "Avoirdupois is a system of mass based on a pound of 16 ounces, while Troy weight is the system of mass where 12 troy ounces equals one troy pound."
    },
    {
-      "Uid": 167,
-      "name": "dram",
-      "Qid": 26,
-      "quantity": "mass",
+      "uID": 167,
+      "unitName": "dram",
+      "dimension": "mass",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "US customary",
       "symbol": "dr",
       "defString": "[(84.71875, 1), (\"gr\", 1)]",
@@ -1308,10 +1308,10 @@
       "notes": "Avoirdupois is a system of mass based on a pound of 16 ounces, while Troy weight is the system of mass where 12 troy ounces equals one troy pound."
    },
    {
-      "Uid": 168,
-      "name": "drop (US dry)",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 168,
+      "unitName": "drop (US dry)",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "non-SI metric",
       "symbol": "drop (US dry)",
       "defString": "[(0.05, 1), (\"ml\", 1)]",
@@ -1320,10 +1320,10 @@
       "notes": 0
    },
    {
-      "Uid": 172,
-      "name": "drop (imperial)",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 172,
+      "unitName": "drop (imperial)",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "imperial",
       "symbol": "gtt (imp)",
       "defString": "[(0.003472222, 1), (\"fl oz (imp)\", 1)]",
@@ -1332,10 +1332,10 @@
       "notes": 0
    },
    {
-      "Uid": 173,
-      "name": "drop (US fluid)",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 173,
+      "unitName": "drop (US fluid)",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "other English",
       "symbol": "gtt (US fl)",
       "defString": "[(0.002777778, 1), (\"fl oz\", 1)]",
@@ -1344,10 +1344,10 @@
       "notes": 0
    },
    {
-      "Uid": 175,
-      "name": "drop (medical)",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 175,
+      "unitName": "drop (medical)",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "non-SI metric",
       "symbol": "drop (medical)",
       "defString": "[(0.083333333, 1), (\"ml\", 1)]",
@@ -1356,10 +1356,10 @@
       "notes": 0
    },
    {
-      "Uid": 176,
-      "name": "dunam",
-      "Qid": 3,
-      "quantity": "area",
+      "uID": 176,
+      "unitName": "dunam",
+      "dimension": "area",
+      "category": "Spatial measurements",
       "SOU": "non-SI metric",
       "symbol": "dunam",
       "defString": "[(1000, 1), (\"m\", 2)]",
@@ -1368,10 +1368,10 @@
       "notes": 0
    },
    {
-      "Uid": 177,
-      "name": "dyne",
-      "Qid": 14,
-      "quantity": "force",
+      "uID": 177,
+      "unitName": "dyne",
+      "dimension": "force",
+      "category": "Mechanics",
       "SOU": "non-SI metric",
       "symbol": "dyn",
       "defString": "[(1, 1), (\"g\", 1), (\"cm\", 1), (\"s\", -2)]",
@@ -1380,10 +1380,10 @@
       "notes": 0
    },
    {
-      "Uid": 178,
-      "name": "electromagnetic unit",
-      "Qid": 8,
-      "quantity": "electric charge",
+      "uID": 178,
+      "unitName": "electromagnetic unit",
+      "dimension": "electric charge",
+      "category": "Electromagnetism\u00A0",
       "SOU": "non-SI metric",
       "symbol": "emu",
       "defString": "[(10, 1), (\"C\", 1)]",
@@ -1392,10 +1392,10 @@
       "notes": 0
    },
    {
-      "Uid": 179,
-      "name": "abampere",
-      "Qid": 9,
-      "quantity": "electric current",
+      "uID": 179,
+      "unitName": "abampere",
+      "dimension": "electric current",
+      "category": "Circuit / electrical properties",
       "SOU": "universal",
       "symbol": "abamp",
       "defString": "[(10, 1), (\"A\", 1)]",
@@ -1404,10 +1404,10 @@
       "notes": 0
    },
    {
-      "Uid": 181,
-      "name": "electronvolt",
-      "Qid": 12,
-      "quantity": "energy",
+      "uID": 181,
+      "unitName": "electronvolt",
+      "dimension": "energy",
+      "category": "Mechanics",
       "SOU": "SI",
       "symbol": "eV",
       "defString": "[(1, 1), (\"e\", 1), (\"V\", 1)]",
@@ -1416,10 +1416,10 @@
       "notes": 0
    },
    {
-      "Uid": 182,
-      "name": "electrostatic unit",
-      "Qid": 8,
-      "quantity": "electric charge",
+      "uID": 182,
+      "unitName": "electrostatic unit",
+      "dimension": "electric charge",
+      "category": "Electromagnetism\u00A0",
       "SOU": "non-SI metric",
       "symbol": "esu",
       "defString": "[(0.1, 1), (\"A\", 1), (\"m\", 1), (\"C\", -1)]",
@@ -1428,10 +1428,10 @@
       "notes": 0
    },
    {
-      "Uid": 183,
-      "name": "elementary charge",
-      "Qid": 66,
-      "quantity": "amount of substance",
+      "uID": 183,
+      "unitName": "elementary charge",
+      "dimension": "amount of substance",
+      "category": "Chemistry",
       "SOU": "universal",
       "symbol": "e",
       "defString": "[(1.60218E-19, 1), (\"C\", 1)]",
@@ -1440,10 +1440,10 @@
       "notes": "The elementary charge, usually denoted as e or sometimes q, is the electric charge carried by a single proton, or equivalently, the magnitude of the electric charge carried by a single electron, which has charge \u2212e.[2] This elementary charge is a fundamental physical constant. To avoid confusion over its sign, e is sometimes called the elementary positive charge. This charge has a measured value of approximately 1.6021766208(98)\u00D710\u221219 coulombs,[1] and after the planned redefinition of SI base units in 2018-2019, its value will be exactly 1.602176634\u00D710\u221219C by definition of the Coulomb. In cgs units, it is 4.80320425(10)\u00D710\u221210 statcoulombs.[3]"
    },
    {
-      "Uid": 184,
-      "name": "ell",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 184,
+      "unitName": "ell",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "other English",
       "symbol": "ell",
       "defString": "[(45, 1), (\"in\", 1)]",
@@ -1452,10 +1452,10 @@
       "notes": "in England, usually"
    },
    {
-      "Uid": 185,
-      "name": "erg",
-      "Qid": 12,
-      "quantity": "energy",
+      "uID": 185,
+      "unitName": "erg",
+      "dimension": "energy",
+      "category": "Mechanics",
       "SOU": "non-SI metric",
       "symbol": "erg",
       "defString": "[(1, 1), (\"g\", 1), (\"cm\", 2), (\"s\", -2)]",
@@ -1464,10 +1464,10 @@
       "notes": 0
    },
    {
-      "Uid": 186,
-      "name": "erg per second",
-      "Qid": 28,
-      "quantity": "power",
+      "uID": 186,
+      "unitName": "erg per second",
+      "dimension": "power",
+      "category": "Mechanics",
       "SOU": "non-SI metric",
       "symbol": "erg/s",
       "defString": "[(1, 1), (\"erg\", 1), (\"s\", -1)]",
@@ -1476,10 +1476,10 @@
       "notes": 0
    },
    {
-      "Uid": 187,
-      "name": "esu per second; statampere",
-      "Qid": 9,
-      "quantity": "electric current",
+      "uID": 187,
+      "unitName": "esu per second; statampere",
+      "dimension": "electric current",
+      "category": "Circuit / electrical properties",
       "SOU": "non-SI metric",
       "symbol": "esu/s",
       "defString": "[(0.1, 1), (\"A\", 1), (\"m\", 1), (\"s\", -1), (\"C\", -1)]",
@@ -1488,10 +1488,10 @@
       "notes": 0
    },
    {
-      "Uid": 188,
-      "name": "farad",
-      "Qid": 4,
-      "quantity": "capacitance",
+      "uID": 188,
+      "unitName": "farad",
+      "dimension": "capacitance",
+      "category": "Circuit / electrical properties",
       "SOU": "SI",
       "symbol": "F",
       "defString": "[(1, 1), (\"C\", 1), (\"V\", -1)]",
@@ -1500,10 +1500,10 @@
       "notes": "The capacitance between two parallel plates that results in one volt of potential difference when charged by one coulomb of electricity.[33]"
    },
    {
-      "Uid": 189,
-      "name": "farad per meter",
-      "Qid": 52,
-      "quantity": "permittivity",
+      "uID": 189,
+      "unitName": "farad per meter",
+      "dimension": "permittivity",
+      "category": "Chemistry",
       "SOU": "SI",
       "symbol": "F/m",
       "defString": "[(1, 1), (\"F\", 1), (\"m\", -1)]",
@@ -1512,10 +1512,10 @@
       "notes": 0
    },
    {
-      "Uid": 190,
-      "name": "faraday",
-      "Qid": 8,
-      "quantity": "electric charge",
+      "uID": 190,
+      "unitName": "faraday",
+      "dimension": "electric charge",
+      "category": "Electromagnetism\u00A0",
       "SOU": "non-SI metric",
       "symbol": "faraday",
       "defString": "[(1, 1), (\"mol\", 1), (\"NA\", 1), (\"e\", 1)]",
@@ -1524,10 +1524,10 @@
       "notes": 0
    },
    {
-      "Uid": 191,
-      "name": "fathom",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 191,
+      "unitName": "fathom",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "US customary",
       "symbol": "ftm",
       "defString": "[(6, 1), (\"ft\", 1)]",
@@ -1536,10 +1536,10 @@
       "notes": 0
    },
    {
-      "Uid": 192,
-      "name": "fermi",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 192,
+      "unitName": "fermi",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "non-SI metric",
       "symbol": "fm",
       "defString": "[(1E-15, 1), (\"m\", 1)]",
@@ -1548,10 +1548,10 @@
       "notes": 0
    },
    {
-      "Uid": 193,
-      "name": "fifth",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 193,
+      "unitName": "fifth",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "other English",
       "symbol": "fifth",
       "defString": "[(0.2, 1), (\"gal\", 1)]",
@@ -1560,10 +1560,10 @@
       "notes": 0
    },
    {
-      "Uid": 194,
-      "name": "finger",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 194,
+      "unitName": "finger",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "other English",
       "symbol": "finger",
       "defString": "[(0.875, 1), (\"in\", 1)]",
@@ -1572,10 +1572,10 @@
       "notes": 0
    },
    {
-      "Uid": 195,
-      "name": "finger (cloth)",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 195,
+      "unitName": "finger (cloth)",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "other English",
       "symbol": "finger (cloth)",
       "defString": "[(20.5, 1), (\"in\", 1)]",
@@ -1584,10 +1584,10 @@
       "notes": 0
    },
    {
-      "Uid": 196,
-      "name": "firkin",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 196,
+      "unitName": "firkin",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "other English",
       "symbol": "firkin",
       "defString": "[(9, 1), (\"gal (imp)\", 1)]",
@@ -1596,10 +1596,10 @@
       "notes": 0
    },
    {
-      "Uid": 197,
-      "name": "fluid drachm",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 197,
+      "unitName": "fluid drachm",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "imperial",
       "symbol": "fl dr (imp)",
       "defString": "[(0.125, 1), (\"fl oz (imp)\", 1)]",
@@ -1608,10 +1608,10 @@
       "notes": 0
    },
    {
-      "Uid": 199,
-      "name": "fluid scruple",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 199,
+      "unitName": "fluid scruple",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "imperial",
       "symbol": "fl s",
       "defString": "[(0.041666667, 1), (\"fl oz (imp)\", 1)]",
@@ -1620,10 +1620,10 @@
       "notes": 0
    },
    {
-      "Uid": 203,
-      "name": "foot (international)",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 203,
+      "unitName": "foot (international)",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "non-SI metric",
       "symbol": "ft (metric)",
       "defString": "[(0.3048, 1), (\"m\", 1)]",
@@ -1632,10 +1632,10 @@
       "notes": 0
    },
    {
-      "Uid": 204,
-      "name": "foot",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 204,
+      "unitName": "foot",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "US customary",
       "symbol": "ft",
       "defString": "[(12, 1), (\"in\", 1)]",
@@ -1644,10 +1644,10 @@
       "notes": 0
    },
    {
-      "Uid": 209,
-      "name": "foot per hour",
-      "Qid": 38,
-      "quantity": "velocity",
+      "uID": 209,
+      "unitName": "foot per hour",
+      "dimension": "velocity",
+      "category": "Physics of motion",
       "SOU": "other English",
       "symbol": "fph",
       "defString": "[(1, 1), (\"ft\", 1), (\"h\", -1)]",
@@ -1656,10 +1656,10 @@
       "notes": 0
    },
    {
-      "Uid": 210,
-      "name": "foot per hour per second",
-      "Qid": 1,
-      "quantity": "acceleration",
+      "uID": 210,
+      "unitName": "foot per hour per second",
+      "dimension": "acceleration",
+      "category": "Physics of motion",
       "SOU": "other English",
       "symbol": "fph/s",
       "defString": "[(1, 1), (\"ft\", 1), (\"h\", -1), (\"s\", -1)]",
@@ -1668,10 +1668,10 @@
       "notes": 0
    },
    {
-      "Uid": 211,
-      "name": "foot per minute",
-      "Qid": 38,
-      "quantity": "velocity",
+      "uID": 211,
+      "unitName": "foot per minute",
+      "dimension": "velocity",
+      "category": "Physics of motion",
       "SOU": "other English",
       "symbol": "fpm",
       "defString": "[(1, 1), (\"ft\", 1), (\"min\", -1)]",
@@ -1680,10 +1680,10 @@
       "notes": 0
    },
    {
-      "Uid": 212,
-      "name": "foot per minute per second",
-      "Qid": 1,
-      "quantity": "acceleration",
+      "uID": 212,
+      "unitName": "foot per minute per second",
+      "dimension": "acceleration",
+      "category": "Physics of motion",
       "SOU": "other English",
       "symbol": "fpm/s",
       "defString": "[(1, 1), (\"ft\", 1), (\"min\", -1), (\"s\", -1)]",
@@ -1692,10 +1692,10 @@
       "notes": 0
    },
    {
-      "Uid": 213,
-      "name": "foot per second",
-      "Qid": 38,
-      "quantity": "velocity",
+      "uID": 213,
+      "unitName": "foot per second",
+      "dimension": "velocity",
+      "category": "Physics of motion",
       "SOU": "other English",
       "symbol": "fps",
       "defString": "[(1, 1), (\"ft\", 1), (\"s\", -1)]",
@@ -1704,10 +1704,10 @@
       "notes": 0
    },
    {
-      "Uid": 214,
-      "name": "foot per second squared",
-      "Qid": 1,
-      "quantity": "acceleration",
+      "uID": 214,
+      "unitName": "foot per second squared",
+      "dimension": "acceleration",
+      "category": "Physics of motion",
       "SOU": "other English",
       "symbol": "fps2",
       "defString": "[(1, 1), (\"ft\", 1), (\"s\", -2)]",
@@ -1716,10 +1716,10 @@
       "notes": 0
    },
    {
-      "Uid": 215,
-      "name": "foot, metric (long)",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 215,
+      "unitName": "foot, metric (long)",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "non-SI metric",
       "symbol": "lmf",
       "defString": "[(0.333333333, 1), (\"m\", 1)]",
@@ -1728,10 +1728,10 @@
       "notes": 0
    },
    {
-      "Uid": 216,
-      "name": "foot, metric",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 216,
+      "unitName": "foot, metric",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "non-SI metric",
       "symbol": "mf",
       "defString": "[(0.316227766, 1), (\"m\", 1)]",
@@ -1740,10 +1740,10 @@
       "notes": 0
    },
    {
-      "Uid": 217,
-      "name": "foot, metric (short)",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 217,
+      "unitName": "foot, metric (short)",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "non-SI metric",
       "symbol": "smf",
       "defString": "[(0.3, 1), (\"m\", 1)]",
@@ -1752,10 +1752,10 @@
       "notes": 0
    },
    {
-      "Uid": 218,
-      "name": "footcandle; lumen per square foot",
-      "Qid": 16,
-      "quantity": "illuminance",
+      "uID": 218,
+      "unitName": "footcandle; lumen per square foot",
+      "dimension": "illuminance",
+      "category": "Optics\u00A0",
       "SOU": "other English",
       "symbol": "fc",
       "defString": "[(1, 1), (\"lm\", 1), (\"ft\", -2)]",
@@ -1764,10 +1764,10 @@
       "notes": 0
    },
    {
-      "Uid": 219,
-      "name": "footlambert",
-      "Qid": 21,
-      "quantity": "luminance",
+      "uID": 219,
+      "unitName": "footlambert",
+      "dimension": "luminance",
+      "category": "Optics\u00A0",
       "SOU": "other English",
       "symbol": "fL",
       "defString": "[(0.318309886, 1), (\"cd\", 1), (\"ft\", -2)]",
@@ -1776,10 +1776,10 @@
       "notes": 0
    },
    {
-      "Uid": 220,
-      "name": "foot-pound force",
-      "Qid": 12,
-      "quantity": "energy",
+      "uID": 220,
+      "unitName": "foot-pound force",
+      "dimension": "energy",
+      "category": "Mechanics",
       "SOU": "other English",
       "symbol": "ft\u00B7lbf",
       "defString": "[(1, 1), (\"g0\", 1), (\"lb\", 1), (\"ft\", 1)]",
@@ -1788,10 +1788,10 @@
       "notes": 0
    },
    {
-      "Uid": 223,
-      "name": "foot-poundal",
-      "Qid": 37,
-      "quantity": "torque",
+      "uID": 223,
+      "unitName": "foot-poundal",
+      "dimension": "torque",
+      "category": "Mechanics",
       "SOU": "other English",
       "symbol": "ft\u00B7pdl",
       "defString": "[(1, 1), (\"lb\", 1), (\"ft\", 2), (\"s\", -2)]",
@@ -1800,10 +1800,10 @@
       "notes": 0
    },
    {
-      "Uid": 224,
-      "name": "foot-pound-force per hour",
-      "Qid": 28,
-      "quantity": "power",
+      "uID": 224,
+      "unitName": "foot-pound-force per hour",
+      "dimension": "power",
+      "category": "Mechanics",
       "SOU": "other English",
       "symbol": "ft\u00B7lbf/h",
       "defString": "[(1, 1), (\"ft\", 1), (\"lbf\", 1), (\"h\", -1)]",
@@ -1812,10 +1812,10 @@
       "notes": 0
    },
    {
-      "Uid": 225,
-      "name": "foot-pound-force per minute",
-      "Qid": 28,
-      "quantity": "power",
+      "uID": 225,
+      "unitName": "foot-pound-force per minute",
+      "dimension": "power",
+      "category": "Mechanics",
       "SOU": "other English",
       "symbol": "ft\u00B7lbf/min",
       "defString": "[(1, 1), (\"ft\", 1), (\"lbf\", 1), (\"min\", -1)]",
@@ -1824,10 +1824,10 @@
       "notes": 0
    },
    {
-      "Uid": 226,
-      "name": "foot-pound-force per second",
-      "Qid": 28,
-      "quantity": "power",
+      "uID": 226,
+      "unitName": "foot-pound-force per second",
+      "dimension": "power",
+      "category": "Mechanics",
       "SOU": "other English",
       "symbol": "ft\u00B7lbf/s",
       "defString": "[(1, 1), (\"ft\", 1), (\"lbf\", 1), (\"s\", -1)]",
@@ -1836,10 +1836,10 @@
       "notes": 0
    },
    {
-      "Uid": 227,
-      "name": "fortnight",
-      "Qid": 36,
-      "quantity": "time",
+      "uID": 227,
+      "unitName": "fortnight",
+      "dimension": "time",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "universal",
       "symbol": "fn",
       "defString": "[(2, 1), (\"wk\", 1)]",
@@ -1848,10 +1848,10 @@
       "notes": 0
    },
    {
-      "Uid": 229,
-      "name": "charriere",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 229,
+      "unitName": "charriere",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "non-SI metric",
       "symbol": "charriere",
       "defString": "[(0.333333333, 1), (\"mm\", 1)]",
@@ -1860,10 +1860,10 @@
       "notes": 0
    },
    {
-      "Uid": 659,
-      "name": "french",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 659,
+      "unitName": "french",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "non-SI metric",
       "symbol": "french",
       "defString": "[(0.333333333, 1), (\"mm\", 1)]",
@@ -1872,10 +1872,10 @@
       "notes": 0
    },
    {
-      "Uid": 230,
-      "name": "furlong",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 230,
+      "unitName": "furlong",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "US customary",
       "symbol": "fur",
       "defString": "[(10, 1), (\"ch\", 1)]",
@@ -1884,10 +1884,10 @@
       "notes": 0
    },
    {
-      "Uid": 233,
-      "name": "furlong per fortnight",
-      "Qid": 38,
-      "quantity": "velocity",
+      "uID": 233,
+      "unitName": "furlong per fortnight",
+      "dimension": "velocity",
+      "category": "Physics of motion",
       "SOU": "other English",
       "symbol": "fur/fn",
       "defString": "[(1, 1), (\"fur\", 1), (\"fn\", -1)]",
@@ -1896,10 +1896,10 @@
       "notes": 0
    },
    {
-      "Uid": 234,
-      "name": "gal; galileo",
-      "Qid": 1,
-      "quantity": "acceleration",
+      "uID": 234,
+      "unitName": "gal; galileo",
+      "dimension": "acceleration",
+      "category": "Physics of motion",
       "SOU": "non-SI metric",
       "symbol": "Gal",
       "defString": "[(1, 1), (\"cm\", 1), (\"s\", -2)]",
@@ -1908,10 +1908,10 @@
       "notes": 0
    },
    {
-      "Uid": 235,
-      "name": "gallon (beer)",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 235,
+      "unitName": "gallon (beer)",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "other English",
       "symbol": "gal (beer)",
       "defString": "[(282, 1), (\"in\", 3)]",
@@ -1920,10 +1920,10 @@
       "notes": 0
    },
    {
-      "Uid": 236,
-      "name": "gallon (imperial)",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 236,
+      "unitName": "gallon (imperial)",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "imperial",
       "symbol": "gal (imp)",
       "defString": "[(4.54609, 1), (\"L\", 1)]",
@@ -1932,10 +1932,10 @@
       "notes": 0
    },
    {
-      "Uid": 237,
-      "name": "gallon (US dry)",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 237,
+      "unitName": "gallon (US dry)",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "other English",
       "symbol": "gal (US dry)",
       "defString": "[(0.125, 1), (\"bu\", 1)]",
@@ -1944,10 +1944,10 @@
       "notes": 0
    },
    {
-      "Uid": 238,
-      "name": "gallon",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 238,
+      "unitName": "gallon",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "US customary",
       "symbol": "gal",
       "defString": "[(231, 1), (\"in\", 3)]",
@@ -1956,10 +1956,10 @@
       "notes": 0
    },
    {
-      "Uid": 239,
-      "name": "gallon per day",
-      "Qid": 13,
-      "quantity": "volume flow",
+      "uID": 239,
+      "unitName": "gallon per day",
+      "dimension": "volume flow",
+      "category": "Physics of motion",
       "SOU": "other English",
       "symbol": "GPD",
       "defString": "[(1, 1), (\"gal\", 1), (\"d\", -1)]",
@@ -1968,10 +1968,10 @@
       "notes": 0
    },
    {
-      "Uid": 240,
-      "name": "gallon per hour",
-      "Qid": 13,
-      "quantity": "volume flow",
+      "uID": 240,
+      "unitName": "gallon per hour",
+      "dimension": "volume flow",
+      "category": "Physics of motion",
       "SOU": "other English",
       "symbol": "GPH",
       "defString": "[(1, 1), (\"gal\", 1), (\"h\", -1)]",
@@ -1980,10 +1980,10 @@
       "notes": 0
    },
    {
-      "Uid": 241,
-      "name": "gallon per minute",
-      "Qid": 13,
-      "quantity": "volume flow",
+      "uID": 241,
+      "unitName": "gallon per minute",
+      "dimension": "volume flow",
+      "category": "Physics of motion",
       "SOU": "other English",
       "symbol": "GPM",
       "defString": "[(1, 1), (\"gal\", 1), (\"min\", -1)]",
@@ -1992,10 +1992,10 @@
       "notes": 0
    },
    {
-      "Uid": 244,
-      "name": "gamma",
-      "Qid": 26,
-      "quantity": "mass",
+      "uID": 244,
+      "unitName": "gamma",
+      "dimension": "mass",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "non-SI metric",
       "symbol": "\u03B3",
       "defString": "[(1, 1), (\"\u03BCg\", 1)]",
@@ -2004,10 +2004,10 @@
       "notes": 0
    },
    {
-      "Uid": 245,
-      "name": "gauss",
-      "Qid": 25,
-      "quantity": "magnetic flux density",
+      "uID": 245,
+      "unitName": "gauss",
+      "dimension": "magnetic flux density",
+      "category": "Electromagnetism\u00A0",
       "SOU": "non-SI metric",
       "symbol": "G",
       "defString": "[(1, 1), (\"Mx\", 1), (\"cm\", -2)]",
@@ -2016,10 +2016,10 @@
       "notes": 0
    },
    {
-      "Uid": 247,
-      "name": "giga calorie",
-      "Qid": 12,
-      "quantity": "energy",
+      "uID": 247,
+      "unitName": "giga calorie",
+      "dimension": "energy",
+      "category": "Mechanics",
       "SOU": "non-SI metric",
       "symbol": "GcalIT",
       "defString": "[(0, 1), (\"calIT\", 1)]",
@@ -2028,10 +2028,10 @@
       "notes": 0
    },
    {
-      "Uid": 248,
-      "name": "giga calorie (thermochemical)",
-      "Qid": 12,
-      "quantity": "energy",
+      "uID": 248,
+      "unitName": "giga calorie (thermochemical)",
+      "dimension": "energy",
+      "category": "Mechanics",
       "SOU": "non-SI metric",
       "symbol": "Gcalth",
       "defString": "[(0, 1), (\"calth\", 1)]",
@@ -2040,10 +2040,10 @@
       "notes": 0
    },
    {
-      "Uid": 249,
-      "name": "gill (imperial)",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 249,
+      "unitName": "gill (imperial)",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "imperial",
       "symbol": "gi (imp)",
       "defString": "[(5, 1), (\"fl oz (imp)\", 1)]",
@@ -2052,10 +2052,10 @@
       "notes": 0
    },
    {
-      "Uid": 250,
-      "name": "gill",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 250,
+      "unitName": "gill",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "US customary",
       "symbol": "gi (US)",
       "defString": "[(4, 1), (\"fl oz\", 1)]",
@@ -2064,10 +2064,10 @@
       "notes": 0
    },
    {
-      "Uid": 251,
-      "name": "grad",
-      "Qid": 27,
-      "quantity": "plane angle",
+      "uID": 251,
+      "unitName": "grad",
+      "dimension": "plane angle",
+      "category": "Spatial measurements",
       "SOU": "universal",
       "symbol": "grad",
       "defString": "[(0.015707963, 1), (\"rad\", 1)]",
@@ -2076,10 +2076,10 @@
       "notes": "\u2261 \u200B1\u2044400 of a revolution \u2261 \u200B\u03C0\u2044200 rad \u2261 0.9\u00B0"
    },
    {
-      "Uid": 252,
-      "name": "grain",
-      "Qid": 26,
-      "quantity": "mass",
+      "uID": 252,
+      "unitName": "grain",
+      "dimension": "mass",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "US customary",
       "symbol": "gr",
       "defString": "[(0.000142857, 1), (\"lb\", 1)]",
@@ -2088,10 +2088,10 @@
       "notes": 0
    },
    {
-      "Uid": 253,
-      "name": "gram",
-      "Qid": 26,
-      "quantity": "mass",
+      "uID": 253,
+      "unitName": "gram",
+      "dimension": "mass",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "non-SI metric",
       "symbol": "g",
       "defString": "[(0.001, 1), (\"kg\", 1)]",
@@ -2100,10 +2100,10 @@
       "notes": "or kilogramme; \u2248 mass of 1\u00A0litre of water"
    },
    {
-      "Uid": 254,
-      "name": "gram per milliliter",
-      "Qid": 6,
-      "quantity": "mass density",
+      "uID": 254,
+      "unitName": "gram per milliliter",
+      "dimension": "mass density",
+      "category": "Physical properties",
       "SOU": "non-SI metric",
       "symbol": "g/ml",
       "defString": "[(1, 1), (\"g\", 1), (\"ml\", -1)]",
@@ -2112,10 +2112,10 @@
       "notes": 0
    },
    {
-      "Uid": 258,
-      "name": "gray",
-      "Qid": 30,
-      "quantity": "radiation - absorbed dose",
+      "uID": 258,
+      "unitName": "gray",
+      "dimension": "radiation - absorbed dose",
+      "category": "Radiation and radioactivity\u00A0",
       "SOU": "SI",
       "symbol": "Gy",
       "defString": "[(1, 1), (\"J\", 1), (\"kg\", -1)]",
@@ -2124,10 +2124,10 @@
       "notes": "= 1 m2/s2 [45]"
    },
    {
-      "Uid": 259,
-      "name": "gray per second",
-      "Qid": 70,
-      "quantity": "radiation - absorbed dose rate",
+      "uID": 259,
+      "unitName": "gray per second",
+      "dimension": "radiation - absorbed dose rate",
+      "category": "Radiation and radioactivity\u00A0",
       "SOU": "SI",
       "symbol": "Gy/s",
       "defString": "[(1, 1), (\"Gy\", 1), (\"s\", -1)]",
@@ -2136,10 +2136,10 @@
       "notes": 0
    },
    {
-      "Uid": 260,
-      "name": "guntha (India)",
-      "Qid": 3,
-      "quantity": "area",
+      "uID": 260,
+      "unitName": "guntha (India)",
+      "dimension": "area",
+      "category": "Spatial measurements",
       "SOU": "other English",
       "symbol": "guntha (India)",
       "defString": "[(121, 1), (\"yd\", 2)]",
@@ -2148,10 +2148,10 @@
       "notes": 0
    },
    {
-      "Uid": 261,
-      "name": "hand",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 261,
+      "unitName": "hand",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "other English",
       "symbol": "hand",
       "defString": "[(4, 1), (\"in\", 1)]",
@@ -2160,10 +2160,10 @@
       "notes": 0
    },
    {
-      "Uid": 264,
-      "name": "hectare",
-      "Qid": 3,
-      "quantity": "area",
+      "uID": 264,
+      "unitName": "hectare",
+      "dimension": "area",
+      "category": "Spatial measurements",
       "SOU": "SI",
       "symbol": "ha",
       "defString": "[(10000, 1), (\"m\", 2)]",
@@ -2172,10 +2172,10 @@
       "notes": 0
    },
    {
-      "Uid": 265,
-      "name": "helek",
-      "Qid": 36,
-      "quantity": "time",
+      "uID": 265,
+      "unitName": "helek",
+      "dimension": "time",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "universal",
       "symbol": "helek",
       "defString": "[(0.000925926, 1), (\"h\", 1)]",
@@ -2184,10 +2184,10 @@
       "notes": 0
    },
    {
-      "Uid": 266,
-      "name": "henry",
-      "Qid": 17,
-      "quantity": "inductance",
+      "uID": 266,
+      "unitName": "henry",
+      "dimension": "inductance",
+      "category": "Circuit / electrical properties",
       "SOU": "SI",
       "symbol": "H",
       "defString": "[(1, 1), (\"Wb\", 1), (\"A\", -1)]",
@@ -2196,10 +2196,10 @@
       "notes": "The inductance of a closed circuit that produces one volt of electromotive force when the current in the circuit varies at a uniform rate of one ampere per second.[33]"
    },
    {
-      "Uid": 267,
-      "name": "henry per meter",
-      "Qid": 50,
-      "quantity": "permeability",
+      "uID": 267,
+      "unitName": "henry per meter",
+      "dimension": "permeability",
+      "category": "Physical properties",
       "SOU": "SI",
       "symbol": "H/m",
       "defString": "[(1, 1), (\"H\", 1), (\"m\", -1)]",
@@ -2208,10 +2208,10 @@
       "notes": 0
    },
    {
-      "Uid": 268,
-      "name": "hertz",
-      "Qid": 15,
-      "quantity": "frequency",
+      "uID": 268,
+      "unitName": "hertz",
+      "dimension": "frequency",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "SI",
       "symbol": "Hz",
       "defString": "[(1, 1), (\"1\", 1), (\"s\", -1)]",
@@ -2220,10 +2220,10 @@
       "notes": "\u2261 Number of cycles per second"
    },
    {
-      "Uid": 269,
-      "name": "hide",
-      "Qid": 3,
-      "quantity": "area",
+      "uID": 269,
+      "unitName": "hide",
+      "dimension": "area",
+      "category": "Spatial measurements",
       "SOU": "other English",
       "symbol": "hide",
       "defString": "[(120, 1), (\"ac\", 1)]",
@@ -2232,10 +2232,10 @@
       "notes": 0
    },
    {
-      "Uid": 271,
-      "name": "hogshead (imperial)",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 271,
+      "unitName": "hogshead (imperial)",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "imperial",
       "symbol": "hhd (imp)",
       "defString": "[(2, 1), (\"bbl (imp)\", 1)]",
@@ -2244,10 +2244,10 @@
       "notes": 0
    },
    {
-      "Uid": 272,
-      "name": "hogshead",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 272,
+      "unitName": "hogshead",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "US customary",
       "symbol": "hhd (US)",
       "defString": "[(2, 1), (\"bbl\", 1)]",
@@ -2256,10 +2256,10 @@
       "notes": 0
    },
    {
-      "Uid": 273,
-      "name": "horsepower (boiler)",
-      "Qid": 28,
-      "quantity": "power",
+      "uID": 273,
+      "unitName": "horsepower (boiler)",
+      "dimension": "power",
+      "category": "Mechanics",
       "SOU": "other English",
       "symbol": "hp (boiler)",
       "defString": "[(0, 1), (\"BTUIT\", 1), (\"h\", -1)]",
@@ -2268,10 +2268,10 @@
       "notes": 0
    },
    {
-      "Uid": 274,
-      "name": "horsepower (electrical)",
-      "Qid": 28,
-      "quantity": "power",
+      "uID": 274,
+      "unitName": "horsepower (electrical)",
+      "dimension": "power",
+      "category": "Mechanics",
       "SOU": "non-SI metric",
       "symbol": "hp (elec)",
       "defString": "[(746, 1), (\"W\", 1)]",
@@ -2280,10 +2280,10 @@
       "notes": 0
    },
    {
-      "Uid": 275,
-      "name": "horsepower (European electrical)",
-      "Qid": 28,
-      "quantity": "power",
+      "uID": 275,
+      "unitName": "horsepower (European electrical)",
+      "dimension": "power",
+      "category": "Mechanics",
       "SOU": "non-SI metric",
       "symbol": "hp (Euro)",
       "defString": "[(75, 1), (\"kp\", 1), (\"m\", 1), (\"s\", -1)]",
@@ -2292,10 +2292,10 @@
       "notes": 0
    },
    {
-      "Uid": 276,
-      "name": "horsepower",
-      "Qid": 28,
-      "quantity": "power",
+      "uID": 276,
+      "unitName": "horsepower",
+      "dimension": "power",
+      "category": "Mechanics",
       "SOU": "non-SI metric",
       "symbol": "PS",
       "defString": "[(75, 1), (\"m\", 1), (\"kgf\", 1), (\"s\", -1)]",
@@ -2304,10 +2304,10 @@
       "notes": 0
    },
    {
-      "Uid": 277,
-      "name": "horsepower (mechanical)",
-      "Qid": 28,
-      "quantity": "power",
+      "uID": 277,
+      "unitName": "horsepower (mechanical)",
+      "dimension": "power",
+      "category": "Mechanics",
       "SOU": "other English",
       "symbol": "hp",
       "defString": "[(550, 1), (\"ft\", 1), (\"lbf\", 1), (\"s\", -1)]",
@@ -2316,10 +2316,10 @@
       "notes": 0
    },
    {
-      "Uid": 278,
-      "name": "horsepower-hour",
-      "Qid": 12,
-      "quantity": "energy",
+      "uID": 278,
+      "unitName": "horsepower-hour",
+      "dimension": "energy",
+      "category": "Mechanics",
       "SOU": "other English",
       "symbol": "hp\u00B7h",
       "defString": "[(1, 1), (\"hp\", 1), (\"h\", 1)]",
@@ -2328,10 +2328,10 @@
       "notes": 0
    },
    {
-      "Uid": 279,
-      "name": "hour",
-      "Qid": 36,
-      "quantity": "time",
+      "uID": 279,
+      "unitName": "hour",
+      "dimension": "time",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "SI",
       "symbol": "h",
       "defString": "[(60, 1), (\"min\", 1)]",
@@ -2340,10 +2340,10 @@
       "notes": 0
    },
    {
-      "Uid": 281,
-      "name": "hundredweight (long)",
-      "Qid": 26,
-      "quantity": "mass",
+      "uID": 281,
+      "unitName": "hundredweight (long)",
+      "dimension": "mass",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "US customary",
       "symbol": "long cwt",
       "defString": "[(112, 1), (\"lb\", 1)]",
@@ -2352,10 +2352,10 @@
       "notes": 0
    },
    {
-      "Uid": 282,
-      "name": "hundredweight (short)",
-      "Qid": 26,
-      "quantity": "mass",
+      "uID": 282,
+      "unitName": "hundredweight (short)",
+      "dimension": "mass",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "US customary",
       "symbol": "sh cwt",
       "defString": "[(100, 1), (\"lb\", 1)]",
@@ -2364,10 +2364,10 @@
       "notes": 0
    },
    {
-      "Uid": 663,
-      "name": "cental",
-      "Qid": 26,
-      "quantity": "mass",
+      "uID": 663,
+      "unitName": "cental",
+      "dimension": "mass",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "other English",
       "symbol": "cental",
       "defString": "[(100, 1), (\"lb\", 1)]",
@@ -2376,10 +2376,10 @@
       "notes": 0
    },
    {
-      "Uid": 285,
-      "name": "inch",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 285,
+      "unitName": "inch",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "US customary",
       "symbol": "in",
       "defString": "[(0.083333333, 1), (\"ft\", 1)]",
@@ -2388,10 +2388,10 @@
       "notes": 0
    },
    {
-      "Uid": 288,
-      "name": "inch per hour",
-      "Qid": 38,
-      "quantity": "velocity",
+      "uID": 288,
+      "unitName": "inch per hour",
+      "dimension": "velocity",
+      "category": "Physics of motion",
       "SOU": "other English",
       "symbol": "iph",
       "defString": "[(1, 1), (\"in\", 1), (\"h\", -1)]",
@@ -2400,10 +2400,10 @@
       "notes": 0
    },
    {
-      "Uid": 289,
-      "name": "inch per minute",
-      "Qid": 38,
-      "quantity": "velocity",
+      "uID": 289,
+      "unitName": "inch per minute",
+      "dimension": "velocity",
+      "category": "Physics of motion",
       "SOU": "other English",
       "symbol": "ipm",
       "defString": "[(1, 1), (\"in\", 1), (\"min\", -1)]",
@@ -2412,10 +2412,10 @@
       "notes": 0
    },
    {
-      "Uid": 290,
-      "name": "inch per minute per second",
-      "Qid": 1,
-      "quantity": "acceleration",
+      "uID": 290,
+      "unitName": "inch per minute per second",
+      "dimension": "acceleration",
+      "category": "Physics of motion",
       "SOU": "other English",
       "symbol": "ipm/s",
       "defString": "[(1, 1), (\"in\", 1), (\"min\", -1), (\"s\", -1)]",
@@ -2424,10 +2424,10 @@
       "notes": 0
    },
    {
-      "Uid": 291,
-      "name": "inch per second",
-      "Qid": 38,
-      "quantity": "velocity",
+      "uID": 291,
+      "unitName": "inch per second",
+      "dimension": "velocity",
+      "category": "Physics of motion",
       "SOU": "other English",
       "symbol": "ips",
       "defString": "[(1, 1), (\"in\", 1), (\"s\", -1)]",
@@ -2436,10 +2436,10 @@
       "notes": 0
    },
    {
-      "Uid": 292,
-      "name": "inch per second squared",
-      "Qid": 1,
-      "quantity": "acceleration",
+      "uID": 292,
+      "unitName": "inch per second squared",
+      "dimension": "acceleration",
+      "category": "Physics of motion",
       "SOU": "other English",
       "symbol": "ips2",
       "defString": "[(1, 1), (\"in\", 1), (\"s\", -2)]",
@@ -2448,10 +2448,10 @@
       "notes": 0
    },
    {
-      "Uid": 295,
-      "name": "jiffy (alternative)",
-      "Qid": 36,
-      "quantity": "time",
+      "uID": 295,
+      "unitName": "jiffy (alternative)",
+      "dimension": "time",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "universal",
       "symbol": "ja",
       "defString": "[(0.01, 1), (\"s\", 1)]",
@@ -2460,10 +2460,10 @@
       "notes": 0
    },
    {
-      "Uid": 296,
-      "name": "jiffy",
-      "Qid": 36,
-      "quantity": "time",
+      "uID": 296,
+      "unitName": "jiffy",
+      "dimension": "time",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "universal",
       "symbol": "j",
       "defString": "[(0.016666667, 1), (\"s\", 1)]",
@@ -2472,10 +2472,10 @@
       "notes": 0
    },
    {
-      "Uid": 297,
-      "name": "jigger (bartending)",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 297,
+      "unitName": "jigger (bartending)",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "other English",
       "symbol": "jigger",
       "defString": "[(5.5, 1), (\"fl oz\", 1)]",
@@ -2484,10 +2484,10 @@
       "notes": 0
    },
    {
-      "Uid": 298,
-      "name": "joule",
-      "Qid": 12,
-      "quantity": "energy",
+      "uID": 298,
+      "unitName": "joule",
+      "dimension": "energy",
+      "category": "Mechanics",
       "SOU": "SI",
       "symbol": "J",
       "defString": "[(1, 1), (\"N\", 1), (\"m\", 1)]",
@@ -2496,10 +2496,10 @@
       "notes": "The work done when a force of one newton moves the point of its application a distance of one metre in the direction of the force.[33]"
    },
    {
-      "Uid": 301,
-      "name": "joule per cubic meter",
-      "Qid": 54,
-      "quantity": "energy density",
+      "uID": 301,
+      "unitName": "joule per cubic meter",
+      "dimension": "energy density",
+      "category": "Mechanics",
       "SOU": "SI",
       "symbol": "J/m3",
       "defString": "[(1, 1), (\"J\", 1), (\"m\", -3)]",
@@ -2508,10 +2508,10 @@
       "notes": 0
    },
    {
-      "Uid": 302,
-      "name": "joule per kelvin",
-      "Qid": 55,
-      "quantity": "heat capacity, entropy",
+      "uID": 302,
+      "unitName": "joule per kelvin",
+      "dimension": "heat capacity, entropy",
+      "category": "Thermo",
       "SOU": "SI",
       "symbol": "J/K",
       "defString": "[(1, 1), (\"J\", 1), (\"K\", -1)]",
@@ -2520,10 +2520,10 @@
       "notes": 0
    },
    {
-      "Uid": 303,
-      "name": "joule per kilogram",
-      "Qid": 60,
-      "quantity": "specific energy",
+      "uID": 303,
+      "unitName": "joule per kilogram",
+      "dimension": "specific energy",
+      "category": "Thermo",
       "SOU": "SI",
       "symbol": "J/kg",
       "defString": "[(1, 1), (\"J\", 1), (\"kg\", -1)]",
@@ -2532,10 +2532,10 @@
       "notes": 0
    },
    {
-      "Uid": 304,
-      "name": "joule per kilogram kelvin",
-      "Qid": 61,
-      "quantity": "specific heat capacity, specific entropy",
+      "uID": 304,
+      "unitName": "joule per kilogram kelvin",
+      "dimension": "specific heat capacity, specific entropy",
+      "category": "Thermo",
       "SOU": "SI",
       "symbol": "J/(kg\u00B7K)",
       "defString": "[(1, 1), (\"J\", 1), (\"kg\", -1), (\"K\", -1)]",
@@ -2544,10 +2544,10 @@
       "notes": 0
    },
    {
-      "Uid": 305,
-      "name": "joule per mole",
-      "Qid": 46,
-      "quantity": "molar energy",
+      "uID": 305,
+      "unitName": "joule per mole",
+      "dimension": "molar energy",
+      "category": "Chemistry",
       "SOU": "SI",
       "symbol": "J/mol",
       "defString": "[(1, 1), (\"J\", 1), (\"mol\", -1)]",
@@ -2556,10 +2556,10 @@
       "notes": 0
    },
    {
-      "Uid": 306,
-      "name": "joule per mole kelvin",
-      "Qid": 48,
-      "quantity": "molar entropy, molar heat capacity",
+      "uID": 306,
+      "unitName": "joule per mole kelvin",
+      "dimension": "molar entropy, molar heat capacity",
+      "category": "Thermo",
       "SOU": "SI",
       "symbol": "J/(mol\u00B7K)",
       "defString": "[(1, 1), (\"J\", 1), (\"mol\", -1), (\"K\", -1)]",
@@ -2568,10 +2568,10 @@
       "notes": 0
    },
    {
-      "Uid": 307,
-      "name": "katal",
-      "Qid": 42,
-      "quantity": "catalytic activity",
+      "uID": 307,
+      "unitName": "katal",
+      "dimension": "catalytic activity",
+      "category": "Chemistry",
       "SOU": "SI",
       "symbol": "kat",
       "defString": "[(1, 1), (\"mol\", 1), (\"s\", -1)]",
@@ -2580,10 +2580,10 @@
       "notes": 0
    },
    {
-      "Uid": 308,
-      "name": "katal per cubic meter",
-      "Qid": 41,
-      "quantity": "catalytic (activity) concentration",
+      "uID": 308,
+      "unitName": "katal per cubic meter",
+      "dimension": "catalytic (activity) concentration",
+      "category": "Chemistry",
       "SOU": "SI",
       "symbol": "kat/m3",
       "defString": "[(1, 1), (\"kat\", 1), (\"m\", -3)]",
@@ -2592,10 +2592,10 @@
       "notes": 0
    },
    {
-      "Uid": 309,
-      "name": "Ke (quarter of an hour)",
-      "Qid": 36,
-      "quantity": "time",
+      "uID": 309,
+      "unitName": "Ke (quarter of an hour)",
+      "dimension": "time",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "universal",
       "symbol": "Ke (quarter of an hour)",
       "defString": "[(0.25, 1), (\"h\", 1)]",
@@ -2604,10 +2604,10 @@
       "notes": 0
    },
    {
-      "Uid": 312,
-      "name": "Ke (traditional)",
-      "Qid": 36,
-      "quantity": "time",
+      "uID": 312,
+      "unitName": "Ke (traditional)",
+      "dimension": "time",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "universal",
       "symbol": "Ke (traditional)",
       "defString": "[(0.01, 1), (\"d\", 1)]",
@@ -2616,10 +2616,10 @@
       "notes": 0
    },
    {
-      "Uid": 314,
-      "name": "kelvin",
-      "Qid": 35,
-      "quantity": "temperature",
+      "uID": 314,
+      "unitName": "kelvin",
+      "dimension": "temperature",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "SI",
       "symbol": "K",
       "defString": "[(1, 1), (\"K\", 1)]",
@@ -2628,10 +2628,10 @@
       "notes": "\u2261 \u200B1\u2044273.16 of the thermodynamic temperature of the triple point of water.[10]"
    },
    {
-      "Uid": 315,
-      "name": "kibibyte",
-      "Qid": 18,
-      "quantity": "information entropy",
+      "uID": 315,
+      "unitName": "kibibyte",
+      "dimension": "information",
+      "category": "Informatics\u00A0",
       "SOU": "universal",
       "symbol": "KiB",
       "defString": "[(1024, 1), (\"B\", 1)]",
@@ -2640,10 +2640,10 @@
       "notes": "= 213 bit = 8192 bit"
    },
    {
-      "Uid": 316,
-      "name": "kilderkin",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 316,
+      "unitName": "kilderkin",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "other English",
       "symbol": "kilderkin",
       "defString": "[(18, 1), (\"gal (imp)\", 1)]",
@@ -2652,10 +2652,10 @@
       "notes": 0
    },
    {
-      "Uid": 317,
-      "name": "kilobyte (decimal)",
-      "Qid": 18,
-      "quantity": "information entropy",
+      "uID": 317,
+      "unitName": "kilobyte (decimal)",
+      "dimension": "information",
+      "category": "Informatics\u00A0",
       "SOU": "universal",
       "symbol": "kB",
       "defString": "[(1000, 1), (\"B\", 1)]",
@@ -2664,10 +2664,10 @@
       "notes": "= 8000 bit"
    },
    {
-      "Uid": 318,
-      "name": "kilobyte",
-      "Qid": 18,
-      "quantity": "information entropy",
+      "uID": 318,
+      "unitName": "kilobyte",
+      "dimension": "information",
+      "category": "Informatics\u00A0",
       "SOU": "universal",
       "symbol": "KB",
       "defString": "[(1024, 1), (\"B\", 1)]",
@@ -2676,10 +2676,10 @@
       "notes": "= 213 bit = 8192 bit"
    },
    {
-      "Uid": 319,
-      "name": "kilocalorie",
-      "Qid": 12,
-      "quantity": "energy",
+      "uID": 319,
+      "unitName": "kilocalorie",
+      "dimension": "energy",
+      "category": "Mechanics",
       "SOU": "non-SI metric",
       "symbol": "kcal",
       "defString": "[(1000, 1), (\"calIT\", 1)]",
@@ -2688,10 +2688,10 @@
       "notes": 0
    },
    {
-      "Uid": 320,
-      "name": "kilogram",
-      "Qid": 26,
-      "quantity": "mass",
+      "uID": 320,
+      "unitName": "kilogram",
+      "dimension": "mass",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "SI",
       "symbol": "kg",
       "defString": "[(1, 1), (\"kg\", 1)]",
@@ -2700,10 +2700,10 @@
       "notes": "\u2261 mass of the prototype near Paris"
    },
    {
-      "Uid": 321,
-      "name": "kilogram per cubic meter",
-      "Qid": 6,
-      "quantity": "mass density",
+      "uID": 321,
+      "unitName": "kilogram per cubic meter",
+      "dimension": "mass density",
+      "category": "Physical properties",
       "SOU": "SI",
       "symbol": "kg/m3",
       "defString": "[(1, 1), (\"kg\", 1), (\"m\", -3)]",
@@ -2712,10 +2712,10 @@
       "notes": 0
    },
    {
-      "Uid": 322,
-      "name": "kilogram per kilogram, which may be represented by the number 1",
-      "Qid": 45,
-      "quantity": "mass fraction",
+      "uID": 322,
+      "unitName": "kilogram per kilogram, which may be represented by the number 1",
+      "dimension": "mass fraction",
+      "category": "Chemistry",
       "SOU": "SI",
       "symbol": "kg/kg",
       "defString": "[(1, 1), (\"kg\", 1), (\"kg\", -1)]",
@@ -2724,10 +2724,10 @@
       "notes": 0
    },
    {
-      "Uid": 323,
-      "name": "kilogram per liter",
-      "Qid": 6,
-      "quantity": "mass density",
+      "uID": 323,
+      "unitName": "kilogram per liter",
+      "dimension": "mass density",
+      "category": "Physical properties",
       "SOU": "non-SI metric",
       "symbol": "kg/L",
       "defString": "[(1, 1), (\"kg\", 1), (\"L\", -1)]",
@@ -2736,10 +2736,10 @@
       "notes": 0
    },
    {
-      "Uid": 324,
-      "name": "kilogram-force",
-      "Qid": 14,
-      "quantity": "force",
+      "uID": 324,
+      "unitName": "kilogram-force",
+      "dimension": "force",
+      "category": "Mechanics",
       "SOU": "non-SI metric",
       "symbol": "kgf",
       "defString": "[(1, 1), (\"g0\", 1), (\"kg\", 1)]",
@@ -2748,10 +2748,10 @@
       "notes": 0
    },
    {
-      "Uid": 325,
-      "name": "kilogram-force per square millimeter",
-      "Qid": 29,
-      "quantity": "pressure",
+      "uID": 325,
+      "unitName": "kilogram-force per square millimeter",
+      "dimension": "pressure",
+      "category": "Mechanics",
       "SOU": "non-SI metric",
       "symbol": "kgf/mm2",
       "defString": "[(1, 1), (\"kgf\", 1), (\"mm\", -2)]",
@@ -2760,10 +2760,10 @@
       "notes": 0
    },
    {
-      "Uid": 326,
-      "name": "kilometer",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 326,
+      "unitName": "kilometer",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "non-SI metric",
       "symbol": "km",
       "defString": "[(1000, 1), (\"m\", 1)]",
@@ -2772,10 +2772,10 @@
       "notes": "\u2248 \u200B1\u204410000000 of the distance from equator to pole."
    },
    {
-      "Uid": 327,
-      "name": "kilometer per hour",
-      "Qid": 38,
-      "quantity": "velocity",
+      "uID": 327,
+      "unitName": "kilometer per hour",
+      "dimension": "velocity",
+      "category": "Physics of motion",
       "SOU": "non-SI metric",
       "symbol": "km/h",
       "defString": "[(1, 1), (\"km\", 1), (\"h\", -1)]",
@@ -2784,10 +2784,10 @@
       "notes": 0
    },
    {
-      "Uid": 328,
-      "name": "kilopond",
-      "Qid": 14,
-      "quantity": "force",
+      "uID": 328,
+      "unitName": "kilopond",
+      "dimension": "force",
+      "category": "Mechanics",
       "SOU": "non-SI metric",
       "symbol": "kp",
       "defString": "[(1, 1), (\"kgf\", 1)]",
@@ -2796,10 +2796,10 @@
       "notes": 0
    },
    {
-      "Uid": 329,
-      "name": "kilowatt",
-      "Qid": 28,
-      "quantity": "power",
+      "uID": 329,
+      "unitName": "kilowatt",
+      "dimension": "power",
+      "category": "Mechanics",
       "SOU": "non-SI metric",
       "symbol": "kW",
       "defString": "[(1000, 1), (\"W\", 1)]",
@@ -2808,10 +2808,10 @@
       "notes": 0
    },
    {
-      "Uid": 330,
-      "name": "kilowatt-hour",
-      "Qid": 12,
-      "quantity": "energy",
+      "uID": 330,
+      "unitName": "kilowatt-hour",
+      "dimension": "energy",
+      "category": "Mechanics",
       "SOU": "non-SI metric",
       "symbol": "kW\u00B7h",
       "defString": "[(1, 1), (\"kW\", 1), (\"h\", 1)]",
@@ -2820,10 +2820,10 @@
       "notes": 0
    },
    {
-      "Uid": 332,
-      "name": "kip",
-      "Qid": 26,
-      "quantity": "mass",
+      "uID": 332,
+      "unitName": "kip",
+      "dimension": "mass",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "other English",
       "symbol": "kip",
       "defString": "[(1000, 1), (\"lb\", 1)]",
@@ -2832,10 +2832,10 @@
       "notes": 0
    },
    {
-      "Uid": 333,
-      "name": "kip per square inch",
-      "Qid": 29,
-      "quantity": "pressure",
+      "uID": 333,
+      "unitName": "kip per square inch",
+      "dimension": "pressure",
+      "category": "Mechanics",
       "SOU": "other English",
       "symbol": "ksi",
       "defString": "[(1, 1), (\"kipf\", 1), (\"in\", -2)]",
@@ -2844,10 +2844,10 @@
       "notes": 0
    },
    {
-      "Uid": 335,
-      "name": "kip-force",
-      "Qid": 14,
-      "quantity": "force",
+      "uID": 335,
+      "unitName": "kip-force",
+      "dimension": "force",
+      "category": "Mechanics",
       "SOU": "other English",
       "symbol": "kipf",
       "defString": "[(1000, 1), (\"g0\", 1), (\"lb\", 1)]",
@@ -2856,10 +2856,10 @@
       "notes": 0
    },
    {
-      "Uid": 336,
-      "name": "knot",
-      "Qid": 38,
-      "quantity": "velocity",
+      "uID": 336,
+      "unitName": "knot",
+      "dimension": "velocity",
+      "category": "Physics of motion",
       "SOU": "SI",
       "symbol": "kn",
       "defString": "[(1, 1), (\"nmi\", 1), (\"h\", -1)]",
@@ -2868,10 +2868,10 @@
       "notes": 0
    },
    {
-      "Uid": 339,
-      "name": "knot per second",
-      "Qid": 1,
-      "quantity": "acceleration",
+      "uID": 339,
+      "unitName": "knot per second",
+      "dimension": "acceleration",
+      "category": "Physics of motion",
       "SOU": "non-SI metric",
       "symbol": "kn/s",
       "defString": "[(1, 1), (\"kn\", 1), (\"s\", -1)]",
@@ -2880,10 +2880,10 @@
       "notes": 0
    },
    {
-      "Uid": 340,
-      "name": "lambda",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 340,
+      "unitName": "lambda",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "non-SI metric",
       "symbol": "\u03BB",
       "defString": "[(1, 1), (\"mm\", 3)]",
@@ -2892,10 +2892,10 @@
       "notes": 0
    },
    {
-      "Uid": 341,
-      "name": "lambert",
-      "Qid": 21,
-      "quantity": "luminance",
+      "uID": 341,
+      "unitName": "lambert",
+      "dimension": "luminance",
+      "category": "Optics\u00A0",
       "SOU": "non-SI metric",
       "symbol": "lambert",
       "defString": "[(0, 1), (\"cd\", 1), (\"m\", -2)]",
@@ -2904,10 +2904,10 @@
       "notes": 0
    },
    {
-      "Uid": 342,
-      "name": "large calorie",
-      "Qid": 12,
-      "quantity": "energy",
+      "uID": 342,
+      "unitName": "large calorie",
+      "dimension": "energy",
+      "category": "Mechanics",
       "SOU": "non-SI metric",
       "symbol": "Cal",
       "defString": "[(1000, 1), (\"calIT\", 1)]",
@@ -2916,10 +2916,10 @@
       "notes": 0
    },
    {
-      "Uid": 343,
-      "name": "last",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 343,
+      "unitName": "last",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "other English",
       "symbol": "last",
       "defString": "[(80, 1), (\"bu (imp)\", 1)]",
@@ -2928,10 +2928,10 @@
       "notes": 0
    },
    {
-      "Uid": 344,
-      "name": "league",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 344,
+      "unitName": "league",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "US customary",
       "symbol": "lea",
       "defString": "[(3, 1), (\"mi\", 1)]",
@@ -2940,10 +2940,10 @@
       "notes": "\u2248 1 hour walk, but historically varied from 2 to 9\u00A0km"
    },
    {
-      "Uid": 345,
-      "name": "light-day",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 345,
+      "unitName": "light-day",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "non-SI metric",
       "symbol": "light-day",
       "defString": "[(24, 1), (\"light-hour\", 1)]",
@@ -2952,10 +2952,10 @@
       "notes": 0
    },
    {
-      "Uid": 346,
-      "name": "light-hour",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 346,
+      "unitName": "light-hour",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "non-SI metric",
       "symbol": "light-hour",
       "defString": "[(60, 1), (\"light-minute\", 1)]",
@@ -2964,10 +2964,10 @@
       "notes": 0
    },
    {
-      "Uid": 347,
-      "name": "light-minute",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 347,
+      "unitName": "light-minute",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "non-SI metric",
       "symbol": "light-minute",
       "defString": "[(60, 1), (\"light-second\", 1)]",
@@ -2976,10 +2976,10 @@
       "notes": 0
    },
    {
-      "Uid": 348,
-      "name": "light-second",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 348,
+      "unitName": "light-second",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "non-SI metric",
       "symbol": "light-second",
       "defString": "[(299792458, 1), (\"m\", 1)]",
@@ -2988,10 +2988,10 @@
       "notes": "Distance light travels in one second in vacuum"
    },
    {
-      "Uid": 349,
-      "name": "light-year",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 349,
+      "unitName": "light-year",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "non-SI metric",
       "symbol": "ly",
       "defString": "[(9.46073E+15, 1), (\"m\", 1)]",
@@ -3000,10 +3000,10 @@
       "notes": "Distance light travels in vacuum in 365.25 days"
    },
    {
-      "Uid": 350,
-      "name": "line",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 350,
+      "unitName": "line",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "other English",
       "symbol": "ln",
       "defString": "[(0.083333333, 1), (\"in\", 1)]",
@@ -3012,10 +3012,10 @@
       "notes": 0
    },
    {
-      "Uid": 351,
-      "name": "link",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 351,
+      "unitName": "link",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "US customary",
       "symbol": "lnk",
       "defString": "[(0.01, 1), (\"ch\", 1)]",
@@ -3024,10 +3024,10 @@
       "notes": 0
    },
    {
-      "Uid": 354,
-      "name": "link (Ramsden's)",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 354,
+      "unitName": "link (Ramsden's)",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "other English",
       "symbol": "lnk (Ram)",
       "defString": "[(1, 1), (\"ft\", 1)]",
@@ -3036,10 +3036,10 @@
       "notes": 0
    },
    {
-      "Uid": 355,
-      "name": "liter",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 355,
+      "unitName": "liter",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "SI",
       "symbol": "L",
       "defString": "[(0.001, 1), (\"m\", 3)]",
@@ -3048,10 +3048,10 @@
       "notes": "or liter"
    },
    {
-      "Uid": 356,
-      "name": "liter per minute",
-      "Qid": 13,
-      "quantity": "volume flow",
+      "uID": 356,
+      "unitName": "liter per minute",
+      "dimension": "volume flow",
+      "category": "Physics of motion",
       "SOU": "non-SI metric",
       "symbol": "LPM",
       "defString": "[(1, 1), (\"L\", 1), (\"min\", -1)]",
@@ -3060,10 +3060,10 @@
       "notes": 0
    },
    {
-      "Uid": 361,
-      "name": "load",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 361,
+      "unitName": "load",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "other English",
       "symbol": "load",
       "defString": "[(50, 1), (\"ft\", 3)]",
@@ -3072,10 +3072,10 @@
       "notes": 0
    },
    {
-      "Uid": 362,
-      "name": "long ton",
-      "Qid": 26,
-      "quantity": "mass",
+      "uID": 362,
+      "unitName": "long ton",
+      "dimension": "mass",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "US customary",
       "symbol": "long ton",
       "defString": "[(2240, 1), (\"lb\", 1)]",
@@ -3084,10 +3084,10 @@
       "notes": 0
    },
    {
-      "Uid": 365,
-      "name": "lumen",
-      "Qid": 23,
-      "quantity": "luminous flux",
+      "uID": 365,
+      "unitName": "lumen",
+      "dimension": "luminous flux",
+      "category": "Optics\u00A0",
       "SOU": "SI",
       "symbol": "lm",
       "defString": "[(1, 1), (\"cd\", 1), (\"sr\", 1)]",
@@ -3096,10 +3096,10 @@
       "notes": 0
    },
    {
-      "Uid": 366,
-      "name": "lumen per square inch",
-      "Qid": 16,
-      "quantity": "illuminance",
+      "uID": 366,
+      "unitName": "lumen per square inch",
+      "dimension": "illuminance",
+      "category": "Optics\u00A0",
       "SOU": "other English",
       "symbol": "lm/in2",
       "defString": "[(1, 1), (\"lm\", 1), (\"in\", -2)]",
@@ -3108,10 +3108,10 @@
       "notes": 0
    },
    {
-      "Uid": 369,
-      "name": "lux",
-      "Qid": 16,
-      "quantity": "illuminance",
+      "uID": 369,
+      "unitName": "lux",
+      "dimension": "illuminance",
+      "category": "Optics\u00A0",
       "SOU": "SI",
       "symbol": "lx",
       "defString": "[(1, 1), (\"lm\", 1), (\"m\", -2)]",
@@ -3120,10 +3120,10 @@
       "notes": 0
    },
    {
-      "Uid": 370,
-      "name": "mach number",
-      "Qid": 38,
-      "quantity": "velocity",
+      "uID": 370,
+      "unitName": "mach number",
+      "dimension": "velocity",
+      "category": "Physics of motion",
       "SOU": "universal",
       "symbol": "M",
       "defString": "[(317.5, 1), (\"m\", 1), (\"s\", -1)]",
@@ -3132,10 +3132,10 @@
       "notes": "Ratio of the speed to the speed of sound[note 1] in the medium (unitless)."
    },
    {
-      "Uid": 371,
-      "name": "mark",
-      "Qid": 26,
-      "quantity": "mass",
+      "uID": 371,
+      "unitName": "mark",
+      "dimension": "mass",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "other English",
       "symbol": "mark",
       "defString": "[(8, 1), (\"oz t\", 1)]",
@@ -3144,10 +3144,10 @@
       "notes": 0
    },
    {
-      "Uid": 372,
-      "name": "maxwell",
-      "Qid": 24,
-      "quantity": "magnetic flux",
+      "uID": 372,
+      "unitName": "maxwell",
+      "dimension": "magnetic flux",
+      "category": "Electromagnetism\u00A0",
       "SOU": "non-SI metric",
       "symbol": "Mx",
       "defString": "[(0.00000001, 1), (\"Wb\", 1)]",
@@ -3156,10 +3156,10 @@
       "notes": 0
    },
    {
-      "Uid": 373,
-      "name": "mega calorie",
-      "Qid": 12,
-      "quantity": "energy",
+      "uID": 373,
+      "unitName": "mega calorie",
+      "dimension": "energy",
+      "category": "Mechanics",
       "SOU": "non-SI metric",
       "symbol": "McalIT",
       "defString": "[(1000, 1), (\"calIT\", 1)]",
@@ -3168,10 +3168,10 @@
       "notes": 0
    },
    {
-      "Uid": 374,
-      "name": "megabecquerel",
-      "Qid": 33,
-      "quantity": "radioactivity",
+      "uID": 374,
+      "unitName": "megabecquerel",
+      "dimension": "radioactivity",
+      "category": "Radiation and radioactivity\u00A0",
       "SOU": "non-SI metric",
       "symbol": "MBq",
       "defString": "[(1000, 1), (\"Bq\", 1)]",
@@ -3180,10 +3180,10 @@
       "notes": 0
    },
    {
-      "Uid": 375,
-      "name": "meter",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 375,
+      "unitName": "meter",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "SI",
       "symbol": "m",
       "defString": "[(1, 1), (\"m\", 1)]",
@@ -3192,10 +3192,10 @@
       "notes": "\u2248 \u200B1\u204410000000 of the distance from equator to pole.  \u2261 Distance light travels in \u200B1/299792458 of a second in vacuum.[10]"
    },
    {
-      "Uid": 377,
-      "name": "meter per second",
-      "Qid": 38,
-      "quantity": "velocity",
+      "uID": 377,
+      "unitName": "meter per second",
+      "dimension": "velocity",
+      "category": "Physics of motion",
       "SOU": "SI",
       "symbol": "m/s",
       "defString": "[(1, 1), (\"m\", 1), (\"s\", -1)]",
@@ -3204,10 +3204,10 @@
       "notes": 0
    },
    {
-      "Uid": 378,
-      "name": "meter per second squared",
-      "Qid": 1,
-      "quantity": "acceleration",
+      "uID": 378,
+      "unitName": "meter per second squared",
+      "dimension": "acceleration",
+      "category": "Physics of motion",
       "SOU": "SI",
       "symbol": "m/s2",
       "defString": "[(1, 1), (\"m\", 1), (\"s\", -2)]",
@@ -3216,10 +3216,10 @@
       "notes": 0
    },
    {
-      "Uid": 380,
-      "name": "metric ton",
-      "Qid": 26,
-      "quantity": "mass",
+      "uID": 380,
+      "unitName": "metric ton",
+      "dimension": "mass",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "SI",
       "symbol": "MT",
       "defString": "[(1000, 1), (\"kg\", 1)]",
@@ -3228,10 +3228,10 @@
       "notes": 0
    },
    {
-      "Uid": 381,
-      "name": "mickey",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 381,
+      "unitName": "mickey",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "other English",
       "symbol": "mickey",
       "defString": "[(0.005, 1), (\"in\", 1)]",
@@ -3240,10 +3240,10 @@
       "notes": 0
    },
    {
-      "Uid": 382,
-      "name": "microgram",
-      "Qid": 26,
-      "quantity": "mass",
+      "uID": 382,
+      "unitName": "microgram",
+      "dimension": "mass",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "non-SI metric",
       "symbol": "\u03BCg",
       "defString": "[(0.000001, 1), (\"g\", 1)]",
@@ -3252,10 +3252,10 @@
       "notes": "or kilogramme; \u2248 mass of 1\u00A0litre of water"
    },
    {
-      "Uid": 383,
-      "name": "micrometer",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 383,
+      "unitName": "micrometer",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "non-SI metric",
       "symbol": "\u03BCm",
       "defString": "[(0.000001, 1), (\"m\", 1)]",
@@ -3264,10 +3264,10 @@
       "notes": 0
    },
    {
-      "Uid": 385,
-      "name": "micron",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 385,
+      "unitName": "micron",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "non-SI metric",
       "symbol": "\u03BC",
       "defString": "[(0.000001, 1), (\"m\", 1)]",
@@ -3276,10 +3276,10 @@
       "notes": 0
    },
    {
-      "Uid": 386,
-      "name": "mil",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 386,
+      "unitName": "mil",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "US customary",
       "symbol": "mil",
       "defString": "[(0.001, 1), (\"in\", 1)]",
@@ -3288,10 +3288,10 @@
       "notes": 0
    },
    {
-      "Uid": 387,
-      "name": "mil (Sweden and Norway)",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 387,
+      "unitName": "mil (Sweden and Norway)",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "non-SI metric",
       "symbol": "mil (Sweden)",
       "defString": "[(10, 1), (\"km\", 1)]",
@@ -3300,10 +3300,10 @@
       "notes": 0
    },
    {
-      "Uid": 388,
-      "name": "mile (geographical)",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 388,
+      "unitName": "mile (geographical)",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "other English",
       "symbol": "mi (geo)",
       "defString": "[(6082, 1), (\"ft\", 1)]",
@@ -3312,10 +3312,10 @@
       "notes": 0
    },
    {
-      "Uid": 393,
-      "name": "mile (tactical or data)",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 393,
+      "unitName": "mile (tactical or data)",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "other English",
       "symbol": "mi (tact)",
       "defString": "[(6000, 1), (\"ft\", 1)]",
@@ -3324,10 +3324,10 @@
       "notes": 0
    },
    {
-      "Uid": 394,
-      "name": "mile (telegraph)",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 394,
+      "unitName": "mile (telegraph)",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "other English",
       "symbol": "mi (tel)",
       "defString": "[(6087, 1), (\"ft\", 1)]",
@@ -3336,10 +3336,10 @@
       "notes": 0
    },
    {
-      "Uid": 395,
-      "name": "mile per hour",
-      "Qid": 38,
-      "quantity": "velocity",
+      "uID": 395,
+      "unitName": "mile per hour",
+      "dimension": "velocity",
+      "category": "Physics of motion",
       "SOU": "other English",
       "symbol": "mph",
       "defString": "[(1, 1), (\"mi\", 1), (\"h\", -1)]",
@@ -3348,10 +3348,10 @@
       "notes": 0
    },
    {
-      "Uid": 396,
-      "name": "mile per hour per second",
-      "Qid": 1,
-      "quantity": "acceleration",
+      "uID": 396,
+      "unitName": "mile per hour per second",
+      "dimension": "acceleration",
+      "category": "Physics of motion",
       "SOU": "other English",
       "symbol": "mph/s",
       "defString": "[(1, 1), (\"mi\", 1), (\"h\", -1), (\"s\", -1)]",
@@ -3360,10 +3360,10 @@
       "notes": 0
    },
    {
-      "Uid": 397,
-      "name": "mile per minute",
-      "Qid": 38,
-      "quantity": "velocity",
+      "uID": 397,
+      "unitName": "mile per minute",
+      "dimension": "velocity",
+      "category": "Physics of motion",
       "SOU": "other English",
       "symbol": "mpm",
       "defString": "[(1, 1), (\"mi\", 1), (\"min\", -1)]",
@@ -3372,10 +3372,10 @@
       "notes": 0
    },
    {
-      "Uid": 398,
-      "name": "mile per minute per second",
-      "Qid": 1,
-      "quantity": "acceleration",
+      "uID": 398,
+      "unitName": "mile per minute per second",
+      "dimension": "acceleration",
+      "category": "Physics of motion",
       "SOU": "other English",
       "symbol": "mpm/s",
       "defString": "[(1, 1), (\"mi\", 1), (\"min\", -1), (\"s\", -1)]",
@@ -3384,10 +3384,10 @@
       "notes": 0
    },
    {
-      "Uid": 399,
-      "name": "mile per second",
-      "Qid": 38,
-      "quantity": "velocity",
+      "uID": 399,
+      "unitName": "mile per second",
+      "dimension": "velocity",
+      "category": "Physics of motion",
       "SOU": "other English",
       "symbol": "mps",
       "defString": "[(1, 1), (\"mi\", 1), (\"s\", -1)]",
@@ -3396,10 +3396,10 @@
       "notes": 0
    },
    {
-      "Uid": 400,
-      "name": "mile per second squared",
-      "Qid": 1,
-      "quantity": "acceleration",
+      "uID": 400,
+      "unitName": "mile per second squared",
+      "dimension": "acceleration",
+      "category": "Physics of motion",
       "SOU": "other English",
       "symbol": "mps2",
       "defString": "[(1, 1), (\"mi\", 1), (\"s\", -2)]",
@@ -3408,10 +3408,10 @@
       "notes": 0
    },
    {
-      "Uid": 401,
-      "name": "millennium",
-      "Qid": 36,
-      "quantity": "time",
+      "uID": 401,
+      "unitName": "millennium",
+      "dimension": "time",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "universal",
       "symbol": "millennium",
       "defString": "[(1000, 1), (\"yr\", 1)]",
@@ -3420,10 +3420,10 @@
       "notes": 0
    },
    {
-      "Uid": 402,
-      "name": "milliamp",
-      "Qid": 9,
-      "quantity": "electric current",
+      "uID": 402,
+      "unitName": "milliamp",
+      "dimension": "electric current",
+      "category": "Circuit / electrical properties",
       "SOU": "universal",
       "symbol": "mA",
       "defString": "[(0.001, 1), (\"A\", 1)]",
@@ -3432,10 +3432,10 @@
       "notes": 0
    },
    {
-      "Uid": 403,
-      "name": "milliampere hour",
-      "Qid": 8,
-      "quantity": "electric charge",
+      "uID": 403,
+      "unitName": "milliampere hour",
+      "dimension": "electric charge",
+      "category": "Electromagnetism\u00A0",
       "SOU": "universal",
       "symbol": "mA\u00B7h",
       "defString": "[(0.001, 1), (\"A\", 1), (\"h\", 1)]",
@@ -3444,10 +3444,10 @@
       "notes": 0
    },
    {
-      "Uid": 404,
-      "name": "milliday",
-      "Qid": 36,
-      "quantity": "time",
+      "uID": 404,
+      "unitName": "milliday",
+      "dimension": "time",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "universal",
       "symbol": "md",
       "defString": "[(0.001, 1), (\"d\", 1)]",
@@ -3456,10 +3456,10 @@
       "notes": 0
    },
    {
-      "Uid": 405,
-      "name": "milligram",
-      "Qid": 26,
-      "quantity": "mass",
+      "uID": 405,
+      "unitName": "milligram",
+      "dimension": "mass",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "non-SI metric",
       "symbol": "mg",
       "defString": "[(0.001, 1), (\"g\", 1)]",
@@ -3468,10 +3468,10 @@
       "notes": "or kilogramme; \u2248 mass of 1\u00A0litre of water"
    },
    {
-      "Uid": 408,
-      "name": "milliliter",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 408,
+      "unitName": "milliliter",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "non-SI metric",
       "symbol": "ml",
       "defString": "[(0.001, 1), (\"L\", 1)]",
@@ -3480,10 +3480,10 @@
       "notes": "or liter"
    },
    {
-      "Uid": 409,
-      "name": "millimeter",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 409,
+      "unitName": "millimeter",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "non-SI metric",
       "symbol": "mm",
       "defString": "[(0.001, 1), (\"m\", 1)]",
@@ -3492,10 +3492,10 @@
       "notes": "\u2248 \u200B1\u204410000000 of the distance from equator to pole."
    },
    {
-      "Uid": 413,
-      "name": "minim (imperial)",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 413,
+      "unitName": "minim (imperial)",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "imperial",
       "symbol": "min (imp)",
       "defString": "[(0.016666667, 1), (\"fl dr (imp)\", 1)]",
@@ -3504,10 +3504,10 @@
       "notes": 0
    },
    {
-      "Uid": 415,
-      "name": "minim",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 415,
+      "unitName": "minim",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "US customary",
       "symbol": "min (US)",
       "defString": "[(0.016666667, 1), (\"fl dr (US)\", 1)]",
@@ -3516,10 +3516,10 @@
       "notes": 0
    },
    {
-      "Uid": 416,
-      "name": "minute",
-      "Qid": 36,
-      "quantity": "time",
+      "uID": 416,
+      "unitName": "minute",
+      "dimension": "time",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "SI",
       "symbol": "min",
       "defString": "[(60, 1), (\"s\", 1)]",
@@ -3528,10 +3528,10 @@
       "notes": 0
    },
    {
-      "Uid": 418,
-      "name": "mite",
-      "Qid": 26,
-      "quantity": "mass",
+      "uID": 418,
+      "unitName": "mite",
+      "dimension": "mass",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "other English",
       "symbol": "mite",
       "defString": "[(0.05, 1), (\"gr\", 1)]",
@@ -3540,10 +3540,10 @@
       "notes": 0
    },
    {
-      "Uid": 419,
-      "name": "mite (metric)",
-      "Qid": 26,
-      "quantity": "mass",
+      "uID": 419,
+      "unitName": "mite (metric)",
+      "dimension": "mass",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "non-SI metric",
       "symbol": "mite (metric)",
       "defString": "[(0.05, 1), (\"g\", 1)]",
@@ -3552,10 +3552,10 @@
       "notes": 0
    },
    {
-      "Uid": 420,
-      "name": "mole",
-      "Qid": 66,
-      "quantity": "amount of substance",
+      "uID": 420,
+      "unitName": "mole",
+      "dimension": "amount of substance",
+      "category": "Chemistry",
       "SOU": "SI",
       "symbol": "mol",
       "defString": "[(1, 1), (\"mol\", 1)]",
@@ -3564,10 +3564,10 @@
       "notes": 0
    },
    {
-      "Uid": 421,
-      "name": "mole per cubic meter",
-      "Qid": 67,
-      "quantity": "amount-of-substance concentration",
+      "uID": 421,
+      "unitName": "mole per cubic meter",
+      "dimension": "amount-of-substance concentration",
+      "category": "Chemistry",
       "SOU": "SI",
       "symbol": "mol/m3",
       "defString": "[(1, 1), (\"mol\", 1), (\"m\", -3)]",
@@ -3576,10 +3576,10 @@
       "notes": 0
    },
    {
-      "Uid": 422,
-      "name": "moment",
-      "Qid": 36,
-      "quantity": "time",
+      "uID": 422,
+      "unitName": "moment",
+      "dimension": "time",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "universal",
       "symbol": "moment",
       "defString": "[(90, 1), (\"s\", 1)]",
@@ -3588,10 +3588,10 @@
       "notes": 0
    },
    {
-      "Uid": 423,
-      "name": "month (full)",
-      "Qid": 36,
-      "quantity": "time",
+      "uID": 423,
+      "unitName": "month (full)",
+      "dimension": "time",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "universal",
       "symbol": "mo",
       "defString": "[(30, 1), (\"d\", 1)]",
@@ -3600,10 +3600,10 @@
       "notes": 0
    },
    {
-      "Uid": 427,
-      "name": "nail (cloth)",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 427,
+      "unitName": "nail (cloth)",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "other English",
       "symbol": "nail (cloth)",
       "defString": "[(5.25, 1), (\"in\", 1)]",
@@ -3612,10 +3612,10 @@
       "notes": 0
    },
    {
-      "Uid": 428,
-      "name": "nanometer",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 428,
+      "unitName": "nanometer",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "non-SI metric",
       "symbol": "nm",
       "defString": "[(0.000000001, 1), (\"m\", 1)]",
@@ -3624,10 +3624,10 @@
       "notes": 0
    },
    {
-      "Uid": 430,
-      "name": "nautical league",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 430,
+      "unitName": "nautical league",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "non-SI metric",
       "symbol": "NL",
       "defString": "[(3, 1), (\"nmi\", 1)]",
@@ -3636,10 +3636,10 @@
       "notes": 0
    },
    {
-      "Uid": 431,
-      "name": "nautical mile (Admiralty)",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 431,
+      "unitName": "nautical mile (Admiralty)",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "other English",
       "symbol": "NM (Adm)",
       "defString": "[(6080, 1), (\"ft\", 1)]",
@@ -3648,10 +3648,10 @@
       "notes": 0
    },
    {
-      "Uid": 434,
-      "name": "nautical mile",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 434,
+      "unitName": "nautical mile",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "SI",
       "symbol": "nmi",
       "defString": "[(1852, 1), (\"m\", 1)]",
@@ -3660,10 +3660,10 @@
       "notes": 0
    },
    {
-      "Uid": 435,
-      "name": "nautical mile (US pre 1954)",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 435,
+      "unitName": "nautical mile (US pre 1954)",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "non-SI metric",
       "symbol": "nmi (pre 1954)",
       "defString": "[(1853.248, 1), (\"m\", 1)]",
@@ -3672,10 +3672,10 @@
       "notes": 0
    },
    {
-      "Uid": 436,
-      "name": "neper",
-      "Qid": 71,
-      "quantity": "ratio (non-dimensional)",
+      "uID": 436,
+      "unitName": "neper",
+      "dimension": "ratio (non-dimensional)",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "SI",
       "symbol": "Np",
       "defString": "[(1, 1), (\"NA\", 1)]",
@@ -3684,10 +3684,10 @@
       "notes": 0
    },
    {
-      "Uid": 437,
-      "name": "newton",
-      "Qid": 14,
-      "quantity": "force",
+      "uID": 437,
+      "unitName": "newton",
+      "dimension": "force",
+      "category": "Mechanics",
       "SOU": "SI",
       "symbol": "N",
       "defString": "[(1, 1), (\"kg\", 1), (\"m\", 1), (\"s\", -2)]",
@@ -3696,10 +3696,10 @@
       "notes": "A force capable of giving a mass of one kilogram an acceleration of one metre per second per second.[33]"
    },
    {
-      "Uid": 438,
-      "name": "newton meter",
-      "Qid": 37,
-      "quantity": "torque",
+      "uID": 438,
+      "unitName": "newton meter",
+      "dimension": "torque",
+      "category": "Mechanics",
       "SOU": "SI",
       "symbol": "N\u00B7m",
       "defString": "[(1, 1), (\"N\", 1), (\"m\", 1)]",
@@ -3708,10 +3708,10 @@
       "notes": 0
    },
    {
-      "Uid": 439,
-      "name": "newton per meter",
-      "Qid": 64,
-      "quantity": "surface tension",
+      "uID": 439,
+      "unitName": "newton per meter",
+      "dimension": "surface tension",
+      "category": "Physical properties",
       "SOU": "SI",
       "symbol": "N/m",
       "defString": "[(1, 1), (\"N\", 1), (\"m\", -1)]",
@@ -3720,10 +3720,10 @@
       "notes": 0
    },
    {
-      "Uid": 442,
-      "name": "noggin",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 442,
+      "unitName": "noggin",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "other English",
       "symbol": "nog",
       "defString": "[(5, 1), (\"fl oz (imp)\", 1)]",
@@ -3732,10 +3732,10 @@
       "notes": 0
    },
    {
-      "Uid": 445,
-      "name": "ohm",
-      "Qid": 11,
-      "quantity": "electric resistance",
+      "uID": 445,
+      "unitName": "ohm",
+      "dimension": "electrical resistance",
+      "category": "Circuit / electrical properties",
       "SOU": "SI",
       "symbol": "\u03A9",
       "defString": "[(1, 1), (\"V\", 1), (\"A\", -1)]",
@@ -3744,10 +3744,10 @@
       "notes": "The resistance between two points in a conductor when one volt of electric potential difference, applied to these points, produces one ampere of current in the conductor.[33]"
    },
    {
-      "Uid": 446,
-      "name": "troy ounce",
-      "Qid": 26,
-      "quantity": "mass",
+      "uID": 446,
+      "unitName": "troy ounce",
+      "dimension": "mass",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "US customary",
       "symbol": "oz t",
       "defString": "[(0.083333333, 1), (\"lb t\", 1)]",
@@ -3756,10 +3756,10 @@
       "notes": "Avoirdupois is a system of mass based on a pound of 16 ounces, while Troy weight is the system of mass where 12 troy ounces equals one troy pound."
    },
    {
-      "Uid": 447,
-      "name": "fluid ounce (imperial)",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 447,
+      "unitName": "fluid ounce (imperial)",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "imperial",
       "symbol": "fl oz (imp)",
       "defString": "[(0.00625, 1), (\"gal (imp)\", 1)]",
@@ -3768,10 +3768,10 @@
       "notes": 0
    },
    {
-      "Uid": 448,
-      "name": "ounce",
-      "Qid": 26,
-      "quantity": "mass",
+      "uID": 448,
+      "unitName": "ounce",
+      "dimension": "mass",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "US customary",
       "symbol": "oz",
       "defString": "[(0.0625, 1), (\"lb\", 1)]",
@@ -3780,10 +3780,10 @@
       "notes": "Avoirdupois is a system of mass based on a pound of 16 ounces, while Troy weight is the system of mass where 12 troy ounces equals one troy pound."
    },
    {
-      "Uid": 449,
-      "name": "ounce (US FDA)",
-      "Qid": 26,
-      "quantity": "mass",
+      "uID": 449,
+      "unitName": "ounce (US FDA)",
+      "dimension": "mass",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "non-SI metric",
       "symbol": "oz (FDA)",
       "defString": "[(28, 1), (\"g\", 1)]",
@@ -3792,10 +3792,10 @@
       "notes": 0
    },
    {
-      "Uid": 450,
-      "name": "fluid ounce",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 450,
+      "unitName": "fluid ounce",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "US customary",
       "symbol": "fl oz",
       "defString": "[(0.0078125, 1), (\"gal\", 1)]",
@@ -3804,10 +3804,10 @@
       "notes": 0
    },
    {
-      "Uid": 451,
-      "name": "fluid ounce (US FDA)",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 451,
+      "unitName": "fluid ounce (US FDA)",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "non-SI metric",
       "symbol": "fl oz (FDA)",
       "defString": "[(30, 1), (\"ml\", 1)]",
@@ -3816,10 +3816,10 @@
       "notes": 0
    },
    {
-      "Uid": 452,
-      "name": "ounce per cubic foot",
-      "Qid": 6,
-      "quantity": "mass density",
+      "uID": 452,
+      "unitName": "ounce per cubic foot",
+      "dimension": "mass density",
+      "category": "Physical properties",
       "SOU": "other English",
       "symbol": "oz/ft3",
       "defString": "[(1, 1), (\"oz\", 1), (\"ft\", -3)]",
@@ -3828,10 +3828,10 @@
       "notes": 0
    },
    {
-      "Uid": 453,
-      "name": "ounce per cubic inch",
-      "Qid": 6,
-      "quantity": "mass density",
+      "uID": 453,
+      "unitName": "ounce per cubic inch",
+      "dimension": "mass density",
+      "category": "Physical properties",
       "SOU": "other English",
       "symbol": "oz/in3",
       "defString": "[(1, 1), (\"oz\", 1), (\"in\", -3)]",
@@ -3840,10 +3840,10 @@
       "notes": 0
    },
    {
-      "Uid": 454,
-      "name": "ounce per gallon (imperial)",
-      "Qid": 6,
-      "quantity": "mass density",
+      "uID": 454,
+      "unitName": "ounce per gallon (imperial)",
+      "dimension": "mass density",
+      "category": "Physical properties",
       "SOU": "imperial",
       "symbol": "oz/gal",
       "defString": "[(1, 1), (\"oz\", 1), (\"gal\", -1)]",
@@ -3852,10 +3852,10 @@
       "notes": 0
    },
    {
-      "Uid": 455,
-      "name": "ounce per gallon",
-      "Qid": 6,
-      "quantity": "mass density",
+      "uID": 455,
+      "unitName": "ounce per gallon",
+      "dimension": "mass density",
+      "category": "Physical properties",
       "SOU": "other English",
       "symbol": "oz/gal",
       "defString": "[(1, 1), (\"oz\", 1), (\"gal\", -1)]",
@@ -3864,10 +3864,10 @@
       "notes": 0
    },
    {
-      "Uid": 457,
-      "name": "pace",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 457,
+      "unitName": "pace",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "other English",
       "symbol": "pace",
       "defString": "[(2.5, 1), (\"ft\", 1)]",
@@ -3876,10 +3876,10 @@
       "notes": 0
    },
    {
-      "Uid": 458,
-      "name": "palm",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 458,
+      "unitName": "palm",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "other English",
       "symbol": "palm",
       "defString": "[(3, 1), (\"in\", 1)]",
@@ -3888,10 +3888,10 @@
       "notes": 0
    },
    {
-      "Uid": 460,
-      "name": "pascal",
-      "Qid": 29,
-      "quantity": "pressure",
+      "uID": 460,
+      "unitName": "pascal",
+      "dimension": "pressure",
+      "category": "Mechanics",
       "SOU": "SI",
       "symbol": "Pa",
       "defString": "[(1, 1), (\"N\", 1), (\"m\", -2)]",
@@ -3900,10 +3900,10 @@
       "notes": "= kg/(m\u00B7s2)"
    },
    {
-      "Uid": 461,
-      "name": "pascal second",
-      "Qid": 7,
-      "quantity": "dynamic viscosity",
+      "uID": 461,
+      "unitName": "pascal second",
+      "dimension": "dynamic viscosity",
+      "category": "Physical properties",
       "SOU": "SI",
       "symbol": "Pa\u00B7s",
       "defString": "[(1, 1), (\"N\", 1), (\"s\", 1), (\"m\", -2)]",
@@ -3912,10 +3912,10 @@
       "notes": "\u2261 kg/(m\u00B7s)"
    },
    {
-      "Uid": 462,
-      "name": "peck (imperial)",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 462,
+      "unitName": "peck (imperial)",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "imperial",
       "symbol": "pk (imp)",
       "defString": "[(2, 1), (\"gal (imp)\", 1)]",
@@ -3924,10 +3924,10 @@
       "notes": 0
    },
    {
-      "Uid": 463,
-      "name": "peck (US dry)",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 463,
+      "unitName": "peck (US dry)",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "US customary",
       "symbol": "pk (US dry)",
       "defString": "[(0.25, 1), (\"bu\", 1)]",
@@ -3936,10 +3936,10 @@
       "notes": 0
    },
    {
-      "Uid": 464,
-      "name": "pennyweight",
-      "Qid": 26,
-      "quantity": "mass",
+      "uID": 464,
+      "unitName": "pennyweight",
+      "dimension": "mass",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "US customary",
       "symbol": "pwt",
       "defString": "[(0.05, 1), (\"oz t\", 1)]",
@@ -3948,10 +3948,10 @@
       "notes": 0
    },
    {
-      "Uid": 465,
-      "name": "perch",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 465,
+      "unitName": "perch",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "other English",
       "symbol": "per",
       "defString": "[(24.75, 1), (\"ft\", 3)]",
@@ -3960,10 +3960,10 @@
       "notes": 0
    },
    {
-      "Uid": 467,
-      "name": "phot",
-      "Qid": 16,
-      "quantity": "illuminance",
+      "uID": 467,
+      "unitName": "phot",
+      "dimension": "illuminance",
+      "category": "Optics\u00A0",
       "SOU": "non-SI metric",
       "symbol": "ph",
       "defString": "[(1, 1), (\"lm\", 1), (\"cm\", -2)]",
@@ -3972,10 +3972,10 @@
       "notes": 0
    },
    {
-      "Uid": 468,
-      "name": "pica",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 468,
+      "unitName": "pica",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "US customary",
       "symbol": "pica",
       "defString": "[(12, 1), (\"point\", 1)]",
@@ -3984,10 +3984,10 @@
       "notes": 0
    },
    {
-      "Uid": 470,
-      "name": "pi\u00E8ze",
-      "Qid": 29,
-      "quantity": "pressure",
+      "uID": 470,
+      "unitName": "pi\u00E8ze",
+      "dimension": "pressure",
+      "category": "Mechanics",
       "SOU": "non-SI metric",
       "symbol": "pz",
       "defString": "[(1000, 1), (\"kg\", 1), (\"m\", -1), (\"s\", -2)]",
@@ -3996,10 +3996,10 @@
       "notes": 0
    },
    {
-      "Uid": 471,
-      "name": "pinch",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 471,
+      "unitName": "pinch",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "other English",
       "symbol": "pinch",
       "defString": "[(0.020833333, 1), (\"fl oz\", 1)]",
@@ -4008,10 +4008,10 @@
       "notes": 0
    },
    {
-      "Uid": 472,
-      "name": "pinch (imperial)",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 472,
+      "unitName": "pinch (imperial)",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "imperial",
       "symbol": "pinch (imp)",
       "defString": "[(0.005208333, 1), (\"gi (imp)\", 1)]",
@@ -4020,10 +4020,10 @@
       "notes": 0
    },
    {
-      "Uid": 473,
-      "name": "ping",
-      "Qid": 3,
-      "quantity": "area",
+      "uID": 473,
+      "unitName": "ping",
+      "dimension": "area",
+      "category": "Spatial measurements",
       "SOU": "non-SI metric",
       "symbol": "ping",
       "defString": "[(3.305785124, 1), (\"m\", 2)]",
@@ -4032,10 +4032,10 @@
       "notes": 0
    },
    {
-      "Uid": 474,
-      "name": "pint (imperial)",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 474,
+      "unitName": "pint (imperial)",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "imperial",
       "symbol": "pt (imp)",
       "defString": "[(0.125, 1), (\"gal (imp)\", 1)]",
@@ -4044,10 +4044,10 @@
       "notes": 0
    },
    {
-      "Uid": 475,
-      "name": "pint (US dry)",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 475,
+      "unitName": "pint (US dry)",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "other English",
       "symbol": "pt (US dry)",
       "defString": "[(0.125, 1), (\"gal (US dry)\", 1)]",
@@ -4056,10 +4056,10 @@
       "notes": 0
    },
    {
-      "Uid": 476,
-      "name": "pint",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 476,
+      "unitName": "pint",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "US customary",
       "symbol": "pt (US fl)",
       "defString": "[(0.125, 1), (\"gal\", 1)]",
@@ -4068,10 +4068,10 @@
       "notes": 0
    },
    {
-      "Uid": 478,
-      "name": "point",
-      "Qid": 26,
-      "quantity": "mass",
+      "uID": 478,
+      "unitName": "point",
+      "dimension": "mass",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "US customary",
       "symbol": "point",
       "defString": "[(0.01, 1), (\"ct\", 1)]",
@@ -4080,10 +4080,10 @@
       "notes": 0
    },
    {
-      "Uid": 481,
-      "name": "point (PostScript)",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 481,
+      "unitName": "point (PostScript)",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "other English",
       "symbol": "pt",
       "defString": "[(0.013888889, 1), (\"in\", 1)]",
@@ -4092,10 +4092,10 @@
       "notes": 0
    },
    {
-      "Uid": 483,
-      "name": "poise",
-      "Qid": 7,
-      "quantity": "dynamic viscosity",
+      "uID": 483,
+      "unitName": "poise",
+      "dimension": "dynamic viscosity",
+      "category": "Physical properties",
       "SOU": "non-SI metric",
       "symbol": "P",
       "defString": "[(1, 1), (\"barye\", 1), (\"s\", 1)]",
@@ -4104,10 +4104,10 @@
       "notes": 0
    },
    {
-      "Uid": 484,
-      "name": "pole",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 484,
+      "unitName": "pole",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "other English",
       "symbol": "pole",
       "defString": "[(80.5, 1), (\"ft\", 1)]",
@@ -4116,10 +4116,10 @@
       "notes": 0
    },
    {
-      "Uid": 485,
-      "name": "poncelet",
-      "Qid": 28,
-      "quantity": "power",
+      "uID": 485,
+      "unitName": "poncelet",
+      "dimension": "power",
+      "category": "Mechanics",
       "SOU": "non-SI metric",
       "symbol": "p",
       "defString": "[(100, 1), (\"m\", 1), (\"kgf\", 1), (\"s\", -1)]",
@@ -4128,10 +4128,10 @@
       "notes": 0
    },
    {
-      "Uid": 486,
-      "name": "pony",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 486,
+      "unitName": "pony",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "other English",
       "symbol": "pony",
       "defString": "[(0.75, 1), (\"fl oz\", 1)]",
@@ -4140,10 +4140,10 @@
       "notes": 0
    },
    {
-      "Uid": 487,
-      "name": "pottle",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 487,
+      "unitName": "pottle",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "other English",
       "symbol": "pottle",
       "defString": "[(0.5, 1), (\"gal (imp)\", 1)]",
@@ -4152,10 +4152,10 @@
       "notes": 0
    },
    {
-      "Uid": 488,
-      "name": "quartern",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 488,
+      "unitName": "quartern",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "other English",
       "symbol": "quartern",
       "defString": "[(80, 1), (\"fl oz (imp)\", 1)]",
@@ -4164,10 +4164,10 @@
       "notes": 0
    },
    {
-      "Uid": 489,
-      "name": "pound (metric)",
-      "Qid": 26,
-      "quantity": "mass",
+      "uID": 489,
+      "unitName": "pound (metric)",
+      "dimension": "mass",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "non-SI metric",
       "symbol": "pound (metric)",
       "defString": "[(500, 1), (\"g\", 1)]",
@@ -4176,10 +4176,10 @@
       "notes": 0
    },
    {
-      "Uid": 492,
-      "name": "troy pound",
-      "Qid": 26,
-      "quantity": "mass",
+      "uID": 492,
+      "unitName": "troy pound",
+      "dimension": "mass",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "US customary",
       "symbol": "lb t",
       "defString": "[(5760, 1), (\"gr\", 1)]",
@@ -4188,10 +4188,10 @@
       "notes": "Avoirdupois is a system of mass based on a pound of 16 ounces, while Troy weight is the system of mass where 12 troy ounces equals one troy pound."
    },
    {
-      "Uid": 493,
-      "name": "pound per cubic foot",
-      "Qid": 6,
-      "quantity": "mass density",
+      "uID": 493,
+      "unitName": "pound per cubic foot",
+      "dimension": "mass density",
+      "category": "Physical properties",
       "SOU": "other English",
       "symbol": "lb/ft3",
       "defString": "[(1, 1), (\"lb\", 1), (\"ft\", -3)]",
@@ -4200,10 +4200,10 @@
       "notes": 0
    },
    {
-      "Uid": 494,
-      "name": "pound per cubic inch",
-      "Qid": 6,
-      "quantity": "mass density",
+      "uID": 494,
+      "unitName": "pound per cubic inch",
+      "dimension": "mass density",
+      "category": "Physical properties",
       "SOU": "other English",
       "symbol": "lb/in3",
       "defString": "[(1, 1), (\"lb\", 1), (\"in\", -3)]",
@@ -4212,10 +4212,10 @@
       "notes": 0
    },
    {
-      "Uid": 495,
-      "name": "pound per foot hour",
-      "Qid": 7,
-      "quantity": "dynamic viscosity",
+      "uID": 495,
+      "unitName": "pound per foot hour",
+      "dimension": "dynamic viscosity",
+      "category": "Physical properties",
       "SOU": "other English",
       "symbol": "lb/(ft\u00B7h)",
       "defString": "[(1, 1), (\"lb\", 1), (\"ft\", -1), (\"h\", -1)]",
@@ -4224,10 +4224,10 @@
       "notes": 0
    },
    {
-      "Uid": 496,
-      "name": "pound per foot second",
-      "Qid": 7,
-      "quantity": "dynamic viscosity",
+      "uID": 496,
+      "unitName": "pound per foot second",
+      "dimension": "dynamic viscosity",
+      "category": "Physical properties",
       "SOU": "other English",
       "symbol": "lb/(ft\u00B7s)",
       "defString": "[(1, 1), (\"lb\", 1), (\"ft\", -1), (\"s\", -1)]",
@@ -4236,10 +4236,10 @@
       "notes": 0
    },
    {
-      "Uid": 497,
-      "name": "pound per gallon (imperial)",
-      "Qid": 6,
-      "quantity": "mass density",
+      "uID": 497,
+      "unitName": "pound per gallon (imperial)",
+      "dimension": "mass density",
+      "category": "Physical properties",
       "SOU": "imperial",
       "symbol": "lb/gal (imp)",
       "defString": "[(1, 1), (\"lb\", 1), (\"gal (imp)\", -1)]",
@@ -4248,10 +4248,10 @@
       "notes": 0
    },
    {
-      "Uid": 498,
-      "name": "pound per gallon",
-      "Qid": 6,
-      "quantity": "mass density",
+      "uID": 498,
+      "unitName": "pound per gallon",
+      "dimension": "mass density",
+      "category": "Physical properties",
       "SOU": "other English",
       "symbol": "lb/gal",
       "defString": "[(1, 1), (\"lb\", 1), (\"gal\", -1)]",
@@ -4260,10 +4260,10 @@
       "notes": 0
    },
    {
-      "Uid": 499,
-      "name": "pound per square foot",
-      "Qid": 29,
-      "quantity": "pressure",
+      "uID": 499,
+      "unitName": "pound per square foot",
+      "dimension": "pressure",
+      "category": "Mechanics",
       "SOU": "other English",
       "symbol": "psf",
       "defString": "[(1, 1), (\"lbf\", 1), (\"ft\", -2)]",
@@ -4272,10 +4272,10 @@
       "notes": 0
    },
    {
-      "Uid": 500,
-      "name": "pound per square inch",
-      "Qid": 29,
-      "quantity": "pressure",
+      "uID": 500,
+      "unitName": "pound per square inch",
+      "dimension": "pressure",
+      "category": "Mechanics",
       "SOU": "other English",
       "symbol": "psi",
       "defString": "[(1, 1), (\"lbf\", 1), (\"in\", -2)]",
@@ -4284,10 +4284,10 @@
       "notes": 0
    },
    {
-      "Uid": 501,
-      "name": "poundal",
-      "Qid": 14,
-      "quantity": "force",
+      "uID": 501,
+      "unitName": "poundal",
+      "dimension": "force",
+      "category": "Mechanics",
       "SOU": "other English",
       "symbol": "pdl",
       "defString": "[(1, 1), (\"lb\", 1), (\"ft\", 1), (\"s\", -2)]",
@@ -4296,10 +4296,10 @@
       "notes": 0
    },
    {
-      "Uid": 502,
-      "name": "poundal per square foot",
-      "Qid": 29,
-      "quantity": "pressure",
+      "uID": 502,
+      "unitName": "poundal per square foot",
+      "dimension": "pressure",
+      "category": "Mechanics",
       "SOU": "other English",
       "symbol": "pdl/ft2",
       "defString": "[(1, 1), (\"pdl\", 1), (\"ft\", -2)]",
@@ -4308,10 +4308,10 @@
       "notes": 0
    },
    {
-      "Uid": 503,
-      "name": "pound-force",
-      "Qid": 14,
-      "quantity": "force",
+      "uID": 503,
+      "unitName": "pound-force",
+      "dimension": "force",
+      "category": "Mechanics",
       "SOU": "other English",
       "symbol": "lbf",
       "defString": "[(1, 1), (\"g0\", 1), (\"lb\", 1)]",
@@ -4320,10 +4320,10 @@
       "notes": 0
    },
    {
-      "Uid": 504,
-      "name": "pound-force second per square foot",
-      "Qid": 7,
-      "quantity": "dynamic viscosity",
+      "uID": 504,
+      "unitName": "pound-force second per square foot",
+      "dimension": "dynamic viscosity",
+      "category": "Physical properties",
       "SOU": "other English",
       "symbol": "lbf\u00B7s/ft2",
       "defString": "[(1, 1), (\"lbf\", 1), (\"s\", 1), (\"ft\", -2)]",
@@ -4332,10 +4332,10 @@
       "notes": 0
    },
    {
-      "Uid": 505,
-      "name": "pound-force second per square inch",
-      "Qid": 7,
-      "quantity": "dynamic viscosity",
+      "uID": 505,
+      "unitName": "pound-force second per square inch",
+      "dimension": "dynamic viscosity",
+      "category": "Physical properties",
       "SOU": "other English",
       "symbol": "lbf\u00B7s/in2",
       "defString": "[(1, 1), (\"lbf\", 1), (\"s\", 1), (\"in\", -2)]",
@@ -4344,10 +4344,10 @@
       "notes": 0
    },
    {
-      "Uid": 506,
-      "name": "pound-weight",
-      "Qid": 14,
-      "quantity": "force",
+      "uID": 506,
+      "unitName": "pound-weight",
+      "dimension": "force",
+      "category": "Mechanics",
       "SOU": "US customary",
       "symbol": "lb",
       "defString": "[(1, 1), (\"g0\", 1), (\"lb\", 1)]",
@@ -4356,10 +4356,10 @@
       "notes": "\u2261 0.45359237\u00A0kg"
    },
    {
-      "Uid": 507,
-      "name": "quad",
-      "Qid": 12,
-      "quantity": "energy",
+      "uID": 507,
+      "unitName": "quad",
+      "dimension": "energy",
+      "category": "Mechanics",
       "SOU": "other English",
       "symbol": "quad",
       "defString": "[(1015, 1), (\"BTUIT\", 1)]",
@@ -4368,10 +4368,10 @@
       "notes": 0
    },
    {
-      "Uid": 509,
-      "name": "quart (imperial)",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 509,
+      "unitName": "quart (imperial)",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "imperial",
       "symbol": "qt (imp)",
       "defString": "[(0.25, 1), (\"gal (imp)\", 1)]",
@@ -4380,10 +4380,10 @@
       "notes": 0
    },
    {
-      "Uid": 511,
-      "name": "quart (US dry)",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 511,
+      "unitName": "quart (US dry)",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "other English",
       "symbol": "qt (US dry)",
       "defString": "[(0.25, 1), (\"gal (US dry)\", 1)]",
@@ -4392,10 +4392,10 @@
       "notes": 0
    },
    {
-      "Uid": 512,
-      "name": "quart",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 512,
+      "unitName": "quart",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "US customary",
       "symbol": "qt",
       "defString": "[(0.25, 1), (\"gal\", 1)]",
@@ -4404,10 +4404,10 @@
       "notes": 0
    },
    {
-      "Uid": 513,
-      "name": "quarter",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 513,
+      "unitName": "quarter",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "other English",
       "symbol": "quarter",
       "defString": "[(0.25, 1), (\"yd\", 1)]",
@@ -4416,10 +4416,10 @@
       "notes": 0
    },
    {
-      "Uid": 514,
-      "name": "quarter (imperial)",
-      "Qid": 26,
-      "quantity": "mass",
+      "uID": 514,
+      "unitName": "quarter (imperial)",
+      "dimension": "mass",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "imperial",
       "symbol": "quarter (imp)",
       "defString": "[(0.25, 1), (\"long cwt\", 1)]",
@@ -4428,10 +4428,10 @@
       "notes": 0
    },
    {
-      "Uid": 517,
-      "name": "quarter (informal)",
-      "Qid": 26,
-      "quantity": "mass",
+      "uID": 517,
+      "unitName": "quarter (informal)",
+      "dimension": "mass",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "other English",
       "symbol": "quarter (informal)",
       "defString": "[(0.25, 1), (\"ton\", 1)]",
@@ -4440,10 +4440,10 @@
       "notes": 0
    },
    {
-      "Uid": 518,
-      "name": "quarter, long (informal)",
-      "Qid": 26,
-      "quantity": "mass",
+      "uID": 518,
+      "unitName": "quarter, long (informal)",
+      "dimension": "mass",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "other English",
       "symbol": "quarter, long (informal)",
       "defString": "[(0.25, 1), (\"long ton\", 1)]",
@@ -4452,10 +4452,10 @@
       "notes": 0
    },
    {
-      "Uid": 519,
-      "name": "pail (imperial)",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 519,
+      "unitName": "pail (imperial)",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "other English",
       "symbol": "pail (imp)",
       "defString": "[(8, 1), (\"bu (imp)\", 1)]",
@@ -4464,10 +4464,10 @@
       "notes": 0
    },
    {
-      "Uid": 520,
-      "name": "quintal",
-      "Qid": 26,
-      "quantity": "mass",
+      "uID": 520,
+      "unitName": "quintal",
+      "dimension": "mass",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "non-SI metric",
       "symbol": "q",
       "defString": "[(100, 1), (\"kg\", 1)]",
@@ -4476,10 +4476,10 @@
       "notes": 0
    },
    {
-      "Uid": 521,
-      "name": "rad",
-      "Qid": 30,
-      "quantity": "radiation - absorbed dose",
+      "uID": 521,
+      "unitName": "rad",
+      "dimension": "radiation - absorbed dose",
+      "category": "Radiation and radioactivity\u00A0",
       "SOU": "non-SI metric",
       "symbol": "rad (dose)",
       "defString": "[(0.01, 1), (\"Gy\", 1)]",
@@ -4488,10 +4488,10 @@
       "notes": 0
    },
    {
-      "Uid": 522,
-      "name": "radian",
-      "Qid": 27,
-      "quantity": "plane angle",
+      "uID": 522,
+      "unitName": "radian",
+      "dimension": "plane angle",
+      "category": "Spatial measurements",
       "SOU": "SI",
       "symbol": "rad",
       "defString": "[(1, 1), (\"m\", 1), (\"m\", -1)]",
@@ -4500,10 +4500,10 @@
       "notes": "The angle subtended at the center of a circle by an arc whose length is equal to the circle's radius.  One full revolution encompasses 2\u03C0 radians."
    },
    {
-      "Uid": 523,
-      "name": "radian per second",
-      "Qid": 69,
-      "quantity": "angular velocity",
+      "uID": 523,
+      "unitName": "radian per second",
+      "dimension": "angular velocity",
+      "category": "Physics of motion",
       "SOU": "SI",
       "symbol": "rad/s",
       "defString": "[(1, 1), (\"rad\", 1), (\"s\", -1)]",
@@ -4512,10 +4512,10 @@
       "notes": 0
    },
    {
-      "Uid": 524,
-      "name": "radian per second squared",
-      "Qid": 68,
-      "quantity": "angular acceleration",
+      "uID": 524,
+      "unitName": "radian per second squared",
+      "dimension": "angular acceleration",
+      "category": "Physics of motion",
       "SOU": "SI",
       "symbol": "rad/s2",
       "defString": "[(1, 1), (\"rad\", 1), (\"s\", -2)]",
@@ -4524,10 +4524,10 @@
       "notes": 0
    },
    {
-      "Uid": 525,
-      "name": "reciprocal meter",
-      "Qid": 65,
-      "quantity": "wave number",
+      "uID": 525,
+      "unitName": "reciprocal meter",
+      "dimension": "wave number",
+      "category": "Physics of motion",
       "SOU": "SI",
       "symbol": "1/m",
       "defString": "[(1, 1), (\"1\", 1), (\"m\", -1)]",
@@ -4536,10 +4536,10 @@
       "notes": 0
    },
    {
-      "Uid": 526,
-      "name": "register ton",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 526,
+      "unitName": "register ton",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "other English",
       "symbol": "register ton",
       "defString": "[(100, 1), (\"ft\", 3)]",
@@ -4548,10 +4548,10 @@
       "notes": 0
    },
    {
-      "Uid": 529,
-      "name": "rod",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 529,
+      "unitName": "rod",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "US customary",
       "symbol": "rd",
       "defString": "[(80.5, 1), (\"ft\", 1)]",
@@ -4560,10 +4560,10 @@
       "notes": 0
    },
    {
-      "Uid": 531,
-      "name": "roentgen",
-      "Qid": 32,
-      "quantity": "radiation - exposure",
+      "uID": 531,
+      "unitName": "roentgen",
+      "dimension": "radiation - exposure",
+      "category": "Radiation and radioactivity\u00A0",
       "SOU": "SI",
       "symbol": "R",
       "defString": "[(0.000258, 1), (\"C\", 1), (\"kg\", -1)]",
@@ -4572,11 +4572,11 @@
       "notes": "The roentgen is not an SI unit and the NIST strongly discourages its continued use.[44]"
    },
    {
-      "Uid": 532,
-      "name": "roentgen equivalent man",
-      "Qid": 31,
-      "quantity": "radiation - equivalent dose",
-      "SOU": "non-SI metric",
+      "uID": 532,
+      "unitName": "roentgen equivalent man",
+      "dimension": "radiation - equivalent dose",
+      "category": "Radiation and radioactivity\u00A0",
+      "SOU": "SI",
       "symbol": "rem",
       "defString": "[(0.01, 1), (\"Sv\", 1)]",
       "convCoefficient": 0.01,
@@ -4584,10 +4584,10 @@
       "notes": 0
    },
    {
-      "Uid": 533,
-      "name": "rood",
-      "Qid": 3,
-      "quantity": "area",
+      "uID": 533,
+      "unitName": "rood",
+      "dimension": "area",
+      "category": "Spatial measurements",
       "SOU": "other English",
       "symbol": "ro",
       "defString": "[(0.25, 1), (\"ac\", 1)]",
@@ -4596,10 +4596,10 @@
       "notes": 0
    },
    {
-      "Uid": 534,
-      "name": "rope",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 534,
+      "unitName": "rope",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "other English",
       "symbol": "rope",
       "defString": "[(20, 1), (\"ft\", 1)]",
@@ -4608,10 +4608,10 @@
       "notes": 0
    },
    {
-      "Uid": 535,
-      "name": "rutherford",
-      "Qid": 33,
-      "quantity": "radioactivity",
+      "uID": 535,
+      "unitName": "rutherford",
+      "dimension": "radioactivity",
+      "category": "Radiation and radioactivity\u00A0",
       "SOU": "non-SI metric",
       "symbol": "ruth",
       "defString": "[(1, 1), (\"MBq\", 1)]",
@@ -4620,10 +4620,10 @@
       "notes": 0
    },
    {
-      "Uid": 537,
-      "name": "sack",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 537,
+      "unitName": "sack",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "other English",
       "symbol": "sack",
       "defString": "[(3, 1), (\"bu\", 1)]",
@@ -4632,10 +4632,10 @@
       "notes": 0
    },
    {
-      "Uid": 658,
-      "name": "sack (imperial)",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 658,
+      "unitName": "sack (imperial)",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "imperial",
       "symbol": "sack (imp)",
       "defString": "[(3, 1), (\"bu (imp)\", 1)]",
@@ -4644,10 +4644,10 @@
       "notes": 0
    },
    {
-      "Uid": 538,
-      "name": "bag (imperial)",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 538,
+      "unitName": "bag (imperial)",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "imperial",
       "symbol": "bag (imp)",
       "defString": "[(3, 1), (\"bu (imp)\", 1)]",
@@ -4656,10 +4656,10 @@
       "notes": 0
    },
    {
-      "Uid": 539,
-      "name": "scruple (apothecary)",
-      "Qid": 26,
-      "quantity": "mass",
+      "uID": 539,
+      "unitName": "scruple (apothecary)",
+      "dimension": "mass",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "other English",
       "symbol": "s ap",
       "defString": "[(20, 1), (\"gr\", 1)]",
@@ -4668,10 +4668,10 @@
       "notes": 0
    },
    {
-      "Uid": 540,
-      "name": "seam",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 540,
+      "unitName": "seam",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "other English",
       "symbol": "seam",
       "defString": "[(8, 1), (\"bu\", 1)]",
@@ -4680,10 +4680,10 @@
       "notes": 0
    },
    {
-      "Uid": 541,
-      "name": "second",
-      "Qid": 36,
-      "quantity": "time",
+      "uID": 541,
+      "unitName": "second",
+      "dimension": "time",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "SI",
       "symbol": "s",
       "defString": "[(1, 1), (\"s\", 1)]",
@@ -4692,10 +4692,10 @@
       "notes": "Time of 9192631770 periods of the radiation corresponding to the transition between the two hyperfine levels of the ground state of the caesium 133 atom at 0\u00A0K[10] (but other seconds are sometimes used in astronomy). Also that time it takes for light to travel a distance of 299792458 metres."
    },
    {
-      "Uid": 542,
-      "name": "section",
-      "Qid": 3,
-      "quantity": "area",
+      "uID": 542,
+      "unitName": "section",
+      "dimension": "area",
+      "category": "Spatial measurements",
       "SOU": "US customary",
       "symbol": "section",
       "defString": "[(1, 1), (\"mi\", 2)]",
@@ -4704,10 +4704,10 @@
       "notes": 0
    },
    {
-      "Uid": 544,
-      "name": "shake",
-      "Qid": 36,
-      "quantity": "time",
+      "uID": 544,
+      "unitName": "shake",
+      "dimension": "time",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "universal",
       "symbol": "shake",
       "defString": "[(0.00000001, 1), (\"s\", 1)]",
@@ -4716,10 +4716,10 @@
       "notes": 0
    },
    {
-      "Uid": 545,
-      "name": "shaku (Japan)",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 545,
+      "unitName": "shaku (Japan)",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "non-SI metric",
       "symbol": "shaku (Japan)",
       "defString": "[(0.303030303, 1), (\"m\", 1)]",
@@ -4728,10 +4728,10 @@
       "notes": 0
    },
    {
-      "Uid": 547,
-      "name": "shed",
-      "Qid": 3,
-      "quantity": "area",
+      "uID": 547,
+      "unitName": "shed",
+      "dimension": "area",
+      "category": "Spatial measurements",
       "SOU": "non-SI metric",
       "symbol": "shed",
       "defString": "[(1E-52, 1), (\"m\", 2)]",
@@ -4740,10 +4740,10 @@
       "notes": 0
    },
    {
-      "Uid": 548,
-      "name": "sheet",
-      "Qid": 26,
-      "quantity": "mass",
+      "uID": 548,
+      "unitName": "sheet",
+      "dimension": "mass",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "other English",
       "symbol": "sheet",
       "defString": "[(0.001428571, 1), (\"lb\", 1)]",
@@ -4752,10 +4752,10 @@
       "notes": 0
    },
    {
-      "Uid": 549,
-      "name": "short ton",
-      "Qid": 26,
-      "quantity": "mass",
+      "uID": 549,
+      "unitName": "short ton",
+      "dimension": "mass",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "US customary",
       "symbol": "ton",
       "defString": "[(2000, 1), (\"lb\", 1)]",
@@ -4764,10 +4764,10 @@
       "notes": 0
    },
    {
-      "Uid": 552,
-      "name": "shot",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 552,
+      "unitName": "shot",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "US customary",
       "symbol": "shot",
       "defString": "[(1.5, 1), (\"fl oz\", 1)]",
@@ -4776,10 +4776,10 @@
       "notes": 0
    },
    {
-      "Uid": 553,
-      "name": "siemens",
-      "Qid": 49,
-      "quantity": "electric conductance",
+      "uID": 553,
+      "unitName": "siemens",
+      "dimension": "electric conductance",
+      "category": "Circuit / electrical properties",
       "SOU": "SI",
       "symbol": "S",
       "defString": "[(1, 1), (\"A\", 1), (\"V\", -1)]",
@@ -4788,10 +4788,10 @@
       "notes": 0
    },
    {
-      "Uid": 554,
-      "name": "sievert",
-      "Qid": 31,
-      "quantity": "radiation - equivalent dose",
+      "uID": 554,
+      "unitName": "sievert",
+      "dimension": "radiation - equivalent dose",
+      "category": "Radiation and radioactivity\u00A0",
       "SOU": "SI",
       "symbol": "Sv",
       "defString": "[(1, 1), (\"J\", 1), (\"kg\", -1)]",
@@ -4800,10 +4800,10 @@
       "notes": "Although the definitions for sievert (Sv) and gray (Gy) would seem to indicate that they measure the same quantities, this is not the case. The effect of receiving a certain dose of radiation (given as Gy) is variable and depends on many factors, thus a new unit was needed to denote the biological effectiveness of that dose on the body; this is known as the equivalent dose and is shown in Sv. The general relationship between absorbed dose and equivalent dose can be represented as\nH = Q \u00B7 D\nwhere H is the equivalent dose, D is the absorbed dose, and Q is a dimensionless quality factor. Thus, for any quantity of D measured in Gy, the numerical value for H measured in Sv may be different.[46]"
    },
    {
-      "Uid": 555,
-      "name": "sigma",
-      "Qid": 36,
-      "quantity": "time",
+      "uID": 555,
+      "unitName": "sigma",
+      "dimension": "time",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "universal",
       "symbol": "sigma",
       "defString": "[(0.000001, 1), (\"s\", 1)]",
@@ -4812,10 +4812,10 @@
       "notes": 0
    },
    {
-      "Uid": 557,
-      "name": "slug per cubic foot",
-      "Qid": 6,
-      "quantity": "mass density",
+      "uID": 557,
+      "unitName": "slug per cubic foot",
+      "dimension": "mass density",
+      "category": "Physical properties",
       "SOU": "other English",
       "symbol": "slug/ft3",
       "defString": "[(1, 1), (\"slug\", 1), (\"ft\", -3)]",
@@ -4824,10 +4824,10 @@
       "notes": 0
    },
    {
-      "Uid": 558,
-      "name": "slug",
-      "Qid": 26,
-      "quantity": "mass",
+      "uID": 558,
+      "unitName": "slug",
+      "dimension": "mass",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "other English",
       "symbol": "slug",
       "defString": "[(1, 1), (\"g0\", 1), (\"lb\", 1), (\"s\", 2), (\"ft\", -1)]",
@@ -4836,10 +4836,10 @@
       "notes": "In this table, the unit gee is used to denote standard gravity in order to avoid confusion with the \"g\" symbol for grams."
    },
    {
-      "Uid": 661,
-      "name": "geepound",
-      "Qid": 26,
-      "quantity": "mass",
+      "uID": 661,
+      "unitName": "geepound",
+      "dimension": "mass",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "other English",
       "symbol": "geepound",
       "defString": "[(1, 1), (\"slug\", 1)]",
@@ -4848,10 +4848,10 @@
       "notes": "In this table, the unit gee is used to denote standard gravity in order to avoid confusion with the \"g\" symbol for grams."
    },
    {
-      "Uid": 662,
-      "name": "hyl",
-      "Qid": 26,
-      "quantity": "mass",
+      "uID": 662,
+      "unitName": "hyl",
+      "dimension": "mass",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "other English",
       "symbol": "hyl",
       "defString": "[(1, 1), (\"slug\", 1)]",
@@ -4860,10 +4860,10 @@
       "notes": "In this table, the unit gee is used to denote standard gravity in order to avoid confusion with the \"g\" symbol for grams."
    },
    {
-      "Uid": 560,
-      "name": "span",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 560,
+      "unitName": "span",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "other English",
       "symbol": "span",
       "defString": "[(9, 1), (\"in\", 1)]",
@@ -4872,10 +4872,10 @@
       "notes": 0
    },
    {
-      "Uid": 563,
-      "name": "speed of light in vacuum",
-      "Qid": 38,
-      "quantity": "velocity",
+      "uID": 563,
+      "unitName": "speed of light in vacuum",
+      "dimension": "velocity",
+      "category": "Physics of motion",
       "SOU": "universal",
       "symbol": "c",
       "defString": "[(299792458, 1), (\"m\", 1), (\"s\", -1)]",
@@ -4884,10 +4884,10 @@
       "notes": 0
    },
    {
-      "Uid": 564,
-      "name": "speed of sound in air",
-      "Qid": 38,
-      "quantity": "velocity",
+      "uID": 564,
+      "unitName": "speed of sound in air",
+      "dimension": "velocity",
+      "category": "Physics of motion",
       "SOU": "non-SI metric",
       "symbol": "speed sound",
       "defString": "[(317.5, 1), (\"m\", 1), (\"s\", -1)]",
@@ -4896,10 +4896,10 @@
       "notes": "1. The speed of sound varies especially with temperature and pressure from about 1225\u00A0km/h (761\u00A0mph or 661\u00A0kn).  in air at sea level to about 1062\u00A0km/h (660\u00A0mph or 570\u00A0kn) at jet altitudes (12200\u00A0m or 40000\u00A0ft).[31]"
    },
    {
-      "Uid": 565,
-      "name": "square (roofing)",
-      "Qid": 3,
-      "quantity": "area",
+      "uID": 565,
+      "unitName": "square (roofing)",
+      "dimension": "area",
+      "category": "Spatial measurements",
       "SOU": "other English",
       "symbol": "square (roofing)",
       "defString": "[(100, 1), (\"ft\", 2)]",
@@ -4908,10 +4908,10 @@
       "notes": 0
    },
    {
-      "Uid": 566,
-      "name": "square chain",
-      "Qid": 3,
-      "quantity": "area",
+      "uID": 566,
+      "unitName": "square chain",
+      "dimension": "area",
+      "category": "Spatial measurements",
       "SOU": "US customary",
       "symbol": "ch2",
       "defString": "[(4356, 1), (\"ft\", 2)]",
@@ -4920,10 +4920,10 @@
       "notes": 0
    },
    {
-      "Uid": 570,
-      "name": "square foot",
-      "Qid": 3,
-      "quantity": "area",
+      "uID": 570,
+      "unitName": "square foot",
+      "dimension": "area",
+      "category": "Spatial measurements",
       "SOU": "other English",
       "symbol": "ft2",
       "defString": "[(1, 1), (\"ft\", 2)]",
@@ -4932,10 +4932,10 @@
       "notes": 0
    },
    {
-      "Uid": 571,
-      "name": "square foot equivalent direct radiation",
-      "Qid": 28,
-      "quantity": "power",
+      "uID": 571,
+      "unitName": "square foot equivalent direct radiation",
+      "dimension": "power",
+      "category": "Mechanics",
       "SOU": "other English",
       "symbol": "ft2 (EDR)",
       "defString": "[(240, 1), (\"BTUIT\", 1), (\"h\", -1)]",
@@ -4944,10 +4944,10 @@
       "notes": 0
    },
    {
-      "Uid": 572,
-      "name": "square foot per second",
-      "Qid": 19,
-      "quantity": "kinematic viscosity",
+      "uID": 572,
+      "unitName": "square foot per second",
+      "dimension": "kinematic viscosity",
+      "category": "Physical properties",
       "SOU": "other English",
       "symbol": "ft2/s",
       "defString": "[(1, 1), (\"ft\", 2), (\"s\", -1)]",
@@ -4956,10 +4956,10 @@
       "notes": 0
    },
    {
-      "Uid": 573,
-      "name": "square inch",
-      "Qid": 3,
-      "quantity": "area",
+      "uID": 573,
+      "unitName": "square inch",
+      "dimension": "area",
+      "category": "Spatial measurements",
       "SOU": "other English",
       "symbol": "in2",
       "defString": "[(1, 1), (\"in\", 2)]",
@@ -4968,10 +4968,10 @@
       "notes": 0
    },
    {
-      "Uid": 574,
-      "name": "square kilometer",
-      "Qid": 3,
-      "quantity": "area",
+      "uID": 574,
+      "unitName": "square kilometer",
+      "dimension": "area",
+      "category": "Spatial measurements",
       "SOU": "non-SI metric",
       "symbol": "km2",
       "defString": "[(1, 1), (\"km\", 2)]",
@@ -4980,10 +4980,10 @@
       "notes": 0
    },
    {
-      "Uid": 577,
-      "name": "square meter",
-      "Qid": 3,
-      "quantity": "area",
+      "uID": 577,
+      "unitName": "square meter",
+      "dimension": "area",
+      "category": "Spatial measurements",
       "SOU": "SI",
       "symbol": "m2",
       "defString": "[(1, 1), (\"m\", 2)]",
@@ -4992,10 +4992,10 @@
       "notes": 0
    },
    {
-      "Uid": 578,
-      "name": "square meter per second",
-      "Qid": 19,
-      "quantity": "kinematic viscosity",
+      "uID": 578,
+      "unitName": "square meter per second",
+      "dimension": "kinematic viscosity",
+      "category": "Physical properties",
       "SOU": "non-SI metric",
       "symbol": "m2/s",
       "defString": "[(1, 1), (\"m\", 2), (\"s\", -1)]",
@@ -5004,10 +5004,10 @@
       "notes": 0
    },
    {
-      "Uid": 579,
-      "name": "square mil",
-      "Qid": 3,
-      "quantity": "area",
+      "uID": 579,
+      "unitName": "square mil",
+      "dimension": "area",
+      "category": "Spatial measurements",
       "SOU": "other English",
       "symbol": "mil2",
       "defString": "[(1, 1), (\"mil\", 2)]",
@@ -5016,10 +5016,10 @@
       "notes": 0
    },
    {
-      "Uid": 580,
-      "name": "square mile",
-      "Qid": 3,
-      "quantity": "area",
+      "uID": 580,
+      "unitName": "square mile",
+      "dimension": "area",
+      "category": "Spatial measurements",
       "SOU": "other English",
       "symbol": "mi2",
       "defString": "[(1, 1), (\"mi\", 2)]",
@@ -5028,10 +5028,10 @@
       "notes": 0
    },
    {
-      "Uid": 581,
-      "name": "square rod",
-      "Qid": 3,
-      "quantity": "area",
+      "uID": 581,
+      "unitName": "square rod",
+      "dimension": "area",
+      "category": "Spatial measurements",
       "SOU": "other English",
       "symbol": "rd2",
       "defString": "[(1, 1), (\"rd\", 2)]",
@@ -5040,10 +5040,10 @@
       "notes": 0
    },
    {
-      "Uid": 582,
-      "name": "square yard",
-      "Qid": 3,
-      "quantity": "area",
+      "uID": 582,
+      "unitName": "square yard",
+      "dimension": "area",
+      "category": "Spatial measurements",
       "SOU": "other English",
       "symbol": "yd2",
       "defString": "[(1, 1), (\"yd\", 2)]",
@@ -5052,10 +5052,10 @@
       "notes": 0
    },
    {
-      "Uid": 589,
-      "name": "statute mile",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 589,
+      "unitName": "statute mile",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "US customary",
       "symbol": "mi",
       "defString": "[(8, 1), (\"fur\", 1)]",
@@ -5064,10 +5064,10 @@
       "notes": "5280 US Survey feet \u2261 (5280 \u00D7 \u200B1200\u20443937) m"
    },
    {
-      "Uid": 591,
-      "name": "steradian",
-      "Qid": 34,
-      "quantity": "solid angle",
+      "uID": 591,
+      "unitName": "steradian",
+      "dimension": "solid angle",
+      "category": "Spatial measurements",
       "SOU": "SI",
       "symbol": "sr",
       "defString": "[(1, 1), (\"m\", 2), (\"m\", -2)]",
@@ -5076,10 +5076,10 @@
       "notes": "The solid angle subtended at the center of a sphere of radius r by a portion of the surface of the sphere having an area r2.\nA sphere subtends 4\u03C0\u00A0sr.[18]"
    },
    {
-      "Uid": 592,
-      "name": "sthene",
-      "Qid": 14,
-      "quantity": "force",
+      "uID": 592,
+      "unitName": "sthene",
+      "dimension": "force",
+      "category": "Mechanics",
       "SOU": "non-SI metric",
       "symbol": "sn",
       "defString": "[(1, 1), (\"MT\", 1), (\"m\", 1), (\"s\", -2)]",
@@ -5088,10 +5088,10 @@
       "notes": 0
    },
    {
-      "Uid": 593,
-      "name": "stick",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 593,
+      "unitName": "stick",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "other English",
       "symbol": "stick",
       "defString": "[(2, 1), (\"in\", 1)]",
@@ -5100,10 +5100,10 @@
       "notes": 0
    },
    {
-      "Uid": 594,
-      "name": "stilb",
-      "Qid": 21,
-      "quantity": "luminance",
+      "uID": 594,
+      "unitName": "stilb",
+      "dimension": "luminance",
+      "category": "Optics\u00A0",
       "SOU": "non-SI metric",
       "symbol": "sb",
       "defString": "[(104, 1), (\"cd\", 1), (\"m\", -2)]",
@@ -5112,10 +5112,10 @@
       "notes": 0
    },
    {
-      "Uid": 595,
-      "name": "stokes",
-      "Qid": 19,
-      "quantity": "kinematic viscosity",
+      "uID": 595,
+      "unitName": "stokes",
+      "dimension": "kinematic viscosity",
+      "category": "Physical properties",
       "SOU": "non-SI metric",
       "symbol": "St",
       "defString": "[(1, 1), (\"cm\", 2), (\"s\", -1)]",
@@ -5124,10 +5124,10 @@
       "notes": 0
    },
    {
-      "Uid": 596,
-      "name": "stone",
-      "Qid": 26,
-      "quantity": "mass",
+      "uID": 596,
+      "unitName": "stone",
+      "dimension": "mass",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "other English",
       "symbol": "st",
       "defString": "[(14, 1), (\"lb\", 1)]",
@@ -5136,10 +5136,10 @@
       "notes": 0
    },
    {
-      "Uid": 597,
-      "name": "stremma",
-      "Qid": 3,
-      "quantity": "area",
+      "uID": 597,
+      "unitName": "stremma",
+      "dimension": "area",
+      "category": "Spatial measurements",
       "SOU": "non-SI metric",
       "symbol": "stremma",
       "defString": "[(1000, 1), (\"m\", 2)]",
@@ -5148,10 +5148,10 @@
       "notes": 0
    },
    {
-      "Uid": 598,
-      "name": "strike (imperial)",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 598,
+      "unitName": "strike (imperial)",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "imperial",
       "symbol": "strike (imp)",
       "defString": "[(2, 1), (\"bu (imp)\", 1)]",
@@ -5160,10 +5160,10 @@
       "notes": 0
    },
    {
-      "Uid": 599,
-      "name": "strike (US dry)",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 599,
+      "unitName": "strike (US dry)",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "other English",
       "symbol": "strike (US dry)",
       "defString": "[(2, 1), (\"bu\", 1)]",
@@ -5172,10 +5172,10 @@
       "notes": 0
    },
    {
-      "Uid": 600,
-      "name": "survey foot",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 600,
+      "unitName": "survey foot",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "US customary",
       "symbol": "ft (survey)",
       "defString": "[(0.30480061, 1), (\"m\", 1)]",
@@ -5184,10 +5184,10 @@
       "notes": 0
    },
    {
-      "Uid": 601,
-      "name": "svedberg",
-      "Qid": 36,
-      "quantity": "time",
+      "uID": 601,
+      "unitName": "svedberg",
+      "dimension": "time",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "universal",
       "symbol": "Sved",
       "defString": "[(1E-13, 1), (\"s\", 1)]",
@@ -5196,10 +5196,10 @@
       "notes": 0
    },
    {
-      "Uid": 603,
-      "name": "tablespoon (Canadian)",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 603,
+      "unitName": "tablespoon (Canadian)",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "other English",
       "symbol": "tbsp (Can)",
       "defString": "[(0.5, 1), (\"fl oz (imp)\", 1)]",
@@ -5208,10 +5208,10 @@
       "notes": 0
    },
    {
-      "Uid": 604,
-      "name": "tablespoon (imperial)",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 604,
+      "unitName": "tablespoon (imperial)",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "imperial",
       "symbol": "tbsp (imp)",
       "defString": "[(0.625, 1), (\"fl oz (imp)\", 1)]",
@@ -5220,10 +5220,10 @@
       "notes": 0
    },
    {
-      "Uid": 605,
-      "name": "tablespoon",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 605,
+      "unitName": "tablespoon",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "US customary",
       "symbol": "tbsp",
       "defString": "[(0.5, 1), (\"fl oz\", 1)]",
@@ -5232,10 +5232,10 @@
       "notes": 0
    },
    {
-      "Uid": 606,
-      "name": "tablespoon (US FDA)",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 606,
+      "unitName": "tablespoon (US FDA)",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "non-SI metric",
       "symbol": "tbsp (FDA)",
       "defString": "[(15, 1), (\"ml\", 1)]",
@@ -5244,10 +5244,10 @@
       "notes": 0
    },
    {
-      "Uid": 607,
-      "name": "teaspoon (Canadian)",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 607,
+      "unitName": "teaspoon (Canadian)",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "other English",
       "symbol": "tsp (Can)",
       "defString": "[(0.166666667, 1), (\"fl oz (imp)\", 1)]",
@@ -5256,10 +5256,10 @@
       "notes": 0
    },
    {
-      "Uid": 608,
-      "name": "teaspoon (imperial)",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 608,
+      "unitName": "teaspoon (imperial)",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "imperial",
       "symbol": "tsp (imp)",
       "defString": "[(0.041666667, 1), (\"gi (imp)\", 1)]",
@@ -5268,10 +5268,10 @@
       "notes": 0
    },
    {
-      "Uid": 609,
-      "name": "teaspoon",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 609,
+      "unitName": "teaspoon",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "US customary",
       "symbol": "tsp",
       "defString": "[(0.166666667, 1), (\"fl oz\", 1)]",
@@ -5280,10 +5280,10 @@
       "notes": 0
    },
    {
-      "Uid": 610,
-      "name": "teaspoon (US FDA)",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 610,
+      "unitName": "teaspoon (US FDA)",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "non-SI metric",
       "symbol": "tsp (FDA)",
       "defString": "[(5, 1), (\"ml\", 1)]",
@@ -5292,10 +5292,10 @@
       "notes": 0
    },
    {
-      "Uid": 611,
-      "name": "tesla",
-      "Qid": 25,
-      "quantity": "magnetic flux density",
+      "uID": 611,
+      "unitName": "tesla",
+      "dimension": "magnetic flux density",
+      "category": "Electromagnetism\u00A0",
       "SOU": "SI",
       "symbol": "T",
       "defString": "[(1, 1), (\"Wb\", 1), (\"m\", -2)]",
@@ -5304,10 +5304,10 @@
       "notes": 0
    },
    {
-      "Uid": 612,
-      "name": "therm",
-      "Qid": 12,
-      "quantity": "energy",
+      "uID": 612,
+      "unitName": "therm",
+      "dimension": "energy",
+      "category": "Mechanics",
       "SOU": "other English",
       "symbol": "therm",
       "defString": "[(100000, 1), (\"BTU59\u00A0\u00B0F\", 1)]",
@@ -5316,10 +5316,10 @@
       "notes": 0
    },
    {
-      "Uid": 613,
-      "name": "therm (E.C.)",
-      "Qid": 12,
-      "quantity": "energy",
+      "uID": 613,
+      "unitName": "therm (E.C.)",
+      "dimension": "energy",
+      "category": "Mechanics",
       "SOU": "other English",
       "symbol": "therm (E.C.)",
       "defString": "[(100000, 1), (\"BTUIT\", 1)]",
@@ -5328,10 +5328,10 @@
       "notes": 0
    },
    {
-      "Uid": 614,
-      "name": "thermie",
-      "Qid": 12,
-      "quantity": "energy",
+      "uID": 614,
+      "unitName": "thermie",
+      "dimension": "energy",
+      "category": "Mechanics",
       "SOU": "non-SI metric",
       "symbol": "th",
       "defString": "[(1, 1), (\"McalIT\", 1)]",
@@ -5340,10 +5340,10 @@
       "notes": 0
    },
    {
-      "Uid": 615,
-      "name": "thou",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 615,
+      "unitName": "thou",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "US customary",
       "symbol": "thou",
       "defString": "[(0.001, 1), (\"in\", 1)]",
@@ -5352,10 +5352,10 @@
       "notes": 0
    },
    {
-      "Uid": 616,
-      "name": "timber foot",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 616,
+      "unitName": "timber foot",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "other English",
       "symbol": "timber foot",
       "defString": "[(1, 1), (\"ft\", 3)]",
@@ -5364,10 +5364,10 @@
       "notes": 0
    },
    {
-      "Uid": 617,
-      "name": "ton (displacement)",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 617,
+      "unitName": "ton (displacement)",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "other English",
       "symbol": "ton (displacement)",
       "defString": "[(35, 1), (\"ft\", 3)]",
@@ -5376,10 +5376,10 @@
       "notes": 0
    },
    {
-      "Uid": 618,
-      "name": "ton (freight)",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 618,
+      "unitName": "ton (freight)",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "other English",
       "symbol": "ton (freight)",
       "defString": "[(40, 1), (\"ft\", 3)]",
@@ -5388,10 +5388,10 @@
       "notes": 0
    },
    {
-      "Uid": 619,
-      "name": "ton (water)",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 619,
+      "unitName": "ton (water)",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "other English",
       "symbol": "ton (water)",
       "defString": "[(28, 1), (\"bu (imp)\", 1)]",
@@ -5400,10 +5400,10 @@
       "notes": 0
    },
    {
-      "Uid": 621,
-      "name": "ton of coal equivalent",
-      "Qid": 12,
-      "quantity": "energy",
+      "uID": 621,
+      "unitName": "ton of coal equivalent",
+      "dimension": "energy",
+      "category": "Mechanics",
       "SOU": "non-SI metric",
       "symbol": "TCE",
       "defString": "[(7, 1), (\"Gcalth\", 1)]",
@@ -5412,10 +5412,10 @@
       "notes": 0
    },
    {
-      "Uid": 624,
-      "name": "ton of TNT",
-      "Qid": 12,
-      "quantity": "energy",
+      "uID": 624,
+      "unitName": "ton of TNT",
+      "dimension": "energy",
+      "category": "Mechanics",
       "SOU": "other English",
       "symbol": "tTNT",
       "defString": "[(1, 1), (\"Gcalth\", 1)]",
@@ -5424,10 +5424,10 @@
       "notes": 0
    },
    {
-      "Uid": 628,
-      "name": "tonne of oil equivalent",
-      "Qid": 12,
-      "quantity": "energy",
+      "uID": 628,
+      "unitName": "tonne of oil equivalent",
+      "dimension": "energy",
+      "category": "Mechanics",
       "SOU": "non-SI metric",
       "symbol": "toe",
       "defString": "[(10, 1), (\"GcalIT\", 1)]",
@@ -5436,10 +5436,10 @@
       "notes": 0
    },
    {
-      "Uid": 629,
-      "name": "torr",
-      "Qid": 29,
-      "quantity": "pressure",
+      "uID": 629,
+      "unitName": "torr",
+      "dimension": "pressure",
+      "category": "Mechanics",
       "SOU": "non-SI metric",
       "symbol": "torr",
       "defString": "[(133.3223684, 1), (\"Pa\", 1)]",
@@ -5448,10 +5448,10 @@
       "notes": 0
    },
    {
-      "Uid": 630,
-      "name": "township",
-      "Qid": 3,
-      "quantity": "area",
+      "uID": 630,
+      "unitName": "township",
+      "dimension": "area",
+      "category": "Spatial measurements",
       "SOU": "US customary",
       "symbol": "twp",
       "defString": "[(36, 1), (\"mi\", 2)]",
@@ -5460,10 +5460,10 @@
       "notes": 0
    },
    {
-      "Uid": 631,
-      "name": "tun",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 631,
+      "unitName": "tun",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "other English",
       "symbol": "tun",
       "defString": "[(252, 1), (\"gal\", 1)]",
@@ -5472,10 +5472,10 @@
       "notes": 0
    },
    {
-      "Uid": 632,
-      "name": "twip",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 632,
+      "unitName": "twip",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "other English",
       "symbol": "twip",
       "defString": "[(0.000694444, 1), (\"in\", 1)]",
@@ -5484,10 +5484,10 @@
       "notes": 0
    },
    {
-      "Uid": 633,
-      "name": "fluidram",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 633,
+      "unitName": "fluidram",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "US customary",
       "symbol": "fl dr (US)",
       "defString": "[(0.125, 1), (\"fl oz\", 1)]",
@@ -5496,10 +5496,10 @@
       "notes": 0
    },
    {
-      "Uid": 634,
-      "name": "volt",
-      "Qid": 39,
-      "quantity": "voltage",
+      "uID": 634,
+      "unitName": "volt",
+      "dimension": "voltage",
+      "category": "Circuit / electrical properties",
       "SOU": "SI",
       "symbol": "V",
       "defString": "[(1, 1), (\"W\", 1), (\"A\", -1)]",
@@ -5508,10 +5508,10 @@
       "notes": "The difference in electric potential across two points along a conducting wire carrying one ampere of constant current when the power dissipated between the points equals one watt.[33]"
    },
    {
-      "Uid": 635,
-      "name": "volt per meter",
-      "Qid": 51,
-      "quantity": "electric field strength",
+      "uID": 635,
+      "unitName": "volt per meter",
+      "dimension": "electric field strength",
+      "category": "Electromagnetism\u00A0",
       "SOU": "SI",
       "symbol": "V/m",
       "defString": "[(1, 1), (\"V\", 1), (\"m\", -1)]",
@@ -5520,10 +5520,10 @@
       "notes": 0
    },
    {
-      "Uid": 636,
-      "name": "watt",
-      "Qid": 28,
-      "quantity": "power",
+      "uID": 636,
+      "unitName": "watt",
+      "dimension": "power",
+      "category": "Mechanics",
       "SOU": "SI",
       "symbol": "W",
       "defString": "[(1, 1), (\"J\", 1), (\"s\", -1)]",
@@ -5532,10 +5532,10 @@
       "notes": "The power which in one second of time gives rise to one joule of energy.[33]"
    },
    {
-      "Uid": 637,
-      "name": "watt per meter kelvin",
-      "Qid": 62,
-      "quantity": "thermal conductivity",
+      "uID": 637,
+      "unitName": "watt per meter kelvin",
+      "dimension": "thermal conductivity",
+      "category": "Thermo",
       "SOU": "SI",
       "symbol": "W/(m\u00B7K)",
       "defString": "[(1, 1), (\"W\", 1), (\"m\", -1), (\"K\", -1)]",
@@ -5544,10 +5544,10 @@
       "notes": 0
    },
    {
-      "Uid": 638,
-      "name": "watt per square meter",
-      "Qid": 56,
-      "quantity": "heat flux density, irradiance",
+      "uID": 638,
+      "unitName": "watt per square meter",
+      "dimension": "heat flux density, irradiance",
+      "category": "Thermo",
       "SOU": "SI",
       "symbol": "W/m2",
       "defString": "[(1, 1), (\"W\", 1), (\"m\", -2)]",
@@ -5556,10 +5556,10 @@
       "notes": 0
    },
    {
-      "Uid": 639,
-      "name": "watt per square meter steradian",
-      "Qid": 58,
-      "quantity": "radiance",
+      "uID": 639,
+      "unitName": "watt per square meter steradian",
+      "dimension": "radiance",
+      "category": "Optics\u00A0",
       "SOU": "SI",
       "symbol": "W/(m2\u00B7sr)",
       "defString": "[(1, 1), (\"W\", 1), (\"m\", -2), (\"sr\", -1)]",
@@ -5568,10 +5568,10 @@
       "notes": 0
    },
    {
-      "Uid": 640,
-      "name": "watt per steradian",
-      "Qid": 59,
-      "quantity": "radiant intensity",
+      "uID": 640,
+      "unitName": "watt per steradian",
+      "dimension": "radiant intensity",
+      "category": "Optics\u00A0",
       "SOU": "SI",
       "symbol": "W/sr",
       "defString": "[(1, 1), (\"W\", 1), (\"sr\", -1)]",
@@ -5580,10 +5580,10 @@
       "notes": 0
    },
    {
-      "Uid": 641,
-      "name": "weber",
-      "Qid": 24,
-      "quantity": "magnetic flux",
+      "uID": 641,
+      "unitName": "weber",
+      "dimension": "magnetic flux",
+      "category": "Electromagnetism\u00A0",
       "SOU": "SI",
       "symbol": "Wb",
       "defString": "[(1, 1), (\"V\", 1), (\"s\", 1)]",
@@ -5592,10 +5592,10 @@
       "notes": "Magnetic flux which, linking a circuit of one turn, would produce in it an electromotive force of 1 volt if it were reduced to zero at a uniform rate in 1 second.[33]"
    },
    {
-      "Uid": 642,
-      "name": "week",
-      "Qid": 36,
-      "quantity": "time",
+      "uID": 642,
+      "unitName": "week",
+      "dimension": "time",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "universal",
       "symbol": "wk",
       "defString": "[(7, 1), (\"d\", 1)]",
@@ -5604,10 +5604,10 @@
       "notes": 0
    },
    {
-      "Uid": 643,
-      "name": "wey (US dry)",
-      "Qid": 40,
-      "quantity": "volume",
+      "uID": 643,
+      "unitName": "wey (US dry)",
+      "dimension": "volume",
+      "category": "Spatial measurements",
       "SOU": "other English",
       "symbol": "wey (US dry)",
       "defString": "[(40, 1), (\"bu\", 1)]",
@@ -5616,10 +5616,10 @@
       "notes": 0
    },
    {
-      "Uid": 644,
-      "name": "wey",
-      "Qid": 26,
-      "quantity": "mass",
+      "uID": 644,
+      "unitName": "wey",
+      "dimension": "mass",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "other English",
       "symbol": "wey",
       "defString": "[(252, 1), (\"lb\", 1)]",
@@ -5628,10 +5628,10 @@
       "notes": 0
    },
    {
-      "Uid": 645,
-      "name": "wey (imperial)",
-      "Qid": 26,
-      "quantity": "mass",
+      "uID": 645,
+      "unitName": "wey (imperial)",
+      "dimension": "mass",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "other English",
       "symbol": "wey (imp)",
       "defString": "[(18, 1), (\"st\", 1)]",
@@ -5640,10 +5640,10 @@
       "notes": 0
    },
    {
-      "Uid": 647,
-      "name": "yard (international)",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 647,
+      "unitName": "yard (international)",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "non-SI metric",
       "symbol": "yd (metric)",
       "defString": "[(0.9144, 1), (\"m\", 1)]",
@@ -5652,10 +5652,10 @@
       "notes": 0
    },
    {
-      "Uid": 648,
-      "name": "yard",
-      "Qid": 20,
-      "quantity": "length",
+      "uID": 648,
+      "unitName": "yard",
+      "dimension": "length",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "US customary",
       "symbol": "yd",
       "defString": "[(3, 1), (\"ft\", 1)]",
@@ -5664,10 +5664,10 @@
       "notes": 0
    },
    {
-      "Uid": 650,
-      "name": "yardland",
-      "Qid": 3,
-      "quantity": "area",
+      "uID": 650,
+      "unitName": "yardland",
+      "dimension": "area",
+      "category": "Spatial measurements",
       "SOU": "other English",
       "symbol": "yardland",
       "defString": "[(30, 1), (\"ac\", 1)]",
@@ -5676,10 +5676,10 @@
       "notes": 0
    },
    {
-      "Uid": 651,
-      "name": "year (common)",
-      "Qid": 36,
-      "quantity": "time",
+      "uID": 651,
+      "unitName": "year (common)",
+      "dimension": "time",
+      "category": "Basic SI quantities\u00A0",
       "SOU": "universal",
       "symbol": "yr",
       "defString": "[(365, 1), (\"d\", 1)]",

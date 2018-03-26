@@ -11,13 +11,14 @@ import F3_buildDicts as fBuild
 import F4_dealParams as fParam
 import F5_findProb as fProb
 import F6_pickObjects as fObj
-import F7_buildText as fText
+import F7_quantities as fQuant
+import F8_buildText as fText
 
 import chad
 
 def problemGen(subject, sou, diffString):
 
-    rawUnitsDict = fGen.loadRaw('UnitsDict13.json')
+    rawUnitsDict = fGen.loadRaw('UnitsDict16.json')
 
     # Create list, metricIDs based on passed system of units
     souSet = {'SI', 'non-SI metric', 'universal'}
@@ -41,53 +42,67 @@ def problemGen(subject, sou, diffString):
     exclDims = ['acceleration', 'action', 'currency', 'dynamic viscosity', 'energy density', 'frequency', 'kinematic viscosity', 'surface tension', 'torque']
     mechDimDict = fParam.selectDims(subject, exclDims, dimsDict)
 
-    # Main procedure to create tuple list of dimensions, lambdas that are dimensionally congruent
-    answerDim = fParam.dealAnswer(mechDimDict)
-    print(answerDim, "can be calculated with this combination of arguments: ")
+#-----------MAIN PROCEDURE TO GENERATE PARAMETER LIST OF TUPLES, I.E. ANSWER AND REQUIRED ARGUMENTS THAT ARE DIMENSIONALLY CONGRUENT
 
     # Need to convert whatever is set by web page into integer; plus 1 added so Simple doesn't generate a 'zero', which is problematic for code
     difficulty = ["Simple", "Fairly easy", "Challenging", "Very hard", "Brutal"].index(diffString) + 1
     tryCount = 0
     maxTry = 50
 
-    paramList = []
+    # Start by simply picking an Answer dimension randomly, i.e. 'dealing'
+    answerDim = fParam.dealAnswer(mechDimDict)
+    print(answerDim, "can be calculated with this combination of arguments: ")
+    
+    # Main loop that calls "dealArguments" function until seemingly valid set of parameters formed uprepeat
+    # Primary objective is to construct a list of 2tuples with (dim, lamda) called dimLambdas
+    
     goodList = False
     maxArgs = difficulty + 3
     while not goodList and tryCount < maxTry:
         tryCount = tryCount + 1
 
         # Going to use difficulty variable as a threshold on minimum number of arguments before routine clears remaining base dimensions
-        paramList = fParam.dealArguments(answerDim, difficulty, mechDimDict)
+        # which is done via call to simpleDim function
+        dimLambdas = fParam.dealArguments(answerDim, difficulty, mechDimDict)
     
-        if len(paramList) != 0 and len(paramList) <= maxArgs:
+        if len(dimLambdas) != 0 and len(dimLambdas) <= maxArgs:
             goodList = True
     
-    argList = paramList[1:]
+    argDimLambdas = dimLambdas[1:]
 
-    print(argList)
+    print(argDimLambdas)
     print("Number of tries: ", tryCount)
 
-    paramDims = [i[0] for i in paramList]
+    # Extract just dimension element from 2tuples and place into simple list
+    # Finding relevant problem is a function of dimensions along, not their lambdas
+    paramDims = [i[0] for i in dimLambdas]
     probType = fProb.findProbType(paramDims, probDict)
     print("Problem type: ", probType)
     print("----------")
     print("\n")
 
-    paramObjList = fObj.setObjects(paramList, probType, mechDimDict, probDict)
-    paramObjList = fObj.conformObjects(paramObjList, objDict)
+    # DLOlist is augmentation of dimLambda 2tuple with 3rd argument representing the "object" for each dimension
+    DLOlist = fObj.setObjects(dimLambdas, probType, mechDimDict, probDict)
+    DLOlist = fObj.conformObjects(DLOlist, objDict)
 
-    print("Established parameters, degrees, and connected objects:")
-    for param in paramObjList:
-        print(param)
+    # Produce 5tuple, by adding a units and (appropriate) value to each dimension
+    DLOUVlist = fQuant.dealUnits(DLOlist, sou, metricDict)
+
+
+# OUTPUT STATEMENTS
+
+    print("Established parameters, lambdas, connected objects, units, and values:")
+    for element in DLOUVlist:
+        print(element)
     print("----------")
     print("\n")
 
-    title = fText.buildTitle(probType, paramObjList, probDict)
-    context = fText.buildContext(probType, paramObjList, probDict)
+    title = fText.buildTitle(probType, DLOlist, probDict)
+    context = fText.buildContext(probType, DLOlist, probDict)
     
-    ansTuple = paramObjList[0]
+    ansTuple = DLOUVlist[0]
     queryText = fText.buildQuery(ansTuple)
-    assList = fText.buildAss(paramObjList[1:])
+    assList = fText.buildAss(DLOUVlist[1:])
   
     print("Title: ", title)
     print("===============")

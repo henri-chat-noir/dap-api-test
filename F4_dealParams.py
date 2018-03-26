@@ -10,44 +10,49 @@ def dealAnswer(dimDict):
     
     return answerDim
 
-
 def dealArguments(answerDim, difficulty, dimDict):
     
+    # Residual tuples is the current combination of base dimensions and degrees that remain to be 'cancelled out'
     # Initialize the residual tuples list with definition of answer; development list of strings for resid Dims
     residTuples = dimDict[answerDim]['primTuples']
     residBaseDims = [i[0] for i in residTuples]
 
-    # Initialize paraemeter list, which holds dimensions and lambda values for answer plus each argument
-    paramList = []
-    paramList.append((answerDim, 1))
+    # Initialize paraemeter dimension list, which holds dimensions and lambda values for answer plus each argument
+    # Load passed answerDim along with its lambda, which is (by definition) = 1
+    dimLambdas = []
+    dimLambdas.append((answerDim, 1))
 
-    # Set maximum limit on iterations of while loop in event residual base dimensions not 'cancelled out'
+    # Set (somewhat arbitrary) maximum limit on iterations of while loop in event residual base dimensions cannot be 'cancelled out'
     maxArgs = 9
     count = 0
+
     # This first loop simply builds a set of arguments (based on difficulty level) that involve 'some cancelling'
     while len(residTuples) > 0 and count < maxArgs:
 
         count = count + 1
 
-        # Add new dimension to parameter list
-        paramDims = [i[0] for i in paramList]
+        # Construct simple list of current dimensions
+        dimsList = [i[0] for i in dimLambdas]
+
+        # Could work to conform random and simple functions perhaps by passing a Boolean as to which algorithm should be applied.
         if count <= difficulty:    
-            newDim = randomDim(residTuples, paramDims, dimDict)
+            newDim = randomDim(residTuples, dimsList, dimDict)
         else:
-            newDim = simpleDim(residTuples, paramDims, dimDict)
+            newDim = simpleDim(residTuples, dimsList, dimDict)
+
         if newDim == 'NoMatch':
         # Exit out of function and essentially retry, as this effort didn't work
             breakStop = True
-            paramList = []
+            dimsList = []
             break
         else:
-        # Process new dimension, adding to paramList, calculating lambda, figuring out residual base dimensions, etc.
+        # Process new dimension, adding to the related 'primTuples' from dimDict, calculating lambda, figuring out residual base dimensions, etc.
             newTuples = dimDict[newDim]['primTuples']
             argLambda = calcLambda(residTuples, newTuples)
     
             newBaseDims = [i[0] for i in newTuples]
-            paramList.append( (newDim, argLambda) )
-            # Make a shallow? copy of residual tuples into replacement for processing
+            dimLambdas.append( (newDim, argLambda) )
+            # Make a copy of residual tuples into replacement for processing
             repTuples = residTuples[:]
 
             for baseDim, degree in newTuples:
@@ -64,12 +69,7 @@ def dealArguments(answerDim, difficulty, dimDict):
                 if tuple[1] != 0:
                     residTuples.append(tuple)
         
-            paramDims = [i[0] for i in paramList]
-            # print('paramList:', paramList)
-            # print("residTuples: ", residTuples)
-            # print("----------")
-    
-    return paramList
+    return dimLambdas
 
 def calcLambda(residTuples, newTuples):
     
@@ -106,7 +106,7 @@ def calcLambda(residTuples, newTuples):
 
     return argLambda
 
-def randomDim(residualPrimTuples, paramDims, dimDict):
+def randomDim(residualPrimTuples, dimsList, dimDict):
 
     # First for loop through residual to pick argument to attack time (if an 'issue')
     attackTime = False
@@ -131,7 +131,7 @@ def randomDim(residualPrimTuples, paramDims, dimDict):
         entryDict = entry[1]
         dimLabel = entryDict['dimension']
         entryBaseDims = [i[0] for i in entryDict['primTuples']]
-        if nextBaseDim in entryBaseDims and dimLabel not in paramDims:
+        if nextBaseDim in entryBaseDims and dimLabel not in dimsList:
             nextDims[dimLabel] = entryDict
 
     keyList = list(nextDims.keys())
@@ -141,7 +141,7 @@ def randomDim(residualPrimTuples, paramDims, dimDict):
     
     return dimension
 
-def simpleDim(residTuples, paramDims, dimDict):
+def simpleDim(residTuples, dimsList, dimDict):
 
     simpleDim = 'NoMatch'
     for primDim, degree in residTuples:
@@ -153,7 +153,7 @@ def simpleDim(residTuples, paramDims, dimDict):
             entryDict = entry[1]
             primTuples = entryDict['primTuples']
 
-            if len(primTuples) == 1 and primTuples[0][0] == primDim and newDim not in paramDims:
+            if len(primTuples) == 1 and primTuples[0][0] == primDim and newDim not in dimsList:
                 if abs(primTuples[0][1]) == abs(degree):
                     simpleDim = newDim
                     # print("simpleDim: ", simpleDim)

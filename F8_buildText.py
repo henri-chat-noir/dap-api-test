@@ -89,7 +89,6 @@ def swapObjects(inputString, paramObjList, firstCap):
 
     return outputString
 
-
 def buildQuery(ansTuple):
 
     queryText = "What is the " + ansTuple[0] + " " + dimPrep(ansTuple[0]) + " " + ansTuple[2] + "?"
@@ -101,11 +100,10 @@ def buildAss(argTuple):
     count = 0
     assList = []
     assList.append(". . . if you are given the following assumptions:" + "\n")
-    for dim, deg, obj in argTuple:
+    for dim, deg, obj, units, value in argTuple:
         count = count + 1
-        value = "[value]"
-        units = "[units]"
-        coreText = dim[0].upper() + dim[1:] + " " + dimPrep(dim) + " " + obj + " = " + value + " " + units
+        valString = str(round(value, 2))
+        coreText = dim[0].upper() + dim[1:] + " " + dimPrep(dim) + " " + obj + " = " + valString + " " + units
         assList.append(coreText)
 
     return assList

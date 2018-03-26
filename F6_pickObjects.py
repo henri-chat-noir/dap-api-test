@@ -1,7 +1,7 @@
 import F0_general as fGen
 import random as rand
 
-def conformObjects(paramObjList, objDict):
+def conformObjects(dimLambdas, objDict):
     # Clunky, but having randomly selected a set of objects, simplest process is then to re-set so that
     # Only get one object per object class, using the first one encountered to re-set any others
     # For instance "beer" and "wine" (both of class = fluids) cannont both be in same problem
@@ -10,23 +10,21 @@ def conformObjects(paramObjList, objDict):
     # As well, a single object can appear in multiple classes, e.g. piston as both moving object and force applicator
     # However, we can see how far this gets us (as a rough prototype)
 
-    newParamObjList = []
-    # classList = []
+    newDimLambdas = []
     paramObjDict = {}
-    newList = []
-    for dim, deg, object in paramObjList:
-        currentClass = findClass(object, objDict)
-        if currentClass in list(paramObjDict.keys()):
-            newObj = paramObjDict[currentClass]
+    for dim, deg, object in dimLambdas:
+        currentObjClass = findClass(object, objDict)
+        if currentObjClass in list(paramObjDict.keys()):
+            newObj = paramObjDict[currentObjClass]
         
         else:
             newObj = object
-            paramObjDict[currentClass] = object
+            paramObjDict[currentObjClass] = object
         
         newTuple = (dim, deg, newObj)
-        newParamObjList.append(newTuple)
+        newDimLambdas.append(newTuple)
 
-    return newParamObjList
+    return newDimLambdas
 
 def findClass(targetObj, objDict):
 
