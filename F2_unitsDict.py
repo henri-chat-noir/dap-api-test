@@ -61,6 +61,11 @@ def unitProcess(targetDict, exclUIDs):
         # Initially assigning value defList to tempList ahead of WHILE loop important, as otherwise
         # those units that are SIBU-only to begin with don't have anything to work from below loop
         defList = unitInfo['defList']
+        defText = buildUnitDef(defList)
+
+        outputDict[unitName]['defList'] = defList
+        outputDict[unitName]['defText'] = defText
+
         tempList = defList[:]
 
         # Attack defList until all arguments have SIBU units returned into baseList
@@ -102,6 +107,47 @@ def unitProcess(targetDict, exclUIDs):
         outputDict[unitName]['pathList'] = pathList
 
     return outputDict
+
+def buildUnitDef(defList):
+
+    defText = ""
+    coeff = 1.0
+    denom = ""
+    numer = ""
+
+    for symbol, degree in defList:
+        if type(symbol) is int or type(symbol) is float:
+            newFactor = float(symbol)**degree
+            coeff = coeff * newFactor
+        else:
+            if abs(degree) != 1:
+                expText = "^" + str(abs(degree))
+            else:
+                expText = ""
+
+            if degree > 0:
+                if numer != "": sep = "."
+                else: sep = ""
+                numer += sep + symbol + expText
+
+            else:
+                if denom != "": sep = "."
+                else: sep = ""
+                denom += sep + symbol + expText
+    
+    if numer == "":
+        numer = 1
+
+    denomText = ""
+    if denom != "":
+        if "." in denom:
+            denomText = "/(" + denom + ")"
+        else:
+            denomText = "/" + denom
+
+    defText = str(coeff) + " " + numer + denomText
+
+    return defText
 
 def tagBase(coeff, symList):
     # All that's needed is to test the first tuple in list

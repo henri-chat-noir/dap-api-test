@@ -103,7 +103,8 @@ def problemGen(subject, sou, diffString):
     ansTuple = DLOUVlist[0]
     queryText = fText.buildQuery(ansTuple)
     assList = fText.buildAss(DLOUVlist[1:])
-  
+    defHelp = fText.buidDefHelp(DLOUVlist, metricDict)
+    
     print("Title: ", title)
     print("===============")
     
@@ -113,10 +114,13 @@ def problemGen(subject, sou, diffString):
     print("\n")
     for line in assList:
         print(line)
-
-    echoback = chad.buildEchoback(subject, sou, diffString, title, context, queryText, assList)
     print("\n")
-    print("ECHOBACK:")
-    print(echoback)
+    for line in defHelp:
+        print(line)
+    
+    echoback = chad.buildEchoback(subject, sou, diffString, title, context, queryText, assList, defHelp)
+    print("\n")
+    # print("ECHOBACK:")
+    # print(echoback)
     
     return echoback

@@ -14,7 +14,6 @@ def  buildTitle(probType, paramObjList, probDict):
 
     return title
 
-
 def  buildContext(probType, paramObjList, probDict):
     
     preamble = "You need to run some calculations related to"
@@ -23,7 +22,6 @@ def  buildContext(probType, paramObjList, probDict):
     context = preamble + " " + swapObjects(conTemplate, paramObjList, False)
 
     return context
-
 
 def swapObjects(inputString, paramObjList, firstCap):
 
@@ -121,3 +119,19 @@ def dimPrep(dim):
         preposition = "of"
         
     return preposition
+
+def buidDefHelp(DLOUVlist, metricDict):
+
+    defHelp = []
+    defHelp.append("You may find the following unit conversions useful:")
+
+    for dim, paramLamba, object, unit, value in DLOUVlist:
+
+        defList = metricDict[unit]['defList']
+
+        symbol = metricDict[unit]['symbol']
+
+        newHelp = "1 " + symbol + " = "  + metricDict[unit]['defText']
+        defHelp.append(newHelp)
+
+    return defHelp
