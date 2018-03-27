@@ -257,7 +257,6 @@ def baseStep(defList, pathList, unitID, unitName, unitsDict):
                 breakStop = True         
                 break
             
-            
             if new_defList is None:
                 errLabel = "Replacement defList is NoneType"
                 breakStop = True

@@ -128,10 +128,17 @@ def buidDefHelp(DLOUVlist, metricDict):
     for dim, paramLamba, object, unit, value in DLOUVlist:
 
         defList = metricDict[unit]['defList']
-
         symbol = metricDict[unit]['symbol']
 
         newHelp = "1 " + symbol + " = "  + metricDict[unit]['defText']
         defHelp.append(newHelp)
+
+        pathList = metricDict[unit]['pathList']
+        for uID, unitName in pathList:
+
+            print("Pathlist: ", pathList)
+            symbol = metricDict[unitName]['symbol']
+            defText = metricDict[unitName]['defText']
+            defHelp.append("1 " + symbol + " = " + defText)
 
     return defHelp
