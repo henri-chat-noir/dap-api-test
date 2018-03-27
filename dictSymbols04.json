@@ -1,0 +1,2342 @@
+[
+   {
+      "symID": 1,
+      "symTup": "(\"'c\", )",
+      "unitName": "centesimal minute of arc",
+      "uID": 98
+   },
+   {
+      "symID": 2,
+      "symTup": "(\"\\\"c\", )",
+      "unitName": "centesimal second of arc",
+      "uID": 99
+   },
+   {
+      "symID": 3,
+      "symTup": "(\"#\", )",
+      "unitName": "count of number of units",
+      "uID": 118
+   },
+   {
+      "symID": 4,
+      "symTup": "(\"\u00B0\", )",
+      "unitName": "degree (of arc)",
+      "uID": 157
+   },
+   {
+      "symID": 5,
+      "symTup": "(\"\u00B0C\", )",
+      "unitName": "degree Celsius",
+      "uID": 158
+   },
+   {
+      "symID": 6,
+      "symTup": "(\"\u00B0F\", )",
+      "unitName": "degree Fahrenheit",
+      "uID": 160
+   },
+   {
+      "symID": 7,
+      "symTup": "(\"\u00B0R\", )",
+      "unitName": "degree Rankine",
+      "uID": 162
+   },
+   {
+      "symID": 8,
+      "symTup": "(\"\u00B5\", )",
+      "unitName": "angular mil",
+      "uID": 13
+   },
+   {
+      "symID": 9,
+      "symTup": "(\"A\", )",
+      "unitName": "amp",
+      "uID": 8
+   },
+   {
+      "symID": 10,
+      "symTup": "(\"a\", )",
+      "unitName": "are",
+      "uID": 16
+   },
+   {
+      "symID": 11,
+      "symTup": "(\"\u00C5\", )",
+      "unitName": "\u00E5ngstr\u00F6m",
+      "uID": 12
+   },
+   {
+      "symID": 12,
+      "symTup": "(\"abamp\", )",
+      "unitName": "abampere",
+      "uID": 179
+   },
+   {
+      "symID": 13,
+      "symTup": "(\"abC\", )",
+      "unitName": "abcoulomb",
+      "uID": 1
+   },
+   {
+      "symID": 14,
+      "symTup": "(\"ac\", )",
+      "unitName": "acre",
+      "uID": 5
+   },
+   {
+      "symID": 15,
+      "symTup": "(\"arcmin\", )",
+      "unitName": "arcminute",
+      "uID": 14
+   },
+   {
+      "symID": 16,
+      "symTup": "(\"arcsec\", )",
+      "unitName": "arcsecond",
+      "uID": 15
+   },
+   {
+      "symID": 17,
+      "symTup": "(\"at\", )",
+      "unitName": "atmosphere (technical)",
+      "uID": 19
+   },
+   {
+      "symID": 18,
+      "symTup": "(\"AU\", )",
+      "unitName": "astronomical unit",
+      "uID": 17
+   },
+   {
+      "symID": 19,
+      "symTup": "(\"au\", )",
+      "unitName": "atomic unit of charge",
+      "uID": 28
+   },
+   {
+      "symID": 20,
+      "symTup": "(\"b\", )",
+      "unitName": "barn",
+      "uID": 40
+   },
+   {
+      "symID": 21,
+      "symTup": "(\"B\", )",
+      "unitName": "bel",
+      "uID": 51
+   },
+   {
+      "symID": 22,
+      "symTup": "(\"B.O.T.U.\", )",
+      "unitName": "Board of Trade Unit",
+      "uID": 55
+   },
+   {
+      "symID": 23,
+      "symTup": "(\"bag (cement)\", )",
+      "unitName": "bag (Portland cement)",
+      "uID": 35
+   },
+   {
+      "symID": 24,
+      "symTup": "(\"bag (coffee)\", )",
+      "unitName": "bag (coffee)",
+      "uID": 34
+   },
+   {
+      "symID": 25,
+      "symTup": "(\"bag (imp)\", )",
+      "unitName": "bag (imperial)",
+      "uID": 538
+   },
+   {
+      "symID": 26,
+      "symTup": "(\"bar\", )",
+      "unitName": "bar",
+      "uID": 37
+   },
+   {
+      "symID": 27,
+      "symTup": "(\"barge\", )",
+      "unitName": "barge",
+      "uID": 38
+   },
+   {
+      "symID": 28,
+      "symTup": "(\"barleycorn\", )",
+      "unitName": "barleycorn",
+      "uID": 39
+   },
+   {
+      "symID": 29,
+      "symTup": "(\"barony\", )",
+      "unitName": "barony",
+      "uID": 41
+   },
+   {
+      "symID": 30,
+      "symTup": "(\"barye\", )",
+      "unitName": "barye",
+      "uID": 49
+   },
+   {
+      "symID": 31,
+      "symTup": "(\"bbl\", )",
+      "unitName": "barrel (US fluid)",
+      "uID": 45
+   },
+   {
+      "symID": 32,
+      "symTup": "(\"bbl (imp)\", )",
+      "unitName": "barrel (imperial)",
+      "uID": 42
+   },
+   {
+      "symID": 33,
+      "symTup": "(\"bbl (pet)\", )",
+      "unitName": "barrel (petroleum)",
+      "uID": 46
+   },
+   {
+      "symID": 34,
+      "symTup": "(\"bbl (US dry)\", )",
+      "unitName": "barrel (US dry)",
+      "uID": 43
+   },
+   {
+      "symID": 35,
+      "symTup": "(\"bd\", )",
+      "unitName": "board",
+      "uID": 54
+   },
+   {
+      "symID": 36,
+      "symTup": "(\"bkt\", )",
+      "unitName": "bucket",
+      "uID": 70
+   },
+   {
+      "symID": 37,
+      "symTup": "(\"boe\", )",
+      "unitName": "barrel of oil equivalent",
+      "uID": 48
+   },
+   {
+      "symID": 38,
+      "symTup": "(\"Bq\", )",
+      "unitName": "becquerel",
+      "uID": 50
+   },
+   {
+      "symID": 39,
+      "symTup": "(\"BTU59\u00A0\u00B0F\", )",
+      "unitName": "British thermal unit (59\u00A0\u00B0F)",
+      "uID": 60
+   },
+   {
+      "symID": 40,
+      "symTup": "(\"BTUISO\", )",
+      "unitName": "British thermal unit (ISO)",
+      "uID": 64
+   },
+   {
+      "symID": 41,
+      "symTup": "(\"BTUIT\", )",
+      "unitName": "British thermal unit",
+      "uID": 63
+   },
+   {
+      "symID": 42,
+      "symTup": "(\"bu\", )",
+      "unitName": "bushel (US dry heaped)",
+      "uID": 73
+   },
+   {
+      "symID": 43,
+      "symTup": "(\"bu (imp)\", )",
+      "unitName": "bushel (imperial)",
+      "uID": 71
+   },
+   {
+      "symID": 44,
+      "symTup": "(\"bu (US heaped)\", )",
+      "unitName": "bushel (US dry level)",
+      "uID": 72
+   },
+   {
+      "symID": 45,
+      "symTup": "(\"butt\", )",
+      "unitName": "butt",
+      "uID": 660
+   },
+   {
+      "symID": 46,
+      "symTup": "(\"c\", )",
+      "unitName": "speed of light in vacuum",
+      "uID": 563
+   },
+   {
+      "symID": 47,
+      "symTup": "(\"C\", )",
+      "unitName": "coulomb",
+      "uID": 113
+   },
+   {
+      "symID": 48,
+      "symTup": "(\"c (Can)\", )",
+      "unitName": "cup (Canadian)",
+      "uID": 145
+   },
+   {
+      "symID": 49,
+      "symTup": "(\"cable length\", )",
+      "unitName": "cable length",
+      "uID": 78
+   },
+   {
+      "symID": 50,
+      "symTup": "(\"cable length (imperial)\", )",
+      "unitName": "cable length (imperial)",
+      "uID": 76
+   },
+   {
+      "symID": 51,
+      "symTup": "(\"cable length (international)\", )",
+      "unitName": "cable length (international)",
+      "uID": 77
+   },
+   {
+      "symID": 52,
+      "symTup": "(\"Cal\", )",
+      "unitName": "large calorie",
+      "uID": 342
+   },
+   {
+      "symID": 53,
+      "symTup": "(\"Cal (FDA)\", )",
+      "unitName": "Calorie (US; FDA)",
+      "uID": 86
+   },
+   {
+      "symID": 54,
+      "symTup": "(\"cal15\u00A0\u00B0C\", )",
+      "unitName": "calorie (15\u00A0\u00B0C)",
+      "uID": 80
+   },
+   {
+      "symID": 55,
+      "symTup": "(\"calIT\", )",
+      "unitName": "calorie",
+      "uID": 83
+   },
+   {
+      "symID": 56,
+      "symTup": "(\"calth\", )",
+      "unitName": "calorie (thermochemical)",
+      "uID": 85
+   },
+   {
+      "symID": 57,
+      "symTup": "(\"cd\", )",
+      "unitName": "candela",
+      "uID": 88
+   },
+   {
+      "symID": 58,
+      "symTup": "(\"cda\", )",
+      "unitName": "cuerda (PR Survey)",
+      "uID": 140
+   },
+   {
+      "symID": 59,
+      "symTup": "(\"cental\", )",
+      "unitName": "cental",
+      "uID": 663
+   },
+   {
+      "symID": 60,
+      "symTup": "(\"century\", )",
+      "unitName": "century",
+      "uID": 103
+   },
+   {
+      "symID": 61,
+      "symTup": "(\"CFM\", )",
+      "unitName": "cubic foot per minute",
+      "uID": 126
+   },
+   {
+      "symID": 62,
+      "symTup": "(\"ch\", )",
+      "unitName": "chain",
+      "uID": 104
+   },
+   {
+      "symID": 63,
+      "symTup": "(\"sq ch\", \"ch2\")",
+      "unitName": "square chain",
+      "uID": 566
+   },
+   {
+      "symID": 64,
+      "symTup": "(\"charriere\", )",
+      "unitName": "charriere",
+      "uID": 229
+   },
+   {
+      "symID": 65,
+      "symTup": "(\"Ci\", )",
+      "unitName": "curie",
+      "uID": 146
+   },
+   {
+      "symID": 66,
+      "symTup": "(\"circ in\", )",
+      "unitName": "circular inch",
+      "uID": 106
+   },
+   {
+      "symID": 67,
+      "symTup": "(\"circ mil\", )",
+      "unitName": "circular mil; circular thou",
+      "uID": 107
+   },
+   {
+      "symID": 68,
+      "symTup": "(\"clove\", )",
+      "unitName": "clove",
+      "uID": 108
+   },
+   {
+      "symID": 69,
+      "symTup": "(\"cm\", )",
+      "unitName": "centimeter",
+      "uID": 100
+   },
+   {
+      "symID": 70,
+      "symTup": "(\"coomb\", )",
+      "unitName": "coomb",
+      "uID": 109
+   },
+   {
+      "symID": 71,
+      "symTup": "(\"cord\", )",
+      "unitName": "cord",
+      "uID": 110
+   },
+   {
+      "symID": 72,
+      "symTup": "(\"cord (firewood)\", )",
+      "unitName": "cord (firewood)",
+      "uID": 111
+   },
+   {
+      "symID": 73,
+      "symTup": "(\"cord-foot\", )",
+      "unitName": "cord-foot",
+      "uID": 112
+   },
+   {
+      "symID": 74,
+      "symTup": "(\"ct\", )",
+      "unitName": "carat",
+      "uID": 95
+   },
+   {
+      "symID": 75,
+      "symTup": "(\"cubit\", )",
+      "unitName": "cubit",
+      "uID": 138
+   },
+   {
+      "symID": 76,
+      "symTup": "(\"cup\", )",
+      "unitName": "cup",
+      "uID": 142
+   },
+   {
+      "symID": 77,
+      "symTup": "(\"cup (breakfast)\", )",
+      "unitName": "cup (breakfast)",
+      "uID": 141
+   },
+   {
+      "symID": 78,
+      "symTup": "(\"cup (metric)\", )",
+      "unitName": "cup (metric)",
+      "uID": 144
+   },
+   {
+      "symID": 79,
+      "symTup": "(\"cup (US dry)\", )",
+      "unitName": "cup (US dry)",
+      "uID": 143
+   },
+   {
+      "symID": 80,
+      "symTup": "(\"d\", )",
+      "unitName": "day",
+      "uID": 152
+   },
+   {
+      "symID": 81,
+      "symTup": "(\"dash\", )",
+      "unitName": "dash",
+      "uID": 151
+   },
+   {
+      "symID": 82,
+      "symTup": "(\"dash (imp)\", )",
+      "unitName": "dash (imperial)",
+      "uID": 149
+   },
+   {
+      "symID": 83,
+      "symTup": "(\"dB\", )",
+      "unitName": "decibel",
+      "uID": 156
+   },
+   {
+      "symID": 84,
+      "symTup": "(\"dec\", )",
+      "unitName": "decade",
+      "uID": 155
+   },
+   {
+      "symID": 85,
+      "symTup": "(\"dessertspoon\", )",
+      "unitName": "dessertspoon",
+      "uID": 165
+   },
+   {
+      "symID": 86,
+      "symTup": "(\"dr\", )",
+      "unitName": "dram",
+      "uID": 167
+   },
+   {
+      "symID": 87,
+      "symTup": "(\"dr t\", )",
+      "unitName": "troy dram",
+      "uID": 166
+   },
+   {
+      "symID": 88,
+      "symTup": "(\"drop (medical)\", )",
+      "unitName": "drop (medical)",
+      "uID": 175
+   },
+   {
+      "symID": 89,
+      "symTup": "(\"drop (US dry)\", )",
+      "unitName": "drop (US dry)",
+      "uID": 168
+   },
+   {
+      "symID": 90,
+      "symTup": "(\"dunam\", )",
+      "unitName": "dunam",
+      "uID": 176
+   },
+   {
+      "symID": 91,
+      "symTup": "(\"dyn\", )",
+      "unitName": "dyne",
+      "uID": 177
+   },
+   {
+      "symID": 92,
+      "symTup": "(\"e\", )",
+      "unitName": "elementary charge",
+      "uID": 183
+   },
+   {
+      "symID": 93,
+      "symTup": "(\"ell\", )",
+      "unitName": "ell",
+      "uID": 184
+   },
+   {
+      "symID": 94,
+      "symTup": "(\"emu\", )",
+      "unitName": "electromagnetic unit",
+      "uID": 178
+   },
+   {
+      "symID": 95,
+      "symTup": "(\"erg\", )",
+      "unitName": "erg",
+      "uID": 185
+   },
+   {
+      "symID": 96,
+      "symTup": "(\"esu\", )",
+      "unitName": "electrostatic unit",
+      "uID": 182
+   },
+   {
+      "symID": 97,
+      "symTup": "(\"eV\", )",
+      "unitName": "electronvolt",
+      "uID": 181
+   },
+   {
+      "symID": 98,
+      "symTup": "(\"F\", )",
+      "unitName": "farad",
+      "uID": 188
+   },
+   {
+      "symID": 99,
+      "symTup": "(\"faraday\", )",
+      "unitName": "faraday",
+      "uID": 190
+   },
+   {
+      "symID": 100,
+      "symTup": "(\"fbm\", )",
+      "unitName": "board-foot",
+      "uID": 56
+   },
+   {
+      "symID": 101,
+      "symTup": "(\"fc\", )",
+      "unitName": "footcandle; lumen per square foot",
+      "uID": 218
+   },
+   {
+      "symID": 102,
+      "symTup": "(\"fifth\", )",
+      "unitName": "fifth",
+      "uID": 193
+   },
+   {
+      "symID": 103,
+      "symTup": "(\"finger\", )",
+      "unitName": "finger",
+      "uID": 194
+   },
+   {
+      "symID": 104,
+      "symTup": "(\"finger (cloth)\", )",
+      "unitName": "finger (cloth)",
+      "uID": 195
+   },
+   {
+      "symID": 105,
+      "symTup": "(\"firkin\", )",
+      "unitName": "firkin",
+      "uID": 196
+   },
+   {
+      "symID": 106,
+      "symTup": "(\"fL\", )",
+      "unitName": "footlambert",
+      "uID": 219
+   },
+   {
+      "symID": 107,
+      "symTup": "(\"fl dr (imp)\", )",
+      "unitName": "fluid drachm",
+      "uID": 197
+   },
+   {
+      "symID": 108,
+      "symTup": "(\"fl dr (US)\", )",
+      "unitName": "fluidram",
+      "uID": 633
+   },
+   {
+      "symID": 109,
+      "symTup": "(\"fl oz\", )",
+      "unitName": "fluid ounce",
+      "uID": 450
+   },
+   {
+      "symID": 110,
+      "symTup": "(\"fl oz (FDA)\", )",
+      "unitName": "fluid ounce (US FDA)",
+      "uID": 451
+   },
+   {
+      "symID": 111,
+      "symTup": "(\"fl oz (imp)\", )",
+      "unitName": "fluid ounce (imperial)",
+      "uID": 447
+   },
+   {
+      "symID": 112,
+      "symTup": "(\"fm\", )",
+      "unitName": "fermi",
+      "uID": 192
+   },
+   {
+      "symID": 113,
+      "symTup": "(\"cu fm\", \"fm3\")",
+      "unitName": "cubic fathom",
+      "uID": 121
+   },
+   {
+      "symID": 114,
+      "symTup": "(\"fn\", )",
+      "unitName": "fortnight",
+      "uID": 227
+   },
+   {
+      "symID": 115,
+      "symTup": "(\"fph\", )",
+      "unitName": "foot per hour",
+      "uID": 209
+   },
+   {
+      "symID": 116,
+      "symTup": "(\"fpm\", )",
+      "unitName": "foot per minute",
+      "uID": 211
+   },
+   {
+      "symID": 117,
+      "symTup": "(\"fps\", )",
+      "unitName": "foot per second",
+      "uID": 213
+   },
+   {
+      "symID": 118,
+      "symTup": "(\"fps2\", )",
+      "unitName": "foot per second squared",
+      "uID": 214
+   },
+   {
+      "symID": 119,
+      "symTup": "(\"french\", )",
+      "unitName": "french",
+      "uID": 659
+   },
+   {
+      "symID": 120,
+      "symTup": "(\"ft\", )",
+      "unitName": "foot",
+      "uID": 204
+   },
+   {
+      "symID": 121,
+      "symTup": "(\"ft (metric)\", )",
+      "unitName": "foot (international)",
+      "uID": 203
+   },
+   {
+      "symID": 122,
+      "symTup": "(\"ft (survey)\", )",
+      "unitName": "survey foot",
+      "uID": 600
+   },
+   {
+      "symID": 123,
+      "symTup": "(\"sq ft\", \"ft2\")",
+      "unitName": "square foot",
+      "uID": 570
+   },
+   {
+      "symID": 124,
+      "symTup": "(\"ft2 (EDR)\", )",
+      "unitName": "square foot equivalent direct radiation",
+      "uID": 571
+   },
+   {
+      "symID": 125,
+      "symTup": "(\"cu ft\", \"ft3\")",
+      "unitName": "cubic foot",
+      "uID": 122
+   },
+   {
+      "symID": 126,
+      "symTup": "(\"cu ft (gas)\", \"ft3 (gas)\")",
+      "unitName": "cubic foot of natural gas",
+      "uID": 125
+   },
+   {
+      "symID": 127,
+      "symTup": "(\"cu ft (gas)\", \"ft3 (gas)\")",
+      "unitName": "cubic foot of natural gas",
+      "uID": 125
+   },
+   {
+      "symID": 128,
+      "symTup": "(\"ftm\", )",
+      "unitName": "fathom",
+      "uID": 191
+   },
+   {
+      "symID": 129,
+      "symTup": "(\"fur\", )",
+      "unitName": "furlong",
+      "uID": 230
+   },
+   {
+      "symID": 130,
+      "symTup": "(\"G\", )",
+      "unitName": "gauss",
+      "uID": 245
+   },
+   {
+      "symID": 131,
+      "symTup": "(\"g\", )",
+      "unitName": "gram",
+      "uID": 253
+   },
+   {
+      "symID": 132,
+      "symTup": "(\"g0\", )",
+      "unitName": "standard gravity",
+      "uID": 3
+   },
+   {
+      "symID": 133,
+      "symTup": "(\"Gal\", )",
+      "unitName": "gal; galileo",
+      "uID": 234
+   },
+   {
+      "symID": 134,
+      "symTup": "(\"gal\", )",
+      "unitName": "gallon",
+      "uID": 238
+   },
+   {
+      "symID": 135,
+      "symTup": "(\"gal (beer)\", )",
+      "unitName": "gallon (beer)",
+      "uID": 235
+   },
+   {
+      "symID": 136,
+      "symTup": "(\"gal (imp)\", )",
+      "unitName": "gallon (imperial)",
+      "uID": 236
+   },
+   {
+      "symID": 137,
+      "symTup": "(\"gal (US dry)\", )",
+      "unitName": "gallon (US dry)",
+      "uID": 237
+   },
+   {
+      "symID": 138,
+      "symTup": "(\"GcalIT\", )",
+      "unitName": "giga calorie",
+      "uID": 247
+   },
+   {
+      "symID": 139,
+      "symTup": "(\"Gcalth\", )",
+      "unitName": "giga calorie (thermochemical)",
+      "uID": 248
+   },
+   {
+      "symID": 140,
+      "symTup": "(\"geepound\", )",
+      "unitName": "geepound",
+      "uID": 661
+   },
+   {
+      "symID": 141,
+      "symTup": "(\"gi (imp)\", )",
+      "unitName": "gill (imperial)",
+      "uID": 249
+   },
+   {
+      "symID": 142,
+      "symTup": "(\"gi (US)\", )",
+      "unitName": "gill",
+      "uID": 250
+   },
+   {
+      "symID": 143,
+      "symTup": "(\"GPD\", )",
+      "unitName": "gallon per day",
+      "uID": 239
+   },
+   {
+      "symID": 144,
+      "symTup": "(\"GPH\", )",
+      "unitName": "gallon per hour",
+      "uID": 240
+   },
+   {
+      "symID": 145,
+      "symTup": "(\"GPM\", )",
+      "unitName": "gallon per minute",
+      "uID": 241
+   },
+   {
+      "symID": 146,
+      "symTup": "(\"gr\", )",
+      "unitName": "grain",
+      "uID": 252
+   },
+   {
+      "symID": 147,
+      "symTup": "(\"grad\", )",
+      "unitName": "grad",
+      "uID": 251
+   },
+   {
+      "symID": 148,
+      "symTup": "(\"gtt (imp)\", )",
+      "unitName": "drop (imperial)",
+      "uID": 172
+   },
+   {
+      "symID": 149,
+      "symTup": "(\"gtt (US fl)\", )",
+      "unitName": "drop (US fluid)",
+      "uID": 173
+   },
+   {
+      "symID": 150,
+      "symTup": "(\"guntha (India)\", )",
+      "unitName": "guntha (India)",
+      "uID": 260
+   },
+   {
+      "symID": 151,
+      "symTup": "(\"Gy\", )",
+      "unitName": "gray",
+      "uID": 258
+   },
+   {
+      "symID": 152,
+      "symTup": "(\"H\", )",
+      "unitName": "henry",
+      "uID": 266
+   },
+   {
+      "symID": 153,
+      "symTup": "(\"h\", )",
+      "unitName": "hour",
+      "uID": 279
+   },
+   {
+      "symID": 154,
+      "symTup": "(\"ha\", )",
+      "unitName": "hectare",
+      "uID": 264
+   },
+   {
+      "symID": 155,
+      "symTup": "(\"hand\", )",
+      "unitName": "hand",
+      "uID": 261
+   },
+   {
+      "symID": 156,
+      "symTup": "(\"helek\", )",
+      "unitName": "helek",
+      "uID": 265
+   },
+   {
+      "symID": 157,
+      "symTup": "(\"hhd (imp)\", )",
+      "unitName": "hogshead (imperial)",
+      "uID": 271
+   },
+   {
+      "symID": 158,
+      "symTup": "(\"hhd (US)\", )",
+      "unitName": "hogshead",
+      "uID": 272
+   },
+   {
+      "symID": 159,
+      "symTup": "(\"hide\", )",
+      "unitName": "hide",
+      "uID": 269
+   },
+   {
+      "symID": 160,
+      "symTup": "(\"hp\", )",
+      "unitName": "horsepower (mechanical)",
+      "uID": 277
+   },
+   {
+      "symID": 161,
+      "symTup": "(\"hp (boiler)\", )",
+      "unitName": "horsepower (boiler)",
+      "uID": 273
+   },
+   {
+      "symID": 162,
+      "symTup": "(\"hp (elec)\", )",
+      "unitName": "horsepower (electrical)",
+      "uID": 274
+   },
+   {
+      "symID": 163,
+      "symTup": "(\"hp (Euro)\", )",
+      "unitName": "horsepower (European electrical)",
+      "uID": 275
+   },
+   {
+      "symID": 164,
+      "symTup": "(\"hyl\", )",
+      "unitName": "hyl",
+      "uID": 662
+   },
+   {
+      "symID": 165,
+      "symTup": "(\"Hz\", )",
+      "unitName": "hertz",
+      "uID": 268
+   },
+   {
+      "symID": 166,
+      "symTup": "(\"in\", )",
+      "unitName": "inch",
+      "uID": 285
+   },
+   {
+      "symID": 167,
+      "symTup": "(\"sq in\", \"in2\")",
+      "unitName": "square inch",
+      "uID": 573
+   },
+   {
+      "symID": 168,
+      "symTup": "(\"cu in\", \"in3\")",
+      "unitName": "cubic inch",
+      "uID": 128
+   },
+   {
+      "symID": 169,
+      "symTup": "(\"iph\", )",
+      "unitName": "inch per hour",
+      "uID": 288
+   },
+   {
+      "symID": 170,
+      "symTup": "(\"ipm\", )",
+      "unitName": "inch per minute",
+      "uID": 289
+   },
+   {
+      "symID": 171,
+      "symTup": "(\"ips\", )",
+      "unitName": "inch per second",
+      "uID": 291
+   },
+   {
+      "symID": 172,
+      "symTup": "(\"ips2\", )",
+      "unitName": "inch per second squared",
+      "uID": 292
+   },
+   {
+      "symID": 173,
+      "symTup": "(\"j\", )",
+      "unitName": "jiffy",
+      "uID": 296
+   },
+   {
+      "symID": 174,
+      "symTup": "(\"J\", )",
+      "unitName": "joule",
+      "uID": 298
+   },
+   {
+      "symID": 175,
+      "symTup": "(\"ja\", )",
+      "unitName": "jiffy (alternative)",
+      "uID": 295
+   },
+   {
+      "symID": 176,
+      "symTup": "(\"jigger\", )",
+      "unitName": "jigger (bartending)",
+      "uID": 297
+   },
+   {
+      "symID": 177,
+      "symTup": "(\"K\", )",
+      "unitName": "kelvin",
+      "uID": 314
+   },
+   {
+      "symID": 178,
+      "symTup": "(\"kat\", )",
+      "unitName": "katal",
+      "uID": 307
+   },
+   {
+      "symID": 179,
+      "symTup": "(\"kB\", )",
+      "unitName": "kilobyte (decimal)",
+      "uID": 317
+   },
+   {
+      "symID": 180,
+      "symTup": "(\"KB\", )",
+      "unitName": "kilobyte",
+      "uID": 318
+   },
+   {
+      "symID": 181,
+      "symTup": "(\"kcal\", )",
+      "unitName": "kilocalorie",
+      "uID": 319
+   },
+   {
+      "symID": 182,
+      "symTup": "(\"Ke (quarter of an hour)\", )",
+      "unitName": "Ke (quarter of an hour)",
+      "uID": 309
+   },
+   {
+      "symID": 183,
+      "symTup": "(\"Ke (traditional)\", )",
+      "unitName": "Ke (traditional)",
+      "uID": 312
+   },
+   {
+      "symID": 184,
+      "symTup": "(\"kg\", )",
+      "unitName": "kilogram",
+      "uID": 320
+   },
+   {
+      "symID": 185,
+      "symTup": "(\"kgf\", )",
+      "unitName": "kilogram-force",
+      "uID": 324
+   },
+   {
+      "symID": 186,
+      "symTup": "(\"KiB\", )",
+      "unitName": "kibibyte",
+      "uID": 315
+   },
+   {
+      "symID": 187,
+      "symTup": "(\"kilderkin\", )",
+      "unitName": "kilderkin",
+      "uID": 316
+   },
+   {
+      "symID": 188,
+      "symTup": "(\"kip\", )",
+      "unitName": "kip",
+      "uID": 332
+   },
+   {
+      "symID": 189,
+      "symTup": "(\"klbf\", \"kipf\")",
+      "unitName": "kip-force",
+      "uID": 335
+   },
+   {
+      "symID": 190,
+      "symTup": "(\"km\", )",
+      "unitName": "kilometer",
+      "uID": 326
+   },
+   {
+      "symID": 191,
+      "symTup": "(\"sq km\", \"km2\")",
+      "unitName": "square kilometer",
+      "uID": 574
+   },
+   {
+      "symID": 192,
+      "symTup": "(\"kn\", )",
+      "unitName": "knot",
+      "uID": 336
+   },
+   {
+      "symID": 193,
+      "symTup": "(\"kp\", )",
+      "unitName": "kilopond",
+      "uID": 328
+   },
+   {
+      "symID": 194,
+      "symTup": "(\"ksi\", )",
+      "unitName": "kip per square inch",
+      "uID": 333
+   },
+   {
+      "symID": 195,
+      "symTup": "(\"kt\", )",
+      "unitName": "carat (metric)",
+      "uID": 96
+   },
+   {
+      "symID": 196,
+      "symTup": "(\"kW\", )",
+      "unitName": "kilowatt",
+      "uID": 329
+   },
+   {
+      "symID": 197,
+      "symTup": "(\"L\", )",
+      "unitName": "liter",
+      "uID": 355
+   },
+   {
+      "symID": 198,
+      "symTup": "(\"lambert\", )",
+      "unitName": "lambert",
+      "uID": 341
+   },
+   {
+      "symID": 199,
+      "symTup": "(\"last\", )",
+      "unitName": "last",
+      "uID": 343
+   },
+   {
+      "symID": 200,
+      "symTup": "(\"lb\", )",
+      "unitName": "pound-weight",
+      "uID": 506
+   },
+   {
+      "symID": 201,
+      "symTup": "(\"lbf\", )",
+      "unitName": "pound-force",
+      "uID": 503
+   },
+   {
+      "symID": 202,
+      "symTup": "(\"lea\", )",
+      "unitName": "league",
+      "uID": 344
+   },
+   {
+      "symID": 203,
+      "symTup": "(\"light-day\", )",
+      "unitName": "light-day",
+      "uID": 345
+   },
+   {
+      "symID": 204,
+      "symTup": "(\"light-hour\", )",
+      "unitName": "light-hour",
+      "uID": 346
+   },
+   {
+      "symID": 205,
+      "symTup": "(\"light-minute\", )",
+      "unitName": "light-minute",
+      "uID": 347
+   },
+   {
+      "symID": 206,
+      "symTup": "(\"light-second\", )",
+      "unitName": "light-second",
+      "uID": 348
+   },
+   {
+      "symID": 207,
+      "symTup": "(\"lm\", )",
+      "unitName": "lumen",
+      "uID": 365
+   },
+   {
+      "symID": 208,
+      "symTup": "(\"lmf\", )",
+      "unitName": "foot, metric (long)",
+      "uID": 215
+   },
+   {
+      "symID": 209,
+      "symTup": "(\"ln\", )",
+      "unitName": "line",
+      "uID": 350
+   },
+   {
+      "symID": 210,
+      "symTup": "(\"lnk\", )",
+      "unitName": "link",
+      "uID": 351
+   },
+   {
+      "symID": 211,
+      "symTup": "(\"lnk (Ram)\", )",
+      "unitName": "link (Ramsden's)",
+      "uID": 354
+   },
+   {
+      "symID": 212,
+      "symTup": "(\"load\", )",
+      "unitName": "load",
+      "uID": 361
+   },
+   {
+      "symID": 213,
+      "symTup": "(\"cwt\", \"long cwt\")",
+      "unitName": "hundredweight (long)",
+      "uID": 281
+   },
+   {
+      "symID": 214,
+      "symTup": "(\"long ton\", )",
+      "unitName": "long ton",
+      "uID": 362
+   },
+   {
+      "symID": 215,
+      "symTup": "(\"LPM\", )",
+      "unitName": "liter per minute",
+      "uID": 356
+   },
+   {
+      "symID": 216,
+      "symTup": "(\"lx\", )",
+      "unitName": "lux",
+      "uID": 369
+   },
+   {
+      "symID": 217,
+      "symTup": "(\"ly\", )",
+      "unitName": "light-year",
+      "uID": 349
+   },
+   {
+      "symID": 218,
+      "symTup": "(\"M\", )",
+      "unitName": "mach number",
+      "uID": 370
+   },
+   {
+      "symID": 219,
+      "symTup": "(\"m\", )",
+      "unitName": "meter",
+      "uID": 375
+   },
+   {
+      "symID": 220,
+      "symTup": "(\"m2\", )",
+      "unitName": "square meter",
+      "uID": 577
+   },
+   {
+      "symID": 221,
+      "symTup": "(\"m3\", )",
+      "unitName": "cubic meter",
+      "uID": 132
+   },
+   {
+      "symID": 222,
+      "symTup": "(\"mA\", )",
+      "unitName": "milliamp",
+      "uID": 402
+   },
+   {
+      "symID": 223,
+      "symTup": "(\"mark\", )",
+      "unitName": "mark",
+      "uID": 371
+   },
+   {
+      "symID": 224,
+      "symTup": "(\"MBq\", )",
+      "unitName": "megabecquerel",
+      "uID": 374
+   },
+   {
+      "symID": 225,
+      "symTup": "(\"McalIT\", )",
+      "unitName": "mega calorie",
+      "uID": 373
+   },
+   {
+      "symID": 226,
+      "symTup": "(\"md\", )",
+      "unitName": "milliday",
+      "uID": 404
+   },
+   {
+      "symID": 227,
+      "symTup": "(\"mf\", )",
+      "unitName": "foot, metric",
+      "uID": 216
+   },
+   {
+      "symID": 228,
+      "symTup": "(\"mg\", )",
+      "unitName": "milligram",
+      "uID": 405
+   },
+   {
+      "symID": 229,
+      "symTup": "(\"mi\", )",
+      "unitName": "statute mile",
+      "uID": 589
+   },
+   {
+      "symID": 230,
+      "symTup": "(\"mi (geo)\", )",
+      "unitName": "mile (geographical)",
+      "uID": 388
+   },
+   {
+      "symID": 231,
+      "symTup": "(\"mi (tact)\", )",
+      "unitName": "mile (tactical or data)",
+      "uID": 393
+   },
+   {
+      "symID": 232,
+      "symTup": "(\"mi (tel)\", )",
+      "unitName": "mile (telegraph)",
+      "uID": 394
+   },
+   {
+      "symID": 233,
+      "symTup": "(\"sq mi\", \"mi2\")",
+      "unitName": "square mile",
+      "uID": 580
+   },
+   {
+      "symID": 234,
+      "symTup": "(\"cu mi\", \"mi3\")",
+      "unitName": "cubic mile",
+      "uID": 135
+   },
+   {
+      "symID": 235,
+      "symTup": "(\"mickey\", )",
+      "unitName": "mickey",
+      "uID": 381
+   },
+   {
+      "symID": 236,
+      "symTup": "(\"mil\", )",
+      "unitName": "mil",
+      "uID": 386
+   },
+   {
+      "symID": 237,
+      "symTup": "(\"mil (Sweden)\", )",
+      "unitName": "mil (Sweden and Norway)",
+      "uID": 387
+   },
+   {
+      "symID": 238,
+      "symTup": "(\"millennium\", )",
+      "unitName": "millennium",
+      "uID": 401
+   },
+   {
+      "symID": 239,
+      "symTup": "(\"min\", )",
+      "unitName": "minute",
+      "uID": 416
+   },
+   {
+      "symID": 240,
+      "symTup": "(\"min (imp)\", )",
+      "unitName": "minim (imperial)",
+      "uID": 413
+   },
+   {
+      "symID": 241,
+      "symTup": "(\"min (US)\", )",
+      "unitName": "minim",
+      "uID": 415
+   },
+   {
+      "symID": 242,
+      "symTup": "(\"mite\", )",
+      "unitName": "mite",
+      "uID": 418
+   },
+   {
+      "symID": 243,
+      "symTup": "(\"mite (metric)\", )",
+      "unitName": "mite (metric)",
+      "uID": 419
+   },
+   {
+      "symID": 244,
+      "symTup": "(\"mL\", \"ml\")",
+      "unitName": "milliliter",
+      "uID": 408
+   },
+   {
+      "symID": 245,
+      "symTup": "(\"mm\", )",
+      "unitName": "millimeter",
+      "uID": 409
+   },
+   {
+      "symID": 246,
+      "symTup": "(\"mo\", )",
+      "unitName": "month (full)",
+      "uID": 423
+   },
+   {
+      "symID": 247,
+      "symTup": "(\"mol\", )",
+      "unitName": "mole",
+      "uID": 420
+   },
+   {
+      "symID": 248,
+      "symTup": "(\"moment\", )",
+      "unitName": "moment",
+      "uID": 422
+   },
+   {
+      "symID": 249,
+      "symTup": "(\"mph\", )",
+      "unitName": "mile per hour",
+      "uID": 395
+   },
+   {
+      "symID": 250,
+      "symTup": "(\"mpm\", )",
+      "unitName": "mile per minute",
+      "uID": 397
+   },
+   {
+      "symID": 251,
+      "symTup": "(\"mps\", )",
+      "unitName": "mile per second",
+      "uID": 399
+   },
+   {
+      "symID": 252,
+      "symTup": "(\"mps2\", )",
+      "unitName": "mile per second squared",
+      "uID": 400
+   },
+   {
+      "symID": 253,
+      "symTup": "(\"MT\", )",
+      "unitName": "metric ton",
+      "uID": 380
+   },
+   {
+      "symID": 254,
+      "symTup": "(\"Mx\", )",
+      "unitName": "maxwell",
+      "uID": 372
+   },
+   {
+      "symID": 255,
+      "symTup": "(\"N\", )",
+      "unitName": "newton",
+      "uID": 437
+   },
+   {
+      "symID": 256,
+      "symTup": "(\"NA\", )",
+      "unitName": "Avogradro's number",
+      "uID": 33
+   },
+   {
+      "symID": 257,
+      "symTup": "(\"nail (cloth)\", )",
+      "unitName": "nail (cloth)",
+      "uID": 427
+   },
+   {
+      "symID": 258,
+      "symTup": "(\"NL\", )",
+      "unitName": "nautical league",
+      "uID": 430
+   },
+   {
+      "symID": 259,
+      "symTup": "(\"nm\", )",
+      "unitName": "nanometer",
+      "uID": 428
+   },
+   {
+      "symID": 260,
+      "symTup": "(\"NM (Adm)\", )",
+      "unitName": "nautical mile (Admiralty)",
+      "uID": 431
+   },
+   {
+      "symID": 261,
+      "symTup": "(\"nmi\", )",
+      "unitName": "nautical mile",
+      "uID": 434
+   },
+   {
+      "symID": 262,
+      "symTup": "(\"nmi (pre 1954)\", )",
+      "unitName": "nautical mile (US pre 1954)",
+      "uID": 435
+   },
+   {
+      "symID": 263,
+      "symTup": "(\"nog\", )",
+      "unitName": "noggin",
+      "uID": 442
+   },
+   {
+      "symID": 264,
+      "symTup": "(\"Np\", )",
+      "unitName": "neper",
+      "uID": 436
+   },
+   {
+      "symID": 265,
+      "symTup": "(\"oz\", )",
+      "unitName": "ounce",
+      "uID": 448
+   },
+   {
+      "symID": 266,
+      "symTup": "(\"oz (FDA)\", )",
+      "unitName": "ounce (US FDA)",
+      "uID": 449
+   },
+   {
+      "symID": 267,
+      "symTup": "(\"P\", )",
+      "unitName": "poise",
+      "uID": 483
+   },
+   {
+      "symID": 268,
+      "symTup": "(\"p\", )",
+      "unitName": "poncelet",
+      "uID": 485
+   },
+   {
+      "symID": 269,
+      "symTup": "(\"Pa\", )",
+      "unitName": "pascal",
+      "uID": 460
+   },
+   {
+      "symID": 270,
+      "symTup": "(\"pace\", )",
+      "unitName": "pace",
+      "uID": 457
+   },
+   {
+      "symID": 271,
+      "symTup": "(\"pail (imp)\", )",
+      "unitName": "pail (imperial)",
+      "uID": 519
+   },
+   {
+      "symID": 272,
+      "symTup": "(\"palm\", )",
+      "unitName": "palm",
+      "uID": 458
+   },
+   {
+      "symID": 273,
+      "symTup": "(\"pdl\", )",
+      "unitName": "poundal",
+      "uID": 501
+   },
+   {
+      "symID": 274,
+      "symTup": "(\"per\", )",
+      "unitName": "perch",
+      "uID": 465
+   },
+   {
+      "symID": 275,
+      "symTup": "(\"ph\", )",
+      "unitName": "phot",
+      "uID": 467
+   },
+   {
+      "symID": 276,
+      "symTup": "(\"pica\", )",
+      "unitName": "pica",
+      "uID": 468
+   },
+   {
+      "symID": 277,
+      "symTup": "(\"pinch\", )",
+      "unitName": "pinch",
+      "uID": 471
+   },
+   {
+      "symID": 278,
+      "symTup": "(\"pinch (imp)\", )",
+      "unitName": "pinch (imperial)",
+      "uID": 472
+   },
+   {
+      "symID": 279,
+      "symTup": "(\"ping\", )",
+      "unitName": "ping",
+      "uID": 473
+   },
+   {
+      "symID": 280,
+      "symTup": "(\"pipe\", )",
+      "unitName": "pipe",
+      "uID": 74
+   },
+   {
+      "symID": 281,
+      "symTup": "(\"pk (imp)\", )",
+      "unitName": "peck (imperial)",
+      "uID": 462
+   },
+   {
+      "symID": 282,
+      "symTup": "(\"pk (US dry)\", )",
+      "unitName": "peck (US dry)",
+      "uID": 463
+   },
+   {
+      "symID": 283,
+      "symTup": "(\"point\", )",
+      "unitName": "point",
+      "uID": 478
+   },
+   {
+      "symID": 284,
+      "symTup": "(\"pole\", )",
+      "unitName": "pole",
+      "uID": 484
+   },
+   {
+      "symID": 285,
+      "symTup": "(\"pony\", )",
+      "unitName": "pony",
+      "uID": 486
+   },
+   {
+      "symID": 286,
+      "symTup": "(\"pottle\", )",
+      "unitName": "pottle",
+      "uID": 487
+   },
+   {
+      "symID": 287,
+      "symTup": "(\"pound (metric)\", )",
+      "unitName": "pound (metric)",
+      "uID": 489
+   },
+   {
+      "symID": 288,
+      "symTup": "(\"hp (metric)\", \"PS\")",
+      "unitName": "horsepower",
+      "uID": 276
+   },
+   {
+      "symID": 289,
+      "symTup": "(\"psf\", )",
+      "unitName": "pound per square foot",
+      "uID": 499
+   },
+   {
+      "symID": 290,
+      "symTup": "(\"psi\", )",
+      "unitName": "pound per square inch",
+      "uID": 500
+   },
+   {
+      "symID": 291,
+      "symTup": "(\"pt\", )",
+      "unitName": "point (PostScript)",
+      "uID": 481
+   },
+   {
+      "symID": 292,
+      "symTup": "(\"pt (imp)\", )",
+      "unitName": "pint (imperial)",
+      "uID": 474
+   },
+   {
+      "symID": 293,
+      "symTup": "(\"pt (US dry)\", )",
+      "unitName": "pint (US dry)",
+      "uID": 475
+   },
+   {
+      "symID": 294,
+      "symTup": "(\"pt (US fl)\", )",
+      "unitName": "pint",
+      "uID": 476
+   },
+   {
+      "symID": 295,
+      "symTup": "(\"pwt\", )",
+      "unitName": "pennyweight",
+      "uID": 464
+   },
+   {
+      "symID": 296,
+      "symTup": "(\"pz\", )",
+      "unitName": "pi\u00E8ze",
+      "uID": 470
+   },
+   {
+      "symID": 297,
+      "symTup": "(\"q\", )",
+      "unitName": "quintal",
+      "uID": 520
+   },
+   {
+      "symID": 298,
+      "symTup": "(\"qt\", )",
+      "unitName": "quart",
+      "uID": 512
+   },
+   {
+      "symID": 299,
+      "symTup": "(\"qt (imp)\", )",
+      "unitName": "quart (imperial)",
+      "uID": 509
+   },
+   {
+      "symID": 300,
+      "symTup": "(\"qt (US dry)\", )",
+      "unitName": "quart (US dry)",
+      "uID": 511
+   },
+   {
+      "symID": 301,
+      "symTup": "(\"quad\", )",
+      "unitName": "quad",
+      "uID": 507
+   },
+   {
+      "symID": 302,
+      "symTup": "(\"quarter\", )",
+      "unitName": "quarter",
+      "uID": 513
+   },
+   {
+      "symID": 303,
+      "symTup": "(\"quarter (imp)\", )",
+      "unitName": "quarter (imperial)",
+      "uID": 514
+   },
+   {
+      "symID": 304,
+      "symTup": "(\"quarter (informal)\", )",
+      "unitName": "quarter (informal)",
+      "uID": 517
+   },
+   {
+      "symID": 305,
+      "symTup": "(\"quarter, long (informal)\", )",
+      "unitName": "quarter, long (informal)",
+      "uID": 518
+   },
+   {
+      "symID": 306,
+      "symTup": "(\"quartern\", )",
+      "unitName": "quartern",
+      "uID": 488
+   },
+   {
+      "symID": 307,
+      "symTup": "(\"R\", )",
+      "unitName": "roentgen",
+      "uID": 531
+   },
+   {
+      "symID": 308,
+      "symTup": "(\"rad\", )",
+      "unitName": "radian",
+      "uID": 522
+   },
+   {
+      "symID": 309,
+      "symTup": "(\"rad (dose)\", )",
+      "unitName": "rad",
+      "uID": 521
+   },
+   {
+      "symID": 310,
+      "symTup": "(\"rod\", \"rd\")",
+      "unitName": "rod",
+      "uID": 529
+   },
+   {
+      "symID": 311,
+      "symTup": "(\"sq rd\", \"rd2\")",
+      "unitName": "square rod",
+      "uID": 581
+   },
+   {
+      "symID": 312,
+      "symTup": "(\"register ton\", )",
+      "unitName": "register ton",
+      "uID": 526
+   },
+   {
+      "symID": 313,
+      "symTup": "(\"rem\", )",
+      "unitName": "roentgen equivalent man",
+      "uID": 532
+   },
+   {
+      "symID": 314,
+      "symTup": "(\"ro\", )",
+      "unitName": "rood",
+      "uID": 533
+   },
+   {
+      "symID": 315,
+      "symTup": "(\"rope\", )",
+      "unitName": "rope",
+      "uID": 534
+   },
+   {
+      "symID": 316,
+      "symTup": "(\"ruth\", )",
+      "unitName": "rutherford",
+      "uID": 535
+   },
+   {
+      "symID": 317,
+      "symTup": "(\"s\", )",
+      "unitName": "second",
+      "uID": 541
+   },
+   {
+      "symID": 318,
+      "symTup": "(\"S\", )",
+      "unitName": "siemens",
+      "uID": 553
+   },
+   {
+      "symID": 319,
+      "symTup": "(\"s ap\", )",
+      "unitName": "scruple (apothecary)",
+      "uID": 539
+   },
+   {
+      "symID": 320,
+      "symTup": "(\"sack\", )",
+      "unitName": "sack",
+      "uID": 537
+   },
+   {
+      "symID": 321,
+      "symTup": "(\"sack (imp)\", )",
+      "unitName": "sack (imperial)",
+      "uID": 658
+   },
+   {
+      "symID": 322,
+      "symTup": "(\"sb\", )",
+      "unitName": "stilb",
+      "uID": 594
+   },
+   {
+      "symID": 323,
+      "symTup": "(\"seam\", )",
+      "unitName": "seam",
+      "uID": 540
+   },
+   {
+      "symID": 324,
+      "symTup": "(\"section\", )",
+      "unitName": "section",
+      "uID": 542
+   },
+   {
+      "symID": 325,
+      "symTup": "(\"sh cwt\", )",
+      "unitName": "hundredweight (short)",
+      "uID": 282
+   },
+   {
+      "symID": 326,
+      "symTup": "(\"shake\", )",
+      "unitName": "shake",
+      "uID": 544
+   },
+   {
+      "symID": 327,
+      "symTup": "(\"shaku (Japan)\", )",
+      "unitName": "shaku (Japan)",
+      "uID": 545
+   },
+   {
+      "symID": 328,
+      "symTup": "(\"shed\", )",
+      "unitName": "shed",
+      "uID": 547
+   },
+   {
+      "symID": 329,
+      "symTup": "(\"sheet\", )",
+      "unitName": "sheet",
+      "uID": 548
+   },
+   {
+      "symID": 330,
+      "symTup": "(\"shot\", )",
+      "unitName": "shot",
+      "uID": 552
+   },
+   {
+      "symID": 331,
+      "symTup": "(\"sigma\", )",
+      "unitName": "sigma",
+      "uID": 555
+   },
+   {
+      "symID": 332,
+      "symTup": "(\"slug\", )",
+      "unitName": "slug",
+      "uID": 558
+   },
+   {
+      "symID": 333,
+      "symTup": "(\"smf\", )",
+      "unitName": "foot, metric (short)",
+      "uID": 217
+   },
+   {
+      "symID": 334,
+      "symTup": "(\"sn\", )",
+      "unitName": "sthene",
+      "uID": 592
+   },
+   {
+      "symID": 335,
+      "symTup": "(\"span\", )",
+      "unitName": "span",
+      "uID": 560
+   },
+   {
+      "symID": 336,
+      "symTup": "(\"speed sound\", )",
+      "unitName": "speed of sound in air",
+      "uID": 564
+   },
+   {
+      "symID": 337,
+      "symTup": "(\"square (roofing)\", )",
+      "unitName": "square (roofing)",
+      "uID": 565
+   },
+   {
+      "symID": 338,
+      "symTup": "(\"sr\", )",
+      "unitName": "steradian",
+      "uID": 591
+   },
+   {
+      "symID": 339,
+      "symTup": "(\"St\", )",
+      "unitName": "stokes",
+      "uID": 595
+   },
+   {
+      "symID": 340,
+      "symTup": "(\"st\", )",
+      "unitName": "stone",
+      "uID": 596
+   },
+   {
+      "symID": 341,
+      "symTup": "(\"stick\", )",
+      "unitName": "stick",
+      "uID": 593
+   },
+   {
+      "symID": 342,
+      "symTup": "(\"stremma\", )",
+      "unitName": "stremma",
+      "uID": 597
+   },
+   {
+      "symID": 343,
+      "symTup": "(\"strike (imp)\", )",
+      "unitName": "strike (imperial)",
+      "uID": 598
+   },
+   {
+      "symID": 344,
+      "symTup": "(\"strike (US dry)\", )",
+      "unitName": "strike (US dry)",
+      "uID": 599
+   },
+   {
+      "symID": 345,
+      "symTup": "(\"Sv\", )",
+      "unitName": "sievert",
+      "uID": 554
+   },
+   {
+      "symID": 346,
+      "symTup": "(\"Sved\", )",
+      "unitName": "svedberg",
+      "uID": 601
+   },
+   {
+      "symID": 347,
+      "symTup": "(\"T\", )",
+      "unitName": "tesla",
+      "uID": 611
+   },
+   {
+      "symID": 348,
+      "symTup": "(\"tbsp\", )",
+      "unitName": "tablespoon",
+      "uID": 605
+   },
+   {
+      "symID": 349,
+      "symTup": "(\"tbsp (Can)\", )",
+      "unitName": "tablespoon (Canadian)",
+      "uID": 603
+   },
+   {
+      "symID": 350,
+      "symTup": "(\"tbsp (FDA)\", )",
+      "unitName": "tablespoon (US FDA)",
+      "uID": 606
+   },
+   {
+      "symID": 351,
+      "symTup": "(\"tbsp (imp)\", )",
+      "unitName": "tablespoon (imperial)",
+      "uID": 604
+   },
+   {
+      "symID": 352,
+      "symTup": "(\"TCE\", )",
+      "unitName": "ton of coal equivalent",
+      "uID": 621
+   },
+   {
+      "symID": 353,
+      "symTup": "(\"th\", )",
+      "unitName": "thermie",
+      "uID": 614
+   },
+   {
+      "symID": 354,
+      "symTup": "(\"therm\", )",
+      "unitName": "therm",
+      "uID": 612
+   },
+   {
+      "symID": 355,
+      "symTup": "(\"therm (E.C.)\", )",
+      "unitName": "therm (E.C.)",
+      "uID": 613
+   },
+   {
+      "symID": 356,
+      "symTup": "(\"thou\", )",
+      "unitName": "thou",
+      "uID": 615
+   },
+   {
+      "symID": 357,
+      "symTup": "(\"timber foot\", )",
+      "unitName": "timber foot",
+      "uID": 616
+   },
+   {
+      "symID": 358,
+      "symTup": "(\"toe\", )",
+      "unitName": "tonne of oil equivalent",
+      "uID": 628
+   },
+   {
+      "symID": 359,
+      "symTup": "(\"ton\", )",
+      "unitName": "short ton",
+      "uID": 549
+   },
+   {
+      "symID": 360,
+      "symTup": "(\"ton (displacement)\", )",
+      "unitName": "ton (displacement)",
+      "uID": 617
+   },
+   {
+      "symID": 361,
+      "symTup": "(\"ton (freight)\", )",
+      "unitName": "ton (freight)",
+      "uID": 618
+   },
+   {
+      "symID": 362,
+      "symTup": "(\"ton (water)\", )",
+      "unitName": "ton (water)",
+      "uID": 619
+   },
+   {
+      "symID": 363,
+      "symTup": "(\"torr\", )",
+      "unitName": "torr",
+      "uID": 629
+   },
+   {
+      "symID": 364,
+      "symTup": "(\"tsp\", )",
+      "unitName": "teaspoon",
+      "uID": 609
+   },
+   {
+      "symID": 365,
+      "symTup": "(\"tsp (Can)\", )",
+      "unitName": "teaspoon (Canadian)",
+      "uID": 607
+   },
+   {
+      "symID": 366,
+      "symTup": "(\"tsp (FDA)\", )",
+      "unitName": "teaspoon (US FDA)",
+      "uID": 610
+   },
+   {
+      "symID": 367,
+      "symTup": "(\"tsp (imp)\", )",
+      "unitName": "teaspoon (imperial)",
+      "uID": 608
+   },
+   {
+      "symID": 368,
+      "symTup": "(\"tTNT\", )",
+      "unitName": "ton of TNT",
+      "uID": 624
+   },
+   {
+      "symID": 369,
+      "symTup": "(\"tun\", )",
+      "unitName": "tun",
+      "uID": 631
+   },
+   {
+      "symID": 370,
+      "symTup": "(\"twip\", )",
+      "unitName": "twip",
+      "uID": 632
+   },
+   {
+      "symID": 371,
+      "symTup": "(\"twp\", )",
+      "unitName": "township",
+      "uID": 630
+   },
+   {
+      "symID": 372,
+      "symTup": "(\"V\", )",
+      "unitName": "volt",
+      "uID": 634
+   },
+   {
+      "symID": 373,
+      "symTup": "(\"W\", )",
+      "unitName": "watt",
+      "uID": 636
+   },
+   {
+      "symID": 374,
+      "symTup": "(\"Wb\", )",
+      "unitName": "weber",
+      "uID": 641
+   },
+   {
+      "symID": 375,
+      "symTup": "(\"wey\", )",
+      "unitName": "wey",
+      "uID": 644
+   },
+   {
+      "symID": 376,
+      "symTup": "(\"wey (imp)\", )",
+      "unitName": "wey (imperial)",
+      "uID": 645
+   },
+   {
+      "symID": 377,
+      "symTup": "(\"wey (US dry)\", )",
+      "unitName": "wey (US dry)",
+      "uID": 643
+   },
+   {
+      "symID": 378,
+      "symTup": "(\"wk\", )",
+      "unitName": "week",
+      "uID": 642
+   },
+   {
+      "symID": 379,
+      "symTup": "(\"yardland\", )",
+      "unitName": "yardland",
+      "uID": 650
+   },
+   {
+      "symID": 380,
+      "symTup": "(\"yd\", )",
+      "unitName": "yard",
+      "uID": 648
+   },
+   {
+      "symID": 381,
+      "symTup": "(\"yd (metric)\", )",
+      "unitName": "yard (international)",
+      "uID": 647
+   },
+   {
+      "symID": 382,
+      "symTup": "(\"sq yd\", \"yd2\")",
+      "unitName": "square yard",
+      "uID": 582
+   },
+   {
+      "symID": 383,
+      "symTup": "(\"cu yd\", \"yd3\")",
+      "unitName": "cubic yard",
+      "uID": 136
+   },
+   {
+      "symID": 384,
+      "symTup": "(\"yr\", )",
+      "unitName": "year (common)",
+      "uID": 651
+   },
+   {
+      "symID": 385,
+      "symTup": "(\"\u03BB\", )",
+      "unitName": "lambda",
+      "uID": 340
+   },
+   {
+      "symID": 386,
+      "symTup": "(\"\u03BC\", )",
+      "unitName": "micron",
+      "uID": 385
+   },
+   {
+      "symID": 387,
+      "symTup": "(\"\u03BCg\", )",
+      "unitName": "microgram",
+      "uID": 382
+   },
+   {
+      "symID": 388,
+      "symTup": "(\"\u03BCm\", )",
+      "unitName": "micrometer",
+      "uID": 383
+   },
+   {
+      "symID": 389,
+      "symTup": "(\"\u03B3\", )",
+      "unitName": "gamma",
+      "uID": 244
+   },
+   {
+      "symID": 390,
+      "symTup": "(\"\u03A9\", )",
+      "unitName": "ohm",
+      "uID": 445
+   }
+]

@@ -189,3 +189,20 @@ def buildObjDict(JSONfile):
         objDict[keyVal] = (objList, defObj)
         
     return objDict
+
+def buildSymjDict(JSONfile):
+    # Start simply by creating a nested dictionary from raw JSON file
+    # with key = to unitName.  symbol(s) added as tuple with other info for tracing
+    
+    symbols = fGen.loadRaw(JSONfile)
+    symDict = {}
+    for entry in symbols:
+        keyVal = entry['unitName']
+        symDict[keyVal] = {}
+        
+        symDict[keyVal]['symTup'] = ast.literal_eval(entry['symTup'])
+        symDict[keyVal]['symID'] = entry['symID']
+        symDict[keyVal]['unitName'] = entry['unitName']
+        symDict[keyVal]['uID'] = entry['uID']
+                
+    return symDict

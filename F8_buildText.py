@@ -122,23 +122,44 @@ def dimPrep(dim):
 
 def buidDefHelp(DLOUVlist, metricDict):
 
-    defHelp = []
-    defHelp.append("You may find the following unit conversions useful:")
-
+    defText = []
+    symList = []
+    defText.append("You may find the following unit conversions useful:")
+    
     for dim, paramLamba, object, unit, value in DLOUVlist:
 
         defList = metricDict[unit]['defList']
         symbol = metricDict[unit]['symbol']
+        if symbol not in symList:
+            symList.append(symbol)
 
-        newHelp = "1 " + symbol + " = "  + metricDict[unit]['defText']
-        defHelp.append(newHelp)
+        newText = "1 " + symbol + " = "  + metricDict[unit]['defText']
+        defText.append(newText)
 
         pathList = metricDict[unit]['pathList']
         for uID, unitName in pathList:
 
-            print("Pathlist: ", pathList)
+            # print("Pathlist: ", pathList)
             symbol = metricDict[unitName]['symbol']
-            defText = metricDict[unitName]['defText']
-            defHelp.append("1 " + symbol + " = " + defText)
+            if symbol not in symList:
+                symList.append(symbol)
 
-    return defHelp
+            newText = metricDict[unitName]['defText']
+            defText.append("1 " + symbol + " = " + newText)
+
+    return (defText, symList)
+
+def buidSymHelp(symList, symDict):
+
+    symHelp = []
+    symHelp.append(". . . where each of the symbols indicate:")
+
+    for paramSym in symList:
+
+        for keyVal, entry in symDict.items():
+            if paramSym in entry['symTup']:
+                if paramSym != entry['unitName']:
+                    symHelp.append(paramSym + " = " + entry['unitName'])
+                break
+        
+    return symHelp

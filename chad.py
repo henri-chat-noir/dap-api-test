@@ -1,4 +1,4 @@
-def buildEchoback(subject, sou, diffString, title, context, queryText, assList, defHelp):
+def buildEchoback(subject, sou, diffString, title, context, queryText, assList, defHelp, symHelp):
 
     answerVal = 42
     answerUnits = "kg-m/s2"
@@ -13,6 +13,7 @@ def buildEchoback(subject, sou, diffString, title, context, queryText, assList, 
         'query' : queryText,
         'assumptions' : assList,
         'defHelp' : defHelp,
+        'symfHelp' : symHelp,
         'answerVal': answerVal,
         'aUnits' : answerUnits,
         'instruction' : instruction
