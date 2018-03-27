@@ -13,7 +13,7 @@ def buildEchoback(subject, sou, diffString, title, context, queryText, assList, 
         'query' : queryText,
         'assumptions' : assList,
         'defHelp' : defHelp,
-        'symfHelp' : symHelp,
+        'symHelp' : symHelp,
         'answerVal': answerVal,
         'aUnits' : answerUnits,
         'instruction' : instruction
