@@ -1,8 +1,7 @@
-def buildEchoback(subject, sou, diffString, title, context, queryText, assList, defHelp, symHelp):
+def buildEchoback(subject, sou, diffString, title, context, queryText, assList, defHelp, symHelp, ansPack, instruction):
 
-    answerVal = 42
-    answerUnits = "kg-m/s2"
-    instruction = "Please enter in Light-years per hour..."
+    answerVal = ansPack[0]
+    answerUnits = ansPack[1]
     
     echoback = {
         'subject' : "A problem related to: " + subject,

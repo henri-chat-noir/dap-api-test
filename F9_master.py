@@ -103,6 +103,9 @@ def problemGen(subject, sou, diffString):
     
     ansTuple = DLOUVlist[0]
     queryText = fText.buildQuery(ansTuple)
+    ansPack = fQuant.buildAnswer(DLOUVlist, metricDict)
+    instruction = fText.buildInstruction(ansPack)
+
     assList = fText.buildAss(DLOUVlist[1:])
     defHelp = fText.buidDefHelp(DLOUVlist, metricDict)
     symHelp = fText.buidSymHelp(defHelp[1], symDict)
@@ -124,9 +127,15 @@ def problemGen(subject, sou, diffString):
     for line in symHelp:
         print(line)
 
-    echoback = chad.buildEchoback(subject, sou, diffString, title, context, queryText, assList, defHelp[0], symHelp)
     print("\n")
-    # print("ECHOBACK:")
-    # print(echoback)
+    print("Parameters of answer:")
+    print("Answer value: ", ansPack[0])
+    print("Units: ", ansPack[1])
+    print("Instruction: ", instruction)
+
+    echoback = chad.buildEchoback(subject, sou, diffString, title, context, queryText, assList, defHelp[0], symHelp, ansPack, instruction)
+    print("\n")
+    print("ECHOBACK:")
+    print(echoback)
     
     return echoback

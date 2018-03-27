@@ -163,3 +163,12 @@ def buidSymHelp(symList, symDict):
                 break
         
     return symHelp
+
+def buildInstruction(ansPack):
+    
+    if ansPack[2] == 'regular':
+        instruction = "Enter your answer in " + ansPack[1] + " to 3 sig figures"
+    else:
+        instruction = "Enter your answer in " + ansPack[1] + " to 3 sig figures in scientic notation"
+    
+    return instruction
