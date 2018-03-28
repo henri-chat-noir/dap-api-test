@@ -23,6 +23,7 @@ def dealUnits(DLOlist, sou, metricDict):
 def dealValue(unit):
 
     unitValue = rand.uniform(1, 10)
+    unitValue = round(unitValue, 2)
 
     return unitValue
 
