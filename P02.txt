@@ -1,0 +1,80 @@
+power can be calculated with this combination of arguments: 
+[('force', 1), ('length', 1), ('time', -1)]
+Number of tries:  1
+Simplest problem type:  energy-work
+Problem type:  energy-work
+----------
+
+
+Established parameters, lambdas, connected objects, units, and values:
+('power', 1, 'pump', 'watt', 5.214021858829061)
+('force', 1, 'lever', 'kilopond', 6.437319163645989)
+('length', 1, 'lever', 'light-minute', 8.758630901627056)
+('time', -1, 'operating', 'fortnight', 2.6301451222930807)
+----------
+
+
+kilopond :  9.80665 6.437319163645989
+Rolling answer =  63.12853597616893
+
+
+light-minute :  17987547480.0 8.758630901627056
+Rolling answer =  9945666585851.625
+
+
+fortnight :  1209600.0 2.6301451222930807
+Rolling answer =  3126168.6666478454
+
+
+Answer =  3126168.6666478454   watt
+Pathlist:  [(298, 'joule')]
+Pathlist:  [(324, 'kilogram-force')]
+Pathlist:  [(348, 'light-second')]
+Pathlist:  [(642, 'week'), (152, 'day')]
+Pathlist:  [(642, 'week'), (152, 'day')]
+Title:  Using a Lever
+===============
+Problem context:  You need to run some calculations related to operating a lever
+
+
+Query:  What is the power output of pump?
+
+
+. . . if you are given the following assumptions:
+
+Force applied by lever = 6.44 kilopond
+Length of lever = 8.76 light-minute
+Time of operating = 2.63 fortnight
+
+
+You may find the following unit conversions useful:
+1 W = 1.0 J/s
+1 J = 1.0 N·m
+1 kp = 1.0 kgf
+1 kgf = 1.0 g0·kg
+1 light-minute = 60.0 light-second
+1 light-second = 299792458.0 m
+1 fn = 2.0 wk
+1 wk = 7.0 d
+1 d = 24.0 h
+
+
+. . . where each of the symbols indicate:
+W = watt
+J = joule
+kp = kilopond
+kgf = kilogram-force
+fn = fortnight
+wk = week
+d = day
+
+
+Parameters of answer:
+Answer value:  3126168.6666478454
+Units:  watt
+Instruction:  Enter your answer in watt to 3 sig figures in scientic notation
+
+
+ECHOBACK:
+{'subject': 'A problem related to: mechanics.', 'sou': 'The system of units are: SI.', 'difficulty': 'The difficulty level is: Simple.', 'title': 'Using a Lever', 'context': 'You need to run some calculations related to operating a lever', 'query': 'What is the power output of pump?', 'assumptions': ['. . . if you are given the following assumptions:\n', 'Force applied by lever = 6.44 kilopond', 'Length of lever = 8.76 light-minute', 'Time of operating = 2.63 fortnight'], 'defHelp': ['You may find the following unit conversions useful:', '1 W = 1.0 J/s', '1 J = 1.0 N·m', '1 kp = 1.0 kgf', '1 kgf = 1.0 g0·kg', '1 light-minute = 60.0 light-second', '1 light-second = 299792458.0 m', '1 fn = 2.0 wk', '1 wk = 7.0 d', '1 d = 24.0 h'], 'symHelp': ['. . . where each of the symbols indicate:', 'W = watt', 'J = joule', 'kp = kilopond', 'kgf = kilogram-force', 'fn = fortnight', 'wk = week', 'd = day'], 'answerVal': 3126168.6666478454, 'aUnits': 'watt', 'instruction': 'Enter your answer in watt to 3 sig figures in scientic notation'}
+The thread 'MainThread' (0x31f8) has exited with code 0 (0x0).

@@ -1,0 +1,63 @@
+time can be calculated with this combination of arguments: 
+[('volume flow', -1), ('volume', 1)]
+Number of tries:  1
+Simplest problem type:  filling - simple
+Problem type:  filling - simple
+----------
+
+
+Established parameters, lambdas, connected objects, units, and values:
+('time', 1, 'filling', 'jiffy (alternative)', 3.750485285067354)
+('volume flow', -1, 'water', 'cubic meter per second', 6.586573244153626)
+('volume', 1, 'water', 'drop (medical)', 3.053421000536619)
+----------
+
+
+cubic meter per second :  1.0 6.586573244153626
+Rolling answer =  0.15182401575623866
+
+
+drop (medical) :  8.333333299999999e-08 3.053421000536619
+Rolling answer =  3.863188635346425e-08
+
+
+Answer =  3.863188635346425e-06   jiffy (alternative)
+Pathlist:  [(408, 'milliliter'), (355, 'liter')]
+Pathlist:  [(408, 'milliliter'), (355, 'liter')]
+Title:  Filling a Water Septic tank
+===============
+Problem context:  You need to run some calculations related to filling a septic tank with water
+
+
+Query:  What is the time of filling?
+
+
+. . . if you are given the following assumptions:
+
+Volume flow of water = 6.59 cubic meter per second
+Volume of water = 3.05 drop (medical)
+
+
+You may find the following unit conversions useful:
+1 ja = 0.01 s
+1 m3/s = 1.0 m^3/s
+1 drop (medical) = 0.083333333 ml
+1 ml = 0.001 L
+1 L = 0.001 m^3
+
+
+. . . where each of the symbols indicate:
+ja = jiffy (alternative)
+ml = milliliter
+L = liter
+
+
+Parameters of answer:
+Answer value:  3.863188635346425e-06
+Units:  jiffy (alternative)
+Instruction:  Enter your answer in jiffy (alternative) to 3 sig figures in scientic notation
+
+
+ECHOBACK:
+{'subject': 'A problem related to: mechanics.', 'sou': 'The system of units are: SI.', 'difficulty': 'The difficulty level is: Simple.', 'title': 'Filling a Water Septic tank', 'context': 'You need to run some calculations related to filling a septic tank with water', 'query': 'What is the time of filling?', 'assumptions': ['. . . if you are given the following assumptions:\n', 'Volume flow of water = 6.59 cubic meter per second', 'Volume of water = 3.05 drop (medical)'], 'defHelp': ['You may find the following unit conversions useful:', '1 ja = 0.01 s', '1 m3/s = 1.0 m^3/s', '1 drop (medical) = 0.083333333 ml', '1 ml = 0.001 L', '1 L = 0.001 m^3'], 'symHelp': ['. . . where each of the symbols indicate:', 'ja = jiffy (alternative)', 'ml = milliliter', 'L = liter'], 'answerVal': 3.863188635346425e-06, 'aUnits': 'jiffy (alternative)', 'instruction': 'Enter your answer in jiffy (alternative) to 3 sig figures in scientic notation'}
+The thread 'MainThread' (0x1848) has exited with code 0 (0x0).

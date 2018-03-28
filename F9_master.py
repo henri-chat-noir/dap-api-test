@@ -18,12 +18,13 @@ import chad
 
 def problemGen(subject, sou, diffString):
 
-    rawUnitsDict = fGen.loadRaw('unitsDict16.json')
+    rawUnitsDict = fGen.loadRaw('unitsDict17.json')
 
     # Create list, metricIDs based on passed system of units
     souSet = {'SI', 'non-SI metric', 'universal'}
     metricSOUs = {'SI', 'non-SI metric', 'universal'}
     unitIDlist = fUnits.buildIDlist(souSet, rawUnitsDict)
+
     # Build 'sub dictionary' (from raw load) based on unitIDlist
     metricDict = fUnits.extractSubDict(unitIDlist, rawUnitsDict)
     metricOmits = {}
