@@ -18,7 +18,7 @@ import chad
 
 def problemGen(subject, sou, diffString):
 
-    rawUnitsDict = fGen.loadRaw('UnitsDict16.json')
+    rawUnitsDict = fGen.loadRaw('unitsDict16.json')
 
     # Create list, metricIDs based on passed system of units
     souSet = {'SI', 'non-SI metric', 'universal'}
