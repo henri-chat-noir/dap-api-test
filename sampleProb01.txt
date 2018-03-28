@@ -1,0 +1,73 @@
+volume can be calculated with this combination of arguments: 
+[('force', 1), ('area', 1), ('mass', -1)]
+Number of tries:  1
+Simplest problem type:  fluid cannon
+Problem type:  fluid cannon
+----------
+
+
+Established parameters, lambdas, connected objects, units, and values:
+('volume', 1, 'sewage', 'lambda', 8.866169919562498)
+('force', 1, 'piston', 'kilopond', 4.776159638816351)
+('area', 1, 'piston', 'dunam', 3.7878813570015506)
+('mass', -1, 'sewage', 'pound (metric)', 2.241414403364748)
+----------
+
+
+kilopond :  9.80665 4.776159638816351
+Rolling answer =  46.83812592199836
+
+
+dunam :  1000.0 3.7878813570015506
+Rolling answer =  177417.26397682866
+
+
+pound (metric) :  0.5 2.241414403364748
+Rolling answer =  158308.31077956388
+
+
+Pathlist:  [(409, 'millimeter')]
+Pathlist:  [(324, 'kilogram-force')]
+Pathlist:  [(253, 'gram')]
+Title:  Firing a Sewage Cannon
+===============
+Problem context:  You need to run some calculations related to a piston-activated cannon firing sewage
+
+
+Query:  What is the volume of sewage?
+
+
+. . . if you are given the following assumptions:
+
+Force applied by piston = 4.78 kilopond
+Area of piston = 3.79 dunam
+Mass of sewage = 2.24 pound (metric)
+
+
+You may find the following unit conversions useful:
+1 ? = 1.0 mm^3
+1 mm = 0.001 m
+1 kp = 1.0 kgf
+1 kgf = 1.0 g0·kg
+1 dunam = 1000.0 m^2
+1 pound (metric) = 500.0 g
+1 g = 0.001 kg
+
+
+. . . where each of the symbols indicate:
+? = lambda
+mm = millimeter
+kp = kilopond
+kgf = kilogram-force
+g = gram
+
+
+Parameters of answer:
+Answer value:  158308.31077956388
+Units:  lambda
+Instruction:  Enter your answer in lambda to 3 sig figures in scientic notation
+
+
+ECHOBACK:
+{'subject': 'A problem related to: mechanics', 'sou': 'The system of units are: SI', 'difficulty': 'The difficulty level is: Simple', 'title': 'Firing a Sewage Cannon', 'context': 'You need to run some calculations related to a piston-activated cannon firing sewage', 'query': 'What is the volume of sewage?', 'assumptions': ['. . . if you are given the following assumptions:\n', 'Force applied by piston = 4.78 kilopond', 'Area of piston = 3.79 dunam', 'Mass of sewage = 2.24 pound (metric)'], 'defHelp': ['You may find the following unit conversions useful:', '1 ? = 1.0 mm^3', '1 mm = 0.001 m', '1 kp = 1.0 kgf', '1 kgf = 1.0 g0·kg', '1 dunam = 1000.0 m^2', '1 pound (metric) = 500.0 g', '1 g = 0.001 kg'], 'symHelp': ['. . . where each of the symbols indicate:', '? = lambda', 'mm = millimeter', 'kp = kilopond', 'kgf = kilogram-force', 'g = gram'], 'answerVal': 158308.31077956388, 'aUnits': 'lambda', 'instruction': 'Enter your answer in lambda to 3 sig figures in scientic notation'}
+The thread 'MainThread' (0xb98) has exited with code 0 (0x0).

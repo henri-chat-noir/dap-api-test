@@ -139,7 +139,7 @@ def buidDefHelp(DLOUVlist, metricDict):
         pathList = metricDict[unit]['pathList']
         for uID, unitName in pathList:
 
-            # print("Pathlist: ", pathList)
+            print("Pathlist: ", pathList)
             symbol = metricDict[unitName]['symbol']
             if symbol not in symList:
                 symList.append(symbol)

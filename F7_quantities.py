@@ -30,11 +30,19 @@ def dealValue(unit):
 def buildAnswer(DLOUVlist, unitDict):
     
     ansVal = 1.0
-
-    for dim, argLambda, argObj, unit, value in DLOUVlist:
-
+    # This first stage multiplies through the arguments
+    for dim, argLambda, argObj, unit, value in DLOUVlist[1:]:
+        
         unitCoeff = unitDict[unit]['coeff']
-        ansVal *= (unitCoeff * value) ** argLambda
+        ansVal *= (unitCoeff * value)**argLambda
+        print(unit, ": ", unitCoeff, value)
+        print("Rolling answer = ", ansVal)
+        print("\n")
+
+    # Preceding answer will be in base SI, i.e. kg, m, s, so need to
+    # Convert from that to required units of answer
+    
+
 
     ansUnits = DLOUVlist[0][3]
     if abs(ansVal) < 100000 and abs(ansVal) > .0001:

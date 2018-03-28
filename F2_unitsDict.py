@@ -114,6 +114,7 @@ def buildUnitDef(defList):
     coeff = 1.0
     denom = ""
     numer = ""
+    dot = "·"
 
     for symbol, degree in defList:
         if type(symbol) is int or type(symbol) is float:
@@ -126,12 +127,12 @@ def buildUnitDef(defList):
                 expText = ""
 
             if degree > 0:
-                if numer != "": sep = "."
+                if numer != "": sep = dot
                 else: sep = ""
                 numer += sep + symbol + expText
 
             else:
-                if denom != "": sep = "."
+                if denom != "": sep = dot
                 else: sep = ""
                 denom += sep + symbol + expText
     
