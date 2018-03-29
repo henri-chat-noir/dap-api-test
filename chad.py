@@ -2,7 +2,8 @@ def buildEchoback(subject, sou, diffString, title, context, queryText, assList, 
 
     answerVal = ansPack[0]
     answerUnits = ansPack[1]
-    
+    ansType = ansPack[2]
+
     echoback = {
         'subject' : "A problem related to: " + subject + ".",
         'sou' : "The system of units are: " + sou + ".",
@@ -15,6 +16,7 @@ def buildEchoback(subject, sou, diffString, title, context, queryText, assList, 
         'symHelp' : symHelp,
         'answerVal': answerVal,
         'aUnits' : answerUnits,
+        'ansType': ansType,
         'instruction' : instruction
     }
 
