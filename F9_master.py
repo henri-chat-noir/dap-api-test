@@ -38,7 +38,7 @@ def problemGen(subject, sou, diffString):
     # Process raw JSONs into Python nexted dictionaries
     rawDims = fGen.loadRaw('dictDimensions18.json')
     dimsDict = fBuild.buildDimsDict(rawDims, objDict)
-    symDict = fBuild.buildSymjDict('dictSymbols04.json')
+    # symDict = fBuild.buildSymjDict('dictSymbols04.json')
 
     # Build appropriate dimensions dictionary (from dimsDict)
     exclDims = ['acceleration', 'action', 'currency', 'dynamic viscosity', 'energy density', 'frequency', 'kinematic viscosity', 'surface tension', 'torque']
@@ -109,7 +109,7 @@ def problemGen(subject, sou, diffString):
 
     assList = fText.buildAss(DLOUVlist[1:])
     defHelp = fText.buidDefHelp(DLOUVlist, metricDict)
-    symHelp = fText.buidSymHelp(defHelp[1], symDict)
+    # symHelp = fText.buidSymHelp(defHelp[1], symDict)
     
     print("Title: ", title)
     print("===============")
@@ -121,12 +121,13 @@ def problemGen(subject, sou, diffString):
     for line in assList:
         print(line)
     print("\n")
-    for line in defHelp[0]:
+    print("Unit conversion help:")
+    for line in defHelp:
         print(line)
     
-    print("\n")
-    for line in symHelp:
-        print(line)
+    # print("\n")
+    # for line in symHelp:
+    #     print(line)
 
     print("\n")
     print("Parameters of answer:")
@@ -134,7 +135,7 @@ def problemGen(subject, sou, diffString):
     print("Units: ", ansPack[1])
     print("Instruction: ", instruction)
 
-    echoback = chad.buildEchoback(subject, sou, diffString, title, context, queryText, assList, defHelp[0], symHelp, ansPack, instruction)
+    echoback = chad.buildEchoback(subject, sou, diffString, title, context, queryText, assList, defHelp, ansPack, instruction)
     print("\n")
     print("ECHOBACK:")
     print(echoback)
