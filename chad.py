@@ -5,8 +5,8 @@ def buildEchoback(subject, sou, diffString, title, context, queryText, assList, 
     ansType = ansPack[2]
 
     unitConvText = "Unit conversions and symbols used*"
-    unitConvNote1 = "*Additional base unit symbols used:"
-    unitConvNote2 = "m = meter; s = second; kg = kilogram"
+    unitConvNote1 = "Additional base unit symbols used:"
+    unitConvNote2 = "*m = meter; s = second; kg = kilogram"
     unitNotes = (unitConvText, unitConvNote1, unitConvNote2)
 
     echoback = {
